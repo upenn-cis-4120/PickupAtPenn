@@ -2967,7 +2967,7 @@ var _yourAvailability = require("./screens/YourAvailability");
 const app = document.getElementById("app");
 const root = (0, _clientDefault.default).createRoot(app);
 // change the Home to CreateGame or Schedule to navigate for now
-root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _home.Home), {}, void 0, false, {
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _createGame.CreateGame), {}, void 0, false, {
     fileName: "src/index.jsx",
     lineNumber: 15,
     columnNumber: 13
@@ -2978,7 +2978,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _home.Home), {}, void 0
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../global.css":"6ZjVH","react":"21dqq","react-dom/client":"lOjBx","./screens/Schedule":"bANSw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./screens/Home":"7eUR9","./screens/CreateGame":"ffNjT","./screens/GroupAvailability":"h5vmJ","./screens/YourAvailability":"29q7c"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../global.css":"6ZjVH","react":"21dqq","react-dom/client":"lOjBx","./screens/Schedule":"bANSw","./screens/Home":"7eUR9","./screens/CreateGame":"ffNjT","./screens/GroupAvailability":"h5vmJ","./screens/YourAvailability":"29q7c","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
