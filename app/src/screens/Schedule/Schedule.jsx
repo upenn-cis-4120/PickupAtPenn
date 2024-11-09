@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import { Link } from 'react-router-dom';
 
 export const Schedule = () => {
   return (
@@ -219,10 +220,12 @@ export const Schedule = () => {
               <div className="frame">
                 <div className="text-wrapper-39">Schedule</div>
               </div>
-
+               
+              <Link to="/availability">
               <div className="frame-2">
                 <div className="text-wrapper-40">Availability</div>
               </div>
+              </Link>
 
               <div className="frame-3">
                 <div className="text-wrapper-40">Community</div>
@@ -232,15 +235,19 @@ export const Schedule = () => {
                 <div className="text-wrapper-41">Map</div>
               </div>
             </div>
-
+            <Link to="/">
             <div className="text-wrapper-42">Pickup@Penn</div>
-
+            </Link>
+            
+            <Link to="/">
             <img
               className="img"
               alt="Image"
               src="https://c.animaapp.com/I43ZrRid/img/image-9@2x.png"
             />
+            </Link>
           </div>
+          
 
           <div className="container-27">
             <div className="container-28">

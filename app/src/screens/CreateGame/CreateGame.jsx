@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import { Link } from 'react-router-dom';
 
 export const CreateGame = () => {
   return (
@@ -37,12 +38,13 @@ export const CreateGame = () => {
 
         <div className="textbox-3">
           <div className="text-wrapper-3">Create a New Game</div>
-
+          <Link to="/">
           <img
             className="close"
             alt="Close"
             src="https://c.animaapp.com/BPOawRxV/img/close.svg"
           />
+          </Link>
         </div>
 
         <div className="overlap-group">
@@ -252,9 +254,9 @@ export const CreateGame = () => {
         />
       </div>
 
-      <button className="button-4">
+      {/* <button className="button-4">
         <div className="text-wrapper-24">Create New Game</div>
-      </button>
+      </button> */}
 
       <div className="text-wrapper-25">Pickup@Penn</div>
 

@@ -1,9 +1,11 @@
 import React from "react";
 import "./style.css";
+import { Link } from 'react-router-dom';
 
 export const Home = () => {
   return (
     <div className="home">
+      
       <div className="container">
         <p className="penn-park-fields-are">
           Penn Park fields are open and empty&nbsp;&nbsp;Perfect for soccer.
@@ -54,14 +56,17 @@ export const Home = () => {
 
       <div className="container-3">
         <div className="header-menu">
+          <Link to="/schedule">
           <div className="frame">
             <div className="text-wrapper-5">Schedule</div>
           </div>
+          </Link>
 
+          <Link to="/availability">
           <div className="frame-2">
             <div className="text-wrapper-6">Availability</div>
           </div>
-
+          </Link>
           <div className="frame-3">
             <div className="text-wrapper-6">Community</div>
           </div>
@@ -70,20 +75,21 @@ export const Home = () => {
             <div className="text-wrapper-6">Map</div>
           </div>
         </div>
-
+        <Link to="/">
         <div className="text-wrapper-7">Pickup@Penn</div>
-
+        </Link>
         <img
           className="image"
           alt="Image"
           src="https://c.animaapp.com/RqvJyPyX/img/image-27@2x.png"
         />
-
+        <Link to="/">
         <img
           className="img"
           alt="Image"
           src="https://c.animaapp.com/RqvJyPyX/img/image-28@2x.png"
         />
+        </Link>
       </div>
 
       <div className="container-4">
@@ -211,7 +217,7 @@ export const Home = () => {
           src="https://c.animaapp.com/RqvJyPyX/img/soccer-ball.svg"
         />
       </div>
-
+      <Link to="/create-game">
       <button className="button-4">
         <div className="text-wrapper-23">Create New Game</div>
 
@@ -221,6 +227,7 @@ export const Home = () => {
           src="https://c.animaapp.com/RqvJyPyX/img/e-add.svg"
         />
       </button>
+      </Link>
 
       <div className="text-wrapper-24">Upcoming Games</div>
 
