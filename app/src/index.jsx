@@ -14,7 +14,7 @@ const app = document.getElementById("app");
 const root = ReactDOMClient.createRoot(app);
 
 // change the Home to CreateGame or Schedule to navigate for now
-root.render(<Home />);
+//oot.render(<Home />);
 reactDom.createRoot(document.getElementById("app")).render(
     <Router>
     <Routes>
