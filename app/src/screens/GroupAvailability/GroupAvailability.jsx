@@ -1,6 +1,8 @@
 import React from "react";
 import "./style.css";
 
+import { Link } from 'react-router-dom';
+
 export const GroupAvailability = () => {
   return (
     <div className="group-availability">
@@ -826,9 +828,11 @@ export const GroupAvailability = () => {
 
           <div className="container-3">
             <div className="header-menu">
+              <Link to="/schedule">
               <div className="frame">
                 <div className="text-wrapper-71">Schedule</div>
               </div>
+              </Link>
 
               <div className="div-wrapper">
                 <div className="text-wrapper-72">Availability</div>
@@ -842,20 +846,23 @@ export const GroupAvailability = () => {
                 <div className="text-wrapper-73">Map</div>
               </div>
             </div>
-
+            <Link to="/">
             <div className="text-wrapper-74">Pickup@Penn</div>
-
-            <img
+            </Link>
+            
+            {/* <img
               className="image"
               alt="Image"
               src="https://c.animaapp.com/tBO78KcB/img/image-1@2x.png"
-            />
-
+            /> */}
+            
+            <Link to="/">
             <img
               className="image-2"
               alt="Image"
               src="https://c.animaapp.com/tBO78KcB/img/image-29@2x.png"
             />
+            </Link>
           </div>
 
           <div className="container-4">

@@ -4,3 +4,5 @@
 /app/.parcel-cache/
 /app/.parcel-cache/*
 /app/.parcel-cache/node_modulesapp/.parcel-cache
+app/.anima/cache
+app/.anima/*

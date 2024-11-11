@@ -98,7 +98,7 @@ export const Home = () => {
           </div>
           </Link>
 
-          <Link to="/availability">
+          <Link to="/group-availability">
           <div className="frame-2">
             <div className="text-wrapper-6">Availability</div>
           </div>
@@ -114,11 +114,16 @@ export const Home = () => {
         <Link to="/">
         <div className="text-wrapper-7">Pickup@Penn</div>
         </Link>
+
+        <Link to="/availability">
         <img
           className="image"
           alt="Image"
           src="https://c.animaapp.com/RqvJyPyX/img/image-27@2x.png"
         />
+        </Link>
+
+
         <Link to="/">
         <img
           className="img"

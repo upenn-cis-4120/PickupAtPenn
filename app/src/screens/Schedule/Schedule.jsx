@@ -221,7 +221,7 @@ export const Schedule = () => {
                 <div className="text-wrapper-39">Schedule</div>
               </div>
                
-              <Link to="/availability">
+              <Link to="/group-availability">
               <div className="frame-2">
                 <div className="text-wrapper-40">Availability</div>
               </div>
