@@ -1,40 +1,127 @@
 import React from "react";
 import "./style.css";
 import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 
 export const CreateGame = () => {
+
+  const [selectedSport, setSelectedSport] = useState('Basketball'); // Default selected sport
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false); // To toggle dropdown visibility
+  const [selectedDate, setSelectedDate] = useState('');
+  const [selectedTime, setSelectedTime] = useState(''); 
+  const [selectedLocation, setSelectedLocation] = useState('Select location'); // Default location
+  const [isLocationDropdownOpen, setIsLocationDropdownOpen] = useState(false); // To toggle dropdown visibility
+
+  const [selectedSkill, setSelectedSkill] = useState('Beginner'); // Default skill level
+  const [isSkillDropdownOpen, setIsSkillDropdownOpen] = useState(false); // To toggle dropdown visibility
+
+  const [selectedGroupChat, setSelectedGroupChat] = useState('Select group chat'); // Default group chat
+  const [isGroupChatDropdownOpen, setIsGroupChatDropdownOpen] = useState(false); // Toggle visibility
+  const [additionalNotes, setAdditionalNotes] = useState(''); // New state variable for additional notes
+  const [playerCount, setPlayerCount] = useState(1); // Player count state with default value of 1
+  const [playerNames, setPlayerNames] = useState('');
+  const locations = ['Penn Park', 'Pottruck Gym', 'Hamlin Tennis Center']; // List of locations
+  const sports = ['Basketball', 'Soccer', 'Tennis', 'Baseball', 'Volleyball']; // List of sports
+  const skillLevels = ['Beginner', 'Intermediate', 'Advanced']; // Skill levels
+  const groupChats = ['Basketball', 'Soccer']; // List of group chats
+
+  const handleGroupChatClick = (group) => {
+    setSelectedGroupChat(group);
+    setIsGroupChatDropdownOpen(false); // Close dropdown after selection
+  };
+  
+  const handleSkillClick = (skill) => {
+    setSelectedSkill(skill);
+    setIsSkillDropdownOpen(false); // Close dropdown after selection
+  };
+
+  const handleLocationClick = (location) => {
+    setSelectedLocation(location);
+    setIsLocationDropdownOpen(false); // Close dropdown after selection
+  };
+
+  const handlePlayerNamesChange = (e) => {
+    setPlayerNames(e.target.value); // Update player names state
+  };
+
+  const handlePlayerCountChange = (e) => {
+    setPlayerCount(e.target.value); // Update player count based on input value
+  };
+
+  const handleSportClick = (sport) => {
+    setSelectedSport(sport);
+    setIsDropdownOpen(false); // Close dropdown after selection
+  };
+  const handleAdditionalNotesChange = (e) => {
+    setAdditionalNotes(e.target.value); // Update additional notes state
+  };
+
+  const navigate = useNavigate();
+
+  const handleCreateGame = () => {
+    // Redirect to Home with additionalNotes data
+    navigate("/", { state: { additionalNotes } });
+  };
+
+
   return (
     <div className="create-game">
       <div className="container">
         <div className="div-wrapper">
-          <p className="text-wrapper">
-            Enter any additional notes, hashtags, and event types
-          </p>
+        <input
+            type="text"
+            className="input-additional-notes"
+            placeholder="Enter any additional notes, hashtags, and event types"
+            value={additionalNotes} // Bind value to state
+            onChange={handleAdditionalNotesChange} // Handle input change
+          />
         </div>
 
         <div className="textbox">
           <div className="textfield">
-            <p className="div">Enter player names or select from group chat</p>
+            <input
+              type="text"
+              className="input-player-names"
+              placeholder="Enter player names or select from group chat"
+              value={playerNames}
+              onChange={handlePlayerNamesChange}
+            />
           </div>
 
           <div className="text-wrapper-2">Players</div>
         </div>
 
         <div className="overlap">
+        
           <div className="textbox-2">
-            <div className="textfield">
-              <div className="div">Select location</div>
+          <div className="text-wrapper-4">Location</div>
+          <div className="textfield-2">
+              <div className="text-wrapper-5">{selectedLocation}</div>
             </div>
-
-            <div className="text-wrapper-2">Location</div>
+            <img
+              className="img dropdown-arrow"
+              alt="Dropdown Arrow"
+              src="https://c.animaapp.com/BPOawRxV/img/image-16@2x.png"
+              onClick={() => setIsLocationDropdownOpen(!isLocationDropdownOpen)}
+            />
           </div>
-
-          <img
-            className="image"
-            alt="Image"
-            src="https://c.animaapp.com/BPOawRxV/img/image-14@2x.png"
-          />
-        </div>
+          
+          {isLocationDropdownOpen && (
+            <div className="location-dropdown-menu">
+              {locations.map((location) => (
+                <div
+                  key={location}
+                  className="location-dropdown-item"
+                  onClick={() => handleLocationClick(location)}
+                >
+                  {location}
+                </div>
+              ))}
+              </div>
+          )}
+          </div>
+      
 
         <div className="textbox-3">
           <div className="text-wrapper-3">Create a New Game</div>
@@ -52,30 +139,62 @@ export const CreateGame = () => {
             <div className="text-wrapper-4">Sport</div>
 
             <div className="textfield-2">
-              <div className="text-wrapper-5">Basketball</div>
+          <div className="text-wrapper-5">{selectedSport}</div>
+        </div>
+
+        <img
+          className="img dropdown-arrow"
+          alt="Dropdown Arrow"
+          src="https://c.animaapp.com/BPOawRxV/img/image-16@2x.png"
+          onClick={() => setIsDropdownOpen(!isDropdownOpen)} // Toggle dropdown on arrow click
+        />
+      </div>
+
+      {isDropdownOpen && (
+        <div className="dropdown-menu">
+          {sports.map((sport) => (
+            <div
+              key={sport}
+              className="dropdown-item"
+              onClick={() => handleSportClick(sport)}
+            >
+              {sport}
             </div>
-          </div>
-
-          <img
-            className="img"
-            alt="Image"
-            src="https://c.animaapp.com/BPOawRxV/img/image-16@2x.png"
-          />
+          ))}
         </div>
-
+      )}
+      </div>
         <div className="overlap-2">
-          <div className="textbox-5">
-            <div className="text-wrapper-6">Select group chat</div>
+        <div className="textbox-5">
+          {/* <div className="text-wrapper-6">Group Chat</div> */}
+
+          {/* Display selected group chat */}
+          <div className="text-selected-group">{selectedGroupChat}</div>
+          
+          {/* Dropdown arrow to toggle visibility */}
+          <img
+            className="image-2 dropdown-arrow"
+            alt="Dropdown Arrow"
+            src="https://c.animaapp.com/BPOawRxV/img/image-17@2x.png"
+            onClick={() => setIsGroupChatDropdownOpen(!isGroupChatDropdownOpen)}
+          />
           </div>
 
-          <img
-            className="image-2"
-            alt="Image"
-            src="https://c.animaapp.com/BPOawRxV/img/image-17@2x.png"
-          />
+        {isGroupChatDropdownOpen && (
+          <div className="groupchat-dropdown-menu">
+            {groupChats.map((chat) => (
+              <div
+                key={chat}
+                className="groupchat-dropdown-item"
+                onClick={() => handleGroupChatClick(chat)}
+              >
+                {chat}
+              </div>
+            ))}
+          </div>
+        )}
         </div>
-
-        <button className="button">
+        <button className="button" onClick={handleCreateGame}>
           <div className="text-wrapper-7">Create Game</div>
         </button>
 
@@ -84,46 +203,77 @@ export const CreateGame = () => {
             <div className="text-wrapper-2">Skill Level</div>
 
             <div className="textfield-3">
-              <div className="text-wrapper-8">Beginner</div>
-            </div>
+            <div className="text-wrapper-8">{selectedSkill}</div>
+          </div>
           </div>
 
           <img
-            className="image-3"
-            alt="Image"
+            className="image-3 dropdown-arrow"
+            alt="Dropdown Arrow"
             src="https://c.animaapp.com/BPOawRxV/img/image-13@2x.png"
+            onClick={() => setIsSkillDropdownOpen(!isSkillDropdownOpen)} // Toggle dropdown on arrow click
           />
         </div>
+        {isSkillDropdownOpen && (
+          <div className="skill-dropdown-menu">
+            {skillLevels.map((level) => (
+              <div
+                key={level}
+                className="skill-dropdown-item"
+                onClick={() => handleSkillClick(level)}
+              >
+                {level}
+              </div>
+            ))}
+          </div>
+        )}
 
         <div className="textbox-7">
-          <div className="text-wrapper-2">Date</div>
+        <div className="text-wrapper-2">Date</div>
 
-          <div className="textfield-4">
-            <div className="text-wrapper-9">MM/DD/YYYY</div>
-          </div>
+        <div className="textfield-4">
+          <input
+            type="date"
+            className="date-input"
+            value={selectedDate}
+            onChange={(e) => setSelectedDate(e.target.value)} // Update state on date change
+          />
         </div>
+      </div>
 
         <div className="overlap-group-2">
           <div className="textbox-8">
             <div className="text-wrapper-2">Number of Players</div>
 
             <div className="textfield-5">
-              <div className="text">{""}</div>
+            <input
+              type="number"
+              value={playerCount}
+              min="1"
+              max="20" // Optionally set a max limit
+              onChange={handlePlayerCountChange}
+              className="player-count-input"
+            />
             </div>
           </div>
 
-          <img
+          {/* <img
             className="image-4"
             alt="Image"
             src="https://c.animaapp.com/BPOawRxV/img/image-18@2x.png"
-          />
+          /> */}
         </div>
 
         <div className="textbox-9">
           <div className="text-wrapper-10">Time</div>
 
-          <div className="textfield-6">
-            <div className="text-2">{""}</div>
+          <div className="textfield-time">
+          <input
+            type="time"
+            className="time-input"
+            value={selectedTime}
+            onChange={(e) => setSelectedTime(e.target.value)} // Update state on time change
+          />
           </div>
         </div>
 

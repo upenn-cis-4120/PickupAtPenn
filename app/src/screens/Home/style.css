@@ -7,7 +7,7 @@
 
 .home .container {
   background-color: #fefffe;
-  border: 1px solid;
+   border: 1px solid #f9fbfd;
   box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
   height: 205px;
   left: 398px;
@@ -284,6 +284,19 @@
 }
 
 .home .text-wrapper-7 {
+  color: #172b61;
+  font-family: "Archivo", Helvetica;
+  font-size: 27px;
+  font-weight: 700;
+  left: 63px;
+  letter-spacing: 0;
+  line-height: 42px;
+  position: absolute;
+  top: 8px;
+  white-space: nowrap;
+}
+
+.button .text-wrapper-7 {
   color: #172b61;
   font-family: "Archivo", Helvetica;
   font-size: 27px;

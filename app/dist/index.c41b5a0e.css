@@ -1135,13 +1135,12 @@ a {
 
 .schedule .container-27 {
   background-color: #f9fbfd;
-  border: 1px solid;
+  border: 1px solid #f9fbfd;
   width: 277px;
   height: 205px;
   position: absolute;
   top: 505px;
   left: 1141px;
-  box-shadow: 0 0 1px #171a1f12, 0 0 2px #171a1f1f;
 }
 
 .schedule .container-28 {
@@ -1395,7 +1394,7 @@ a {
 
 .home .container {
   background-color: #fefffe;
-  border: 1px solid;
+  border: 1px solid #f9fbfd;
   width: 663px;
   height: 205px;
   position: absolute;
@@ -1668,7 +1667,7 @@ a {
   overflow: hidden;
 }
 
-.home .text-wrapper-7 {
+.home .text-wrapper-7, .button .text-wrapper-7 {
   color: #172b61;
   letter-spacing: 0;
   white-space: nowrap;
@@ -2277,6 +2276,41 @@ a {
   left: -1px;
 }
 
+.create-game .input-additional-notes {
+  color: #434343;
+  box-sizing: border-box;
+  resize: none;
+  background-color: #fffffe;
+  border: 1px solid #adb6c5;
+  border-radius: 6px;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  font-family: Inter, Helvetica;
+  font-size: 15px;
+  box-shadow: 0 0 1px #171a1f12, 0 0 2px #171a1f1f;
+}
+
+.create-game .input-additional-notes::placeholder {
+  color: #adb6c5;
+}
+
+.create-game .input-player-names {
+  color: #434343;
+  border: none;
+  outline: none;
+  width: 90%;
+  height: 99%;
+  padding: 10px 20px;
+  font-family: Inter, Helvetica;
+  font-size: 16px;
+}
+
+.create-game .input-player-names::placeholder {
+  color: #adb6c5;
+}
+
 .create-game .div {
   color: #adb6c5;
   letter-spacing: 0;
@@ -2314,9 +2348,46 @@ a {
 .create-game .textbox-2 {
   width: 448px;
   height: 74px;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
+}
+
+.create-game .player-count-input {
+  color: #434343;
+  text-align: center;
+  background-color: #fffffe;
+  border: 1px solid #bcc1ca;
+  border-radius: 6px;
+  outline: none;
+  width: 100%;
+  height: 48px;
+  padding: 0 10px;
+  font-family: Inter, Helvetica;
+  font-size: 16px;
+}
+
+.create-game .location-dropdown-menu {
+  z-index: 10;
+  background-color: #fffffe;
+  border: 1px solid #434343;
+  border-radius: 6px;
+  width: 448px;
+  max-height: 150px;
+  margin-top: 10px;
+  position: absolute;
+  top: 80%;
+  overflow-y: auto;
+}
+
+.create-game .location-dropdown-item {
+  cursor: pointer;
+  color: #434343;
+  padding: 10px;
+}
+
+.create-game .location-dropdown-item:hover {
+  background-color: #f0f0f0;
 }
 
 .create-game .image {
@@ -2399,6 +2470,34 @@ a {
   left: -1px;
 }
 
+.create-game .dropdown-arrow {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.create-game .dropdown-menu {
+  z-index: 10;
+  background-color: #fffffe;
+  border: 1px solid #434343;
+  border-radius: 6px;
+  width: 449px;
+  max-height: 150px;
+  margin-top: 10px;
+  position: absolute;
+  top: 90%;
+  overflow-y: auto;
+}
+
+.create-game .dropdown-item {
+  cursor: pointer;
+  color: #434343;
+  padding: 10px;
+}
+
+.create-game .dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
 .create-game .text-wrapper-5 {
   color: #434343;
   letter-spacing: 0;
@@ -2435,22 +2534,52 @@ a {
   border-radius: 4px;
   width: 449px;
   height: 49px;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
 }
 
 .create-game .text-wrapper-6 {
   color: #3b3b3b;
-  letter-spacing: 0;
-  white-space: nowrap;
+  padding: 10px;
   font-family: Inter, Helvetica;
   font-size: 16px;
   font-weight: 400;
-  line-height: 26px;
+}
+
+.create-game .text-selected-group {
+  color: #434343;
+  padding: 15px 20px;
+  font-family: Inter, Helvetica;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.create-game .groupchat-dropdown-menu {
+  z-index: 10;
+  background-color: #fffffe;
+  border: 1px solid #434343;
+  border-radius: 6px;
+  width: 100%;
+  max-height: 150px;
   position: absolute;
-  top: 10px;
-  left: 20px;
+  top: 100%;
+  overflow-y: auto;
+}
+
+.create-game .groupchat-dropdown-item {
+  cursor: pointer;
+  color: #434343;
+  padding: 10px;
+}
+
+.create-game .groupchat-dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.create-game .dropdown-arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 40px;
+  right: 15px;
 }
 
 .create-game .image-2 {
@@ -2515,6 +2644,30 @@ a {
   left: -1px;
 }
 
+.create-game .skill-dropdown-menu {
+  z-index: 1000;
+  background-color: #fffffe;
+  border: 1px solid #434343;
+  border-radius: 6px;
+  width: 220px;
+  max-height: 150px;
+  margin-top: 10px;
+  position: absolute;
+  top: 50%;
+  left: 259px;
+  overflow-y: auto;
+}
+
+.create-game .skill-dropdown-item {
+  cursor: pointer;
+  color: #434343;
+  padding: 10px;
+}
+
+.create-game .skill-dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
 .create-game .text-wrapper-8 {
   color: #343434;
   letter-spacing: 0;
@@ -2550,9 +2703,26 @@ a {
   border-radius: 6px;
   width: 218px;
   height: 50px;
-  position: absolute;
+  position: relative;
   top: 26px;
   left: -1px;
+}
+
+.create-game .date-input {
+  color: #434343;
+  background-color: #fffffe;
+  border: 1px solid #adb6c5;
+  border-radius: 6px;
+  outline: none;
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  font-family: Inter, Helvetica;
+  font-size: 16px;
+}
+
+.create-game .date-input::placeholder {
+  color: #adb6c5;
 }
 
 .create-game .text-wrapper-9 {
@@ -2633,19 +2803,40 @@ a {
   font-weight: 700;
   line-height: 26px;
   position: absolute;
-  top: -1px;
+  top: -3px;
   left: 0;
 }
 
-.create-game .textfield-6 {
+.create-game .textfield-time {
   background-color: #fffffe;
   border: 1px solid #bcc1ca;
   border-radius: 4px;
   width: 221px;
-  height: 46px;
+  height: 50px;
   position: absolute;
-  top: 26px;
+  top: 22px;
   left: -1px;
+}
+
+.create-game .textfield- {
+  position: relative;
+}
+
+.create-game .time-input {
+  color: #434343;
+  background-color: #fffffe;
+  border: 1px solid #bcc1ca;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  font-family: Inter, Helvetica;
+  font-size: 16px;
+}
+
+.create-game .time-input::placeholder {
+  color: #adb6c5;
 }
 
 .create-game .text-2 {
