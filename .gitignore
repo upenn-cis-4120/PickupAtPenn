@@ -1,0 +1,9 @@
+./app/node_modules
+/app/node_modules
+.DS_Store
+/app/.parcel-cache/
+/app/.parcel-cache/*
+/app/.parcel-cache/node_modulesapp/.parcel-cache
+app/.anima/cache
+app/.anima/*
+node_modules/

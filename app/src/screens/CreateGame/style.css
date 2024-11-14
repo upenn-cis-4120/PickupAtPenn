@@ -1,0 +1,1206 @@
+.create-game {
+  background-color: #f9fbfd;
+  height: 928px;
+  position: relative;
+  width: 1440px;
+}
+
+.create-game .container {
+  background-color: #fffffe;
+   border: 1px solid #f9fbfd;
+  border-color: #f9fbfd;
+  border-radius: 6px;
+  box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+  height: 847px;
+  left: 461px;
+  position: absolute;
+  top: 34px;
+  width: 514px;
+}
+
+.create-game .div-wrapper {
+  background-color: #fffffe;
+  border: 1px solid;
+  border-radius: 6px;
+  box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+  height: 149px;
+  left: 30px;
+  position: absolute;
+  top: 617px;
+  width: 448px;
+}
+
+.create-game .text-wrapper {
+  color: #adb6c5;
+  font-family: "Inter", Helvetica;
+  font-size: 15px;
+  font-weight: 400;
+  left: 13px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 61px;
+  white-space: nowrap;
+}
+
+.create-game .textbox {
+  height: 74px;
+  left: 30px;
+  position: absolute;
+  top: 449px;
+  width: 448px;
+}
+
+.create-game .textfield {
+  background-color: #fffffe;
+  border: 1px solid;
+  border-color: #adb6c5;
+  border-radius: 4px;
+  height: 48px;
+  left: -1px;
+  position: absolute;
+  top: 26px;
+  width: 449px;
+}
+
+  .create-game .input-additional-notes {
+    background-color: #fffffe;
+    border: 1px solid #adb6c5; /* Match border color */
+    border-radius: 6px; /* Same border radius */
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f; /* Same shadow */
+    width: 100%; /* Full width to fit container */
+    height: calc(100% - 0px); /* Height adjustment for padding */
+    padding: 10px; /* Padding to match div-wrapper */
+    font-family: "Inter", Helvetica;
+    font-size: 15px;
+    color: #434343; /* Text color */
+    outline: none;
+    box-sizing: border-box; /* Include padding in width calculation */
+    resize: none; /* Prevent resizing if it's a <textarea> */
+  }
+  
+  /* Placeholder styling for the additional notes input */
+  .create-game .input-additional-notes::placeholder {
+    color: #adb6c5;
+  }
+
+
+  .create-game .input-player-names {
+    width: 90%;
+    height: 99%;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    color: #434343; /* Input text color */
+  }
+  
+  .create-game .input-player-names::placeholder {
+    color: #adb6c5; /* Placeholder color */
+  }
+
+.create-game .div {
+  color: #adb6c5;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 20px;
+  letter-spacing: 0;
+  line-height: 26px;
+  position: absolute;
+  top: 10px;
+  white-space: nowrap;
+}
+
+.create-game .text-wrapper-2 {
+  color: #455580;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 26px;
+  position: absolute;
+  top: -1px;
+  white-space: nowrap;
+}
+
+.create-game .overlap {
+  height: 74px;
+  left: 30px;
+  position: absolute;
+  top: 267px;
+  width: 448px;
+}
+
+.create-game .textbox-2 {
+  height: 74px;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 448px;
+}
+
+.create-game .player-count-input {
+  background-color: #fffffe;
+  border: 1px solid #bcc1ca;
+  border-radius: 6px;
+  height: 48px;
+  width: 100%; /* Adjust width to fill container */
+  padding: 0 10px;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  color: #434343; /* Text color */
+  outline: none;
+  text-align: center; /* Center text within the box */
+}
+.create-game .dropdown-arrow {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.create-game .location-dropdown-menu {
+  position: absolute;
+  background-color: #fffffe;
+  border: 1px solid #434343;
+  border-radius: 6px;
+  margin-top: 10px;
+  width: 448px;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 10;
+  top: 80%
+}
+
+.create-game .location-dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  color: #434343;
+}
+
+.create-game .location-dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.create-game .image {
+  height: 17px;
+  left: 420px;
+  position: absolute;
+  top: 39px;
+  width: 17px;
+}
+
+.create-game .textbox-3 {
+  background-color: #fffffe;
+  border: 1px solid;
+  border-color: #f9fbfd;
+  border-radius: 6px;
+  height: 66px;
+  left: 3px;
+  position: absolute;
+  top: -1px;
+  width: 507px;
+}
+
+.create-game .text-wrapper-3 {
+  color: #1f1f1f;
+  font-family: "Inter", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  left: 20px;
+  letter-spacing: 0;
+  line-height: 29px;
+  position: absolute;
+  top: 18px;
+  white-space: nowrap;
+}
+
+.create-game .close {
+  height: 31px;
+  left: 455px;
+  position: absolute;
+  top: 17px;
+  width: 31px;
+}
+
+.create-game .overlap-group {
+  height: 69px;
+  left: 30px;
+  position: absolute;
+  top: 85px;
+  width: 448px;
+}
+
+.create-game .textbox-4 {
+  height: 69px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 448px;
+}
+
+.create-game .text-wrapper-4 {
+  color: #54628a;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 26px;
+  position: absolute;
+  top: -1px;
+  white-space: nowrap;
+}
+
+.create-game .textfield-2 {
+  background-color: #fffffe;
+  border: 1px solid;
+  border-color: #434343;
+  border-radius: 6px;
+  height: 43px;
+  left: -1px;
+  position: absolute;
+  top: 26px;
+  width: 449px;
+}
+.create-game .dropdown-arrow {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.create-game .dropdown-menu {
+  position: absolute;
+  background-color: #fffffe;
+  border: 1px solid #434343;
+  border-radius: 6px;
+  margin-top: 10px;
+  width: 449px;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 10;
+  top: 90%
+}
+
+.create-game .dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  color: #434343;
+}
+
+.create-game .dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.create-game .text-wrapper-5 {
+  color: #434343;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 20px;
+  letter-spacing: 0;
+  line-height: 26px;
+  position: absolute;
+  top: 8px;
+  white-space: nowrap;
+}
+
+.create-game .img {
+  height: 16px;
+  left: 420px;
+  position: absolute;
+  top: 38px;
+  width: 16px;
+}
+
+.create-game .overlap-2 {
+  border-radius: 4px;
+  height: 49px;
+  left: 29px;
+  position: absolute;
+  top: 531px;
+  width: 449px;
+}
+
+.create-game .textbox-5 {
+  background-color: #fffffe;
+  border: 1px solid #3b3b3b;
+  border-radius: 4px;
+  height: 49px;
+  position: relative;
+  width: 449px;
+}
+
+.create-game .text-wrapper-6 {
+  color: #3b3b3b;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px;
+}
+
+.create-game .text-selected-group {
+  color: #434343;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  padding: 15px 20px;
+  display: inline-block;
+}
+
+.create-game .groupchat-dropdown-menu {
+  position: absolute;
+  background-color: #fffffe;
+  border: 1px solid #434343;
+  border-radius: 6px;
+  width: 100%; /* Match width with text box */
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 10;
+  top: 100%; /* Position dropdown below the text box */
+}
+
+.create-game .groupchat-dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  color: #434343;
+}
+
+.create-game .groupchat-dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.create-game .dropdown-arrow {
+  position: absolute;
+  top: 40px;
+  right: 15px;
+  cursor: pointer;
+}
+.create-game .image-2 {
+  height: 17px;
+  left: 419px;
+  position: absolute;
+  top: 15px;
+  width: 18px;
+}
+
+.create-game .button {
+  all: unset;
+  background-color: #091e57;
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 8px;
+  box-sizing: border-box;
+  height: 42px;
+  left: 34px;
+  overflow: hidden;
+  position: absolute;
+  top: 776px;
+  width: 442px;
+}
+
+.create-game .text-wrapper-7 {
+  color: #d8dbe4;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 172px;
+  letter-spacing: 0;
+  line-height: 26px;
+  position: absolute;
+  top: 7px;
+  white-space: nowrap;
+}
+
+.create-game .overlap-3 {
+  height: 77px;
+  left: 259px;
+  position: absolute;
+  top: 355px;
+  width: 220px;
+}
+
+.create-game .textbox-6 {
+  height: 77px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 220px;
+}
+
+.create-game .textfield-3 {
+  background-color: #fffffe;
+  border: 1px solid;
+  border-color: #343434;
+  border-radius: 4px;
+  height: 51px;
+  left: -1px;
+  position: absolute;
+  top: 26px;
+  width: 221px;
+}
+.create-game .skill-dropdown-menu {
+  position: absolute;
+  background-color: #fffffe;
+  border: 1px solid #434343;
+  border-radius: 6px;
+  margin-top: 10px;
+  width: 220px; /* Adjust width to match text box */
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 1000;
+  left: 259px; /* Positioning relative to .overlap-3 */
+  top: 50%; /* Position dropdown below the input */
+}
+
+.create-game .skill-dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  color: #434343;
+}
+
+.create-game .skill-dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.create-game .text-wrapper-8 {
+  color: #343434;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 20px;
+  letter-spacing: 0;
+  line-height: 26px;
+  position: absolute;
+  top: 12px;
+  white-space: nowrap;
+}
+
+.create-game .image-3 {
+  height: 16px;
+  left: 191px;
+  position: absolute;
+  top: 45px;
+  width: 16px;
+}
+
+.create-game .textbox-7 {
+  height: 76px;
+  left: 30px;
+  position: absolute;
+  top: 172px;
+  width: 217px;
+}
+
+.create-game .textfield-4 {
+  background-color: #fffffe;
+  border: 1px solid;
+  border-color: #adb6c5;
+  border-radius: 6px;
+  height: 50px;
+  left: -1px;
+  position: absolute;
+  top: 26px;
+  width: 218px;
+}
+.create-game .textfield-4 {
+  position: relative; /* Adjust position to contain the input */
+}
+
+.create-game .date-input {
+  background-color: #fffffe;
+  border: 1px solid #adb6c5;
+  border-radius: 6px;
+  height: 50px;
+  width: 100%; /* Set width to full container */
+  padding: 0 10px;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  color: #434343; /* Text color for the selected date */
+  outline: none;
+}
+
+.create-game .date-input::placeholder {
+  color: #adb6c5; /* Placeholder color */
+}
+
+.create-game .text-wrapper-9 {
+  color: #adb6c5;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 20px;
+  letter-spacing: 0;
+  line-height: 26px;
+  position: absolute;
+  top: 11px;
+  white-space: nowrap;
+}
+
+.create-game .overlap-group-2 {
+  height: 74px;
+  left: 30px;
+  position: absolute;
+  top: 358px;
+  width: 216px;
+}
+
+.create-game .textbox-8 {
+  height: 74px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 216px;
+}
+
+.create-game .textfield-5 {
+  background-color: #fffffe;
+  border: 1px solid;
+  border-color: #bcc1ca;
+  border-radius: 6px;
+  height: 48px;
+  left: -1px;
+  position: absolute;
+  top: 26px;
+  width: 217px;
+}
+
+.create-game .text {
+  color: #171a1f;
+  font-family: "Inter", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  left: 20px;
+  letter-spacing: 0;
+  line-height: 28px;
+  position: absolute;
+  top: 9px;
+  white-space: nowrap;
+}
+
+.create-game .image-4 {
+  height: 21px;
+  left: 187px;
+  position: absolute;
+  top: 39px;
+  width: 17px;
+}
+
+.create-game .textbox-9 {
+  height: 72px;
+  left: 259px;
+  position: absolute;
+  top: 176px;
+  width: 220px;
+}
+
+.create-game .text-wrapper-10 {
+  color: #354675;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 26px;
+  position: absolute;
+  top: -3px;
+  white-space: nowrap;
+}
+
+.create-game .textfield-time {
+  background-color: #fffffe;
+  border: 1px solid;
+  border-color: #bcc1ca;
+  border-radius: 4px;
+  height: 50px;
+  left: -1px;
+  position: absolute;
+  top: 22px;
+  width: 221px;
+}
+
+.create-game .textfield- {
+  position: relative;  
+ } 
+ 
+
+.create-game .time-input {
+  width: 100%;
+  height: 48px;
+  padding: 0 15px;
+  color: #434343;
+  background-color: #fffffe;
+  border: 1px solid #bcc1ca;
+  border-radius: 6px;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23434343%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 12px;
+}
+
+.create-game .time-input:hover {
+  border-color: #8c8c8c;
+}
+
+.create-game .time-input:focus {
+  border-color: #354675;
+  box-shadow: 0 0 0 2px rgba(53, 70, 117, 0.1);
+}
+
+.create-game .time-input option {
+  font-size: 16px;
+  padding: 8px;
+}
+
+.create-game .time-input::placeholder {
+  color: #adb6c5; /* Placeholder color if needed */
+}
+
+.create-game .text-2 {
+  color: #171a1f;
+  font-family: "Inter", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  left: 20px;
+  letter-spacing: 0;
+  line-height: 28px;
+  position: absolute;
+  top: 8px;
+  white-space: nowrap;
+}
+
+.create-game .text-wrapper-11 {
+  color: #455580;
+  font-family: "Inter", Helvetica;
+  font-size: 17px;
+  font-weight: 400;
+  left: 34px;
+  letter-spacing: 0;
+  line-height: 26px;
+  position: absolute;
+  top: 590px;
+  white-space: nowrap;
+}
+
+.create-game .container-2 {
+  background-color: #fffffe;
+  border: 1px solid;
+  border-color: #f9fbfd;
+  border-radius: 8px;
+  box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+  height: 276px;
+  left: 10px;
+  position: absolute;
+  top: 98px;
+  width: 355px;
+}
+
+.create-game .button-2 {
+  all: unset;
+  background-color: #091e57;
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 8px;
+  box-sizing: border-box;
+  height: 42px;
+  left: 25px;
+  overflow: hidden;
+  position: absolute;
+  top: 205px;
+  width: 127px;
+}
+
+.create-game .text-wrapper-12 {
+  color: #d8dbe4;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 24px;
+  letter-spacing: 0;
+  line-height: 26px;
+  position: absolute;
+  top: 7px;
+  white-space: nowrap;
+}
+
+.create-game .avatar {
+  background-color: #ced0f8;
+  border: 0px none;
+  border-radius: 32px;
+  height: 64px;
+  left: 23px;
+  overflow: hidden;
+  position: absolute;
+  top: 74px;
+  width: 64px;
+}
+
+.create-game .rectangle {
+  height: 64px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 64px;
+}
+
+.create-game .button-3 {
+  all: unset;
+  background-color: #8c1a11;
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 8px;
+  box-sizing: border-box;
+  height: 42px;
+  left: 166px;
+  overflow: hidden;
+  position: absolute;
+  top: 205px;
+  width: 101px;
+}
+
+.create-game .text-wrapper-13 {
+  color: #ebd7d6;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 24px;
+  letter-spacing: 0;
+  line-height: 26px;
+  position: absolute;
+  top: 7px;
+  white-space: nowrap;
+}
+
+.create-game .text-wrapper-14 {
+  color: #1f1f1f;
+  font-family: "Archivo", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  left: 25px;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  top: 23px;
+  white-space: nowrap;
+}
+
+.create-game .text-wrapper-15 {
+  color: #282828;
+  font-family: "Inter", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  left: 25px;
+  letter-spacing: 0;
+  line-height: 28px;
+  position: absolute;
+  top: 161px;
+  white-space: nowrap;
+}
+
+.create-game .text-wrapper-16 {
+  color: #282828;
+  font-family: "Inter", Helvetica;
+  font-size: 17px;
+  font-weight: 400;
+  left: 110px;
+  letter-spacing: 0;
+  line-height: 26px;
+  position: absolute;
+  top: 83px;
+  white-space: nowrap;
+}
+
+.create-game .text-wrapper-17 {
+  color: #9a9a9a;
+  font-family: "Inter", Helvetica;
+  font-size: 17px;
+  font-weight: 400;
+  left: 110px;
+  letter-spacing: 0;
+  line-height: 26px;
+  position: absolute;
+  top: 109px;
+  white-space: nowrap;
+}
+
+.create-game .text-wrapper-18 {
+  color: #54628a;
+  font-family: "Inter", Helvetica;
+  font-size: 17px;
+  font-weight: 400;
+  left: 296px;
+  letter-spacing: 0;
+  line-height: 26px;
+  position: absolute;
+  top: 25px;
+  white-space: nowrap;
+}
+
+.create-game .overlap-4 {
+  height: 102px;
+  left: 17px;
+  position: absolute;
+  top: 399px;
+  width: 355px;
+}
+
+.create-game .textbox-10 {
+  height: 102px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 355px;
+}
+
+.create-game .textfield-7 {
+  background-color: #fffffe;
+  border: 1px solid;
+  border-color: #d9e4e5;
+  border-radius: 8px;
+  height: 73px;
+  left: -1px;
+  position: absolute;
+  top: 30px;
+  width: 356px;
+}
+
+.create-game .text-wrapper-19 {
+  color: #343434;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 48px;
+  letter-spacing: 0;
+  line-height: 26px;
+  position: absolute;
+  top: 22px;
+  white-space: nowrap;
+}
+
+.create-game .text-wrapper-20 {
+  color: #282828;
+  font-family: "Inter", Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 29px;
+  position: absolute;
+  top: -1px;
+  white-space: nowrap;
+}
+
+.create-game .image-5 {
+  height: 33px;
+  left: 9px;
+  position: absolute;
+  top: 51px;
+  width: 33px;
+}
+
+.create-game .overlap-wrapper {
+  background-color: #fffffe;
+  border: 1px solid;
+  border-color: #f9fbfd;
+  border-radius: 12px;
+  box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+  height: 99px;
+  left: 1064px;
+  position: absolute;
+  top: 794px;
+  width: 354px;
+}
+
+.create-game .overlap-5 {
+  height: 59px;
+  left: 19px;
+  position: relative;
+  top: 18px;
+  width: 147px;
+}
+
+.create-game .october {
+  color: #9a9a9a;
+  font-family: "Inter", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 17px;
+  position: absolute;
+  top: 25px;
+  width: 147px;
+}
+
+.create-game .text-wrapper-21 {
+  color: #282828;
+  font-family: "Inter", Helvetica;
+  font-size: 17px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 26px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.create-game .overlap-group-wrapper {
+  background-color: #fffffe;
+  border: 1px solid;
+  border-color: #f9fbfd;
+  border-radius: 8px;
+  box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+  height: 98px;
+  left: 1064px;
+  position: absolute;
+  top: 220px;
+  width: 355px;
+}
+
+.create-game .overlap-6 {
+  height: 62px;
+  left: 19px;
+  position: relative;
+  top: 17px;
+  width: 136px;
+}
+
+.create-game .p {
+  color: #9a9a9a;
+  font-family: "Inter", Helvetica;
+  font-size: 15px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 19px;
+  position: absolute;
+  top: 24px;
+}
+
+.create-game .container-3 {
+  background-color: #fffffe;
+  border: 1px solid;
+  border-color: #f9fbfd;
+  border-radius: 8px;
+  box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+  height: 98px;
+  left: 1064px;
+  position: absolute;
+  top: 563px;
+  width: 355px;
+}
+
+.create-game .overlap-7 {
+  height: 63px;
+  left: 19px;
+  position: relative;
+  top: 17px;
+  width: 131px;
+}
+
+.create-game .october-2 {
+  color: #9a9a9a;
+  font-family: "Inter", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 19px;
+  position: absolute;
+  top: 25px;
+  width: 131px;
+}
+
+.create-game .container-4 {
+  background-color: #fffffe;
+  border: 1px solid;
+  border-color: #f9fbfd;
+  border-radius: 8px;
+  box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+  height: 98px;
+  left: 1064px;
+  position: absolute;
+  top: 336px;
+  width: 354px;
+}
+
+.create-game .overlap-8 {
+  height: 59px;
+  left: 19px;
+  position: relative;
+  top: 16px;
+  width: 131px;
+}
+
+.create-game .october-3 {
+  color: #9a9a9a;
+  font-family: "Inter", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 17px;
+  position: absolute;
+  top: 25px;
+  width: 131px;
+}
+
+.create-game .container-5 {
+  background-color: #fffffe;
+  border: 1px solid;
+  border-color: #e4ebed;
+  border-radius: 6px;
+  box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+  height: 98px;
+  left: 1064px;
+  position: absolute;
+  top: 452px;
+  width: 354px;
+}
+
+.create-game .overlap-9 {
+  height: 59px;
+  left: 19px;
+  position: relative;
+  top: 16px;
+  width: 147px;
+}
+
+.create-game .container-6 {
+  background-color: #fffffe;
+  border: 1px solid;
+  border-color: #e4ebed;
+  border-radius: 6px;
+  box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+  height: 98px;
+  left: 1064px;
+  position: absolute;
+  top: 679px;
+  width: 354px;
+}
+
+.create-game .october-4 {
+  color: #9a9a9a;
+  font-family: "Inter", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  left: 19px;
+  letter-spacing: 0;
+  line-height: 17px;
+  position: absolute;
+  top: 42px;
+  width: 131px;
+}
+
+.create-game .text-wrapper-22 {
+  color: #282828;
+  font-family: "Inter", Helvetica;
+  font-size: 17px;
+  font-weight: 400;
+  left: 19px;
+  letter-spacing: 0;
+  line-height: 26px;
+  position: absolute;
+  top: 16px;
+  white-space: nowrap;
+}
+
+.create-game .textbox-11 {
+  background-color: #fffffe;
+  border: 1px solid;
+  border-color: #e4ebed;
+  border-radius: 12px;
+  height: 64px;
+  left: 9px;
+  position: absolute;
+  top: 513px;
+  width: 356px;
+}
+
+.create-game .text-wrapper-23 {
+  color: #3b3b3b;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 59px;
+  letter-spacing: 0;
+  line-height: 26px;
+  position: absolute;
+  top: 18px;
+  white-space: nowrap;
+}
+
+.create-game .ecology {
+  height: 31px;
+  left: 20px;
+  position: absolute;
+  top: 16px;
+  width: 31px;
+}
+
+.create-game .button-4 {
+  all: unset;
+  background-color: #8c1a11;
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 8px;
+  box-sizing: border-box;
+  height: 50px;
+  left: 1065px;
+  overflow: hidden;
+  position: absolute;
+  top: 152px;
+  width: 176px;
+}
+
+.create-game .text-wrapper-24 {
+  color: #ebd7d6;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 19px;
+  letter-spacing: 0;
+  line-height: 26px;
+  position: absolute;
+  top: 11px;
+  white-space: nowrap;
+}
+
+.create-game .text-wrapper-25 {
+  color: #213468;
+  font-family: "Archivo", Helvetica;
+  font-size: 26px;
+  font-weight: 700;
+  left: 63px;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  top: 8px;
+  white-space: nowrap;
+}
+
+.create-game .text-wrapper-26 {
+  color: #1f1f1f;
+  font-family: "Archivo", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  left: 1065px;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  top: 104px;
+  white-space: nowrap;
+}
+
+.create-game .image-6 {
+  height: 43px;
+  left: 12px;
+  position: absolute;
+  top: 12px;
+  width: 42px;
+}

@@ -1,0 +1,1481 @@
+.schedule {
+    background-color: #f9fbfd;
+    height: 873px;
+    width: 1440px;
+  }
+  
+  .schedule .overlap {
+    height: 710px;
+    position: relative;
+  }
+  
+  .schedule .overlap-group {
+    height: 710px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1440px;
+  }
+  
+  .schedule .container {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #f9fbfd;
+    border-radius: 6px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 611px;
+    left: 40px;
+    position: absolute;
+    top: 62px;
+    width: 1108px;
+  }
+  
+  .schedule .div {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #d2dfdf;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 80px;
+    left: 19px;
+    position: absolute;
+    top: 135px;
+    width: 143px;
+  }
+  
+  .schedule .text-wrapper {
+    color: #43537e;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 11px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 40px;
+    white-space: nowrap;
+  }
+  
+  .schedule .image {
+    height: 26px;
+    left: 111px;
+    position: absolute;
+    top: 11px;
+    width: 26px;
+  }
+  
+  .schedule .overlap-group-wrapper {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #e8eeef;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 79px;
+    left: 484px;
+    position: absolute;
+    top: 328px;
+    width: 144px;
+  }
+  
+  .schedule .overlap-group-2 {
+    height: 42px;
+    left: 14px;
+    position: relative;
+    top: 9px;
+    width: 119px;
+  }
+  
+  .schedule .text-wrapper-2 {
+    color: #43537e;
+    font-family: "Inter", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: absolute;
+    top: 18px;
+    white-space: nowrap;
+  }
+  
+  .schedule .text-wrapper-3 {
+    color: #393939;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 101px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+  }
+  
+  .schedule .div-wrapper {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #d2dfdf;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 79px;
+    left: 641px;
+    position: absolute;
+    top: 137px;
+    width: 144px;
+  }
+  
+  .schedule .text-wrapper-4 {
+    color: #393939;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 123px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 11px;
+    white-space: nowrap;
+  }
+  
+  .schedule .overlap-wrapper {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #d2dfdf;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 79px;
+    left: 641px;
+    position: absolute;
+    top: 423px;
+    width: 144px;
+  }
+  
+  .schedule .overlap-2 {
+    height: 48px;
+    left: 13px;
+    position: relative;
+    top: 9px;
+    width: 121px;
+  }
+  
+  .schedule .text-wrapper-5 {
+    color: #374876;
+    font-family: "Inter", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: absolute;
+    top: 24px;
+    white-space: nowrap;
+  }
+  
+  .schedule .text-wrapper-6 {
+    color: #313131;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 101px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+  }
+  
+  .schedule .overlap-3 {
+    border-radius: 8px;
+    height: 80px;
+    left: 174px;
+    position: absolute;
+    top: 136px;
+    width: 145px;
+  }
+  
+  .schedule .textbox {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #d2dfdf;
+    border-radius: 8px;
+    height: 80px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 145px;
+  }
+  
+  .schedule .text-wrapper-7 {
+    color: #374876;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 20px;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: absolute;
+    top: 27px;
+    white-space: nowrap;
+  }
+  
+  .schedule .text-wrapper-8 {
+    color: #393939;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 121px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 8px;
+    white-space: nowrap;
+  }
+  
+  .schedule .container-2 {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #d2dfdf;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 79px;
+    left: 19px;
+    position: absolute;
+    top: 231px;
+    width: 143px;
+  }
+  
+  .schedule .text-wrapper-9 {
+    color: #393939;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 122px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 11px;
+    white-space: nowrap;
+  }
+  
+  .schedule .container-3 {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #d2dfdf;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 79px;
+    left: 330px;
+    position: absolute;
+    top: 137px;
+    width: 143px;
+  }
+  
+  .schedule .text-wrapper-10 {
+    color: #393939;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 121px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 11px;
+    white-space: nowrap;
+  }
+  
+  .schedule .container-4 {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #d2dfdf;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 79px;
+    left: 330px;
+    position: absolute;
+    top: 231px;
+    width: 143px;
+  }
+  
+  .schedule .overlap-4 {
+    height: 50px;
+    left: 11px;
+    position: relative;
+    top: 11px;
+    width: 123px;
+  }
+  
+  .schedule .text-wrapper-11 {
+    color: #43537e;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 24px;
+    white-space: nowrap;
+  }
+  
+  .schedule .text-wrapper-12 {
+    color: #2b2b2b;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 105px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+  }
+  
+  .schedule .container-5 {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #d2dfdf;
+    border-radius: 12px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 79px;
+    left: 330px;
+    position: absolute;
+    top: 423px;
+    width: 143px;
+  }
+  
+  .schedule .text-wrapper-13 {
+    color: #222222;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 113px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 9px;
+    white-space: nowrap;
+  }
+  
+  .schedule .container-6 {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #d2dfdf;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 79px;
+    left: 330px;
+    position: absolute;
+    top: 517px;
+    width: 143px;
+  }
+  
+  .schedule .text-wrapper-14 {
+    color: #43537e;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 11px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 33px;
+    white-space: nowrap;
+  }
+  
+  .schedule .text-wrapper-15 {
+    color: #2b2b2b;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 114px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 9px;
+    white-space: nowrap;
+  }
+  
+  .schedule .container-7 {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #d2dfdf;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 79px;
+    left: 796px;
+    position: absolute;
+    top: 137px;
+    width: 143px;
+  }
+  
+  .schedule .text-wrapper-16 {
+    color: #43537e;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 10px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 38px;
+    white-space: nowrap;
+  }
+  
+  .schedule .text-wrapper-17 {
+    color: #393939;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 124px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 11px;
+    white-space: nowrap;
+  }
+  
+  .schedule .container-8 {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #d2dfdf;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 79px;
+    left: 796px;
+    position: absolute;
+    top: 231px;
+    width: 143px;
+  }
+  
+  .schedule .overlap-5 {
+    height: 49px;
+    left: 13px;
+    position: relative;
+    top: 11px;
+    width: 123px;
+  }
+  
+  .schedule .text-wrapper-18 {
+    color: #374876;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 23px;
+    white-space: nowrap;
+  }
+  
+  .schedule .text-wrapper-19 {
+    color: #2b2b2b;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 102px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+  }
+  
+  .schedule .container-9 {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #e8eeef;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 79px;
+    left: 796px;
+    position: absolute;
+    top: 328px;
+    width: 143px;
+  }
+  
+  .schedule .text-wrapper-20 {
+    color: #43537e;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 13px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 26px;
+    white-space: nowrap;
+  }
+  
+  .schedule .text-wrapper-21 {
+    color: #2b2b2b;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 113px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 9px;
+    white-space: nowrap;
+  }
+  
+  .schedule .container-10 {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #d2dfdf;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 79px;
+    left: 796px;
+    position: absolute;
+    top: 423px;
+    width: 143px;
+  }
+  
+  .schedule .text-wrapper-22 {
+    color: #313131;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 114px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 9px;
+    white-space: nowrap;
+  }
+  
+  .schedule .overlap-6 {
+    border-radius: 8px;
+    height: 79px;
+    left: 330px;
+    position: absolute;
+    top: 328px;
+    width: 143px;
+  }
+  
+  .schedule .button {
+    all: unset;
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #e8eeef;
+    border-radius: 8px;
+    box-sizing: border-box;
+    height: 79px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 143px;
+  }
+  
+  .schedule .text-wrapper-23 {
+    color: #374876;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 21px;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: absolute;
+    top: 26px;
+    white-space: nowrap;
+  }
+  
+  .schedule .text-wrapper-24 {
+    color: #393939;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 120px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 10px;
+    white-space: nowrap;
+  }
+  
+  .schedule .overlap-7 {
+    border-radius: 8px;
+    height: 80px;
+    left: 484px;
+    position: absolute;
+    top: 136px;
+    width: 144px;
+  }
+  
+  .schedule .textbox-2 {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #d2dfdf;
+    border-radius: 8px;
+    height: 80px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 144px;
+  }
+  
+  .schedule .text-wrapper-25 {
+    color: #43537e;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 20px;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: absolute;
+    top: 27px;
+    white-space: nowrap;
+  }
+  
+  .schedule .text-wrapper-26 {
+    color: #393939;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 120px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 9px;
+    white-space: nowrap;
+  }
+  
+  .schedule .overlap-8 {
+    border-radius: 8px;
+    height: 80px;
+    left: 951px;
+    position: absolute;
+    top: 422px;
+    width: 144px;
+  }
+  
+  .schedule .text-wrapper-27 {
+    color: #313131;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 114px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 7px;
+    white-space: nowrap;
+  }
+  
+  .schedule .text-wrapper-28 {
+    color: #213468;
+    font-family: "Archivo", Helvetica;
+    font-size: 28px;
+    font-weight: 700;
+    left: 21px;
+    letter-spacing: 0;
+    line-height: 42px;
+    position: absolute;
+    top: 16px;
+    white-space: nowrap;
+  }
+  
+  .schedule .text-wrapper-29 {
+    color: #374876;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 890px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 26px;
+    white-space: nowrap;
+  }
+  
+  .schedule .text-wrapper-30 {
+    color: #213468;
+    font-family: "Archivo", Helvetica;
+    font-size: 22px;
+    font-weight: 700;
+    left: 480px;
+    letter-spacing: 0;
+    line-height: 34px;
+    position: absolute;
+    top: 48px;
+    white-space: nowrap;
+  }
+  
+  .schedule .caret-left {
+    height: 32px;
+    left: 442px;
+    position: absolute;
+    top: 50px;
+    width: 32px;
+  }
+  
+  .schedule .caret-right {
+    height: 32px;
+    left: 649px;
+    position: absolute;
+    top: 52px;
+    width: 32px;
+  }
+  
+  .schedule .text-wrapper-31 {
+    color: #2b2b2b;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 74px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 103px;
+    white-space: nowrap;
+  }
+  
+  .schedule .text-wrapper-32 {
+    color: #222222;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 387px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 103px;
+    white-space: nowrap;
+  }
+  
+  .schedule .text-wrapper-33 {
+    color: #2b2b2b;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 544px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 103px;
+    white-space: nowrap;
+  }
+  
+  .schedule .text-wrapper-34 {
+    color: #2b2b2b;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 1010px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 103px;
+    white-space: nowrap;
+  }
+  
+  .schedule .text-wrapper-35 {
+    color: #2b2b2b;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 232px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 103px;
+    white-space: nowrap;
+  }
+  
+  .schedule .text-wrapper-36 {
+    color: #2b2b2b;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 856px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 103px;
+    white-space: nowrap;
+  }
+  
+  .schedule .text-wrapper-37 {
+    color: #2b2b2b;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 703px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 103px;
+    white-space: nowrap;
+  }
+  
+  .schedule .container-11 {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #d2dfdf;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 79px;
+    left: 485px;
+    position: absolute;
+    top: 423px;
+    width: 144px;
+  }
+  
+  .schedule .container-12 {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #d2dfdf;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 79px;
+    left: 19px;
+    position: absolute;
+    top: 423px;
+    width: 144px;
+  }
+  
+  .schedule .overlap-9 {
+    border-radius: 8px;
+    height: 79px;
+    position: relative;
+  }
+  
+  .schedule .text-wrapper-38 {
+    color: #2b2b2b;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 112px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 9px;
+    white-space: nowrap;
+  }
+  
+  .schedule .container-13 {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #d2dfdf;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 79px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 144px;
+  }
+  
+  .schedule .container-14 {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #d2dfdf;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 79px;
+    left: 176px;
+    position: absolute;
+    top: 231px;
+    width: 144px;
+  }
+  
+  .schedule .container-15 {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #d2dfdf;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 79px;
+    left: 174px;
+    position: absolute;
+    top: 329px;
+    width: 144px;
+  }
+  
+  .schedule .container-16 {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #d2dfdf;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 79px;
+    left: 176px;
+    position: absolute;
+    top: 517px;
+    width: 144px;
+  }
+  
+  .schedule .container-17 {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #d2dfdf;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 79px;
+    left: 487px;
+    position: absolute;
+    top: 231px;
+    width: 144px;
+  }
+  
+  .schedule .container-18 {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #d2dfdf;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 79px;
+    left: 642px;
+    position: absolute;
+    top: 231px;
+    width: 144px;
+  }
+  
+  .schedule .container-19 {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #d2dfdf;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 79px;
+    left: 953px;
+    position: absolute;
+    top: 138px;
+    width: 144px;
+  }
+  
+  .schedule .container-20 {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #d2dfdf;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 79px;
+    left: 21px;
+    position: absolute;
+    top: 329px;
+    width: 144px;
+  }
+  
+  .schedule .container-21 {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #d2dfdf;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 79px;
+    left: 643px;
+    position: absolute;
+    top: 329px;
+    width: 144px;
+  }
+  
+  .schedule .container-22 {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #d2dfdf;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 79px;
+    left: 951px;
+    position: absolute;
+    top: 329px;
+    width: 144px;
+  }
+  
+  .schedule .container-23 {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #d2dfdf;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 79px;
+    left: 18px;
+    position: absolute;
+    top: 517px;
+    width: 144px;
+  }
+  
+  .schedule .container-24 {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #d2dfdf;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 79px;
+    left: 174px;
+    position: absolute;
+    top: 423px;
+    width: 144px;
+  }
+  
+  .schedule .container-25 {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #d2dfdf;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 79px;
+    left: 952px;
+    position: absolute;
+    top: 229px;
+    width: 144px;
+  }
+  
+  .schedule .container-26 {
+    background-color: #f9fbfd;
+    border: 0px none;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 73px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1440px;
+  }
+  
+  .schedule .header-menu {
+    height: 52px;
+    left: 292px;
+    position: absolute;
+    top: 7px;
+    width: 408px;
+  }
+  
+  .schedule .frame {
+    border-radius: 6px;
+    height: 52px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 106px;
+  }
+  
+  .schedule .text-wrapper-39 {
+    color: #213468;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    font-weight: 700;
+    left: 21px;
+    letter-spacing: 0;
+    line-height: 22px;
+    position: absolute;
+    top: 14px;
+    white-space: nowrap;
+  }
+
+  .schedule .text-wrapper-bold {
+    color: #2d3f70;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    font-weight: 700;
+    left: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    position: absolute;
+    top: 14px;
+    white-space: nowrap;
+  }
+  .schedule .text-wrapper-menu {
+    color: #2d3f70;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    position: absolute;
+    top: 14px;
+    white-space: nowrap;
+  }
+  
+
+  .schedule .header-menu {
+    height: 52px;
+    left: 304px;
+    position: absolute;
+    top: 4px;
+    width: 384px;
+  }
+
+  .schedule .text-wrapper-menu-title {
+    color: #172b61;
+    font-family: "Archivo", Helvetica;
+    font-size: 27px;
+    font-weight: 700;
+    left: 63px;
+    letter-spacing: 0;
+    line-height: 42px;
+    position: absolute;
+    top: 8px;
+    white-space: nowrap;
+  }
+  .button .text-wrapper-menu-title {
+    color: #172b61;
+    font-family: "Archivo", Helvetica;
+    font-size: 27px;
+    font-weight: 700;
+    left: 63px;
+    letter-spacing: 0;
+    line-height: 42px;
+    position: absolute;
+    top: 8px;
+    white-space: nowrap;
+  }
+  
+  .schedule .prof {
+    height: 48px;
+    left: 1374px;
+    position: absolute;
+    top: 5px;
+    width: 48px;
+  }
+  
+  .schedule .logo {
+    height: 43px;
+    left: 12px;
+    position: absolute;
+    top: 10px;
+    width: 42px;
+  }
+  
+  .schedule .frame-2 {
+    border-radius: 6px;
+    height: 52px;
+    left: 106px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 113px;
+  }
+  
+  .schedule .text-wrapper-40 {
+    color: #374876;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 21px;
+    letter-spacing: 0;
+    line-height: 22px;
+    position: absolute;
+    top: 14px;
+    white-space: nowrap;
+  }
+  
+  .schedule .frame-3 {
+    border-radius: 6px;
+    height: 52px;
+    left: 219px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 117px;
+  }
+  
+  .schedule .frame-4 {
+    border-radius: 6px;
+    height: 52px;
+    left: 337px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 71px;
+  }
+  
+  .schedule .text-wrapper-41 {
+    color: #43537e;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 21px;
+    letter-spacing: 0;
+    line-height: 22px;
+    position: absolute;
+    top: 14px;
+    white-space: nowrap;
+  }
+  
+  .schedule .text-wrapper-42 {
+    color: #213468;
+    font-family: "Archivo", Helvetica;
+    font-size: 26px;
+    font-weight: 700;
+    left: 60px;
+    letter-spacing: 0;
+    line-height: 40px;
+    position: absolute;
+    top: 7px;
+    white-space: nowrap;
+  }
+  
+  .schedule .img {
+    height: 44px;
+    left: 12px;
+    position: absolute;
+    top: 11px;
+    width: 43px;
+  }
+  
+  .schedule .container-27 {
+    background-color: #f9fbfd;
+    border: none; /* removes border entirely */
+    border: 1px solid;
+    border: 1px solid #f9fbfd;
+    height: 205px;
+    left: 1141px;
+    position: absolute;
+    top: 505px;
+    width: 277px;
+  }
+  
+  .schedule .container-28 {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #f9fbfd;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 94px;
+    left: 3px;
+    position: absolute;
+    top: 107px;
+    width: 268px;
+  }
+  
+  .schedule .october {
+    color: #969696;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 17px;
+    letter-spacing: 0;
+    line-height: 19px;
+    position: absolute;
+    top: 41px;
+    width: 131px;
+  }
+  
+  .schedule .text-wrapper-43 {
+    color: #222222;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 17px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 14px;
+    white-space: nowrap;
+  }
+  
+  .schedule .container-29 {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #f9fbfd;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 94px;
+    left: 7px;
+    position: absolute;
+    top: 3px;
+    width: 266px;
+  }
+  
+  .schedule .p {
+    color: #9d9d9d;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 17px;
+    letter-spacing: 0;
+    line-height: 17px;
+    position: absolute;
+    top: 38px;
+    width: 143px;
+  }
+  
+  .schedule .text-wrapper-44 {
+    color: #2b2b2b;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 15px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 12px;
+    white-space: nowrap;
+  }
+  
+  .schedule .container-30 {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #f9fbfd;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 100px;
+    left: 1145px;
+    position: absolute;
+    top: 271px;
+    width: 273px;
+  }
+  
+  .schedule .overlap-10 {
+    height: 63px;
+    left: 20px;
+    position: relative;
+    top: 17px;
+    width: 136px;
+  }
+  
+  .schedule .october-2 {
+    color: #9d9d9d;
+    font-family: "Inter", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 19px;
+    position: absolute;
+    top: 25px;
+  }
+  
+  .schedule .text-wrapper-45 {
+    color: #2b2b2b;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+  }
+  
+  .schedule .container-31 {
+    background-color: #fffeff;
+    border: 1px solid;
+    border-color: #f9fbfd;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 100px;
+    left: 1145px;
+    position: absolute;
+    top: 388px;
+    width: 273px;
+  }
+  
+  .schedule .october-3 {
+    color: #9d9d9d;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 20px;
+    letter-spacing: 0;
+    line-height: 17px;
+    position: absolute;
+    top: 41px;
+    width: 131px;
+  }
+  
+  .schedule .text-wrapper-46 {
+    color: #2b2b2b;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 20px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 15px;
+    white-space: nowrap;
+  }
+  
+  .schedule .button-2 {
+    all: unset;
+    background-color: #8c1a11;
+    border: 1px solid;
+    border-color: #ad5e58;
+    border-radius: 12px;
+    box-sizing: border-box;
+    height: 51px;
+    left: 1149px;
+    overflow: hidden;
+    position: absolute;
+    top: 156px;
+    width: 281px;
+  }
+  
+  .schedule .text-wrapper-47 {
+    color: #ecdad8;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 86px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 12px;
+    white-space: nowrap;
+  }
+  
+  .schedule .e-add {
+    height: 22px;
+    left: 56px;
+    position: absolute;
+    top: 14px;
+    width: 22px;
+  }
+  
+  .schedule .button-3 {
+    all: unset;
+    background-color: #091e57;
+    border: 1px solid;
+    border-color: transparent;
+    border-radius: 8px;
+    box-sizing: border-box;
+    height: 46px;
+    left: 1149px;
+    overflow: hidden;
+    position: absolute;
+    top: 100px;
+    width: 281px;
+  }
+  
+  .schedule .text-wrapper-48 {
+    color: #d2d5e0;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 111px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 9px;
+    white-space: nowrap;
+  }
+  
+  .schedule .search {
+    height: 25px;
+    left: 80px;
+    position: absolute;
+    top: 10px;
+    width: 25px;
+  }
+  
+  .schedule .text-wrapper-49 {
+    color: #222222;
+    font-family: "Inter", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    left: 1153px;
+    letter-spacing: 0;
+    line-height: 28px;
+    position: absolute;
+    top: 225px;
+    white-space: nowrap;
+  }
+  
