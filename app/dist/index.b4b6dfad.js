@@ -37672,4608 +37672,4626 @@ var _reactRouterDom = require("react-router-dom");
 const GroupAvailability = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "group-availability",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "overlap-wrapper",
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "overlap",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "container-3",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "container",
+                        className: "header-menu",
                         children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-group",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        className: "element",
-                                        children: [
-                                            "0/4 Available",
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                                lineNumber: 15,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            "Mouseover the Calendar to See Who Is Available"
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 13,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle"
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/schedule",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "frame",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "text-wrapper-menu",
+                                        children: "Schedule"
                                     }, void 0, false, {
                                         fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 19,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "div"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 21,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-2"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 23,
-                                        columnNumber: 15
+                                        lineNumber: 14,
+                                        columnNumber: 13
                                     }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 12,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "group-s-availability",
-                                children: "Group's Availability"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 13,
+                                    columnNumber: 11
+                                }, undefined)
                             }, void 0, false, {
                                 fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 26,
-                                columnNumber: 13
+                                lineNumber: 12,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/group-availability",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "frame-2",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "text-wrapper-bold",
+                                        children: "Availability"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                        lineNumber: 20,
+                                        columnNumber: 13
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 19,
+                                    columnNumber: 11
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                lineNumber: 18,
+                                columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-2",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper",
-                                        children: "5:00PM"
+                                className: "frame-3",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-menu",
+                                    children: "Community"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 24,
+                                    columnNumber: 13
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                lineNumber: 23,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/map",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "frame-4",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "text-wrapper-menu",
+                                        children: "Map"
                                     }, void 0, false, {
                                         fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
                                         lineNumber: 29,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-2",
-                                        children: "6:00PM"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 31,
-                                        columnNumber: 15
+                                        columnNumber: 13
                                     }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 28,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-3",
-                                children: "October 2024"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 34,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-4",
-                                children: "4/4 Available"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 36,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-3",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-5",
-                                        children: "Wed"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 39,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-6",
-                                        children: "3"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 41,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 38,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-7",
-                                children: "Time/Day"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 44,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-4",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-8",
-                                        children: "Sun"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 47,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-9",
-                                        children: "7"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 49,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 46,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-10",
-                                children: "10:00 AM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 52,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-11",
-                                children: "11:00 AM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 54,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-12",
-                                children: "12:00 PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 56,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-13",
-                                children: "10:00 PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 58,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-14",
-                                children: "11:00 PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 60,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-5",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-15",
-                                        children: "Sat"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 63,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-16",
-                                        children: "6"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 65,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-3"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 67,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 62,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-17",
-                                children: "4:00 PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 70,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-18",
-                                children: "6:00 AM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 72,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-19",
-                                children: "7:00 AM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 74,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-20",
-                                children: "8:00 AM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 76,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-21",
-                                children: "9:00 AM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 78,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-22",
-                                children: "1:00 PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 80,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-23",
-                                children: "2:00 PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 82,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-24",
-                                children: "3:00 PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 84,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-25",
-                                children: "7:00 PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 86,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-26",
-                                children: "8:00PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 88,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-27",
-                                children: "9:00 PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 90,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-6",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-28",
-                                        children: "Fri"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 93,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-29",
-                                        children: "5"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 95,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 92,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                className: "caret-right",
-                                alt: "Caret right",
-                                src: "https://c.animaapp.com/tBO78KcB/img/caret-right-1-1.svg"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 98,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                className: "caret-left",
-                                alt: "Caret left",
-                                src: "https://c.animaapp.com/tBO78KcB/img/caret-left-2-1.svg"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 104,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-30",
-                                children: "Mon"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 110,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-31",
-                                children: "Thu"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 112,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-32",
-                                children: "Tue"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 114,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-33",
-                                children: "K"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 116,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-34",
-                                children: "2"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 118,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-35",
-                                children: "4"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 120,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-36",
-                                children: "1"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 122,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-4"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 124,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-5"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 126,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-6"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 128,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-7"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 130,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-8"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 132,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-9"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 134,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-10"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 136,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-11"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 138,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-12"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 140,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-13"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 142,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-14"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 144,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-15"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 146,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-16"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 148,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-17"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 150,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-18"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 152,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-7",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-19"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 155,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-20"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 157,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 154,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-21"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 160,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-22"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 162,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-23"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 164,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-24"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 166,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-25"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 168,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-26"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 170,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-27"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 172,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-28"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 174,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-29"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 176,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-30"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 178,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-8",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-31"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 181,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-32"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 183,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 180,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-33"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 186,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-34"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 188,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-35"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 190,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-36"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 192,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-37"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 194,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-38"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 196,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-9",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-39"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 199,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-32"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 201,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 198,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-40"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 204,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-41"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 206,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-42"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 208,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-43"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 210,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-44"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 212,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-45"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 214,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-10",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-31"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 217,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-32"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 219,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 216,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-46"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 222,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-47"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 224,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-48"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 226,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-49"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 228,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-50"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 230,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-51"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 232,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-11",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-39"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 235,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-52"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 237,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 234,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-53"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 240,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-54"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 242,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-55"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 244,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-56"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 246,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-12",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-57"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 249,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-58"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 251,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 248,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-59"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 254,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-60"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 256,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-61"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 258,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-62"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 260,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-13",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-57"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 263,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-58"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 265,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 262,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-63"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 268,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-64"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 270,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-65"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 272,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-66"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 274,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-67"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 276,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-68"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 278,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-69"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 280,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-70"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 282,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-71"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 284,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-72"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 286,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-73"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 288,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-74"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 290,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-75"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 292,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-76"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 294,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-77"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 296,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-78"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 298,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-79"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 300,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-80"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 302,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-81"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 304,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-82"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 306,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-83"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 308,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-84"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 310,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-85"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 312,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-86"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 314,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-87"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 316,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-88"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 318,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-89"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 320,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-90"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 322,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-91"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 324,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-92"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 326,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-93"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 328,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-94"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 330,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-95"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 332,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-96"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 334,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-97"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 336,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-98"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 338,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-99"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 340,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-100"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 342,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-101"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 344,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-102"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 346,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-103"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 348,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-104"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 350,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-group-2",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-31"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 353,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-32"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 355,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 352,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-105"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 358,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-106"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 360,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-107"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 362,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-108"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 364,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-109"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 366,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-14",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-31"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 369,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-32"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 371,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 368,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-110"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 374,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-111"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 376,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-112"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 378,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-113"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 380,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-15",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-31"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 383,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-114"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 385,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 382,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-115"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 388,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-116"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 390,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-117"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 392,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-118"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 394,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-16",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-119"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 397,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-114"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 399,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 396,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-120"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 402,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-121"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 404,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-122"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 406,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-123"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 408,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-124"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 410,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-125"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 412,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-126"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 414,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-127"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 416,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-128"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 418,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-129"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 420,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-130"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 422,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-131"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 424,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-132"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 426,
-                                columnNumber: 13
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 28,
+                                    columnNumber: 11
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                lineNumber: 27,
+                                columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
                         lineNumber: 11,
-                        columnNumber: 11
+                        columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "container-2",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-17",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        className: "availableclick-and",
-                                        children: [
-                                            "Available",
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                                lineNumber: 433,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            "Click and Drag to Toggle; Saved Immediately"
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 431,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-37",
-                                        children: "Unavailable"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 437,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-133"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 439,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-134"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 441,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 430,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-38",
-                                children: "Your Availability"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 444,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-39",
-                                children: "5:00PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 446,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-40",
-                                children: "October 2024"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 448,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-18",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-5",
-                                        children: "Wed"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 451,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-41",
-                                        children: "3"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 453,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 450,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-42",
-                                children: "10:00 AM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 456,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-43",
-                                children: "11:00 AM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 458,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-44",
-                                children: "12:00 PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 460,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-45",
-                                children: "10:00 PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 462,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-46",
-                                children: "11:00 PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 464,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-47",
-                                children: "Time/Day"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 466,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-48",
-                                children: "4:00 PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 468,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-49",
-                                children: "6:00 AM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 470,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-50",
-                                children: "7:00 AM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 472,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-51",
-                                children: "8:00 AM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 474,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-52",
-                                children: "9:00 AM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 476,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-53",
-                                children: "1:00 PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 478,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-54",
-                                children: "2:00 PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 480,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-55",
-                                children: "3:00PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 482,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-56",
-                                children: "7:00 PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 484,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-57",
-                                children: "8:00 PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 486,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-58",
-                                children: "9:00 PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 488,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-19",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-28",
-                                        children: "Fri"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 491,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-59",
-                                        children: "5"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 493,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 490,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                className: "img",
-                                alt: "Caret left",
-                                src: "https://c.animaapp.com/tBO78KcB/img/caret-left-2-1.svg"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 496,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-60",
-                                children: "Mon"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 502,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-61",
-                                children: "Thu"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 504,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-62",
-                                children: "Sun"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 506,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-63",
-                                children: "Tue"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 508,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-64",
-                                children: "Sat"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 510,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-65",
-                                children: "2"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 512,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-66",
-                                children: "4"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 514,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-67",
-                                children: "1"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 516,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-68",
-                                children: "6"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 518,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-69",
-                                children: "7"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 520,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-70",
-                                children: "6:00PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 522,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-135"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 524,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-136"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 526,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-137"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 528,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-138"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 530,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-139"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 532,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-140"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 534,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-141"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 536,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-142"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 538,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-143"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 540,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-144"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 542,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-145"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 544,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-146"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 546,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-147"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 548,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-148"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 550,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-149"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 552,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-20",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-19"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 555,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-20"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 557,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 554,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-150"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 560,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-151"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 562,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-152"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 564,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-153"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 566,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-154"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 568,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-155"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 570,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-156"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 572,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-157"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 574,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-158"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 576,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-159"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 578,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-21",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-31"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 581,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-32"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 583,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 580,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-160"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 586,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-161"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 588,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-162"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 590,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-163"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 592,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-164"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 594,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-165"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 596,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-22",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-31"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 599,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-32"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 601,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 598,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-166"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 604,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-167"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 606,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-168"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 608,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-169"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 610,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-170"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 612,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-171"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 614,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-23",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-31"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 617,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-32"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 619,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 616,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-172"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 622,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-173"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 624,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-174"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 626,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-175"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 628,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-176"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 630,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-177"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 632,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-24",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-31"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 635,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-32"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 637,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 634,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-178"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 640,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-179"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 642,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-180"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 644,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-181"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 646,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-182"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 648,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-183"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 650,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-25",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-31"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 653,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-32"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 655,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 652,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-184"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 658,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-185"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 660,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-186"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 662,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-187"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 664,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-188"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 666,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-189"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 668,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-26",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-31"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 671,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-32"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 673,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 670,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-190"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 676,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-191"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 678,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-192"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 680,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-193"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 682,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-27",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-31"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 685,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-194"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 687,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 684,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-195"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 690,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-196"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 692,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-197"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 694,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-198"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 696,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-28",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-31"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 699,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-194"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 701,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 698,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-199"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 704,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-200"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 706,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-201"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 708,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-202"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 710,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-203"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 712,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-204"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 714,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-205"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 716,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-206"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 718,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-207"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 720,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-208"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 722,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-209"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 724,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-210"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 726,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-211"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 728,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-212"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 730,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-213"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 732,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-214"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 734,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-215"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 736,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-216"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 738,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-217"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 740,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-218"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 742,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-219"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 744,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-220"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 746,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-221"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 748,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-222"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 750,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-223"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 752,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-224"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 754,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-225"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 756,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-226"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 758,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-227"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 760,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-228"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 762,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-229"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 764,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-230"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 766,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-29",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-31"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 769,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-114"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 771,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 768,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-231"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 774,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-232"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 776,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-233"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 778,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-234"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 780,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-30",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-119"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 783,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-114"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 785,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 782,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-235"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 788,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-236"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 790,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-237"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 792,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-238"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 794,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-239"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 796,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-240"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 798,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-241"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 800,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-242"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 802,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-243"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 804,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-244"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 806,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-245"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 808,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-246"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 810,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-247"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 812,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-248"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 814,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-249"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 816,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-250"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 818,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-251"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 820,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-252"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 822,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-253"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 824,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-254"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 826,
-                                columnNumber: 13
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-wrapper-menu-title",
+                            children: "Pickup@Penn"
+                        }, void 0, false, {
+                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                            lineNumber: 34,
+                            columnNumber: 9
+                        }, undefined)
+                    }, void 0, false, {
                         fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                        lineNumber: 429,
-                        columnNumber: 11
+                        lineNumber: 33,
+                        columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "container-3",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "header-menu",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                        to: "/schedule",
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "frame",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "text-wrapper-menu",
-                                                children: "Schedule"
-                                            }, void 0, false, {
-                                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                                lineNumber: 834,
-                                                columnNumber: 13
-                                            }, undefined)
-                                        }, void 0, false, {
-                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                            lineNumber: 833,
-                                            columnNumber: 11
-                                        }, undefined)
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 832,
-                                        columnNumber: 11
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                        to: "/group-availability",
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "frame-2",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "text-wrapper-bold",
-                                                children: "Availability"
-                                            }, void 0, false, {
-                                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                                lineNumber: 840,
-                                                columnNumber: 13
-                                            }, undefined)
-                                        }, void 0, false, {
-                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                            lineNumber: 839,
-                                            columnNumber: 11
-                                        }, undefined)
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 838,
-                                        columnNumber: 11
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "frame-3",
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "text-wrapper-menu",
-                                            children: "Community"
-                                        }, void 0, false, {
-                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                            lineNumber: 844,
-                                            columnNumber: 13
-                                        }, undefined)
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 843,
-                                        columnNumber: 11
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                        to: "/map",
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "frame-4",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "text-wrapper-menu",
-                                                children: "Map"
-                                            }, void 0, false, {
-                                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                                lineNumber: 849,
-                                                columnNumber: 13
-                                            }, undefined)
-                                        }, void 0, false, {
-                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                            lineNumber: 848,
-                                            columnNumber: 11
-                                        }, undefined)
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 847,
-                                        columnNumber: 11
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 831,
-                                columnNumber: 9
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "text-wrapper-menu-title",
-                                    children: "Pickup@Penn"
-                                }, void 0, false, {
-                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                    lineNumber: 854,
-                                    columnNumber: 9
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 853,
-                                columnNumber: 9
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    className: "logo",
-                                    alt: "Image",
-                                    src: "https://c.animaapp.com/RqvJyPyX/img/image-28@2x.png"
-                                }, void 0, false, {
-                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                    lineNumber: 865,
-                                    columnNumber: 9
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 864,
-                                columnNumber: 9
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/availability",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("imgs", {
+                            className: "prof",
+                            alt: "Image",
+                            src: "https://c.animaapp.com/RqvJyPyX/img/image-27@2x.png"
+                        }, void 0, false, {
+                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                            lineNumber: 38,
+                            columnNumber: 9
+                        }, undefined)
+                    }, void 0, false, {
                         fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                        lineNumber: 830,
-                        columnNumber: 7
+                        lineNumber: 37,
+                        columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "container-4",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-group",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        className: "element",
-                                        children: [
-                                            "0/4 Available",
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                                lineNumber: 877,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            "Mouseover the Calendar to See Who Is Available"
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 875,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 881,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "div"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 883,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-2"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 885,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 874,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "group-s-availability",
-                                children: "Group's Availability"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 888,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-2",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper",
-                                        children: "5:00PM"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 891,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-2",
-                                        children: "6:00PM"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 893,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 890,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-3",
-                                children: "October 2024"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 896,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-4",
-                                children: "4/4 Available"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 898,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-3",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-5",
-                                        children: "Wed"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 901,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-6",
-                                        children: "3"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 903,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 900,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-7",
-                                children: "Time/Day"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 906,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-4",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-8",
-                                        children: "Sun"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 909,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-9",
-                                        children: "7"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 911,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 908,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-10",
-                                children: "10:00 AM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 914,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-11",
-                                children: "11:00 AM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 916,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-12",
-                                children: "12:00 PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 918,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-13",
-                                children: "10:00 PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 920,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-14",
-                                children: "11:00 PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 922,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-5",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-15",
-                                        children: "Sat"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 925,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-16",
-                                        children: "6"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 927,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-3"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 929,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 924,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-17",
-                                children: "4:00 PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 932,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-18",
-                                children: "6:00 AM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 934,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-19",
-                                children: "7:00 AM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 936,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-20",
-                                children: "8:00 AM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 938,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-21",
-                                children: "9:00 AM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 940,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-22",
-                                children: "1:00 PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 942,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-23",
-                                children: "2:00 PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 944,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-24",
-                                children: "3:00 PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 946,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-25",
-                                children: "7:00 PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 948,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-26",
-                                children: "8:00PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 950,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-27",
-                                children: "9:00 PM"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 952,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-6",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-28",
-                                        children: "Fri"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 955,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-29",
-                                        children: "5"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 957,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 954,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                className: "caret-right",
-                                alt: "Caret right",
-                                src: "https://c.animaapp.com/tBO78KcB/img/caret-right-1-1.svg"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 960,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                className: "caret-left",
-                                alt: "Caret left",
-                                src: "https://c.animaapp.com/tBO78KcB/img/caret-left-2-1.svg"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 966,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-30",
-                                children: "Mon"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 972,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-31",
-                                children: "Thu"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 974,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-32",
-                                children: "Tue"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 976,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-34",
-                                children: "2"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 978,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-35",
-                                children: "4"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 980,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-36",
-                                children: "1"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 982,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-4"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 984,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-5"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 986,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-6"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 988,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-7"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 990,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-8"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 992,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-9"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 994,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-10"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 996,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-11"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 998,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-12"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1000,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-13"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1002,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-14"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1004,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-15"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1006,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-16"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1008,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-17"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1010,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-18"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1012,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-7",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-19"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 1015,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-20"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 1017,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1014,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-21"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1020,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-22"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1022,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-23"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1024,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-24"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1026,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-25"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1028,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-26"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1030,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-27"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1032,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-28"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1034,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-29"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1036,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-30"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1038,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-8",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-31"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 1041,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-32"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 1043,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1040,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-33"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1046,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-34"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1048,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-35"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1050,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-36"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1052,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-37"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1054,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-38"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1056,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-9",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-39"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 1059,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-32"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 1061,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1058,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-40"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1064,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-41"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1066,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-42"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1068,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-43"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1070,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-44"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1072,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-45"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1074,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-10",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-31"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 1077,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-32"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 1079,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1076,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-46"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1082,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-47"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1084,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-48"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1086,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-49"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1088,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-50"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1090,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-51"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1092,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-11",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-39"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 1095,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-52"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 1097,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1094,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-53"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1100,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-54"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1102,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-55"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1104,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-56"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1106,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-12",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-57"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 1109,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-58"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 1111,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1108,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-59"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1114,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-60"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1116,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-61"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1118,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-62"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1120,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-13",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-57"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 1123,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-58"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 1125,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1122,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-63"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1128,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-64"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1130,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-65"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1132,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-66"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1134,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-67"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1136,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-68"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1138,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-69"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1140,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-70"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1142,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-71"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1144,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-72"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1146,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-73"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1148,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-74"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1150,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-75"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1152,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-76"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1154,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-77"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1156,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-78"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1158,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-79"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1160,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-80"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1162,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-81"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1164,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-82"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1166,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-83"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1168,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-84"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1170,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-85"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1172,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-86"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1174,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-87"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1176,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-88"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1178,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-89"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1180,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-90"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1182,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-91"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1184,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-92"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1186,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-93"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1188,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-94"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1190,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-95"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1192,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-96"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1194,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-97"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1196,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-98"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1198,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-99"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1200,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-100"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1202,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-101"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1204,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-102"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1206,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-103"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1208,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-104"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1210,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-group-2",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-31"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 1213,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-32"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 1215,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1212,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-105"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1218,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-106"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1220,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-107"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1222,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-108"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1224,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-109"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1226,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-14",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-31"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 1229,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-32"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 1231,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1228,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-110"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1234,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-111"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1236,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-112"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1238,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-113"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1240,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-15",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-31"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 1243,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-114"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 1245,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1242,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-115"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1248,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-116"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1250,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-117"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1252,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-118"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1254,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-16",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-119"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 1257,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rectangle-114"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 1259,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1256,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-120"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1262,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-121"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1264,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-122"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1266,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-123"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1268,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-124"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1270,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-125"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1272,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-126"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1274,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-127"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1276,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-128"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1278,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-129"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1280,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-130"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1282,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-131"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1284,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle-132"
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 1286,
-                                columnNumber: 13
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "logo",
+                            alt: "Image",
+                            src: "https://c.animaapp.com/RqvJyPyX/img/image-28@2x.png"
+                        }, void 0, false, {
+                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                            lineNumber: 45,
+                            columnNumber: 9
+                        }, undefined)
+                    }, void 0, false, {
                         fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                        lineNumber: 873,
-                        columnNumber: 11
+                        lineNumber: 44,
+                        columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
                 lineNumber: 10,
-                columnNumber: 9
+                columnNumber: 8
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "overlap-wrapper",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "overlap",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "container",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-group",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: "element",
+                                            children: [
+                                                "0/4 Available",
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                                    lineNumber: 59,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                "Mouseover the Calendar to See Who Is Available"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 57,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 63,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "div"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 65,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-2"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 67,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 56,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "group-s-availability",
+                                    children: "Group's Availability"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 70,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-2",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper",
+                                            children: "5:00PM"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 73,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-2",
+                                            children: "6:00PM"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 75,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 72,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-3",
+                                    children: "October 2024"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 78,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-4",
+                                    children: "4/4 Available"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 80,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-3",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-5",
+                                            children: "Wed"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 83,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-6",
+                                            children: "3"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 85,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 82,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-7",
+                                    children: "Time/Day"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 88,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-4",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-8",
+                                            children: "Sun"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 91,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-9",
+                                            children: "7"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 93,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 90,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-10",
+                                    children: "10:00 AM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 96,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-11",
+                                    children: "11:00 AM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 98,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-12",
+                                    children: "12:00 PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 100,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-13",
+                                    children: "10:00 PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 102,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-14",
+                                    children: "11:00 PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 104,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-5",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-15",
+                                            children: "Sat"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 107,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-16",
+                                            children: "6"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 109,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-3"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 111,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 106,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-17",
+                                    children: "4:00 PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 114,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-18",
+                                    children: "6:00 AM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 116,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-19",
+                                    children: "7:00 AM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 118,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-20",
+                                    children: "8:00 AM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 120,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-21",
+                                    children: "9:00 AM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 122,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-22",
+                                    children: "1:00 PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 124,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-23",
+                                    children: "2:00 PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 126,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-24",
+                                    children: "3:00 PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 128,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-25",
+                                    children: "7:00 PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 130,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-26",
+                                    children: "8:00PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 132,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-27",
+                                    children: "9:00 PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 134,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-6",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-28",
+                                            children: "Fri"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 137,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-29",
+                                            children: "5"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 139,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 136,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: "caret-right",
+                                    alt: "Caret right",
+                                    src: "https://c.animaapp.com/tBO78KcB/img/caret-right-1-1.svg"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 142,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: "caret-left",
+                                    alt: "Caret left",
+                                    src: "https://c.animaapp.com/tBO78KcB/img/caret-left-2-1.svg"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 148,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-30",
+                                    children: "Mon"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 154,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-31",
+                                    children: "Thu"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 156,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-32",
+                                    children: "Tue"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 158,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-33",
+                                    children: "K"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 160,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-34",
+                                    children: "2"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 162,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-35",
+                                    children: "4"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 164,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-36",
+                                    children: "1"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 166,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-4"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 168,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-5"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 170,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-6"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 172,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-7"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 174,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-8"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 176,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-9"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 178,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-10"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 180,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-11"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 182,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-12"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 184,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-13"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 186,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-14"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 188,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-15"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 190,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-16"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 192,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-17"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 194,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-18"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 196,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-7",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-19"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 199,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-20"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 201,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 198,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-21"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 204,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-22"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 206,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-23"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 208,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-24"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 210,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-25"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 212,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-26"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 214,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-27"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 216,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-28"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 218,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-29"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 220,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-30"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 222,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-8",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-31"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 225,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-32"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 227,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 224,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-33"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 230,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-34"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 232,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-35"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 234,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-36"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 236,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-37"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 238,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-38"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 240,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-9",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-39"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 243,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-32"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 245,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 242,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-40"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 248,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-41"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 250,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-42"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 252,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-43"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 254,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-44"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 256,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-45"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 258,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-10",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-31"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 261,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-32"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 263,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 260,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-46"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 266,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-47"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 268,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-48"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 270,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-49"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 272,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-50"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 274,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-51"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 276,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-11",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-39"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 279,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-52"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 281,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 278,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-53"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 284,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-54"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 286,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-55"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 288,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-56"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 290,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-12",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-57"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 293,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-58"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 295,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 292,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-59"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 298,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-60"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 300,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-61"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 302,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-62"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 304,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-13",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-57"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 307,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-58"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 309,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 306,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-63"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 312,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-64"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 314,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-65"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 316,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-66"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 318,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-67"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 320,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-68"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 322,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-69"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 324,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-70"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 326,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-71"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 328,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-72"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 330,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-73"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 332,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-74"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 334,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-75"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 336,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-76"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 338,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-77"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 340,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-78"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 342,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-79"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 344,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-80"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 346,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-81"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 348,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-82"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 350,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-83"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 352,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-84"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 354,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-85"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 356,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-86"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 358,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-87"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 360,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-88"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 362,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-89"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 364,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-90"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 366,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-91"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 368,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-92"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 370,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-93"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 372,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-94"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 374,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-95"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 376,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-96"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 378,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-97"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 380,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-98"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 382,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-99"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 384,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-100"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 386,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-101"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 388,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-102"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 390,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-103"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 392,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-104"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 394,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-group-2",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-31"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 397,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-32"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 399,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 396,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-105"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 402,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-106"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 404,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-107"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 406,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-108"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 408,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-109"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 410,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-14",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-31"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 413,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-32"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 415,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 412,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-110"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 418,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-111"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 420,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-112"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 422,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-113"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 424,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-15",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-31"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 427,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-114"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 429,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 426,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-115"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 432,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-116"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 434,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-117"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 436,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-118"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 438,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-16",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-119"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 441,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-114"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 443,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 440,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-120"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 446,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-121"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 448,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-122"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 450,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-123"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 452,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-124"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 454,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-125"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 456,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-126"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 458,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-127"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 460,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-128"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 462,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-129"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 464,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-130"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 466,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-131"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 468,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-132"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 470,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                            lineNumber: 55,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "container-2",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-17",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: "availableclick-and",
+                                            children: [
+                                                "Available",
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                                    lineNumber: 477,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                "Click and Drag to Toggle; Saved Immediately"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 475,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-37",
+                                            children: "Unavailable"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 481,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-133"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 483,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-134"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 485,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 474,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-38",
+                                    children: "Your Availability"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 488,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-39",
+                                    children: "5:00PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 490,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-40",
+                                    children: "October 2024"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 492,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-18",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-5",
+                                            children: "Wed"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 495,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-41",
+                                            children: "3"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 497,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 494,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-42",
+                                    children: "10:00 AM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 500,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-43",
+                                    children: "11:00 AM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 502,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-44",
+                                    children: "12:00 PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 504,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-45",
+                                    children: "10:00 PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 506,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-46",
+                                    children: "11:00 PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 508,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-47",
+                                    children: "Time/Day"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 510,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-48",
+                                    children: "4:00 PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 512,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-49",
+                                    children: "6:00 AM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 514,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-50",
+                                    children: "7:00 AM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 516,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-51",
+                                    children: "8:00 AM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 518,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-52",
+                                    children: "9:00 AM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 520,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-53",
+                                    children: "1:00 PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 522,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-54",
+                                    children: "2:00 PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 524,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-55",
+                                    children: "3:00PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 526,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-56",
+                                    children: "7:00 PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 528,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-57",
+                                    children: "8:00 PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 530,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-58",
+                                    children: "9:00 PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 532,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-19",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-28",
+                                            children: "Fri"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 535,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-59",
+                                            children: "5"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 537,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 534,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: "img",
+                                    alt: "Caret left",
+                                    src: "https://c.animaapp.com/tBO78KcB/img/caret-left-2-1.svg"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 540,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-60",
+                                    children: "Mon"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 546,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-61",
+                                    children: "Thu"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 548,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-62",
+                                    children: "Sun"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 550,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-63",
+                                    children: "Tue"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 552,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-64",
+                                    children: "Sat"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 554,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-65",
+                                    children: "2"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 556,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-66",
+                                    children: "4"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 558,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-67",
+                                    children: "1"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 560,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-68",
+                                    children: "6"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 562,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-69",
+                                    children: "7"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 564,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-70",
+                                    children: "6:00PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 566,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-135"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 568,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-136"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 570,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-137"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 572,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-138"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 574,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-139"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 576,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-140"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 578,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-141"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 580,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-142"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 582,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-143"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 584,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-144"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 586,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-145"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 588,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-146"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 590,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-147"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 592,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-148"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 594,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-149"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 596,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-20",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-19"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 599,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-20"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 601,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 598,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-150"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 604,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-151"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 606,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-152"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 608,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-153"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 610,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-154"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 612,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-155"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 614,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-156"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 616,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-157"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 618,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-158"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 620,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-159"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 622,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-21",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-31"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 625,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-32"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 627,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 624,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-160"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 630,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-161"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 632,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-162"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 634,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-163"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 636,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-164"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 638,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-165"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 640,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-22",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-31"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 643,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-32"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 645,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 642,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-166"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 648,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-167"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 650,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-168"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 652,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-169"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 654,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-170"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 656,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-171"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 658,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-23",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-31"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 661,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-32"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 663,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 660,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-172"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 666,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-173"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 668,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-174"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 670,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-175"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 672,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-176"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 674,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-177"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 676,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-24",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-31"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 679,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-32"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 681,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 678,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-178"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 684,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-179"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 686,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-180"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 688,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-181"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 690,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-182"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 692,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-183"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 694,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-25",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-31"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 697,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-32"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 699,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 696,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-184"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 702,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-185"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 704,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-186"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 706,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-187"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 708,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-188"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 710,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-189"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 712,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-26",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-31"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 715,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-32"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 717,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 714,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-190"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 720,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-191"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 722,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-192"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 724,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-193"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 726,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-27",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-31"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 729,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-194"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 731,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 728,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-195"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 734,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-196"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 736,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-197"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 738,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-198"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 740,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-28",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-31"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 743,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-194"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 745,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 742,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-199"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 748,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-200"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 750,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-201"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 752,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-202"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 754,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-203"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 756,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-204"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 758,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-205"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 760,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-206"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 762,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-207"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 764,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-208"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 766,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-209"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 768,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-210"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 770,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-211"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 772,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-212"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 774,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-213"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 776,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-214"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 778,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-215"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 780,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-216"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 782,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-217"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 784,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-218"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 786,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-219"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 788,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-220"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 790,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-221"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 792,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-222"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 794,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-223"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 796,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-224"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 798,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-225"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 800,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-226"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 802,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-227"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 804,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-228"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 806,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-229"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 808,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-230"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 810,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-29",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-31"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 813,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-114"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 815,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 812,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-231"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 818,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-232"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 820,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-233"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 822,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-234"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 824,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-30",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-119"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 827,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-114"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 829,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 826,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-235"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 832,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-236"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 834,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-237"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 836,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-238"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 838,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-239"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 840,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-240"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 842,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-241"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 844,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-242"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 846,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-243"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 848,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-244"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 850,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-245"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 852,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-246"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 854,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-247"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 856,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-248"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 858,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-249"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 860,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-250"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 862,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-251"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 864,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-252"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 866,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-253"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 868,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-254"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 870,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                            lineNumber: 473,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "container-4",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-group",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: "element",
+                                            children: [
+                                                "0/4 Available",
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                                    lineNumber: 879,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                "Mouseover the Calendar to See Who Is Available"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 877,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 883,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "div"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 885,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-2"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 887,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 876,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "group-s-availability",
+                                    children: "Group's Availability"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 890,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-2",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper",
+                                            children: "5:00PM"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 893,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-2",
+                                            children: "6:00PM"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 895,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 892,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-3",
+                                    children: "October 2024"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 898,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-4",
+                                    children: "4/4 Available"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 900,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-3",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-5",
+                                            children: "Wed"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 903,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-6",
+                                            children: "3"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 905,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 902,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-7",
+                                    children: "Time/Day"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 908,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-4",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-8",
+                                            children: "Sun"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 911,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-9",
+                                            children: "7"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 913,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 910,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-10",
+                                    children: "10:00 AM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 916,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-11",
+                                    children: "11:00 AM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 918,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-12",
+                                    children: "12:00 PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 920,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-13",
+                                    children: "10:00 PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 922,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-14",
+                                    children: "11:00 PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 924,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-5",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-15",
+                                            children: "Sat"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 927,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-16",
+                                            children: "6"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 929,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-3"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 931,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 926,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-17",
+                                    children: "4:00 PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 934,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-18",
+                                    children: "6:00 AM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 936,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-19",
+                                    children: "7:00 AM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 938,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-20",
+                                    children: "8:00 AM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 940,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-21",
+                                    children: "9:00 AM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 942,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-22",
+                                    children: "1:00 PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 944,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-23",
+                                    children: "2:00 PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 946,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-24",
+                                    children: "3:00 PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 948,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-25",
+                                    children: "7:00 PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 950,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-26",
+                                    children: "8:00PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 952,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-27",
+                                    children: "9:00 PM"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 954,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-6",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-28",
+                                            children: "Fri"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 957,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-29",
+                                            children: "5"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 959,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 956,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: "caret-right",
+                                    alt: "Caret right",
+                                    src: "https://c.animaapp.com/tBO78KcB/img/caret-right-1-1.svg"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 962,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: "caret-left",
+                                    alt: "Caret left",
+                                    src: "https://c.animaapp.com/tBO78KcB/img/caret-left-2-1.svg"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 968,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-30",
+                                    children: "Mon"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 974,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-31",
+                                    children: "Thu"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 976,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-32",
+                                    children: "Tue"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 978,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-34",
+                                    children: "2"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 980,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-35",
+                                    children: "4"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 982,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-36",
+                                    children: "1"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 984,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-4"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 986,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-5"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 988,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-6"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 990,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-7"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 992,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-8"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 994,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-9"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 996,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-10"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 998,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-11"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1000,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-12"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1002,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-13"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1004,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-14"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1006,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-15"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1008,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-16"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1010,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-17"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1012,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-18"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1014,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-7",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-19"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 1017,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-20"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 1019,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1016,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-21"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1022,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-22"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1024,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-23"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1026,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-24"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1028,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-25"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1030,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-26"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1032,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-27"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1034,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-28"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1036,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-29"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1038,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-30"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1040,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-8",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-31"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 1043,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-32"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 1045,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1042,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-33"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1048,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-34"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1050,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-35"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1052,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-36"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1054,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-37"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1056,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-38"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1058,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-9",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-39"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 1061,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-32"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 1063,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1060,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-40"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1066,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-41"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1068,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-42"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1070,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-43"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1072,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-44"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1074,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-45"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1076,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-10",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-31"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 1079,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-32"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 1081,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1078,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-46"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1084,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-47"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1086,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-48"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1088,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-49"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1090,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-50"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1092,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-51"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1094,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-11",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-39"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 1097,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-52"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 1099,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1096,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-53"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1102,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-54"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1104,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-55"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1106,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-56"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1108,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-12",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-57"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 1111,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-58"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 1113,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1110,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-59"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1116,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-60"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1118,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-61"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1120,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-62"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1122,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-13",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-57"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 1125,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-58"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 1127,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1124,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-63"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1130,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-64"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1132,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-65"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1134,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-66"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1136,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-67"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1138,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-68"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1140,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-69"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1142,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-70"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1144,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-71"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1146,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-72"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1148,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-73"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1150,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-74"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1152,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-75"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1154,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-76"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1156,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-77"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1158,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-78"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1160,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-79"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1162,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-80"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1164,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-81"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1166,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-82"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1168,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-83"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1170,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-84"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1172,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-85"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1174,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-86"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1176,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-87"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1178,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-88"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1180,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-89"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1182,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-90"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1184,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-91"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1186,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-92"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1188,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-93"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1190,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-94"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1192,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-95"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1194,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-96"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1196,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-97"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1198,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-98"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1200,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-99"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1202,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-100"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1204,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-101"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1206,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-102"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1208,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-103"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1210,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-104"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1212,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-group-2",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-31"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 1215,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-32"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 1217,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1214,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-105"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1220,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-106"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1222,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-107"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1224,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-108"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1226,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-109"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1228,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-14",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-31"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 1231,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-32"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 1233,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1230,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-110"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1236,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-111"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1238,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-112"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1240,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-113"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1242,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-15",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-31"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 1245,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-114"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 1247,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1244,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-115"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1250,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-116"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1252,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-117"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1254,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-118"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1256,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-16",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-119"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 1259,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-114"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                            lineNumber: 1261,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1258,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-120"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1264,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-121"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1266,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-122"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1268,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-123"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1270,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-124"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1272,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-125"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1274,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-126"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1276,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-127"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1278,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-128"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1280,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-129"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1282,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-130"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1284,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-131"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1286,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-132"
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 1288,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                            lineNumber: 875,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                    lineNumber: 54,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                lineNumber: 53,
+                columnNumber: 7
             }, undefined)
-        }, void 0, false, {
-            fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-            lineNumber: 9,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false, {
+        ]
+    }, void 0, true, {
         fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
         lineNumber: 8,
         columnNumber: 5
@@ -43820,119 +43838,140 @@ const YourAvailability = ()=>{
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "frame",
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "text-wrapper-37",
+                                            className: "text-wrapper-menu",
                                             children: "Schedule"
                                         }, void 0, false, {
                                             fileName: "src/screens/YourAvailability/YourAvailability.jsx",
-                                            lineNumber: 427,
-                                            columnNumber: 15
+                                            lineNumber: 428,
+                                            columnNumber: 13
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/screens/YourAvailability/YourAvailability.jsx",
-                                        lineNumber: 426,
-                                        columnNumber: 13
+                                        lineNumber: 427,
+                                        columnNumber: 11
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/screens/YourAvailability/YourAvailability.jsx",
-                                    lineNumber: 425,
+                                    lineNumber: 426,
                                     columnNumber: 11
                                 }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "div-wrapper",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    to: "/group-availability",
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-38",
-                                        children: "Availability"
+                                        className: "frame-2",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-menu",
+                                            children: "Availability"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/YourAvailability/YourAvailability.jsx",
+                                            lineNumber: 434,
+                                            columnNumber: 13
+                                        }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/screens/YourAvailability/YourAvailability.jsx",
-                                        lineNumber: 432,
-                                        columnNumber: 15
+                                        lineNumber: 433,
+                                        columnNumber: 11
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/screens/YourAvailability/YourAvailability.jsx",
-                                    lineNumber: 431,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "frame-2",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-39",
-                                        children: "Community"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/YourAvailability/YourAvailability.jsx",
-                                        lineNumber: 436,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/YourAvailability/YourAvailability.jsx",
-                                    lineNumber: 435,
-                                    columnNumber: 13
+                                    lineNumber: 432,
+                                    columnNumber: 11
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "frame-3",
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-39",
-                                        children: "Map"
+                                        className: "text-wrapper-menu",
+                                        children: "Community"
                                     }, void 0, false, {
                                         fileName: "src/screens/YourAvailability/YourAvailability.jsx",
-                                        lineNumber: 440,
-                                        columnNumber: 15
+                                        lineNumber: 438,
+                                        columnNumber: 13
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/screens/YourAvailability/YourAvailability.jsx",
-                                    lineNumber: 439,
-                                    columnNumber: 13
+                                    lineNumber: 437,
+                                    columnNumber: 11
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    to: "/map",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "frame-4",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-menu",
+                                            children: "Map"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/YourAvailability/YourAvailability.jsx",
+                                            lineNumber: 443,
+                                            columnNumber: 13
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/screens/YourAvailability/YourAvailability.jsx",
+                                        lineNumber: 442,
+                                        columnNumber: 11
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/screens/YourAvailability/YourAvailability.jsx",
+                                    lineNumber: 441,
+                                    columnNumber: 11
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/screens/YourAvailability/YourAvailability.jsx",
-                            lineNumber: 424,
-                            columnNumber: 11
+                            lineNumber: 425,
+                            columnNumber: 9
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                             to: "/",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-40",
+                                className: "text-wrapper-menu-title",
                                 children: "Pickup@Penn"
                             }, void 0, false, {
                                 fileName: "src/screens/YourAvailability/YourAvailability.jsx",
-                                lineNumber: 444,
-                                columnNumber: 11
+                                lineNumber: 448,
+                                columnNumber: 9
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/screens/YourAvailability/YourAvailability.jsx",
-                            lineNumber: 443,
-                            columnNumber: 11
+                            lineNumber: 447,
+                            columnNumber: 9
                         }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            className: "image",
-                            alt: "Image",
-                            src: "https://c.animaapp.com/5kHGbH5C/img/image-2@2x.png"
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/availability",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                className: "prof",
+                                alt: "Image",
+                                src: "https://c.animaapp.com/RqvJyPyX/img/image-27@2x.png"
+                            }, void 0, false, {
+                                fileName: "src/screens/YourAvailability/YourAvailability.jsx",
+                                lineNumber: 452,
+                                columnNumber: 9
+                            }, undefined)
                         }, void 0, false, {
                             fileName: "src/screens/YourAvailability/YourAvailability.jsx",
-                            lineNumber: 448,
-                            columnNumber: 11
+                            lineNumber: 451,
+                            columnNumber: 9
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                             to: "/",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                className: "img",
+                                className: "logo",
                                 alt: "Image",
-                                src: "https://c.animaapp.com/5kHGbH5C/img/image-30@2x.png"
+                                src: "https://c.animaapp.com/RqvJyPyX/img/image-28@2x.png"
                             }, void 0, false, {
                                 fileName: "src/screens/YourAvailability/YourAvailability.jsx",
-                                lineNumber: 455,
-                                columnNumber: 11
+                                lineNumber: 461,
+                                columnNumber: 9
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/screens/YourAvailability/YourAvailability.jsx",
-                            lineNumber: 454,
-                            columnNumber: 11
+                            lineNumber: 460,
+                            columnNumber: 9
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/screens/YourAvailability/YourAvailability.jsx",
-                    lineNumber: 423,
-                    columnNumber: 9
+                    lineNumber: 424,
+                    columnNumber: 7
                 }, undefined)
             ]
         }, void 0, true, {

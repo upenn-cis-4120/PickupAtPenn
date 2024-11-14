@@ -6,6 +6,50 @@ import { Link } from 'react-router-dom';
 export const GroupAvailability = () => {
   return (
     <div className="group-availability">
+       {/* Header Menu */}
+       <div className="container-3">
+        <div className="header-menu">
+          <Link to="/schedule">
+          <div className="frame">
+            <div className="text-wrapper-menu">Schedule</div>
+          </div>
+          </Link>
+
+          <Link to="/group-availability">
+          <div className="frame-2">
+            <div className="text-wrapper-bold">Availability</div>
+          </div>
+          </Link>
+          <div className="frame-3">
+            <div className="text-wrapper-menu">Community</div>
+          </div>
+
+          <Link to="/map">
+          <div className="frame-4">
+            <div className="text-wrapper-menu">Map</div>
+          </div>
+          </Link>
+        </div>
+        <Link to="/">
+        <div className="text-wrapper-menu-title">Pickup@Penn</div>
+        </Link>
+
+        <Link to="/availability">
+        <imgs
+          className="prof"
+          alt="Image"
+          src="https://c.animaapp.com/RqvJyPyX/img/image-27@2x.png"
+        />
+        </Link>
+        <Link to="/">
+        <img
+          className="logo"
+          alt="Image"
+          src="https://c.animaapp.com/RqvJyPyX/img/image-28@2x.png"
+        />
+        </Link>
+      </div>
+      
       <div className="overlap-wrapper">
         <div className="overlap">
           <div className="container">
@@ -826,49 +870,7 @@ export const GroupAvailability = () => {
             <div className="rectangle-254" />
           </div>
 
-          {/* Header Menu */}
-      <div className="container-3">
-        <div className="header-menu">
-          <Link to="/schedule">
-          <div className="frame">
-            <div className="text-wrapper-menu">Schedule</div>
-          </div>
-          </Link>
-
-          <Link to="/group-availability">
-          <div className="frame-2">
-            <div className="text-wrapper-bold">Availability</div>
-          </div>
-          </Link>
-          <div className="frame-3">
-            <div className="text-wrapper-menu">Community</div>
-          </div>
-
-          <Link to="/map">
-          <div className="frame-4">
-            <div className="text-wrapper-menu">Map</div>
-          </div>
-          </Link>
-        </div>
-        <Link to="/">
-        <div className="text-wrapper-menu-title">Pickup@Penn</div>
-        </Link>
-
-        {/* <Link to="/availability">
-        <img
-          className="prof"
-          alt="Image"
-          src="https://c.animaapp.com/RqvJyPyX/img/image-27@2x.png"
-        />
-        </Link> */}
-        <Link to="/">
-        <img
-          className="logo"
-          alt="Image"
-          src="https://c.animaapp.com/RqvJyPyX/img/image-28@2x.png"
-        />
-        </Link>
-      </div>
+         
 
           <div className="container-4">
             <div className="overlap-group">

@@ -33,6 +33,153 @@
     top: 65px;
     width: 341px;
   }
+
+
+  .your-availability .container-2 {
+    background-color: #f9fbfd;
+    border: 0px none;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 73px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1440px;
+  }
+  
+  .your-availability .header-menu {
+    height: 52px;
+    left: 304px;
+    position: absolute;
+    top: 4px;
+    width: 384px;
+  }
+  
+  .your-availability .frame {
+    border-radius: 6px;
+    height: 52px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100px;
+  }
+  
+  .your-availability .text-wrapper-5 {
+    color: #2d3f70;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    position: absolute;
+    top: 14px;
+    white-space: nowrap;
+  }
+  
+  .your-availability .frame-2 {
+    border-radius: 6px;
+    height: 52px;
+    left: 100px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 107px;
+  }
+  
+  .your-availability .text-wrapper-menu {
+    color: #2d3f70;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    position: absolute;
+    top: 14px;
+    white-space: nowrap;
+  }
+
+  .your-availability .text-wrapper-bold {
+    color: #2d3f70;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    font-weight: 700;
+    left: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    position: absolute;
+    top: 14px;
+    white-space: nowrap;
+  }
+  
+  .your-availability .frame-3 {
+    border-radius: 6px;
+    height: 52px;
+    left: 207px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 111px;
+  }
+  
+  .your-availability .frame-4 {
+    border-radius: 6px;
+    height: 52px;
+    left: 318px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 65px;
+  }
+  
+  
+
+  .your-availability .text-wrapper-menu-title {
+    color: #172b61;
+    font-family: "Archivo", Helvetica;
+    font-size: 27px;
+    font-weight: 700;
+    left: 63px;
+    letter-spacing: 0;
+    line-height: 42px;
+    position: absolute;
+    top: 8px;
+    white-space: nowrap;
+  }
+  
+  .button .text-wrapper-menu-title {
+    color: #172b61;
+    font-family: "Archivo", Helvetica;
+    font-size: 27px;
+    font-weight: 700;
+    left: 63px;
+    letter-spacing: 0;
+    line-height: 42px;
+    position: absolute;
+    top: 8px;
+    white-space: nowrap;
+  }
+  
+  .your-availability .prof {
+    height: 48px;
+    left: 1374px;
+    position: absolute;
+    top: 5px;
+    width: 48px;
+  }
+  
+  .your-availability .logo {
+    height: 43px;
+    left: 12px;
+    position: absolute;
+    top: 10px;
+    width: 42px;
+  }
+
+
+
+
   
   .your-availability .availableclick-and {
     color: #2a2a2a;
@@ -2013,23 +2160,14 @@
     width: 155px;
   }
   
-  .your-availability .container-2 {
-    background-color: #f9fbfd;
-    border: 0px none;
-    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
-    height: 79px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 1440px;
-  }
+  
   
   .your-availability .header-menu {
     height: 52px;
-    left: 289px;
+    left: 304px;
     position: absolute;
-    top: 12px;
-    width: 411px;
+    top: 4px;
+    width: 384px;
   }
   
   .your-availability .frame {
@@ -2081,11 +2219,11 @@
   .your-availability .frame-2 {
     border-radius: 6px;
     height: 52px;
-    left: 221px;
+    left: 100px;
     overflow: hidden;
     position: absolute;
     top: 0;
-    width: 118px;
+    width: 107px;
   }
   
   .your-availability .text-wrapper-39 {
@@ -2101,15 +2239,7 @@
     white-space: nowrap;
   }
   
-  .your-availability .frame-3 {
-    border-radius: 6px;
-    height: 52px;
-    left: 339px;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    width: 72px;
-  }
+  
   
   .your-availability .text-wrapper-40 {
     color: #223568;

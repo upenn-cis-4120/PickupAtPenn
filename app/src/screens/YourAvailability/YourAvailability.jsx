@@ -420,45 +420,51 @@ export const YourAvailability = () => {
           <div className="rectangle-127" />
         </div>
 
-        <div className="container-2">
-          <div className="header-menu">
+        {/* Header Menu */}
+      <div className="container-2">
+        <div className="header-menu">
           <Link to="/schedule">
-            <div className="frame">
-              <div className="text-wrapper-37">Schedule</div>
-            </div>
-            </Link>
-
-            <div className="div-wrapper">
-              <div className="text-wrapper-38">Availability</div>
-            </div>
-
-            <div className="frame-2">
-              <div className="text-wrapper-39">Community</div>
-            </div>
-
-            <div className="frame-3">
-              <div className="text-wrapper-39">Map</div>
-            </div>
+          <div className="frame">
+            <div className="text-wrapper-menu">Schedule</div>
           </div>
-          <Link to="/">
-          <div className="text-wrapper-40">Pickup@Penn</div>
           </Link>
 
-          
-          <img
-            className="image"
-            alt="Image"
-            src="https://c.animaapp.com/5kHGbH5C/img/image-2@2x.png"
-          />
-          
-          <Link to="/">
-          <img
-            className="img"
-            alt="Image"
-            src="https://c.animaapp.com/5kHGbH5C/img/image-30@2x.png"
-          />
+          <Link to="/group-availability">
+          <div className="frame-2">
+            <div className="text-wrapper-menu">Availability</div>
+          </div>
+          </Link>
+          <div className="frame-3">
+            <div className="text-wrapper-menu">Community</div>
+          </div>
+
+          <Link to="/map">
+          <div className="frame-4">
+            <div className="text-wrapper-menu">Map</div>
+          </div>
           </Link>
         </div>
+        <Link to="/">
+        <div className="text-wrapper-menu-title">Pickup@Penn</div>
+        </Link>
+
+        <Link to="/availability">
+        <img
+          className="prof"
+          alt="Image"
+          src="https://c.animaapp.com/RqvJyPyX/img/image-27@2x.png"
+        />
+        </Link>
+
+
+        <Link to="/">
+        <img
+          className="logo"
+          alt="Image"
+          src="https://c.animaapp.com/RqvJyPyX/img/image-28@2x.png"
+        />
+        </Link>
+      </div>
       </div>
     </div>
   );
