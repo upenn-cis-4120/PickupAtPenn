@@ -826,44 +826,49 @@ export const GroupAvailability = () => {
             <div className="rectangle-254" />
           </div>
 
-          <div className="container-3">
-            <div className="header-menu">
-              <Link to="/schedule">
-              <div className="frame">
-                <div className="text-wrapper-71">Schedule</div>
-              </div>
-              </Link>
-
-              <div className="div-wrapper">
-                <div className="text-wrapper-72">Availability</div>
-              </div>
-
-              <div className="frame-2">
-                <div className="text-wrapper-73">Community</div>
-              </div>
-
-              <div className="frame-3">
-                <div className="text-wrapper-73">Map</div>
-              </div>
-            </div>
-            <Link to="/">
-            <div className="text-wrapper-74">Pickup@Penn</div>
-            </Link>
-            
-            {/* <img
-              className="image"
-              alt="Image"
-              src="https://c.animaapp.com/tBO78KcB/img/image-1@2x.png"
-            /> */}
-            
-            <Link to="/">
-            <img
-              className="image-2"
-              alt="Image"
-              src="https://c.animaapp.com/tBO78KcB/img/image-29@2x.png"
-            />
-            </Link>
+          {/* Header Menu */}
+      <div className="container-3">
+        <div className="header-menu">
+          <Link to="/schedule">
+          <div className="frame">
+            <div className="text-wrapper-menu">Schedule</div>
           </div>
+          </Link>
+
+          <Link to="/group-availability">
+          <div className="frame-2">
+            <div className="text-wrapper-bold">Availability</div>
+          </div>
+          </Link>
+          <div className="frame-3">
+            <div className="text-wrapper-menu">Community</div>
+          </div>
+
+          <Link to="/map">
+          <div className="frame-4">
+            <div className="text-wrapper-menu">Map</div>
+          </div>
+          </Link>
+        </div>
+        <Link to="/">
+        <div className="text-wrapper-menu-title">Pickup@Penn</div>
+        </Link>
+
+        {/* <Link to="/availability">
+        <img
+          className="prof"
+          alt="Image"
+          src="https://c.animaapp.com/RqvJyPyX/img/image-27@2x.png"
+        />
+        </Link> */}
+        <Link to="/">
+        <img
+          className="logo"
+          alt="Image"
+          src="https://c.animaapp.com/RqvJyPyX/img/image-28@2x.png"
+        />
+        </Link>
+      </div>
 
           <div className="container-4">
             <div className="overlap-group">

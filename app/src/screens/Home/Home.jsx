@@ -107,9 +107,11 @@ export const Home = () => {
             <div className="text-wrapper-6">Community</div>
           </div>
 
+          <Link to="/map">
           <div className="frame-4">
             <div className="text-wrapper-6">Map</div>
           </div>
+          </Link>
         </div>
         <Link to="/">
         <div className="text-wrapper-7">Pickup@Penn</div>

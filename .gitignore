@@ -6,3 +6,4 @@
 /app/.parcel-cache/node_modulesapp/.parcel-cache
 app/.anima/cache
 app/.anima/*
+node_modules/

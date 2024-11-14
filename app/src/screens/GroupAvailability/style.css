@@ -1,9 +1,120 @@
+
+
 .group-availability {
     background-color: #f9fbfd;
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
+  }
+
+  .group-availability .header-menu {
+    height: 52px;
+    left: 292px;
+    position: absolute;
+    top: 7px;
+    width: 408px;
+  }
+
+  .group-availability .text-wrapper-menu {
+    color: #2d3f70;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    position: absolute;
+    top: 14px;
+    white-space: nowrap;
+  }
+
+  .group-availability .text-wrapper-bold {
+    color: #2d3f70;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    font-weight: 700;
+    left: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    position: absolute;
+    top: 14px;
+    white-space: nowrap;
+  }
+  
+  .group-availability .frame-3 {
+    border-radius: 6px;
+    height: 52px;
+    left: 207px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 111px;
+  }
+  
+  .group-availability .frame-4 {
+    border-radius: 6px;
+    height: 52px;
+    left: 318px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 65px;
+  }
+  
+  
+  
+
+  .group-availability .text-wrapper-menu-title {
+    color: #172b61;
+    font-family: "Archivo", Helvetica;
+    font-size: 27px;
+    font-weight: 700;
+    left: 63px;
+    letter-spacing: 0;
+    line-height: 42px;
+    position: absolute;
+    top: 8px;
+    white-space: nowrap;
+  }
+  
+  .button .text-wrapper-menu-title {
+    color: #172b61;
+    font-family: "Archivo", Helvetica;
+    font-size: 27px;
+    font-weight: 700;
+    left: 63px;
+    letter-spacing: 0;
+    line-height: 42px;
+    position: absolute;
+    top: 8px;
+    white-space: nowrap;
+  }
+  
+  .group-availability .prof {
+    height: 48px;
+    left: 1374px;
+    position: absolute;
+    top: 5px;
+    width: 48px;
+  }
+  
+  .group-availability .logo {
+    height: 43px;
+    left: 12px;
+    position: absolute;
+    top: 10px;
+    width: 42px;
+  }
+  
+  .group-availability .frame {
+    border-radius: 6px;
+    height: 52px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 106px;
   }
   
   .group-availability .overlap-wrapper {
@@ -3970,24 +4081,18 @@
     width: 77px;
   }
   
-  .group-availability .container-3 {
+  .group-availability .container-27 {
     background-color: #f9fbfd;
-    border: 0px none;
-    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
-    height: 78px;
-    left: 0;
+    border: none; /* removes border entirely */
+    border: 1px solid;
+    border: 1px solid #f9fbfd;
+    height: 205px;
+    left: 1141px;
     position: absolute;
-    top: 0;
-    width: 1440px;
+    top: 505px;
+    width: 277px;
   }
   
-  .group-availability .header-menu {
-    height: 52px;
-    left: 308px;
-    position: absolute;
-    top: 11px;
-    width: 384px;
-  }
   
   .group-availability .frame {
     border-radius: 6px;

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 
+
 export const CreateGame = () => {
 
   const [selectedSport, setSelectedSport] = useState('Basketball'); // Default selected sport
@@ -272,7 +273,9 @@ export const CreateGame = () => {
             type="time"
             className="time-input"
             value={selectedTime}
+            step="900" // Set time intervals to 15 minutes
             onChange={(e) => setSelectedTime(e.target.value)} // Update state on time change
+            
           />
           </div>
         </div>
