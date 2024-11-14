@@ -7,3 +7,4 @@
 app/.anima/cache
 app/.anima/*
 node_modules/
+app/dist/
