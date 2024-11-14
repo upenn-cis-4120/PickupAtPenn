@@ -1,37 +1,56 @@
 import React from "react";
 import "./style.css";
-import { Link } from 'react-router-dom';
-import React, { useState } from 'react';
+import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-
 export const CreateGame = () => {
-
-  const [selectedSport, setSelectedSport] = useState('Basketball'); // Default selected sport
+  const [selectedSport, setSelectedSport] = useState("Basketball"); // Default selected sport
   const [isDropdownOpen, setIsDropdownOpen] = useState(false); // To toggle dropdown visibility
-  const [selectedDate, setSelectedDate] = useState('');
-  const [selectedTime, setSelectedTime] = useState(''); 
-  const [selectedLocation, setSelectedLocation] = useState('Select location'); // Default location
+  const [selectedDate, setSelectedDate] = useState("");
+  const [selectedTime, setSelectedTime] = useState("");
+  const [selectedLocation, setSelectedLocation] = useState("Select location"); // Default location
   const [isLocationDropdownOpen, setIsLocationDropdownOpen] = useState(false); // To toggle dropdown visibility
 
-  const [selectedSkill, setSelectedSkill] = useState('Beginner'); // Default skill level
+  const [selectedSkill, setSelectedSkill] = useState("Beginner"); // Default skill level
   const [isSkillDropdownOpen, setIsSkillDropdownOpen] = useState(false); // To toggle dropdown visibility
 
-  const [selectedGroupChat, setSelectedGroupChat] = useState('Select group chat'); // Default group chat
+  const [selectedGroupChat, setSelectedGroupChat] =
+    useState("Select group chat"); // Default group chat
   const [isGroupChatDropdownOpen, setIsGroupChatDropdownOpen] = useState(false); // Toggle visibility
-  const [additionalNotes, setAdditionalNotes] = useState(''); // New state variable for additional notes
+  const [additionalNotes, setAdditionalNotes] = useState(""); // New state variable for additional notes
   const [playerCount, setPlayerCount] = useState(1); // Player count state with default value of 1
-  const [playerNames, setPlayerNames] = useState('');
-  const locations = ['Penn Park', 'Pottruck Gym', 'Hamlin Tennis Center']; // List of locations
-  const sports = ['Basketball', 'Soccer', 'Tennis', 'Baseball', 'Volleyball']; // List of sports
-  const skillLevels = ['Beginner', 'Intermediate', 'Advanced']; // Skill levels
-  const groupChats = ['Basketball', 'Soccer']; // List of group chats
+  const [playerNames, setPlayerNames] = useState("");
+  const locations = ["Penn Park", "Pottruck Gym", "Hamlin Tennis Center"]; // List of locations
+  const sports = ["Basketball", "Soccer", "Tennis", "Baseball", "Volleyball"]; // List of sports
+  const skillLevels = ["Beginner", "Intermediate", "Advanced"]; // Skill levels
+  const groupChats = ["Basketball", "Soccer"]; // List of group chats
+
+  const [selectedHour, setSelectedHour] = useState("12");
+  const [selectedMinute, setSelectedMinute] = useState("00");
+  const [selectedPeriod, setSelectedPeriod] = useState("AM");
+
+  useEffect(() => {
+    // Convert to 24-hour format for the input value
+    const hour = parseInt(selectedHour);
+    const minute = selectedMinute;
+    let hours24 =
+      selectedPeriod === "PM" && hour !== 12
+        ? hour + 12
+        : selectedPeriod === "AM" && hour === 12
+        ? 0
+        : hour;
+
+    hours24 = hours24.toString().padStart(2, "0");
+    const timeValue = `${hours24}:${minute}`;
+    setSelectedTime(timeValue);
+  }, [selectedHour, selectedMinute, selectedPeriod]);
 
   const handleGroupChatClick = (group) => {
     setSelectedGroupChat(group);
     setIsGroupChatDropdownOpen(false); // Close dropdown after selection
   };
-  
+
   const handleSkillClick = (skill) => {
     setSelectedSkill(skill);
     setIsSkillDropdownOpen(false); // Close dropdown after selection
@@ -65,12 +84,54 @@ export const CreateGame = () => {
     navigate("/", { state: { additionalNotes } });
   };
 
+  const generateTimeOptions = () => {
+    const options = [];
+    for (let hours = 0; hours < 24; hours++) {
+      for (let minutes = 0; minutes < 60; minutes += 15) {
+        const hour = hours % 12 || 12;
+        const period = hours < 12 ? "AM" : "PM";
+        const formattedMinutes = minutes.toString().padStart(2, "0");
+        const time = `${hours.toString().padStart(2, "0")}:${formattedMinutes}`;
+        const displayTime = `${hour}:${formattedMinutes} ${period}`;
+        options.push(
+          <option key={time} value={time}>
+            {displayTime}
+          </option>
+        );
+      }
+    }
+    return options;
+  };
+
+  const formatTime = (time) => {
+    const [hours, minutes] = time.split(":");
+    const hour = parseInt(hours);
+    const ampm = hour >= 12 ? "PM" : "AM";
+    const formattedHour = hour % 12 || 12;
+    return `${formattedHour}:${minutes} ${ampm}`;
+  };
+
+  const generateHours = () => {
+    const hours = [];
+    for (let i = 1; i <= 12; i++) {
+      hours.push(i.toString().padStart(2, "0"));
+    }
+    return hours;
+  };
+
+  const generateMinutes = () => {
+    const minutes = [];
+    for (let i = 0; i < 60; i += 15) {
+      minutes.push(i.toString().padStart(2, "0"));
+    }
+    return minutes;
+  };
 
   return (
     <div className="create-game">
       <div className="container">
         <div className="div-wrapper">
-        <input
+          <input
             type="text"
             className="input-additional-notes"
             placeholder="Enter any additional notes, hashtags, and event types"
@@ -94,10 +155,9 @@ export const CreateGame = () => {
         </div>
 
         <div className="overlap">
-        
           <div className="textbox-2">
-          <div className="text-wrapper-4">Location</div>
-          <div className="textfield-2">
+            <div className="text-wrapper-4">Location</div>
+            <div className="textfield-2">
               <div className="text-wrapper-5">{selectedLocation}</div>
             </div>
             <img
@@ -107,7 +167,7 @@ export const CreateGame = () => {
               onClick={() => setIsLocationDropdownOpen(!isLocationDropdownOpen)}
             />
           </div>
-          
+
           {isLocationDropdownOpen && (
             <div className="location-dropdown-menu">
               {locations.map((location) => (
@@ -119,19 +179,18 @@ export const CreateGame = () => {
                   {location}
                 </div>
               ))}
-              </div>
+            </div>
           )}
-          </div>
-      
+        </div>
 
         <div className="textbox-3">
           <div className="text-wrapper-3">Create a New Game</div>
           <Link to="/">
-          <img
-            className="close"
-            alt="Close"
-            src="https://c.animaapp.com/BPOawRxV/img/close.svg"
-          />
+            <img
+              className="close"
+              alt="Close"
+              src="https://c.animaapp.com/BPOawRxV/img/close.svg"
+            />
           </Link>
         </div>
 
@@ -140,60 +199,62 @@ export const CreateGame = () => {
             <div className="text-wrapper-4">Sport</div>
 
             <div className="textfield-2">
-          <div className="text-wrapper-5">{selectedSport}</div>
-        </div>
-
-        <img
-          className="img dropdown-arrow"
-          alt="Dropdown Arrow"
-          src="https://c.animaapp.com/BPOawRxV/img/image-16@2x.png"
-          onClick={() => setIsDropdownOpen(!isDropdownOpen)} // Toggle dropdown on arrow click
-        />
-      </div>
-
-      {isDropdownOpen && (
-        <div className="dropdown-menu">
-          {sports.map((sport) => (
-            <div
-              key={sport}
-              className="dropdown-item"
-              onClick={() => handleSportClick(sport)}
-            >
-              {sport}
+              <div className="text-wrapper-5">{selectedSport}</div>
             </div>
-          ))}
+
+            <img
+              className="img dropdown-arrow"
+              alt="Dropdown Arrow"
+              src="https://c.animaapp.com/BPOawRxV/img/image-16@2x.png"
+              onClick={() => setIsDropdownOpen(!isDropdownOpen)} // Toggle dropdown on arrow click
+            />
+          </div>
+
+          {isDropdownOpen && (
+            <div className="dropdown-menu">
+              {sports.map((sport) => (
+                <div
+                  key={sport}
+                  className="dropdown-item"
+                  onClick={() => handleSportClick(sport)}
+                >
+                  {sport}
+                </div>
+              ))}
+            </div>
+          )}
         </div>
-      )}
-      </div>
         <div className="overlap-2">
-        <div className="textbox-5">
-          {/* <div className="text-wrapper-6">Group Chat</div> */}
+          <div className="textbox-5">
+            {/* <div className="text-wrapper-6">Group Chat</div> */}
 
-          {/* Display selected group chat */}
-          <div className="text-selected-group">{selectedGroupChat}</div>
-          
-          {/* Dropdown arrow to toggle visibility */}
-          <img
-            className="image-2 dropdown-arrow"
-            alt="Dropdown Arrow"
-            src="https://c.animaapp.com/BPOawRxV/img/image-17@2x.png"
-            onClick={() => setIsGroupChatDropdownOpen(!isGroupChatDropdownOpen)}
-          />
+            {/* Display selected group chat */}
+            <div className="text-selected-group">{selectedGroupChat}</div>
+
+            {/* Dropdown arrow to toggle visibility */}
+            <img
+              className="image-2 dropdown-arrow"
+              alt="Dropdown Arrow"
+              src="https://c.animaapp.com/BPOawRxV/img/image-17@2x.png"
+              onClick={() =>
+                setIsGroupChatDropdownOpen(!isGroupChatDropdownOpen)
+              }
+            />
           </div>
 
-        {isGroupChatDropdownOpen && (
-          <div className="groupchat-dropdown-menu">
-            {groupChats.map((chat) => (
-              <div
-                key={chat}
-                className="groupchat-dropdown-item"
-                onClick={() => handleGroupChatClick(chat)}
-              >
-                {chat}
-              </div>
-            ))}
-          </div>
-        )}
+          {isGroupChatDropdownOpen && (
+            <div className="groupchat-dropdown-menu">
+              {groupChats.map((chat) => (
+                <div
+                  key={chat}
+                  className="groupchat-dropdown-item"
+                  onClick={() => handleGroupChatClick(chat)}
+                >
+                  {chat}
+                </div>
+              ))}
+            </div>
+          )}
         </div>
         <button className="button" onClick={handleCreateGame}>
           <div className="text-wrapper-7">Create Game</div>
@@ -204,8 +265,8 @@ export const CreateGame = () => {
             <div className="text-wrapper-2">Skill Level</div>
 
             <div className="textfield-3">
-            <div className="text-wrapper-8">{selectedSkill}</div>
-          </div>
+              <div className="text-wrapper-8">{selectedSkill}</div>
+            </div>
           </div>
 
           <img
@@ -230,31 +291,31 @@ export const CreateGame = () => {
         )}
 
         <div className="textbox-7">
-        <div className="text-wrapper-2">Date</div>
+          <div className="text-wrapper-2">Date</div>
 
-        <div className="textfield-4">
-          <input
-            type="date"
-            className="date-input"
-            value={selectedDate}
-            onChange={(e) => setSelectedDate(e.target.value)} // Update state on date change
-          />
+          <div className="textfield-4">
+            <input
+              type="date"
+              className="date-input"
+              value={selectedDate}
+              onChange={(e) => setSelectedDate(e.target.value)} // Update state on date change
+            />
+          </div>
         </div>
-      </div>
 
         <div className="overlap-group-2">
           <div className="textbox-8">
             <div className="text-wrapper-2">Number of Players</div>
 
             <div className="textfield-5">
-            <input
-              type="number"
-              value={playerCount}
-              min="1"
-              max="20" // Optionally set a max limit
-              onChange={handlePlayerCountChange}
-              className="player-count-input"
-            />
+              <input
+                type="number"
+                value={playerCount}
+                min="1"
+                max="20" // Optionally set a max limit
+                onChange={handlePlayerCountChange}
+                className="player-count-input"
+              />
             </div>
           </div>
 
@@ -267,16 +328,40 @@ export const CreateGame = () => {
 
         <div className="textbox-9">
           <div className="text-wrapper-10">Time</div>
-
           <div className="textfield-time">
-          <input
-            type="time"
-            className="time-input"
-            value={selectedTime}
-            step="900" // Set time intervals to 15 minutes
-            onChange={(e) => setSelectedTime(e.target.value)} // Update state on time change
-            
-          />
+            <div className="time-input-container">
+              <select
+                className="time-input hour"
+                value={selectedHour}
+                onChange={(e) => setSelectedHour(e.target.value)}
+              >
+                {generateHours().map((hour) => (
+                  <option key={hour} value={hour}>
+                    {hour}
+                  </option>
+                ))}
+              </select>
+              <span className="time-separator">:</span>
+              <select
+                className="time-input minute"
+                value={selectedMinute}
+                onChange={(e) => setSelectedMinute(e.target.value)}
+              >
+                {generateMinutes().map((minute) => (
+                  <option key={minute} value={minute}>
+                    {minute}
+                  </option>
+                ))}
+              </select>
+              <select
+                className="time-input period"
+                value={selectedPeriod}
+                onChange={(e) => setSelectedPeriod(e.target.value)}
+              >
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+              </select>
+            </div>
           </div>
         </div>
 

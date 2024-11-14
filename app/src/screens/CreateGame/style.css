@@ -7,7 +7,7 @@
 
 .create-game .container {
   background-color: #fffffe;
-   border: 1px solid #f9fbfd;
+  border: 1px solid #f9fbfd;
   border-color: #f9fbfd;
   border-radius: 6px;
   box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
@@ -63,42 +63,53 @@
   width: 449px;
 }
 
-  .create-game .input-additional-notes {
-    background-color: #fffffe;
-    border: 1px solid #adb6c5; /* Match border color */
-    border-radius: 6px; /* Same border radius */
-    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f; /* Same shadow */
-    width: 100%; /* Full width to fit container */
-    height: calc(100% - 0px); /* Height adjustment for padding */
-    padding: 10px; /* Padding to match div-wrapper */
-    font-family: "Inter", Helvetica;
-    font-size: 15px;
-    color: #434343; /* Text color */
-    outline: none;
-    box-sizing: border-box; /* Include padding in width calculation */
-    resize: none; /* Prevent resizing if it's a <textarea> */
-  }
-  
-  /* Placeholder styling for the additional notes input */
-  .create-game .input-additional-notes::placeholder {
-    color: #adb6c5;
-  }
+.create-game .input-additional-notes {
+  background-color: #fffffe;
+  border: 1px solid #adb6c5;
+  /* Match border color */
+  border-radius: 6px;
+  /* Same border radius */
+  box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+  /* Same shadow */
+  width: 100%;
+  /* Full width to fit container */
+  height: calc(100% - 0px);
+  /* Height adjustment for padding */
+  padding: 10px;
+  /* Padding to match div-wrapper */
+  font-family: "Inter", Helvetica;
+  font-size: 15px;
+  color: #434343;
+  /* Text color */
+  outline: none;
+  box-sizing: border-box;
+  /* Include padding in width calculation */
+  resize: none;
+  /* Prevent resizing if it's a <textarea> */
+}
+
+/* Placeholder styling for the additional notes input */
+.create-game .input-additional-notes::placeholder {
+  color: #adb6c5;
+}
 
 
-  .create-game .input-player-names {
-    width: 90%;
-    height: 99%;
-    border: none;
-    outline: none;
-    padding: 10px 20px;
-    font-family: "Inter", Helvetica;
-    font-size: 16px;
-    color: #434343; /* Input text color */
-  }
-  
-  .create-game .input-player-names::placeholder {
-    color: #adb6c5; /* Placeholder color */
-  }
+.create-game .input-player-names {
+  width: 90%;
+  height: 99%;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  color: #434343;
+  /* Input text color */
+}
+
+.create-game .input-player-names::placeholder {
+  color: #adb6c5;
+  /* Placeholder color */
+}
 
 .create-game .div {
   color: #adb6c5;
@@ -147,14 +158,18 @@
   border: 1px solid #bcc1ca;
   border-radius: 6px;
   height: 48px;
-  width: 100%; /* Adjust width to fill container */
+  width: 100%;
+  /* Adjust width to fill container */
   padding: 0 10px;
   font-family: "Inter", Helvetica;
   font-size: 16px;
-  color: #434343; /* Text color */
+  color: #434343;
+  /* Text color */
   outline: none;
-  text-align: center; /* Center text within the box */
+  text-align: center;
+  /* Center text within the box */
 }
+
 .create-game .dropdown-arrow {
   cursor: pointer;
   margin-left: 10px;
@@ -264,6 +279,7 @@
   top: 26px;
   width: 449px;
 }
+
 .create-game .dropdown-arrow {
   cursor: pointer;
   margin-left: 10px;
@@ -352,11 +368,13 @@
   background-color: #fffffe;
   border: 1px solid #434343;
   border-radius: 6px;
-  width: 100%; /* Match width with text box */
+  width: 100%;
+  /* Match width with text box */
   max-height: 150px;
   overflow-y: auto;
   z-index: 10;
-  top: 100%; /* Position dropdown below the text box */
+  top: 100%;
+  /* Position dropdown below the text box */
 }
 
 .create-game .groupchat-dropdown-item {
@@ -375,6 +393,7 @@
   right: 15px;
   cursor: pointer;
 }
+
 .create-game .image-2 {
   height: 17px;
   left: 419px;
@@ -438,18 +457,22 @@
   top: 26px;
   width: 221px;
 }
+
 .create-game .skill-dropdown-menu {
   position: absolute;
   background-color: #fffffe;
   border: 1px solid #434343;
   border-radius: 6px;
   margin-top: 10px;
-  width: 220px; /* Adjust width to match text box */
+  width: 220px;
+  /* Adjust width to match text box */
   max-height: 150px;
   overflow-y: auto;
   z-index: 1000;
-  left: 259px; /* Positioning relative to .overlap-3 */
-  top: 50%; /* Position dropdown below the input */
+  left: 259px;
+  /* Positioning relative to .overlap-3 */
+  top: 50%;
+  /* Position dropdown below the input */
 }
 
 .create-game .skill-dropdown-item {
@@ -502,8 +525,10 @@
   top: 26px;
   width: 218px;
 }
+
 .create-game .textfield-4 {
-  position: relative; /* Adjust position to contain the input */
+  position: relative;
+  /* Adjust position to contain the input */
 }
 
 .create-game .date-input {
@@ -511,16 +536,19 @@
   border: 1px solid #adb6c5;
   border-radius: 6px;
   height: 50px;
-  width: 100%; /* Set width to full container */
+  width: 100%;
+  /* Set width to full container */
   padding: 0 10px;
   font-family: "Inter", Helvetica;
   font-size: 16px;
-  color: #434343; /* Text color for the selected date */
+  color: #434343;
+  /* Text color for the selected date */
   outline: none;
 }
 
 .create-game .date-input::placeholder {
-  color: #adb6c5; /* Placeholder color */
+  color: #adb6c5;
+  /* Placeholder color */
 }
 
 .create-game .text-wrapper-9 {
@@ -619,25 +647,48 @@
 }
 
 .create-game .textfield- {
-  position: relative;  
- } 
- 
+  position: relative;
+}
+
+
+.create-game .time-input-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
+  height: 100%;
+}
 
 .create-game .time-input {
-  background-color: #fffffe;
-  border: 1px solid #bcc1ca;
-  border-radius: 4px;
-  height: 50px;
-  width: 100%; /* Set width to full container */
-  padding: 0 10px;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  color: #434343;
   font-family: "Inter", Helvetica;
   font-size: 16px;
-  color: #434343; /* Text color for the selected time */
+  padding: 4px;
+  cursor: pointer;
   outline: none;
 }
 
-.create-game .time-input::placeholder {
-  color: #adb6c5; /* Placeholder color if needed */
+.create-game .time-input:hover {
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+.create-game .time-input.hour,
+.create-game .time-input.minute {
+  width: 45px;
+}
+
+.create-game .time-input.period {
+  width: 55px;
+}
+
+.create-game .time-separator {
+  color: #434343;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
 }
 
 .create-game .text-2 {
