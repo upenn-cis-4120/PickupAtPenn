@@ -1,5 +1,3 @@
-
-
 .group-availability {
     background-color: #f9fbfd;
     display: flex;
@@ -14,6 +12,76 @@
     position: absolute;
     top: 4px;
     width: 384px;
+  }
+
+
+  .header-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: -22px;
+  }
+
+  .grid-cell {
+    position: relative;
+    height: 30px;
+    border: 1px solid #eee;
+    background-color: #f9f9f9;
+    transition: background-color 0.2s;
+  }
+  
+  .grid-cell[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 50%;
+    top: -30px;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 10;
+  }
+  
+  /* Add a small arrow to the tooltip */
+  .grid-cell[data-tooltip]:hover::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -6px;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+    z-index: 10;
+  }
+  
+  .sport-selector {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    color: #2d3f70;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .sport-selector:hover {
+    border-color: #2d3f70;
+  }
+  
+  .sport-selector:focus {
+    outline: none;
+    border-color: #2d3f70;
+    box-shadow: 0 0 0 2px rgba(45, 63, 112, 0.1);
   }
 
   .group-availability .text-wrapper-menu {
@@ -41,6 +109,161 @@
     top: 14px;
     white-space: nowrap;
   }
+  .availability-grid {
+  position: relative;
+  margin: 40px 20px;
+  padding-left: 60px; /* Space for time labels */
+  padding-top: 30px; /* Space for day labels */
+}
+
+.availability-grid {
+  position: relative;
+  margin: 40px 20px;
+  padding-left: 60px; /* Space for time labels */
+  padding-top: 30px; /* Space for day labels */
+}
+
+.time-labels {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 60px;
+}
+
+.time-label {
+  height: 30px;
+  font-size: 12px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.day-labels {
+  position: absolute;
+  top: 0;
+  left: 60px;
+  right: 0;
+  display: flex;
+}
+
+.day-label {
+  flex: 1;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.grid {
+  display: flex;
+  border: 1px solid #ddd;
+}
+
+.day-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-cell {
+  height: 30px;
+  border: 1px solid #eee;
+  background-color: #f9f9f9;
+  transition: background-color 0.2s;
+}
+
+/* Different shades based on number of events */
+.grid-cell.busy-1 {
+  background-color: rgba(54, 77, 125, 0.4); /* Increased from 0.2 */
+}
+
+.grid-cell.busy-2 {
+  background-color: rgba(54, 77, 125, 0.6); /* Increased from 0.4 */
+}
+
+.grid-cell.busy-3 {
+  background-color: rgba(54, 77, 125, 0.8); /* Increased from 0.6 */
+}
+
+.grid-cell.busy-4 {
+  background-color: rgba(54, 77, 125, 1.0); /* Increased from 0.8 to full opacity */
+}
+
+/* Update container styles */
+.container-2, .container-4 {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin: 20px;
+  padding: 20px;
+  width: 800px;
+}
+
+.time-labels {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 60px;
+}
+
+.time-label {
+  height: 30px;
+  font-size: 12px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.day-labels {
+  position: absolute;
+  top: 0;
+  left: 60px;
+  right: 0;
+  display: flex;
+}
+
+.day-label {
+  flex: 1;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.grid {
+  display: flex;
+  border: 1px solid #ddd;
+}
+
+.day-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-cell {
+  height: 30px;
+  border: 1px solid #eee;
+  background-color: #f9f9f9;
+  transition: background-color 0.2s;
+}
+
+.grid-cell.busy {
+  background-color: #091e57;
+  opacity: 0.7;
+}
+
+/* Update container styles */
+.container-2, .container-4 {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin: 20px;
+  padding: 20px;
+  width: 800px;
+}
   
   .group-availability .frame-3 {
     border-radius: 6px;
@@ -61,6 +284,7 @@
     top: 0;
     width: 65px;
   }
+  
   
   
   
@@ -209,6 +433,8 @@
     position: absolute;
     top: 21px;
     white-space: nowrap;
+    margin: 0;
+    position: static;  /* Override absolute positioning */
   }
   
   .group-availability .overlap-2 {
@@ -759,1448 +985,7 @@
     width: 77px;
   }
   
-  .group-availability .rectangle-5 {
-    background-color: #364d7d9c;
-    border: 0px none;
-    height: 33px;
-    left: 112px;
-    position: absolute;
-    top: 413px;
-    width: 77px;
-  }
   
-  .group-availability .rectangle-6 {
-    background-color: #364d7d2b;
-    border: 0px none;
-    height: 33px;
-    left: 112px;
-    position: absolute;
-    top: 447px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-7 {
-    background-color: #364d7d38;
-    border: 0px none;
-    height: 33px;
-    left: 112px;
-    position: absolute;
-    top: 481px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-8 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 112px;
-    position: absolute;
-    top: 515px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-9 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 112px;
-    position: absolute;
-    top: 549px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-10 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 112px;
-    position: absolute;
-    top: 583px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-11 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 112px;
-    position: absolute;
-    top: 617px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-12 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 112px;
-    position: absolute;
-    top: 651px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-13 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 112px;
-    position: absolute;
-    top: 719px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-14 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 112px;
-    position: absolute;
-    top: 753px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-15 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 112px;
-    position: absolute;
-    top: 821px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-16 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 112px;
-    position: absolute;
-    top: 855px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-17 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 112px;
-    position: absolute;
-    top: 685px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-18 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 112px;
-    position: absolute;
-    top: 787px;
-    width: 77px;
-  }
-  
-  .group-availability .overlap-7 {
-    height: 36px;
-    left: 112px;
-    position: absolute;
-    top: 889px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-19 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-20 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 0;
-    position: absolute;
-    top: 3px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-21 {
-    background-color: #364d7d9c;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 112px;
-    position: absolute;
-    top: 277px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-22 {
-    background-color: #364d7d9c;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 112px;
-    position: absolute;
-    top: 311px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-23 {
-    background-color: #364d7d9c;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 112px;
-    position: absolute;
-    top: 346px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-24 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 112px;
-    position: absolute;
-    top: 380px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-25 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 355px;
-    position: absolute;
-    top: 242px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-26 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 355px;
-    position: absolute;
-    top: 446px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-27 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 355px;
-    position: absolute;
-    top: 481px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-28 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 355px;
-    position: absolute;
-    top: 277px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-29 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 355px;
-    position: absolute;
-    top: 311px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-30 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 355px;
-    position: absolute;
-    top: 346px;
-    width: 77px;
-  }
-  
-  .group-availability .overlap-8 {
-    height: 64px;
-    left: 355px;
-    position: absolute;
-    top: 381px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-31 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-32 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 0;
-    position: absolute;
-    top: 31px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-33 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 274px;
-    position: absolute;
-    top: 242px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-34 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 274px;
-    position: absolute;
-    top: 446px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-35 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 274px;
-    position: absolute;
-    top: 481px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-36 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 274px;
-    position: absolute;
-    top: 278px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-37 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 274px;
-    position: absolute;
-    top: 312px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-38 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 274px;
-    position: absolute;
-    top: 347px;
-    width: 77px;
-  }
-  
-  .group-availability .overlap-9 {
-    height: 64px;
-    left: 274px;
-    position: absolute;
-    top: 381px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-39 {
-    background-color: #364d7d52;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-40 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 437px;
-    position: absolute;
-    top: 242px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-41 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 436px;
-    position: absolute;
-    top: 446px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-42 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 437px;
-    position: absolute;
-    top: 481px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-43 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 437px;
-    position: absolute;
-    top: 277px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-44 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 437px;
-    position: absolute;
-    top: 311px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-45 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 437px;
-    position: absolute;
-    top: 346px;
-    width: 77px;
-  }
-  
-  .group-availability .overlap-10 {
-    height: 64px;
-    left: 437px;
-    position: absolute;
-    top: 381px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-46 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 193px;
-    position: absolute;
-    top: 242px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-47 {
-    background-color: #364d7da6;
-    border: 0px none;
-    height: 33px;
-    left: 193px;
-    position: absolute;
-    top: 446px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-48 {
-    background-color: #364d7da8;
-    border: 0px none;
-    height: 33px;
-    left: 193px;
-    position: absolute;
-    top: 480px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-49 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 193px;
-    position: absolute;
-    top: 276px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-50 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 193px;
-    position: absolute;
-    top: 310px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-51 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 193px;
-    position: absolute;
-    top: 345px;
-    width: 77px;
-  }
-  
-  .group-availability .overlap-11 {
-    height: 64px;
-    left: 193px;
-    position: absolute;
-    top: 381px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-52 {
-    background-color: #6f80a24a;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 0;
-    position: absolute;
-    top: 31px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-53 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 355px;
-    position: absolute;
-    top: 514px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-54 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 355px;
-    position: absolute;
-    top: 549px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-55 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 355px;
-    position: absolute;
-    top: 583px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-56 {
-    background-color: #364d7d59;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 355px;
-    position: absolute;
-    top: 618px;
-    width: 77px;
-  }
-  
-  .group-availability .overlap-12 {
-    height: 65px;
-    left: 355px;
-    position: absolute;
-    top: 653px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-57 {
-    background-color: #364d7d59;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-58 {
-    background-color: #364d7d99;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 0;
-    position: absolute;
-    top: 32px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-59 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 274px;
-    position: absolute;
-    top: 514px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-60 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 274px;
-    position: absolute;
-    top: 550px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-61 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 274px;
-    position: absolute;
-    top: 584px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-62 {
-    background-color: #364d7d59;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 274px;
-    position: absolute;
-    top: 619px;
-    width: 77px;
-  }
-  
-  .group-availability .overlap-13 {
-    height: 65px;
-    left: 274px;
-    position: absolute;
-    top: 653px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-63 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 437px;
-    position: absolute;
-    top: 514px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-64 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 437px;
-    position: absolute;
-    top: 549px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-65 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 437px;
-    position: absolute;
-    top: 583px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-66 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 437px;
-    position: absolute;
-    top: 618px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-67 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 437px;
-    position: absolute;
-    top: 653px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-68 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 193px;
-    position: absolute;
-    top: 514px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-69 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 193px;
-    position: absolute;
-    top: 548px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-70 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 193px;
-    position: absolute;
-    top: 582px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-71 {
-    background-color: #364d7d59;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 193px;
-    position: absolute;
-    top: 617px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-72 {
-    background-color: #364d7d59;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 193px;
-    position: absolute;
-    top: 653px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-73 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 193px;
-    position: absolute;
-    top: 686px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-74 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 193px;
-    position: absolute;
-    top: 720px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-75 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 193px;
-    position: absolute;
-    top: 754px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-76 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 193px;
-    position: absolute;
-    top: 788px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-77 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 193px;
-    position: absolute;
-    top: 822px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-78 {
-    background-color: #364d7d99;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 355px;
-    position: absolute;
-    top: 721px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-79 {
-    background-color: #364d7d99;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 355px;
-    position: absolute;
-    top: 755px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-80 {
-    background-color: #364d7d99;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 355px;
-    position: absolute;
-    top: 790px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-81 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 355px;
-    position: absolute;
-    top: 824px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-82 {
-    background-color: #364d7d99;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 274px;
-    position: absolute;
-    top: 719px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-83 {
-    background-color: #364d7d99;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 274px;
-    position: absolute;
-    top: 753px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-84 {
-    background-color: #364d7d99;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 274px;
-    position: absolute;
-    top: 788px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-85 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 274px;
-    position: absolute;
-    top: 824px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-86 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 438px;
-    position: absolute;
-    top: 688px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-87 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 438px;
-    position: absolute;
-    top: 722px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-88 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 438px;
-    position: absolute;
-    top: 756px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-89 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 438px;
-    position: absolute;
-    top: 790px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-90 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 438px;
-    position: absolute;
-    top: 824px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-91 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 355px;
-    position: absolute;
-    top: 857px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-92 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 274px;
-    position: absolute;
-    top: 857px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-93 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 436px;
-    position: absolute;
-    top: 857px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-94 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 193px;
-    position: absolute;
-    top: 857px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-95 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 355px;
-    position: absolute;
-    top: 892px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-96 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 274px;
-    position: absolute;
-    top: 892px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-97 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 437px;
-    position: absolute;
-    top: 892px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-98 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 193px;
-    position: absolute;
-    top: 891px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-99 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 600px;
-    position: absolute;
-    top: 242px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-100 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 600px;
-    position: absolute;
-    top: 446px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-101 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 600px;
-    position: absolute;
-    top: 481px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-102 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 600px;
-    position: absolute;
-    top: 277px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-103 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 600px;
-    position: absolute;
-    top: 311px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-104 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 600px;
-    position: absolute;
-    top: 346px;
-    width: 77px;
-  }
-  
-  .group-availability .overlap-group-2 {
-    height: 64px;
-    left: 600px;
-    position: absolute;
-    top: 381px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-105 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 518px;
-    position: absolute;
-    top: 446px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-106 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 518px;
-    position: absolute;
-    top: 481px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-107 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 517px;
-    position: absolute;
-    top: 277px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-108 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 517px;
-    position: absolute;
-    top: 311px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-109 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 517px;
-    position: absolute;
-    top: 346px;
-    width: 77px;
-  }
-  
-  .group-availability .overlap-14 {
-    height: 64px;
-    left: 518px;
-    position: absolute;
-    top: 381px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-110 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 600px;
-    position: absolute;
-    top: 687px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-111 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 600px;
-    position: absolute;
-    top: 723px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-112 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 600px;
-    position: absolute;
-    top: 757px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-113 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 600px;
-    position: absolute;
-    top: 792px;
-    width: 77px;
-  }
-  
-  .group-availability .overlap-15 {
-    height: 64px;
-    left: 600px;
-    position: absolute;
-    top: 826px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-114 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 0;
-    position: absolute;
-    top: 31px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-115 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 519px;
-    position: absolute;
-    top: 687px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-116 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 519px;
-    position: absolute;
-    top: 721px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-117 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 519px;
-    position: absolute;
-    top: 755px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-118 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 519px;
-    position: absolute;
-    top: 790px;
-    width: 77px;
-  }
-  
-  .group-availability .overlap-16 {
-    height: 64px;
-    left: 518px;
-    position: absolute;
-    top: 826px;
-    width: 78px;
-  }
-  
-  .group-availability .rectangle-119 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 1px;
-    position: absolute;
-    top: 0;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-120 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 518px;
-    position: absolute;
-    top: 515px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-121 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 518px;
-    position: absolute;
-    top: 550px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-122 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 599px;
-    position: absolute;
-    top: 515px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-123 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 600px;
-    position: absolute;
-    top: 550px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-124 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 518px;
-    position: absolute;
-    top: 583px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-125 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 518px;
-    position: absolute;
-    top: 618px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-126 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 518px;
-    position: absolute;
-    top: 652px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-127 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 600px;
-    position: absolute;
-    top: 583px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-128 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 600px;
-    position: absolute;
-    top: 618px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-129 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 600px;
-    position: absolute;
-    top: 652px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-130 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 600px;
-    position: absolute;
-    top: 892px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-131 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 518px;
-    position: absolute;
-    top: 892px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-132 {
-    background-color: #364d7d;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 13px;
-    left: 432px;
-    position: absolute;
-    top: 73px;
-    width: 90px;
-  }
   .group-availability .container-3 {
     background-color: #f9fbfd;
     border: 0px none;
@@ -3668,165 +2453,6 @@
     width: 77px;
   }
   
-  .group-availability .rectangle-216 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 363px;
-    position: absolute;
-    top: 795px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-217 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 363px;
-    position: absolute;
-    top: 829px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-218 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 282px;
-    position: absolute;
-    top: 724px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-219 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 282px;
-    position: absolute;
-    top: 758px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-220 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 282px;
-    position: absolute;
-    top: 793px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-221 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 282px;
-    position: absolute;
-    top: 829px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-222 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 446px;
-    position: absolute;
-    top: 693px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-223 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 446px;
-    position: absolute;
-    top: 727px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-224 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 446px;
-    position: absolute;
-    top: 761px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-225 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 446px;
-    position: absolute;
-    top: 795px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-226 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 446px;
-    position: absolute;
-    top: 829px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-227 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 608px;
-    position: absolute;
-    top: 692px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-228 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 608px;
-    position: absolute;
-    top: 728px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-229 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 608px;
-    position: absolute;
-    top: 762px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-230 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 608px;
-    position: absolute;
-    top: 797px;
-    width: 77px;
-  }
   
   .group-availability .overlap-29 {
     height: 64px;
@@ -3836,263 +2462,7 @@
     width: 77px;
   }
   
-  .group-availability .rectangle-231 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 527px;
-    position: absolute;
-    top: 692px;
-    width: 77px;
-  }
   
-  .group-availability .rectangle-232 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 527px;
-    position: absolute;
-    top: 726px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-233 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 527px;
-    position: absolute;
-    top: 760px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-234 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 527px;
-    position: absolute;
-    top: 795px;
-    width: 77px;
-  }
-  
-  .group-availability .overlap-30 {
-    height: 64px;
-    left: 526px;
-    position: absolute;
-    top: 831px;
-    width: 78px;
-  }
-  
-  .group-availability .rectangle-235 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 608px;
-    position: absolute;
-    top: 897px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-236 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 363px;
-    position: absolute;
-    top: 862px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-237 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 363px;
-    position: absolute;
-    top: 897px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-238 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 282px;
-    position: absolute;
-    top: 862px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-239 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 282px;
-    position: absolute;
-    top: 897px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-240 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 444px;
-    position: absolute;
-    top: 862px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-241 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 445px;
-    position: absolute;
-    top: 897px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-242 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 526px;
-    position: absolute;
-    top: 897px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-243 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 201px;
-    position: absolute;
-    top: 862px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-244 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 201px;
-    position: absolute;
-    top: 896px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-245 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 526px;
-    position: absolute;
-    top: 520px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-246 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 526px;
-    position: absolute;
-    top: 555px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-247 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 607px;
-    position: absolute;
-    top: 520px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-248 {
-    background-color: #364d7d;
-    border: 0px none;
-    height: 33px;
-    left: 608px;
-    position: absolute;
-    top: 555px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-249 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 526px;
-    position: absolute;
-    top: 588px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-250 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 526px;
-    position: absolute;
-    top: 623px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-251 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 526px;
-    position: absolute;
-    top: 657px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-252 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 608px;
-    position: absolute;
-    top: 588px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-253 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 608px;
-    position: absolute;
-    top: 623px;
-    width: 77px;
-  }
-  
-  .group-availability .rectangle-254 {
-    background-color: #6f80a214;
-    border: 1px solid;
-    border-color: #bdc1ca;
-    height: 33px;
-    left: 608px;
-    position: absolute;
-    top: 657px;
-    width: 77px;
-  }
   
   .group-availability .container-27 {
     background-color: #f9fbfd;
@@ -4226,7 +2596,7 @@
     height: 937px;
     left: 728px;
     position: absolute;
-    top: 73px;
+    top: 70px;
     width: 700px;
   }
   

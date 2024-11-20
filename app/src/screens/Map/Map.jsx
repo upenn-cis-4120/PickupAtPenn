@@ -31,6 +31,16 @@ export const Map = () => {
         position: [39.954, -75.1970],
         description: 'A state-of-the-art, 120,000-square-foot recreation facility serving the Penn community, offering fitness equipment, basketball courts, a climbing wall, and more.',
       },
+      {
+        name: 'Penn Squash Center',
+        position: [39.9503, -75.1885],
+        description: 'The newly renovated Penn Squash Center boosts 12 international squash courts, including a pair of championship glass-wall courts. Towels, showers and day lockers are available for use. Penn Squash Center is open to the Penn and local Philadelphia community.'
+      },
+      {
+        name: 'Class of 1923 Ice Rink',
+        position: [39.9517898, -75.1871317],
+        description: 'The Class of 1923 Ice Rink is home to the Penn men\'s and women\'s ice hockey teams, featuring a 200-seat capacity seating bowl, a 100-seat club level, and a 200-square-foot pro shop.'
+      }
     ];
 
     const sportsIcon = L.icon({
