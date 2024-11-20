@@ -175,7 +175,7 @@ export const Home = () => {
         <div className="text-wrapper-13">Edit</div>
       </div>
 
-      <div className="overlap-2">
+      {/* <div className="overlap-2">
         <div className="textbox">
           <div className="text-wrapper-14">My Chats</div>
 
@@ -190,8 +190,40 @@ export const Home = () => {
           src="https://c.animaapp.com/RqvJyPyX/img/image-26@2x.png"
         />
       </div>
+      <div className="textbox-2">
+        <div className="text-wrapper-22">Soccer Group</div>
 
-      // Remove all the individual containers (5-10) and replace with:
+        <img
+          className="soccer-ball"
+          alt="Soccer ball"
+          src="https://c.animaapp.com/RqvJyPyX/img/soccer-ball.svg"
+        />
+      </div> */}
+      <div className="chat-overlap-4">
+        <div className="chat-textbox-10">
+          <div className="chat-textfield-7">
+            <div className="chat-text-wrapper-19">Basketball Group</div>
+          </div>
+
+          <div className="chat-text-wrapper-20">My Chats</div>
+        </div>
+
+        <img
+          className="basketball"
+          alt="Basketball"
+          src="https://c.animaapp.com/RqvJyPyX/img/image-26@2x.png"
+        />
+      </div>
+      <div className="chat-textbox-11">
+        <div className="chat-text-wrapper-23">Soccer Group</div>
+
+        <img
+          className="soccer"
+          alt="Ecology"
+          src="https://c.animaapp.com/RqvJyPyX/img/soccer-ball.svg"
+        />
+      </div>
+
 <div className="container-upcoming-games">
   {calendarEvents
     .filter(event => event.summary?.startsWith('PICKUP:'))
@@ -213,15 +245,7 @@ export const Home = () => {
   })}
 </div>
 
-      <div className="textbox-2">
-        <div className="text-wrapper-22">Soccer Group</div>
-
-        <img
-          className="soccer-ball"
-          alt="Soccer ball"
-          src="https://c.animaapp.com/RqvJyPyX/img/soccer-ball.svg"
-        />
-      </div>
+      
       <Link to="/create-game">
       <button className="button-4">
         <div className="text-wrapper-23">Create New Game</div>

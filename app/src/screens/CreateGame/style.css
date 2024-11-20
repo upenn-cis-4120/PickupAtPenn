@@ -490,18 +490,7 @@
   background-color: #f0f0f0;
 }
 
-.create-game .text-wrapper-8 {
-  color: #343434;
-  font-family: "Inter", Helvetica;
-  font-size: 16px;
-  font-weight: 400;
-  left: 20px;
-  letter-spacing: 0;
-  line-height: 26px;
-  position: absolute;
-  top: 12px;
-  white-space: nowrap;
-}
+
 
 .create-game .image-3 {
   height: 16px;
@@ -739,18 +728,30 @@
   all: unset;
   background-color: #091e57;
   border: 1px solid;
-  border-color: transparent;
+  border-color: #485782;
   border-radius: 8px;
   box-sizing: border-box;
   height: 42px;
-  left: 25px;
+  left: 23px;
   overflow: hidden;
   position: absolute;
   top: 205px;
-  width: 127px;
+  width: 128px;
 }
 
 .create-game .text-wrapper-12 {
+  color: #e0e2e9;
+  font-family: "Inter", Helvetica;
+  font-size: 15px;
+  font-weight: 400;
+  left: 28px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 8px;
+  white-space: nowrap;
+}
+.create-game .text-wrapper-8 {
   color: #d8dbe4;
   font-family: "Inter", Helvetica;
   font-size: 16px;
@@ -762,16 +763,27 @@
   top: 7px;
   white-space: nowrap;
 }
+.create-game .img-wrapper {
+  background-color: #ced0f8;
+  border: 0px none;
+  border-radius: 32px;
+  height: 64px;
+  left: 21px;
+  overflow: hidden;
+  position: absolute;
+  top: 73px;
+  width: 64px;
+}
 
 .create-game .avatar {
   background-color: #ced0f8;
   border: 0px none;
   border-radius: 32px;
   height: 64px;
-  left: 23px;
+  left: 21px;
   overflow: hidden;
   position: absolute;
-  top: 74px;
+  top: 73px;
   width: 64px;
 }
 
@@ -791,7 +803,7 @@
   border-radius: 8px;
   box-sizing: border-box;
   height: 42px;
-  left: 166px;
+  left: 165px;
   overflow: hidden;
   position: absolute;
   top: 205px;
@@ -799,78 +811,78 @@
 }
 
 .create-game .text-wrapper-13 {
-  color: #ebd7d6;
+  color: #fefffe;
   font-family: "Inter", Helvetica;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
-  left: 24px;
+  left: 26px;
   letter-spacing: 0;
-  line-height: 26px;
+  line-height: 24px;
   position: absolute;
-  top: 7px;
+  top: 8px;
   white-space: nowrap;
 }
 
 .create-game .text-wrapper-14 {
-  color: #1f1f1f;
+  color: #000000;
   font-family: "Archivo", Helvetica;
   font-size: 20px;
   font-weight: 700;
-  left: 25px;
+  left: 24px;
   letter-spacing: 0;
   line-height: 30px;
   position: absolute;
-  top: 23px;
+  top: 22px;
   white-space: nowrap;
 }
 
 .create-game .text-wrapper-15 {
-  color: #282828;
+  color: #1b1b1b;
   font-family: "Inter", Helvetica;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
-  left: 25px;
+  left: 24px;
   letter-spacing: 0;
-  line-height: 28px;
+  line-height: 22px;
   position: absolute;
   top: 161px;
   white-space: nowrap;
 }
 
 .create-game .text-wrapper-16 {
-  color: #282828;
+  color: #212121;
   font-family: "Inter", Helvetica;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 400;
-  left: 110px;
+  left: 109px;
   letter-spacing: 0;
-  line-height: 26px;
+  line-height: 24px;
   position: absolute;
-  top: 83px;
+  top: 81px;
   white-space: nowrap;
 }
 
 .create-game .text-wrapper-17 {
-  color: #9a9a9a;
+  color: #868686;
   font-family: "Inter", Helvetica;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 400;
-  left: 110px;
+  left: 109px;
   letter-spacing: 0;
-  line-height: 26px;
+  line-height: 24px;
   position: absolute;
   top: 109px;
   white-space: nowrap;
 }
 
 .create-game .text-wrapper-18 {
-  color: #54628a;
+  color: #2d3f70;
   font-family: "Inter", Helvetica;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 400;
-  left: 296px;
+  left: 295px;
   letter-spacing: 0;
-  line-height: 26px;
+  line-height: 24px;
   position: absolute;
   top: 25px;
   white-space: nowrap;
@@ -897,7 +909,7 @@
   border: 1px solid;
   border-color: #d9e4e5;
   border-radius: 8px;
-  height: 73px;
+  height: 70px;
   left: -1px;
   position: absolute;
   top: 30px;
@@ -930,11 +942,11 @@
   white-space: nowrap;
 }
 
-.create-game .image-5 {
+.create-game .basketball {
   height: 33px;
   left: 9px;
   position: absolute;
-  top: 51px;
+  top: 48px;
   width: 33px;
 }
 
@@ -1152,7 +1164,7 @@
   border-color: #e4ebed;
   border-radius: 12px;
   height: 64px;
-  left: 9px;
+  left: 15px;
   position: absolute;
   top: 513px;
   width: 356px;
@@ -1163,7 +1175,7 @@
   font-family: "Inter", Helvetica;
   font-size: 16px;
   font-weight: 400;
-  left: 59px;
+  left: 50px;
   letter-spacing: 0;
   line-height: 26px;
   position: absolute;
@@ -1171,9 +1183,9 @@
   white-space: nowrap;
 }
 
-.create-game .ecology {
+.create-game .soccer {
   height: 31px;
-  left: 20px;
+  left: 10px;
   position: absolute;
   top: 16px;
   width: 31px;
@@ -1208,13 +1220,13 @@
 }
 
 .create-game .text-wrapper-25 {
-  color: #213468;
+  color: #172b61;
   font-family: "Archivo", Helvetica;
-  font-size: 26px;
+  font-size: 27px;
   font-weight: 700;
   left: 63px;
   letter-spacing: 0;
-  line-height: 40px;
+  line-height: 42px;
   position: absolute;
   top: 8px;
   white-space: nowrap;
@@ -1237,7 +1249,7 @@
   height: 43px;
   left: 12px;
   position: absolute;
-  top: 12px;
+  top: 10px;
   width: 42px;
 }
 
@@ -1302,4 +1314,42 @@
   position: absolute;
   top: 15px;
   white-space: nowrap;
+}
+.sport {
+  color: #2d2d2d;
+  font-family: "Inter", Helvetica;
+  font-size: 15px;
+  font-weight: 400;
+  padding-left: 5px;
+  position: relative;
+}
+
+.event-details {
+  color: #8e8e8e;
+  font-family: "Inter", Helvetica;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-left: 5px;
+  position: relative;
+}
+
+.event-item {
+  padding: 15px;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between sport name and details */
+}
+.create-game .profile-container {
+  background-color: #fefffe;
+  border: 1px solid;
+  border-color: #d1dedf;
+  border-radius: 8px;
+  box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+  height: 275px;
+  left: 23px;
+  position: absolute;
+  top: 98px;
+  width: 355px;
 }

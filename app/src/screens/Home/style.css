@@ -460,42 +460,46 @@
 
 .home .overlap-2 {
   height: 102px;
-  left: 23px;
+  left: 17px;
   position: absolute;
   top: 399px;
   width: 355px;
 }
 
 .home .textbox {
-  height: 102px;
-  left: 0;
+  background-color: #fffffe;
+  border: 1px solid;
+  border-color: #d9e4e5;
+  border-radius: 8px;
+  height: 73px;
+  left: -1px;
   position: absolute;
-  top: 0;
-  width: 355px;
+  top: 30px;
+  width: 356px;
 }
 
 .home .text-wrapper-14 {
-  color: #212121;
+  color: #282828;
   font-family: "Inter", Helvetica;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
   left: 0;
   letter-spacing: 0;
-  line-height: 24px;
+  line-height: 29px;
   position: absolute;
   top: -1px;
   white-space: nowrap;
 }
 
 .home .textfield {
-  background-color: #fefffe;
+  background-color: #fffffe;
   border: 1px solid;
-  border-color: #d1dedf;
+  border-color: #d9e4e5;
   border-radius: 8px;
-  height: 78px;
+  height: 73px;
   left: -1px;
   position: absolute;
-  top: 24px;
+  top: 30px;
   width: 356px;
 }
 
@@ -878,4 +882,100 @@
   line-height: 1.5;
   padding-left: 5px;
   position: relative;
+}
+
+
+.home .chat-overlap-4 {
+  height: 102px;
+  left: 17px;
+  position: absolute;
+  top: 399px;
+  width: 355px;
+}
+
+.home .chat-textbox-10 {
+  height: 102px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 355px;
+}
+
+.home .chat-textfield-7 {
+  background-color: #fffffe;
+  border: 1px solid;
+  border-color: #d9e4e5;
+  border-radius: 8px;
+  height: 70px;
+  left: -1px;
+  position: absolute;
+  top: 30px;
+  width: 356px;
+}
+
+.home .chat-text-wrapper-19 {
+  color: #343434;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 48px;
+  letter-spacing: 0;
+  line-height: 26px;
+  position: absolute;
+  top: 22px;
+  white-space: nowrap;
+}
+
+.home .chat-text-wrapper-20 {
+  color: #282828;
+  font-family: "Inter", Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 29px;
+  position: absolute;
+  top: -1px;
+  white-space: nowrap;
+}
+
+.home .chat-textbox-11 {
+  background-color: #fffffe;
+  border: 1px solid;
+  border-color: #e4ebed;
+  border-radius: 12px;
+  height: 64px;
+  left: 15px;
+  position: absolute;
+  top: 513px;
+  width: 356px;
+}
+
+.home .chat-text-wrapper-23 {
+  color: #3b3b3b;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 50px;
+  letter-spacing: 0;
+  line-height: 26px;
+  position: absolute;
+  top: 18px;
+  white-space: nowrap;
+}
+
+.home .soccer {
+  height: 31px;
+  left: 10px;
+  position: absolute;
+  top: 16px;
+  width: 31px;
+}
+
+.home .basketball {
+  height: 33px;
+  left: 9px;
+  position: absolute;
+  top: 48px;
+  width: 33px;
 }

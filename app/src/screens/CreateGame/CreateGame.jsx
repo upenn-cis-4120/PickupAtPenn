@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -29,6 +29,75 @@ export const CreateGame = () => {
   const [selectedHour, setSelectedHour] = useState("12");
   const [selectedMinute, setSelectedMinute] = useState("00");
   const [selectedPeriod, setSelectedPeriod] = useState("AM");
+
+  const location = useLocation();
+  const [games, setGames] = useState([
+    { id: 1, data: ["Pickup basketball game at Pottruck in 30 mins  3 spots left",  "https://c.animaapp.com/RqvJyPyX/img/rectangle-1@2x.png", "Colin Speaker", "@cspeaker -- 1 hr"]},
+    { id: 2, data: ["Penn Park fields are open and empty  Perfect for soccer.","https://c.animaapp.com/RqvJyPyX/img/rectangle@2x.png", "Angie Geralis", "@ageralis -- 5 hr"]}, 
+  ]);
+  const [calendarEvents, setCalendarEvents] = useState([]);
+
+  // Add these constants from Schedule.jsx
+  const CLIENT_ID = "7058040155-g739av7vkfgl73dbvk6mrkiadt6vdjs5.apps.googleusercontent.com";
+  const API_KEY = "AIzaSyBYdgzwDYfT95WAoyNEGH8BD2A7ZujvwCk";
+  const CALENDAR_ID = "f447f8579b4a1493049fbea49a613748677a5754a3ec46b076c57f08cc08d5ef@group.calendar.google.com";
+
+  // Function to initialize Google Calendar API
+  const initCalendar = () => {
+    gapi.load("client", () => {
+      gapi.client
+        .init({
+          apiKey: API_KEY,
+          clientId: CLIENT_ID,
+          discoveryDocs: ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"],
+        })
+        .then(() => {
+          fetchEvents();
+        })
+        .catch((err) => console.error("Error initializing calendar:", err));
+    });
+  };
+
+  // Function to fetch calendar events
+  const fetchEvents = () => {
+    gapi.client.calendar.events
+      .list({
+        calendarId: CALENDAR_ID,
+        timeMin: new Date().toISOString(),
+        showDeleted: false,
+        singleEvents: true,
+        maxResults: 7, // Limit to 7 events
+        orderBy: "startTime",
+      })
+      .then((response) => {
+        const events = response.result.items;
+        setCalendarEvents(events);
+      })
+      .catch((err) => console.error("Error fetching events:", err));
+  };
+
+  useEffect(() => {
+    initCalendar();
+  }, []); // Run once on component mount
+
+  // Your existing games useEffect
+  useEffect(() => {
+    if (location.state?.additionalNotes) {
+      setGames(prevGames => [
+        { id: Date.now(), data: [location.state.additionalNotes, "https://c.animaapp.com/RqvJyPyX/img/rectangle-2@2x.png", "Diana Lim", "@dianadl -- just now"] },
+        ...prevGames
+      ]);
+    }
+  }, [location.state]);
+
+  // Helper function to format date and time
+  const formatDateTime = (dateTimeString) => {
+    const date = new Date(dateTimeString);
+    return {
+      date: date.toLocaleDateString('en-US', { month: 'long', day: 'numeric' }),
+      time: date.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' })
+    };
+  };
 
   useEffect(() => {
     // Convert to 24-hour format for the input value
@@ -368,7 +437,7 @@ export const CreateGame = () => {
         <div className="text-wrapper-11">Additional Notes</div>
       </div>
 
-      <div className="container-2">
+      <div className="profile-container">
         <button className="button-2">
           <div className="text-wrapper-12">Basketball</div>
         </button>
@@ -406,91 +475,46 @@ export const CreateGame = () => {
         </div>
 
         <img
-          className="image-5"
-          alt="Image"
-          src="https://c.animaapp.com/BPOawRxV/img/image-15@2x.png"
+          className="basketball"
+          alt="Basketball"
+          src="https://c.animaapp.com/RqvJyPyX/img/image-26@2x.png"
         />
       </div>
-
-      <div className="overlap-wrapper">
-        <div className="overlap-5">
-          <p className="october">
-            October 5, 7:00 PM
-            <br />
-            Hamlin Tennis Center.
-          </p>
-
-          <div className="text-wrapper-21">Tennis</div>
-        </div>
-      </div>
-
-      <div className="overlap-group-wrapper">
-        <div className="overlap-6">
-          <p className="p">
-            October 1, 5:00 PM
-            <br />
-            Pottruck Gym
-          </p>
-
-          <div className="text-wrapper-21">Basketball</div>
-        </div>
-      </div>
-
-      <div className="container-3">
-        <div className="overlap-7">
-          <p className="october-2">
-            October 4, 5:00 PM
-            <br />
-            Pottruck Gym
-          </p>
-
-          <div className="text-wrapper-21">Basketball</div>
-        </div>
-      </div>
-
-      <div className="container-4">
-        <div className="overlap-8">
-          <p className="october-3">
-            October 2, 4:00 PM
-            <br />
-            Penn Park
-          </p>
-
-          <div className="text-wrapper-21">Soccer</div>
-        </div>
-      </div>
-
-      <div className="container-5">
-        <div className="overlap-9">
-          <p className="october">
-            October 3, 7:00 PM
-            <br />
-            Hamlin Tennis Center.
-          </p>
-
-          <div className="text-wrapper-21">Tennis</div>
-        </div>
-      </div>
-
-      <div className="container-6">
-        <p className="october-4">
-          October 5, 4:00 PM
-          <br />
-          Penn Park
-        </p>
-
-        <div className="text-wrapper-22">Soccer</div>
-      </div>
-
       <div className="textbox-11">
         <div className="text-wrapper-23">Soccer Group</div>
 
         <img
-          className="ecology"
-          alt="Ecology"
-          src="https://c.animaapp.com/BPOawRxV/img/ecology.svg"
+          className="soccer"
+          alt="Soccer Ball"
+          src="https://c.animaapp.com/RqvJyPyX/img/soccer-ball.svg"
         />
       </div>
+
+          <div className="container-upcoming-games">
+      {calendarEvents
+        .filter(event => event.summary?.startsWith('PICKUP:'))
+        .map((event, index) => {
+          const { date, time } = formatDateTime(event.start.dateTime || event.start.date);
+          const location = event.location || "Location TBD";
+          const sport = event.summary?.replace('PICKUP:', '').trim().split(" ")[0] || "Sport";
+
+          return (
+            <div key={event.id} className="event-item">
+              <div className="sport">{sport}</div>
+              <div className="event-details">
+                {`${date}, ${time}`}
+                <br />
+                {location}
+              </div>
+            </div>
+          );
+      })}
+    </div>
+
+
+      
+
+      
 
       {/* <button className="button-4">
         <div className="text-wrapper-24">Create New Game</div>
@@ -503,7 +527,7 @@ export const CreateGame = () => {
       <img
         className="image-6"
         alt="Image"
-        src="https://c.animaapp.com/BPOawRxV/img/image-12@2x.png"
+        src="https://c.animaapp.com/RqvJyPyX/img/image-28@2x.png"
       />
     </div>
   );
