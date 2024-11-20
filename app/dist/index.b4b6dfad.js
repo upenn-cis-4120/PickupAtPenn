@@ -2949,96 +2949,105 @@ var _map = require("./screens/Map");
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
 var _reactRouterDom = require("react-router-dom");
+var _google = require("@react-oauth/google"); // Ensure the import for GoogleOAuthProvider
 // to run, navigate to folder, npm install, npm start
 const app = document.getElementById("app");
 const root = (0, _clientDefault.default).createRoot(app);
+const CLIENT_ID = "7058040155-g739av7vkfgl73dbvk6mrkiadt6vdjs5.apps.googleusercontent.com"; // Replace with your actual Google Client ID
 // change the Home to CreateGame or Schedule to navigate for now
 //oot.render(<Home />);
-root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
-    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _home.Home), {}, void 0, false, {
-                    fileName: "src/index.jsx",
-                    lineNumber: 23,
-                    columnNumber: 32
-                }, void 0)
-            }, void 0, false, {
-                fileName: "src/index.jsx",
-                lineNumber: 23,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/schedule",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _schedule.Schedule), {}, void 0, false, {
-                    fileName: "src/index.jsx",
-                    lineNumber: 24,
-                    columnNumber: 40
-                }, void 0)
-            }, void 0, false, {
-                fileName: "src/index.jsx",
-                lineNumber: 24,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/availability",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _yourAvailability.YourAvailability), {}, void 0, false, {
-                    fileName: "src/index.jsx",
-                    lineNumber: 25,
-                    columnNumber: 44
-                }, void 0)
-            }, void 0, false, {
-                fileName: "src/index.jsx",
-                lineNumber: 25,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/group-availability",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _groupAvailability.GroupAvailability), {}, void 0, false, {
-                    fileName: "src/index.jsx",
-                    lineNumber: 26,
-                    columnNumber: 50
-                }, void 0)
-            }, void 0, false, {
-                fileName: "src/index.jsx",
-                lineNumber: 26,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/create-game",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _createGame.CreateGame), {}, void 0, false, {
-                    fileName: "src/index.jsx",
-                    lineNumber: 27,
-                    columnNumber: 43
-                }, void 0)
-            }, void 0, false, {
-                fileName: "src/index.jsx",
-                lineNumber: 27,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/map",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _map.Map), {}, void 0, false, {
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _google.GoogleOAuthProvider), {
+    clientId: CLIENT_ID,
+    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    path: "/",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _home.Home), {}, void 0, false, {
+                        fileName: "src/index.jsx",
+                        lineNumber: 28,
+                        columnNumber: 34
+                    }, void 0)
+                }, void 0, false, {
                     fileName: "src/index.jsx",
                     lineNumber: 28,
-                    columnNumber: 35
-                }, void 0)
-            }, void 0, false, {
-                fileName: "src/index.jsx",
-                lineNumber: 28,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    path: "/schedule",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _schedule.Schedule), {}, void 0, false, {
+                        fileName: "src/index.jsx",
+                        lineNumber: 29,
+                        columnNumber: 42
+                    }, void 0)
+                }, void 0, false, {
+                    fileName: "src/index.jsx",
+                    lineNumber: 29,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    path: "/availability",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _yourAvailability.YourAvailability), {}, void 0, false, {
+                        fileName: "src/index.jsx",
+                        lineNumber: 30,
+                        columnNumber: 46
+                    }, void 0)
+                }, void 0, false, {
+                    fileName: "src/index.jsx",
+                    lineNumber: 30,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    path: "/group-availability",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _groupAvailability.GroupAvailability), {}, void 0, false, {
+                        fileName: "src/index.jsx",
+                        lineNumber: 31,
+                        columnNumber: 52
+                    }, void 0)
+                }, void 0, false, {
+                    fileName: "src/index.jsx",
+                    lineNumber: 31,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    path: "/create-game",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _createGame.CreateGame), {}, void 0, false, {
+                        fileName: "src/index.jsx",
+                        lineNumber: 32,
+                        columnNumber: 45
+                    }, void 0)
+                }, void 0, false, {
+                    fileName: "src/index.jsx",
+                    lineNumber: 32,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    path: "/map",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _map.Map), {}, void 0, false, {
+                        fileName: "src/index.jsx",
+                        lineNumber: 33,
+                        columnNumber: 37
+                    }, void 0)
+                }, void 0, false, {
+                    fileName: "src/index.jsx",
+                    lineNumber: 33,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/index.jsx",
+            lineNumber: 27,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
         fileName: "src/index.jsx",
-        lineNumber: 22,
+        lineNumber: 26,
         columnNumber: 5
     }, undefined)
 }, void 0, false, {
     fileName: "src/index.jsx",
-    lineNumber: 21,
-    columnNumber: 5
+    lineNumber: 25,
+    columnNumber: 3
 }, undefined));
 
   $parcel$ReactRefreshHelpers$98a3.postlude(module);
@@ -3046,7 +3055,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Browser
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../global.css":"6ZjVH","leaflet/dist/leaflet.css":"6JhOO","react":"21dqq","./screens/Schedule":"bANSw","./screens/Home":"7eUR9","./screens/CreateGame":"ffNjT","./screens/GroupAvailability":"h5vmJ","./screens/YourAvailability":"29q7c","./screens/Map":"jMk64","react-dom/client":"lOjBx","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","../global.css":"6ZjVH","react":"21dqq","react-dom/client":"lOjBx","./screens/Schedule":"bANSw","./screens/Home":"7eUR9","./screens/CreateGame":"ffNjT","./screens/GroupAvailability":"h5vmJ","./screens/YourAvailability":"29q7c","./screens/Map":"jMk64","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","leaflet/dist/leaflet.css":"6JhOO","@react-oauth/google":"2ATJC"}],"iTorj":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -5765,2643 +5774,28 @@ module.exports = require("a569817e6ea559f6");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== 'undefined' && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === 'function') __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"6ZjVH":[function() {},{}],"6JhOO":[function() {},{}],"bANSw":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Schedule", ()=>(0, _schedule.Schedule));
-var _schedule = require("./Schedule");
-
-},{"./Schedule":"hvAsX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hvAsX":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$1426 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$1426.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Schedule", ()=>Schedule);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _styleCss = require("./style.css");
-var _reactRouterDom = require("react-router-dom");
-const Schedule = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "schedule",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "overlap",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "overlap-group",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "container",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "div",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "text-wrapper",
-                                            children: "Tennis 3pm"
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Schedule/Schedule.jsx",
-                                            lineNumber: 12,
-                                            columnNumber: 15
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                            className: "image",
-                                            alt: "Image",
-                                            src: "https://c.animaapp.com/I43ZrRid/img/image-1@2x.png"
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Schedule/Schedule.jsx",
-                                            lineNumber: 14,
-                                            columnNumber: 15
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 11,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "overlap-group-wrapper",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "overlap-group-2",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "text-wrapper-2",
-                                                children: "Basketball 9am"
-                                            }, void 0, false, {
-                                                fileName: "src/screens/Schedule/Schedule.jsx",
-                                                lineNumber: 23,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "text-wrapper-3",
-                                                children: "18"
-                                            }, void 0, false, {
-                                                fileName: "src/screens/Schedule/Schedule.jsx",
-                                                lineNumber: 25,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/screens/Schedule/Schedule.jsx",
-                                        lineNumber: 22,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 21,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "div-wrapper",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-4",
-                                        children: "5"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/Schedule/Schedule.jsx",
-                                        lineNumber: 30,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 29,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "overlap-wrapper",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "overlap-2",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "text-wrapper-5",
-                                                children: "Basketball 2pm"
-                                            }, void 0, false, {
-                                                fileName: "src/screens/Schedule/Schedule.jsx",
-                                                lineNumber: 35,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "text-wrapper-6",
-                                                children: "26"
-                                            }, void 0, false, {
-                                                fileName: "src/screens/Schedule/Schedule.jsx",
-                                                lineNumber: 37,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/screens/Schedule/Schedule.jsx",
-                                        lineNumber: 34,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 33,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "overlap-3",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "textbox",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "text-wrapper-7",
-                                                children: "Basketball 5pm"
-                                            }, void 0, false, {
-                                                fileName: "src/screens/Schedule/Schedule.jsx",
-                                                lineNumber: 43,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Schedule/Schedule.jsx",
-                                            lineNumber: 42,
-                                            columnNumber: 15
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "text-wrapper-8",
-                                            children: "2"
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Schedule/Schedule.jsx",
-                                            lineNumber: 46,
-                                            columnNumber: 15
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 41,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "container-2",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-9",
-                                        children: "8"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/Schedule/Schedule.jsx",
-                                        lineNumber: 50,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 49,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "container-3",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-10",
-                                        children: "3"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/Schedule/Schedule.jsx",
-                                        lineNumber: 54,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 53,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "container-4",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "overlap-4",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "text-wrapper-11",
-                                                children: "Basketball 11am"
-                                            }, void 0, false, {
-                                                fileName: "src/screens/Schedule/Schedule.jsx",
-                                                lineNumber: 59,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "text-wrapper-12",
-                                                children: "10"
-                                            }, void 0, false, {
-                                                fileName: "src/screens/Schedule/Schedule.jsx",
-                                                lineNumber: 61,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/screens/Schedule/Schedule.jsx",
-                                        lineNumber: 58,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 57,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "container-5",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-13",
-                                        children: "24"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/Schedule/Schedule.jsx",
-                                        lineNumber: 66,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 65,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "container-6",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "text-wrapper-14",
-                                            children: "Soccer 8pm"
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Schedule/Schedule.jsx",
-                                            lineNumber: 70,
-                                            columnNumber: 15
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "text-wrapper-15",
-                                            children: "31"
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Schedule/Schedule.jsx",
-                                            lineNumber: 72,
-                                            columnNumber: 15
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 69,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "container-7",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "text-wrapper-16",
-                                            children: "Tennis 8am"
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Schedule/Schedule.jsx",
-                                            lineNumber: 76,
-                                            columnNumber: 15
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "text-wrapper-17",
-                                            children: "6"
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Schedule/Schedule.jsx",
-                                            lineNumber: 78,
-                                            columnNumber: 15
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 75,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "container-8",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "overlap-5",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "text-wrapper-18",
-                                                children: "Basketball 10am"
-                                            }, void 0, false, {
-                                                fileName: "src/screens/Schedule/Schedule.jsx",
-                                                lineNumber: 83,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "text-wrapper-19",
-                                                children: "13"
-                                            }, void 0, false, {
-                                                fileName: "src/screens/Schedule/Schedule.jsx",
-                                                lineNumber: 85,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/screens/Schedule/Schedule.jsx",
-                                        lineNumber: 82,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 81,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "container-9",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "text-wrapper-20",
-                                            children: "Tennis 5pm"
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Schedule/Schedule.jsx",
-                                            lineNumber: 90,
-                                            columnNumber: 15
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "text-wrapper-21",
-                                            children: "20"
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Schedule/Schedule.jsx",
-                                            lineNumber: 92,
-                                            columnNumber: 15
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 89,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "container-10",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-22",
-                                        children: "27"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/Schedule/Schedule.jsx",
-                                        lineNumber: 96,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 95,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "overlap-6",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                            className: "button",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "text-wrapper-23",
-                                                children: "Basketball 2pm"
-                                            }, void 0, false, {
-                                                fileName: "src/screens/Schedule/Schedule.jsx",
-                                                lineNumber: 101,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Schedule/Schedule.jsx",
-                                            lineNumber: 100,
-                                            columnNumber: 15
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "text-wrapper-24",
-                                            children: "17"
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Schedule/Schedule.jsx",
-                                            lineNumber: 104,
-                                            columnNumber: 15
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 99,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "overlap-7",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "textbox-2",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "text-wrapper-25",
-                                                children: "Running 7am"
-                                            }, void 0, false, {
-                                                fileName: "src/screens/Schedule/Schedule.jsx",
-                                                lineNumber: 109,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Schedule/Schedule.jsx",
-                                            lineNumber: 108,
-                                            columnNumber: 15
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "text-wrapper-26",
-                                            children: "4"
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Schedule/Schedule.jsx",
-                                            lineNumber: 112,
-                                            columnNumber: 15
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 107,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "overlap-8",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "textbox-2",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "text-wrapper-7",
-                                                children: "Tennis 6pm"
-                                            }, void 0, false, {
-                                                fileName: "src/screens/Schedule/Schedule.jsx",
-                                                lineNumber: 117,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Schedule/Schedule.jsx",
-                                            lineNumber: 116,
-                                            columnNumber: 15
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "text-wrapper-27",
-                                            children: "28"
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Schedule/Schedule.jsx",
-                                            lineNumber: 120,
-                                            columnNumber: 15
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 115,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "text-wrapper-28",
-                                    children: "Your Games"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 123,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "text-wrapper-29",
-                                    children: "Sync with Google Calendar"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 125,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "text-wrapper-30",
-                                    children: "October 2024"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 127,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    className: "caret-left",
-                                    alt: "Caret left",
-                                    src: "https://c.animaapp.com/I43ZrRid/img/caret-left-1.svg"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 129,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    className: "caret-right",
-                                    alt: "Caret right",
-                                    src: "https://c.animaapp.com/I43ZrRid/img/caret-right-1.svg"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 135,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "text-wrapper-31",
-                                    children: "Mon"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 141,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "text-wrapper-32",
-                                    children: "Wed"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 143,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "text-wrapper-33",
-                                    children: "Thu"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 145,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "text-wrapper-34",
-                                    children: "Sun"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 147,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "text-wrapper-35",
-                                    children: "Tue"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 149,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "text-wrapper-36",
-                                    children: "Sat"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 151,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "text-wrapper-37",
-                                    children: "Fri"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 153,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "container-11",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-22",
-                                        children: "25"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/Schedule/Schedule.jsx",
-                                        lineNumber: 156,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 155,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "container-12",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "overlap-9",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "text-wrapper-38",
-                                                children: "22"
-                                            }, void 0, false, {
-                                                fileName: "src/screens/Schedule/Schedule.jsx",
-                                                lineNumber: 161,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "container-13",
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                    className: "text-wrapper-38",
-                                                    children: "22"
-                                                }, void 0, false, {
-                                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                                    lineNumber: 164,
-                                                    columnNumber: 19
-                                                }, undefined)
-                                            }, void 0, false, {
-                                                fileName: "src/screens/Schedule/Schedule.jsx",
-                                                lineNumber: 163,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/screens/Schedule/Schedule.jsx",
-                                        lineNumber: 160,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 159,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "container-14",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-38",
-                                        children: "9"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/Schedule/Schedule.jsx",
-                                        lineNumber: 170,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 169,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "container-15",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-38",
-                                        children: "16"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/Schedule/Schedule.jsx",
-                                        lineNumber: 174,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 173,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "container-16",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-38",
-                                        children: "30"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/Schedule/Schedule.jsx",
-                                        lineNumber: 178,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 177,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "container-17",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-38",
-                                        children: "11"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/Schedule/Schedule.jsx",
-                                        lineNumber: 182,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 181,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "container-18",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-38",
-                                        children: "12"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/Schedule/Schedule.jsx",
-                                        lineNumber: 186,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 185,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "container-19",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-38",
-                                        children: "7"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/Schedule/Schedule.jsx",
-                                        lineNumber: 190,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 189,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "container-20",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-38",
-                                        children: "15"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/Schedule/Schedule.jsx",
-                                        lineNumber: 194,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 193,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "container-21",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-38",
-                                        children: "19"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/Schedule/Schedule.jsx",
-                                        lineNumber: 198,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 197,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "container-22",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-38",
-                                        children: "21"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/Schedule/Schedule.jsx",
-                                        lineNumber: 202,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 201,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "container-23",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-38",
-                                        children: "29"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/Schedule/Schedule.jsx",
-                                        lineNumber: 206,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 205,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "container-24",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-38",
-                                        children: "23"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/Schedule/Schedule.jsx",
-                                        lineNumber: 210,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 209,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "container-25",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-38",
-                                        children: "14"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/Schedule/Schedule.jsx",
-                                        lineNumber: 214,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 213,
-                                    columnNumber: 13
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/screens/Schedule/Schedule.jsx",
-                            lineNumber: 10,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "container-26",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "header-menu",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                            to: "/schedule",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "frame",
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                    className: "text-wrapper-bold",
-                                                    children: "Schedule"
-                                                }, void 0, false, {
-                                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                                    lineNumber: 223,
-                                                    columnNumber: 13
-                                                }, undefined)
-                                            }, void 0, false, {
-                                                fileName: "src/screens/Schedule/Schedule.jsx",
-                                                lineNumber: 222,
-                                                columnNumber: 11
-                                            }, undefined)
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Schedule/Schedule.jsx",
-                                            lineNumber: 221,
-                                            columnNumber: 11
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                            to: "/group-availability",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "frame-2",
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                    className: "text-wrapper-menu",
-                                                    children: "Availability"
-                                                }, void 0, false, {
-                                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                                    lineNumber: 229,
-                                                    columnNumber: 13
-                                                }, undefined)
-                                            }, void 0, false, {
-                                                fileName: "src/screens/Schedule/Schedule.jsx",
-                                                lineNumber: 228,
-                                                columnNumber: 11
-                                            }, undefined)
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Schedule/Schedule.jsx",
-                                            lineNumber: 227,
-                                            columnNumber: 11
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "frame-3",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "text-wrapper-menu",
-                                                children: "Community"
-                                            }, void 0, false, {
-                                                fileName: "src/screens/Schedule/Schedule.jsx",
-                                                lineNumber: 233,
-                                                columnNumber: 13
-                                            }, undefined)
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Schedule/Schedule.jsx",
-                                            lineNumber: 232,
-                                            columnNumber: 11
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                            to: "/map",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "frame-4",
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                    className: "text-wrapper-menu",
-                                                    children: "Map"
-                                                }, void 0, false, {
-                                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                                    lineNumber: 238,
-                                                    columnNumber: 13
-                                                }, undefined)
-                                            }, void 0, false, {
-                                                fileName: "src/screens/Schedule/Schedule.jsx",
-                                                lineNumber: 237,
-                                                columnNumber: 11
-                                            }, undefined)
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Schedule/Schedule.jsx",
-                                            lineNumber: 236,
-                                            columnNumber: 11
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 220,
-                                    columnNumber: 9
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                    to: "/",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-menu-title",
-                                        children: "Pickup@Penn"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/Schedule/Schedule.jsx",
-                                        lineNumber: 243,
-                                        columnNumber: 9
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 242,
-                                    columnNumber: 9
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                    to: "/availability",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                        className: "prof",
-                                        alt: "Image",
-                                        src: "https://c.animaapp.com/RqvJyPyX/img/image-27@2x.png"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/Schedule/Schedule.jsx",
-                                        lineNumber: 247,
-                                        columnNumber: 9
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 246,
-                                    columnNumber: 9
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                    to: "/",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                        className: "logo",
-                                        alt: "Image",
-                                        src: "https://c.animaapp.com/RqvJyPyX/img/image-28@2x.png"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/Schedule/Schedule.jsx",
-                                        lineNumber: 256,
-                                        columnNumber: 9
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 255,
-                                    columnNumber: 9
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/screens/Schedule/Schedule.jsx",
-                            lineNumber: 219,
-                            columnNumber: 7
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "container-27",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "container-28",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                            className: "october",
-                                            children: [
-                                                "October 4, 5:00 PM",
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                                    lineNumber: 269,
-                                                    columnNumber: 17
-                                                }, undefined),
-                                                "Pottruck Gym"
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "src/screens/Schedule/Schedule.jsx",
-                                            lineNumber: 267,
-                                            columnNumber: 15
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "text-wrapper-43",
-                                            children: "Basketball"
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Schedule/Schedule.jsx",
-                                            lineNumber: 273,
-                                            columnNumber: 15
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 266,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "container-29",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                            className: "p",
-                                            children: [
-                                                "October 3, 7:00 PM",
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                                    lineNumber: 279,
-                                                    columnNumber: 17
-                                                }, undefined),
-                                                "Hamlin Tennis Center"
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "src/screens/Schedule/Schedule.jsx",
-                                            lineNumber: 277,
-                                            columnNumber: 15
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "text-wrapper-44",
-                                            children: "Tennis"
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Schedule/Schedule.jsx",
-                                            lineNumber: 283,
-                                            columnNumber: 15
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 276,
-                                    columnNumber: 13
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/screens/Schedule/Schedule.jsx",
-                            lineNumber: 265,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "container-30",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-10",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        className: "october-2",
-                                        children: [
-                                            "October 1, 5:00 PM",
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                                fileName: "src/screens/Schedule/Schedule.jsx",
-                                                lineNumber: 291,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            "Pottruck Gym"
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/screens/Schedule/Schedule.jsx",
-                                        lineNumber: 289,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-45",
-                                        children: "Basketball"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/Schedule/Schedule.jsx",
-                                        lineNumber: 295,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/Schedule/Schedule.jsx",
-                                lineNumber: 288,
-                                columnNumber: 13
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/screens/Schedule/Schedule.jsx",
-                            lineNumber: 287,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "container-31",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                    className: "october-3",
-                                    children: [
-                                        "October 2, 4:00 PM",
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                            fileName: "src/screens/Schedule/Schedule.jsx",
-                                            lineNumber: 302,
-                                            columnNumber: 15
-                                        }, undefined),
-                                        "Penn Park"
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 300,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "text-wrapper-46",
-                                    children: "Soccer"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 306,
-                                    columnNumber: 13
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/screens/Schedule/Schedule.jsx",
-                            lineNumber: 299,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/screens/Schedule/Schedule.jsx",
-                    lineNumber: 9,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    className: "button-2",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "text-wrapper-47",
-                            children: "Create New Game"
-                        }, void 0, false, {
-                            fileName: "src/screens/Schedule/Schedule.jsx",
-                            lineNumber: 311,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            className: "e-add",
-                            alt: "E add",
-                            src: "https://c.animaapp.com/I43ZrRid/img/e-add.svg"
-                        }, void 0, false, {
-                            fileName: "src/screens/Schedule/Schedule.jsx",
-                            lineNumber: 313,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/screens/Schedule/Schedule.jsx",
-                    lineNumber: 310,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    className: "button-3",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "text-wrapper-48",
-                            children: "Find Games"
-                        }, void 0, false, {
-                            fileName: "src/screens/Schedule/Schedule.jsx",
-                            lineNumber: 321,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            className: "search",
-                            alt: "Search",
-                            src: "https://c.animaapp.com/I43ZrRid/img/search.svg"
-                        }, void 0, false, {
-                            fileName: "src/screens/Schedule/Schedule.jsx",
-                            lineNumber: 323,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/screens/Schedule/Schedule.jsx",
-                    lineNumber: 320,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "text-wrapper-49",
-                    children: "Upcoming Games"
-                }, void 0, false, {
-                    fileName: "src/screens/Schedule/Schedule.jsx",
-                    lineNumber: 330,
-                    columnNumber: 9
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/screens/Schedule/Schedule.jsx",
-            lineNumber: 8,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/screens/Schedule/Schedule.jsx",
-        lineNumber: 7,
-        columnNumber: 5
-    }, undefined);
+},{}],"6ZjVH":[function() {},{}],"lOjBx":[function(require,module,exports,__globalThis) {
+'use strict';
+var m = require("aaccff5d309d9239");
+var i = m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+exports.createRoot = function(c, o) {
+    i.usingClientEntryPoint = true;
+    try {
+        return m.createRoot(c, o);
+    } finally{
+        i.usingClientEntryPoint = false;
+    }
 };
-_c = Schedule;
-var _c;
-$RefreshReg$(_c, "Schedule");
+exports.hydrateRoot = function(c, h, o) {
+    i.usingClientEntryPoint = true;
+    try {
+        return m.hydrateRoot(c, h, o);
+    } finally{
+        i.usingClientEntryPoint = false;
+    }
+};
 
-  $parcel$ReactRefreshHelpers$1426.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"1Itax","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1Itax":[function() {},{}],"9xmpe":[function(require,module,exports,__globalThis) {
-/**
- * React Router DOM v6.28.0
- *
- * Copyright (c) Remix Software Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.md file in the root directory of this source tree.
- *
- * @license MIT
- */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "AbortedDeferredError", ()=>(0, _reactRouter.AbortedDeferredError));
-parcelHelpers.export(exports, "Await", ()=>(0, _reactRouter.Await));
-parcelHelpers.export(exports, "MemoryRouter", ()=>(0, _reactRouter.MemoryRouter));
-parcelHelpers.export(exports, "Navigate", ()=>(0, _reactRouter.Navigate));
-parcelHelpers.export(exports, "NavigationType", ()=>(0, _reactRouter.NavigationType));
-parcelHelpers.export(exports, "Outlet", ()=>(0, _reactRouter.Outlet));
-parcelHelpers.export(exports, "Route", ()=>(0, _reactRouter.Route));
-parcelHelpers.export(exports, "Router", ()=>(0, _reactRouter.Router));
-parcelHelpers.export(exports, "Routes", ()=>(0, _reactRouter.Routes));
-parcelHelpers.export(exports, "UNSAFE_DataRouterContext", ()=>(0, _reactRouter.UNSAFE_DataRouterContext));
-parcelHelpers.export(exports, "UNSAFE_DataRouterStateContext", ()=>(0, _reactRouter.UNSAFE_DataRouterStateContext));
-parcelHelpers.export(exports, "UNSAFE_LocationContext", ()=>(0, _reactRouter.UNSAFE_LocationContext));
-parcelHelpers.export(exports, "UNSAFE_NavigationContext", ()=>(0, _reactRouter.UNSAFE_NavigationContext));
-parcelHelpers.export(exports, "UNSAFE_RouteContext", ()=>(0, _reactRouter.UNSAFE_RouteContext));
-parcelHelpers.export(exports, "UNSAFE_useRouteId", ()=>(0, _reactRouter.UNSAFE_useRouteId));
-parcelHelpers.export(exports, "createMemoryRouter", ()=>(0, _reactRouter.createMemoryRouter));
-parcelHelpers.export(exports, "createPath", ()=>(0, _reactRouter.createPath));
-parcelHelpers.export(exports, "createRoutesFromChildren", ()=>(0, _reactRouter.createRoutesFromChildren));
-parcelHelpers.export(exports, "createRoutesFromElements", ()=>(0, _reactRouter.createRoutesFromElements));
-parcelHelpers.export(exports, "defer", ()=>(0, _reactRouter.defer));
-parcelHelpers.export(exports, "generatePath", ()=>(0, _reactRouter.generatePath));
-parcelHelpers.export(exports, "isRouteErrorResponse", ()=>(0, _reactRouter.isRouteErrorResponse));
-parcelHelpers.export(exports, "json", ()=>(0, _reactRouter.json));
-parcelHelpers.export(exports, "matchPath", ()=>(0, _reactRouter.matchPath));
-parcelHelpers.export(exports, "matchRoutes", ()=>(0, _reactRouter.matchRoutes));
-parcelHelpers.export(exports, "parsePath", ()=>(0, _reactRouter.parsePath));
-parcelHelpers.export(exports, "redirect", ()=>(0, _reactRouter.redirect));
-parcelHelpers.export(exports, "redirectDocument", ()=>(0, _reactRouter.redirectDocument));
-parcelHelpers.export(exports, "renderMatches", ()=>(0, _reactRouter.renderMatches));
-parcelHelpers.export(exports, "replace", ()=>(0, _reactRouter.replace));
-parcelHelpers.export(exports, "resolvePath", ()=>(0, _reactRouter.resolvePath));
-parcelHelpers.export(exports, "useActionData", ()=>(0, _reactRouter.useActionData));
-parcelHelpers.export(exports, "useAsyncError", ()=>(0, _reactRouter.useAsyncError));
-parcelHelpers.export(exports, "useAsyncValue", ()=>(0, _reactRouter.useAsyncValue));
-parcelHelpers.export(exports, "useBlocker", ()=>(0, _reactRouter.useBlocker));
-parcelHelpers.export(exports, "useHref", ()=>(0, _reactRouter.useHref));
-parcelHelpers.export(exports, "useInRouterContext", ()=>(0, _reactRouter.useInRouterContext));
-parcelHelpers.export(exports, "useLoaderData", ()=>(0, _reactRouter.useLoaderData));
-parcelHelpers.export(exports, "useLocation", ()=>(0, _reactRouter.useLocation));
-parcelHelpers.export(exports, "useMatch", ()=>(0, _reactRouter.useMatch));
-parcelHelpers.export(exports, "useMatches", ()=>(0, _reactRouter.useMatches));
-parcelHelpers.export(exports, "useNavigate", ()=>(0, _reactRouter.useNavigate));
-parcelHelpers.export(exports, "useNavigation", ()=>(0, _reactRouter.useNavigation));
-parcelHelpers.export(exports, "useNavigationType", ()=>(0, _reactRouter.useNavigationType));
-parcelHelpers.export(exports, "useOutlet", ()=>(0, _reactRouter.useOutlet));
-parcelHelpers.export(exports, "useOutletContext", ()=>(0, _reactRouter.useOutletContext));
-parcelHelpers.export(exports, "useParams", ()=>(0, _reactRouter.useParams));
-parcelHelpers.export(exports, "useResolvedPath", ()=>(0, _reactRouter.useResolvedPath));
-parcelHelpers.export(exports, "useRevalidator", ()=>(0, _reactRouter.useRevalidator));
-parcelHelpers.export(exports, "useRouteError", ()=>(0, _reactRouter.useRouteError));
-parcelHelpers.export(exports, "useRouteLoaderData", ()=>(0, _reactRouter.useRouteLoaderData));
-parcelHelpers.export(exports, "useRoutes", ()=>(0, _reactRouter.useRoutes));
-parcelHelpers.export(exports, "UNSAFE_ErrorResponseImpl", ()=>(0, _router.UNSAFE_ErrorResponseImpl));
-//#endregion
-parcelHelpers.export(exports, "BrowserRouter", ()=>BrowserRouter);
-parcelHelpers.export(exports, "Form", ()=>Form);
-parcelHelpers.export(exports, "HashRouter", ()=>HashRouter);
-parcelHelpers.export(exports, "Link", ()=>Link);
-parcelHelpers.export(exports, "NavLink", ()=>NavLink);
-parcelHelpers.export(exports, "RouterProvider", ()=>RouterProvider);
-parcelHelpers.export(exports, "ScrollRestoration", ()=>ScrollRestoration);
-parcelHelpers.export(exports, "UNSAFE_FetchersContext", ()=>FetchersContext);
-parcelHelpers.export(exports, "UNSAFE_ViewTransitionContext", ()=>ViewTransitionContext);
-parcelHelpers.export(exports, "UNSAFE_useScrollRestoration", ()=>useScrollRestoration);
-parcelHelpers.export(exports, "createBrowserRouter", ()=>createBrowserRouter);
-parcelHelpers.export(exports, "createHashRouter", ()=>createHashRouter);
-parcelHelpers.export(exports, "createSearchParams", ()=>createSearchParams);
-parcelHelpers.export(exports, "unstable_HistoryRouter", ()=>HistoryRouter);
-parcelHelpers.export(exports, "unstable_usePrompt", ()=>usePrompt);
-parcelHelpers.export(exports, "useBeforeUnload", ()=>useBeforeUnload);
-parcelHelpers.export(exports, "useFetcher", ()=>useFetcher);
-parcelHelpers.export(exports, "useFetchers", ()=>useFetchers);
-parcelHelpers.export(exports, "useFormAction", ()=>useFormAction);
-parcelHelpers.export(exports, "useLinkClickHandler", ()=>useLinkClickHandler);
-parcelHelpers.export(exports, "useSearchParams", ()=>useSearchParams);
-parcelHelpers.export(exports, "useSubmit", ()=>useSubmit);
-parcelHelpers.export(exports, "useViewTransitionState", ()=>useViewTransitionState);
-var _react = require("react");
-var _reactDom = require("react-dom");
-var _reactRouter = require("react-router");
-var _router = require("@remix-run/router");
-function _extends() {
-    _extends = Object.assign ? Object.assign.bind() : function(target) {
-        for(var i = 1; i < arguments.length; i++){
-            var source = arguments[i];
-            for(var key in source)if (Object.prototype.hasOwnProperty.call(source, key)) target[key] = source[key];
-        }
-        return target;
-    };
-    return _extends.apply(this, arguments);
-}
-function _objectWithoutPropertiesLoose(source, excluded) {
-    if (source == null) return {};
-    var target = {};
-    var sourceKeys = Object.keys(source);
-    var key, i;
-    for(i = 0; i < sourceKeys.length; i++){
-        key = sourceKeys[i];
-        if (excluded.indexOf(key) >= 0) continue;
-        target[key] = source[key];
-    }
-    return target;
-}
-const defaultMethod = "get";
-const defaultEncType = "application/x-www-form-urlencoded";
-function isHtmlElement(object) {
-    return object != null && typeof object.tagName === "string";
-}
-function isButtonElement(object) {
-    return isHtmlElement(object) && object.tagName.toLowerCase() === "button";
-}
-function isFormElement(object) {
-    return isHtmlElement(object) && object.tagName.toLowerCase() === "form";
-}
-function isInputElement(object) {
-    return isHtmlElement(object) && object.tagName.toLowerCase() === "input";
-}
-function isModifiedEvent(event) {
-    return !!(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey);
-}
-function shouldProcessLinkClick(event, target) {
-    return event.button === 0 && // Ignore everything but left clicks
-    (!target || target === "_self") && // Let browser handle "target=_blank" etc.
-    !isModifiedEvent(event) // Ignore clicks with modifier keys
-    ;
-}
-/**
- * Creates a URLSearchParams object using the given initializer.
- *
- * This is identical to `new URLSearchParams(init)` except it also
- * supports arrays as values in the object form of the initializer
- * instead of just strings. This is convenient when you need multiple
- * values for a given key, but don't want to use an array initializer.
- *
- * For example, instead of:
- *
- *   let searchParams = new URLSearchParams([
- *     ['sort', 'name'],
- *     ['sort', 'price']
- *   ]);
- *
- * you can do:
- *
- *   let searchParams = createSearchParams({
- *     sort: ['name', 'price']
- *   });
- */ function createSearchParams(init) {
-    if (init === void 0) init = "";
-    return new URLSearchParams(typeof init === "string" || Array.isArray(init) || init instanceof URLSearchParams ? init : Object.keys(init).reduce((memo, key)=>{
-        let value = init[key];
-        return memo.concat(Array.isArray(value) ? value.map((v)=>[
-                key,
-                v
-            ]) : [
-            [
-                key,
-                value
-            ]
-        ]);
-    }, []));
-}
-function getSearchParamsForLocation(locationSearch, defaultSearchParams) {
-    let searchParams = createSearchParams(locationSearch);
-    if (defaultSearchParams) // Use `defaultSearchParams.forEach(...)` here instead of iterating of
-    // `defaultSearchParams.keys()` to work-around a bug in Firefox related to
-    // web extensions. Relevant Bugzilla tickets:
-    // https://bugzilla.mozilla.org/show_bug.cgi?id=1414602
-    // https://bugzilla.mozilla.org/show_bug.cgi?id=1023984
-    defaultSearchParams.forEach((_, key)=>{
-        if (!searchParams.has(key)) defaultSearchParams.getAll(key).forEach((value)=>{
-            searchParams.append(key, value);
-        });
-    });
-    return searchParams;
-}
-// One-time check for submitter support
-let _formDataSupportsSubmitter = null;
-function isFormDataSubmitterSupported() {
-    if (_formDataSupportsSubmitter === null) try {
-        new FormData(document.createElement("form"), // @ts-expect-error if FormData supports the submitter parameter, this will throw
-        0);
-        _formDataSupportsSubmitter = false;
-    } catch (e) {
-        _formDataSupportsSubmitter = true;
-    }
-    return _formDataSupportsSubmitter;
-}
-const supportedFormEncTypes = new Set([
-    "application/x-www-form-urlencoded",
-    "multipart/form-data",
-    "text/plain"
-]);
-function getFormEncType(encType) {
-    if (encType != null && !supportedFormEncTypes.has(encType)) {
-        (0, _router.UNSAFE_warning)(false, "\"" + encType + "\" is not a valid `encType` for `<Form>`/`<fetcher.Form>` " + ("and will default to \"" + defaultEncType + "\""));
-        return null;
-    }
-    return encType;
-}
-function getFormSubmissionInfo(target, basename) {
-    let method;
-    let action;
-    let encType;
-    let formData;
-    let body;
-    if (isFormElement(target)) {
-        // When grabbing the action from the element, it will have had the basename
-        // prefixed to ensure non-JS scenarios work, so strip it since we'll
-        // re-prefix in the router
-        let attr = target.getAttribute("action");
-        action = attr ? (0, _router.stripBasename)(attr, basename) : null;
-        method = target.getAttribute("method") || defaultMethod;
-        encType = getFormEncType(target.getAttribute("enctype")) || defaultEncType;
-        formData = new FormData(target);
-    } else if (isButtonElement(target) || isInputElement(target) && (target.type === "submit" || target.type === "image")) {
-        let form = target.form;
-        if (form == null) throw new Error("Cannot submit a <button> or <input type=\"submit\"> without a <form>");
-        // <button>/<input type="submit"> may override attributes of <form>
-        // When grabbing the action from the element, it will have had the basename
-        // prefixed to ensure non-JS scenarios work, so strip it since we'll
-        // re-prefix in the router
-        let attr = target.getAttribute("formaction") || form.getAttribute("action");
-        action = attr ? (0, _router.stripBasename)(attr, basename) : null;
-        method = target.getAttribute("formmethod") || form.getAttribute("method") || defaultMethod;
-        encType = getFormEncType(target.getAttribute("formenctype")) || getFormEncType(form.getAttribute("enctype")) || defaultEncType;
-        // Build a FormData object populated from a form and submitter
-        formData = new FormData(form, target);
-        // If this browser doesn't support the `FormData(el, submitter)` format,
-        // then tack on the submitter value at the end.  This is a lightweight
-        // solution that is not 100% spec compliant.  For complete support in older
-        // browsers, consider using the `formdata-submitter-polyfill` package
-        if (!isFormDataSubmitterSupported()) {
-            let { name, type, value } = target;
-            if (type === "image") {
-                let prefix = name ? name + "." : "";
-                formData.append(prefix + "x", "0");
-                formData.append(prefix + "y", "0");
-            } else if (name) formData.append(name, value);
-        }
-    } else if (isHtmlElement(target)) throw new Error('Cannot submit element that is not <form>, <button>, or <input type="submit|image">');
-    else {
-        method = defaultMethod;
-        action = null;
-        encType = defaultEncType;
-        body = target;
-    }
-    // Send body for <Form encType="text/plain" so we encode it into text
-    if (formData && encType === "text/plain") {
-        body = formData;
-        formData = undefined;
-    }
-    return {
-        action,
-        method: method.toLowerCase(),
-        encType,
-        formData,
-        body
-    };
-}
-const _excluded = [
-    "onClick",
-    "relative",
-    "reloadDocument",
-    "replace",
-    "state",
-    "target",
-    "to",
-    "preventScrollReset",
-    "viewTransition"
-], _excluded2 = [
-    "aria-current",
-    "caseSensitive",
-    "className",
-    "end",
-    "style",
-    "to",
-    "viewTransition",
-    "children"
-], _excluded3 = [
-    "fetcherKey",
-    "navigate",
-    "reloadDocument",
-    "replace",
-    "state",
-    "method",
-    "action",
-    "onSubmit",
-    "relative",
-    "preventScrollReset",
-    "viewTransition"
-];
-// HEY YOU! DON'T TOUCH THIS VARIABLE!
-//
-// It is replaced with the proper version at build time via a babel plugin in
-// the rollup config.
-//
-// Export a global property onto the window for React Router detection by the
-// Core Web Vitals Technology Report.  This way they can configure the `wappalyzer`
-// to detect and properly classify live websites as being built with React Router:
-// https://github.com/HTTPArchive/wappalyzer/blob/main/src/technologies/r.json
-const REACT_ROUTER_VERSION = "6";
-try {
-    window.__reactRouterVersion = REACT_ROUTER_VERSION;
-} catch (e) {
-// no-op
-}
-function createBrowserRouter(routes, opts) {
-    return (0, _router.createRouter)({
-        basename: opts == null ? void 0 : opts.basename,
-        future: _extends({}, opts == null ? void 0 : opts.future, {
-            v7_prependBasename: true
-        }),
-        history: (0, _router.createBrowserHistory)({
-            window: opts == null ? void 0 : opts.window
-        }),
-        hydrationData: (opts == null ? void 0 : opts.hydrationData) || parseHydrationData(),
-        routes,
-        mapRouteProperties: (0, _reactRouter.UNSAFE_mapRouteProperties),
-        dataStrategy: opts == null ? void 0 : opts.dataStrategy,
-        patchRoutesOnNavigation: opts == null ? void 0 : opts.patchRoutesOnNavigation,
-        window: opts == null ? void 0 : opts.window
-    }).initialize();
-}
-function createHashRouter(routes, opts) {
-    return (0, _router.createRouter)({
-        basename: opts == null ? void 0 : opts.basename,
-        future: _extends({}, opts == null ? void 0 : opts.future, {
-            v7_prependBasename: true
-        }),
-        history: (0, _router.createHashHistory)({
-            window: opts == null ? void 0 : opts.window
-        }),
-        hydrationData: (opts == null ? void 0 : opts.hydrationData) || parseHydrationData(),
-        routes,
-        mapRouteProperties: (0, _reactRouter.UNSAFE_mapRouteProperties),
-        dataStrategy: opts == null ? void 0 : opts.dataStrategy,
-        patchRoutesOnNavigation: opts == null ? void 0 : opts.patchRoutesOnNavigation,
-        window: opts == null ? void 0 : opts.window
-    }).initialize();
-}
-function parseHydrationData() {
-    var _window;
-    let state = (_window = window) == null ? void 0 : _window.__staticRouterHydrationData;
-    if (state && state.errors) state = _extends({}, state, {
-        errors: deserializeErrors(state.errors)
-    });
-    return state;
-}
-function deserializeErrors(errors) {
-    if (!errors) return null;
-    let entries = Object.entries(errors);
-    let serialized = {};
-    for (let [key, val] of entries){
-        // Hey you!  If you change this, please change the corresponding logic in
-        // serializeErrors in react-router-dom/server.tsx :)
-        if (val && val.__type === "RouteErrorResponse") serialized[key] = new (0, _router.UNSAFE_ErrorResponseImpl)(val.status, val.statusText, val.data, val.internal === true);
-        else if (val && val.__type === "Error") {
-            // Attempt to reconstruct the right type of Error (i.e., ReferenceError)
-            if (val.__subType) {
-                let ErrorConstructor = window[val.__subType];
-                if (typeof ErrorConstructor === "function") try {
-                    // @ts-expect-error
-                    let error = new ErrorConstructor(val.message);
-                    // Wipe away the client-side stack trace.  Nothing to fill it in with
-                    // because we don't serialize SSR stack traces for security reasons
-                    error.stack = "";
-                    serialized[key] = error;
-                } catch (e) {
-                // no-op - fall through and create a normal Error
-                }
-            }
-            if (serialized[key] == null) {
-                let error = new Error(val.message);
-                // Wipe away the client-side stack trace.  Nothing to fill it in with
-                // because we don't serialize SSR stack traces for security reasons
-                error.stack = "";
-                serialized[key] = error;
-            }
-        } else serialized[key] = val;
-    }
-    return serialized;
-}
-const ViewTransitionContext = /*#__PURE__*/ _react.createContext({
-    isTransitioning: false
-});
-ViewTransitionContext.displayName = "ViewTransition";
-const FetchersContext = /*#__PURE__*/ _react.createContext(new Map());
-FetchersContext.displayName = "Fetchers";
-//#endregion
-////////////////////////////////////////////////////////////////////////////////
-//#region Components
-////////////////////////////////////////////////////////////////////////////////
-/**
-  Webpack + React 17 fails to compile on any of the following because webpack
-  complains that `startTransition` doesn't exist in `React`:
-  * import { startTransition } from "react"
-  * import * as React from from "react";
-    "startTransition" in React ? React.startTransition(() => setState()) : setState()
-  * import * as React from from "react";
-    "startTransition" in React ? React["startTransition"](() => setState()) : setState()
-
-  Moving it to a constant such as the following solves the Webpack/React 17 issue:
-  * import * as React from from "react";
-    const START_TRANSITION = "startTransition";
-    START_TRANSITION in React ? React[START_TRANSITION](() => setState()) : setState()
-
-  However, that introduces webpack/terser minification issues in production builds
-  in React 18 where minification/obfuscation ends up removing the call of
-  React.startTransition entirely from the first half of the ternary.  Grabbing
-  this exported reference once up front resolves that issue.
-
-  See https://github.com/remix-run/react-router/issues/10579
-*/ const START_TRANSITION = "startTransition";
-const startTransitionImpl = _react[START_TRANSITION];
-const FLUSH_SYNC = "flushSync";
-const flushSyncImpl = _reactDom[FLUSH_SYNC];
-const USE_ID = "useId";
-const useIdImpl = _react[USE_ID];
-function startTransitionSafe(cb) {
-    if (startTransitionImpl) startTransitionImpl(cb);
-    else cb();
-}
-function flushSyncSafe(cb) {
-    if (flushSyncImpl) flushSyncImpl(cb);
-    else cb();
-}
-class Deferred {
-    constructor(){
-        this.status = "pending";
-        this.promise = new Promise((resolve, reject)=>{
-            this.resolve = (value)=>{
-                if (this.status === "pending") {
-                    this.status = "resolved";
-                    resolve(value);
-                }
-            };
-            this.reject = (reason)=>{
-                if (this.status === "pending") {
-                    this.status = "rejected";
-                    reject(reason);
-                }
-            };
-        });
-    }
-}
-/**
- * Given a Remix Router instance, render the appropriate UI
- */ function RouterProvider(_ref) {
-    let { fallbackElement, router, future } = _ref;
-    let [state, setStateImpl] = _react.useState(router.state);
-    let [pendingState, setPendingState] = _react.useState();
-    let [vtContext, setVtContext] = _react.useState({
-        isTransitioning: false
-    });
-    let [renderDfd, setRenderDfd] = _react.useState();
-    let [transition, setTransition] = _react.useState();
-    let [interruption, setInterruption] = _react.useState();
-    let fetcherData = _react.useRef(new Map());
-    let { v7_startTransition } = future || {};
-    let optInStartTransition = _react.useCallback((cb)=>{
-        if (v7_startTransition) startTransitionSafe(cb);
-        else cb();
-    }, [
-        v7_startTransition
-    ]);
-    let setState = _react.useCallback((newState, _ref2)=>{
-        let { deletedFetchers, flushSync: flushSync, viewTransitionOpts: viewTransitionOpts } = _ref2;
-        deletedFetchers.forEach((key)=>fetcherData.current.delete(key));
-        newState.fetchers.forEach((fetcher, key)=>{
-            if (fetcher.data !== undefined) fetcherData.current.set(key, fetcher.data);
-        });
-        let isViewTransitionUnavailable = router.window == null || router.window.document == null || typeof router.window.document.startViewTransition !== "function";
-        // If this isn't a view transition or it's not available in this browser,
-        // just update and be done with it
-        if (!viewTransitionOpts || isViewTransitionUnavailable) {
-            if (flushSync) flushSyncSafe(()=>setStateImpl(newState));
-            else optInStartTransition(()=>setStateImpl(newState));
-            return;
-        }
-        // flushSync + startViewTransition
-        if (flushSync) {
-            // Flush through the context to mark DOM elements as transition=ing
-            flushSyncSafe(()=>{
-                // Cancel any pending transitions
-                if (transition) {
-                    renderDfd && renderDfd.resolve();
-                    transition.skipTransition();
-                }
-                setVtContext({
-                    isTransitioning: true,
-                    flushSync: true,
-                    currentLocation: viewTransitionOpts.currentLocation,
-                    nextLocation: viewTransitionOpts.nextLocation
-                });
-            });
-            // Update the DOM
-            let t = router.window.document.startViewTransition(()=>{
-                flushSyncSafe(()=>setStateImpl(newState));
-            });
-            // Clean up after the animation completes
-            t.finished.finally(()=>{
-                flushSyncSafe(()=>{
-                    setRenderDfd(undefined);
-                    setTransition(undefined);
-                    setPendingState(undefined);
-                    setVtContext({
-                        isTransitioning: false
-                    });
-                });
-            });
-            flushSyncSafe(()=>setTransition(t));
-            return;
-        }
-        // startTransition + startViewTransition
-        if (transition) {
-            // Interrupting an in-progress transition, cancel and let everything flush
-            // out, and then kick off a new transition from the interruption state
-            renderDfd && renderDfd.resolve();
-            transition.skipTransition();
-            setInterruption({
-                state: newState,
-                currentLocation: viewTransitionOpts.currentLocation,
-                nextLocation: viewTransitionOpts.nextLocation
-            });
-        } else {
-            // Completed navigation update with opted-in view transitions, let 'er rip
-            setPendingState(newState);
-            setVtContext({
-                isTransitioning: true,
-                flushSync: false,
-                currentLocation: viewTransitionOpts.currentLocation,
-                nextLocation: viewTransitionOpts.nextLocation
-            });
-        }
-    }, [
-        router.window,
-        transition,
-        renderDfd,
-        fetcherData,
-        optInStartTransition
-    ]);
-    // Need to use a layout effect here so we are subscribed early enough to
-    // pick up on any render-driven redirects/navigations (useEffect/<Navigate>)
-    _react.useLayoutEffect(()=>router.subscribe(setState), [
-        router,
-        setState
-    ]);
-    // When we start a view transition, create a Deferred we can use for the
-    // eventual "completed" render
-    _react.useEffect(()=>{
-        if (vtContext.isTransitioning && !vtContext.flushSync) setRenderDfd(new Deferred());
-    }, [
-        vtContext
-    ]);
-    // Once the deferred is created, kick off startViewTransition() to update the
-    // DOM and then wait on the Deferred to resolve (indicating the DOM update has
-    // happened)
-    _react.useEffect(()=>{
-        if (renderDfd && pendingState && router.window) {
-            let newState = pendingState;
-            let renderPromise = renderDfd.promise;
-            let transition = router.window.document.startViewTransition(async ()=>{
-                optInStartTransition(()=>setStateImpl(newState));
-                await renderPromise;
-            });
-            transition.finished.finally(()=>{
-                setRenderDfd(undefined);
-                setTransition(undefined);
-                setPendingState(undefined);
-                setVtContext({
-                    isTransitioning: false
-                });
-            });
-            setTransition(transition);
-        }
-    }, [
-        optInStartTransition,
-        pendingState,
-        renderDfd,
-        router.window
-    ]);
-    // When the new location finally renders and is committed to the DOM, this
-    // effect will run to resolve the transition
-    _react.useEffect(()=>{
-        if (renderDfd && pendingState && state.location.key === pendingState.location.key) renderDfd.resolve();
-    }, [
-        renderDfd,
-        transition,
-        state.location,
-        pendingState
-    ]);
-    // If we get interrupted with a new navigation during a transition, we skip
-    // the active transition, let it cleanup, then kick it off again here
-    _react.useEffect(()=>{
-        if (!vtContext.isTransitioning && interruption) {
-            setPendingState(interruption.state);
-            setVtContext({
-                isTransitioning: true,
-                flushSync: false,
-                currentLocation: interruption.currentLocation,
-                nextLocation: interruption.nextLocation
-            });
-            setInterruption(undefined);
-        }
-    }, [
-        vtContext.isTransitioning,
-        interruption
-    ]);
-    _react.useEffect(()=>{
-        (0, _router.UNSAFE_warning)(fallbackElement == null || !router.future.v7_partialHydration, "`<RouterProvider fallbackElement>` is deprecated when using `v7_partialHydration`, use a `HydrateFallback` component instead");
-    // Only log this once on initial mount
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
-    let navigator = _react.useMemo(()=>{
-        return {
-            createHref: router.createHref,
-            encodeLocation: router.encodeLocation,
-            go: (n)=>router.navigate(n),
-            push: (to, state, opts)=>router.navigate(to, {
-                    state,
-                    preventScrollReset: opts == null ? void 0 : opts.preventScrollReset
-                }),
-            replace: (to, state, opts)=>router.navigate(to, {
-                    replace: true,
-                    state,
-                    preventScrollReset: opts == null ? void 0 : opts.preventScrollReset
-                })
-        };
-    }, [
-        router
-    ]);
-    let basename = router.basename || "/";
-    let dataRouterContext = _react.useMemo(()=>({
-            router,
-            navigator,
-            static: false,
-            basename
-        }), [
-        router,
-        navigator,
-        basename
-    ]);
-    let routerFuture = _react.useMemo(()=>({
-            v7_relativeSplatPath: router.future.v7_relativeSplatPath
-        }), [
-        router.future.v7_relativeSplatPath
-    ]);
-    _react.useEffect(()=>(0, _reactRouter.UNSAFE_logV6DeprecationWarnings)(future, router.future), [
-        future,
-        router.future
-    ]);
-    // The fragment and {null} here are important!  We need them to keep React 18's
-    // useId happy when we are server-rendering since we may have a <script> here
-    // containing the hydrated server-side staticContext (from StaticRouterProvider).
-    // useId relies on the component tree structure to generate deterministic id's
-    // so we need to ensure it remains the same on the client even though
-    // we don't need the <script> tag
-    return /*#__PURE__*/ _react.createElement(_react.Fragment, null, /*#__PURE__*/ _react.createElement((0, _reactRouter.UNSAFE_DataRouterContext).Provider, {
-        value: dataRouterContext
-    }, /*#__PURE__*/ _react.createElement((0, _reactRouter.UNSAFE_DataRouterStateContext).Provider, {
-        value: state
-    }, /*#__PURE__*/ _react.createElement(FetchersContext.Provider, {
-        value: fetcherData.current
-    }, /*#__PURE__*/ _react.createElement(ViewTransitionContext.Provider, {
-        value: vtContext
-    }, /*#__PURE__*/ _react.createElement((0, _reactRouter.Router), {
-        basename: basename,
-        location: state.location,
-        navigationType: state.historyAction,
-        navigator: navigator,
-        future: routerFuture
-    }, state.initialized || router.future.v7_partialHydration ? /*#__PURE__*/ _react.createElement(MemoizedDataRoutes, {
-        routes: router.routes,
-        future: router.future,
-        state: state
-    }) : fallbackElement))))), null);
-}
-// Memoize to avoid re-renders when updating `ViewTransitionContext`
-const MemoizedDataRoutes = /*#__PURE__*/ _react.memo(DataRoutes);
-function DataRoutes(_ref3) {
-    let { routes, future, state } = _ref3;
-    return (0, _reactRouter.UNSAFE_useRoutesImpl)(routes, undefined, state, future);
-}
-/**
- * A `<Router>` for use in web browsers. Provides the cleanest URLs.
- */ function BrowserRouter(_ref4) {
-    let { basename, children, future, window: window1 } = _ref4;
-    let historyRef = _react.useRef();
-    if (historyRef.current == null) historyRef.current = (0, _router.createBrowserHistory)({
-        window: window1,
-        v5Compat: true
-    });
-    let history = historyRef.current;
-    let [state, setStateImpl] = _react.useState({
-        action: history.action,
-        location: history.location
-    });
-    let { v7_startTransition } = future || {};
-    let setState = _react.useCallback((newState)=>{
-        v7_startTransition && startTransitionImpl ? startTransitionImpl(()=>setStateImpl(newState)) : setStateImpl(newState);
-    }, [
-        setStateImpl,
-        v7_startTransition
-    ]);
-    _react.useLayoutEffect(()=>history.listen(setState), [
-        history,
-        setState
-    ]);
-    _react.useEffect(()=>(0, _reactRouter.UNSAFE_logV6DeprecationWarnings)(future), [
-        future
-    ]);
-    return /*#__PURE__*/ _react.createElement((0, _reactRouter.Router), {
-        basename: basename,
-        children: children,
-        location: state.location,
-        navigationType: state.action,
-        navigator: history,
-        future: future
-    });
-}
-/**
- * A `<Router>` for use in web browsers. Stores the location in the hash
- * portion of the URL so it is not sent to the server.
- */ function HashRouter(_ref5) {
-    let { basename, children, future, window: window1 } = _ref5;
-    let historyRef = _react.useRef();
-    if (historyRef.current == null) historyRef.current = (0, _router.createHashHistory)({
-        window: window1,
-        v5Compat: true
-    });
-    let history = historyRef.current;
-    let [state, setStateImpl] = _react.useState({
-        action: history.action,
-        location: history.location
-    });
-    let { v7_startTransition } = future || {};
-    let setState = _react.useCallback((newState)=>{
-        v7_startTransition && startTransitionImpl ? startTransitionImpl(()=>setStateImpl(newState)) : setStateImpl(newState);
-    }, [
-        setStateImpl,
-        v7_startTransition
-    ]);
-    _react.useLayoutEffect(()=>history.listen(setState), [
-        history,
-        setState
-    ]);
-    _react.useEffect(()=>(0, _reactRouter.UNSAFE_logV6DeprecationWarnings)(future), [
-        future
-    ]);
-    return /*#__PURE__*/ _react.createElement((0, _reactRouter.Router), {
-        basename: basename,
-        children: children,
-        location: state.location,
-        navigationType: state.action,
-        navigator: history,
-        future: future
-    });
-}
-/**
- * A `<Router>` that accepts a pre-instantiated history object. It's important
- * to note that using your own history object is highly discouraged and may add
- * two versions of the history library to your bundles unless you use the same
- * version of the history library that React Router uses internally.
- */ function HistoryRouter(_ref6) {
-    let { basename, children, future, history } = _ref6;
-    let [state, setStateImpl] = _react.useState({
-        action: history.action,
-        location: history.location
-    });
-    let { v7_startTransition } = future || {};
-    let setState = _react.useCallback((newState)=>{
-        v7_startTransition && startTransitionImpl ? startTransitionImpl(()=>setStateImpl(newState)) : setStateImpl(newState);
-    }, [
-        setStateImpl,
-        v7_startTransition
-    ]);
-    _react.useLayoutEffect(()=>history.listen(setState), [
-        history,
-        setState
-    ]);
-    _react.useEffect(()=>(0, _reactRouter.UNSAFE_logV6DeprecationWarnings)(future), [
-        future
-    ]);
-    return /*#__PURE__*/ _react.createElement((0, _reactRouter.Router), {
-        basename: basename,
-        children: children,
-        location: state.location,
-        navigationType: state.action,
-        navigator: history,
-        future: future
-    });
-}
-HistoryRouter.displayName = "unstable_HistoryRouter";
-const isBrowser = typeof window !== "undefined" && typeof window.document !== "undefined" && typeof window.document.createElement !== "undefined";
-const ABSOLUTE_URL_REGEX = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i;
-/**
- * The public API for rendering a history-aware `<a>`.
- */ const Link = /*#__PURE__*/ _react.forwardRef(function LinkWithRef(_ref7, ref) {
-    let { onClick, relative, reloadDocument, replace, state, target, to, preventScrollReset, viewTransition } = _ref7, rest = _objectWithoutPropertiesLoose(_ref7, _excluded);
-    let { basename } = _react.useContext((0, _reactRouter.UNSAFE_NavigationContext));
-    // Rendered into <a href> for absolute URLs
-    let absoluteHref;
-    let isExternal = false;
-    if (typeof to === "string" && ABSOLUTE_URL_REGEX.test(to)) {
-        // Render the absolute href server- and client-side
-        absoluteHref = to;
-        // Only check for external origins client-side
-        if (isBrowser) try {
-            let currentUrl = new URL(window.location.href);
-            let targetUrl = to.startsWith("//") ? new URL(currentUrl.protocol + to) : new URL(to);
-            let path = (0, _router.stripBasename)(targetUrl.pathname, basename);
-            if (targetUrl.origin === currentUrl.origin && path != null) // Strip the protocol/origin/basename for same-origin absolute URLs
-            to = path + targetUrl.search + targetUrl.hash;
-            else isExternal = true;
-        } catch (e) {
-            // We can't do external URL detection without a valid URL
-            (0, _router.UNSAFE_warning)(false, "<Link to=\"" + to + "\"> contains an invalid URL which will probably break " + "when clicked - please update to a valid URL path.");
-        }
-    }
-    // Rendered into <a href> for relative URLs
-    let href = (0, _reactRouter.useHref)(to, {
-        relative
-    });
-    let internalOnClick = useLinkClickHandler(to, {
-        replace,
-        state,
-        target,
-        preventScrollReset,
-        relative,
-        viewTransition
-    });
-    function handleClick(event) {
-        if (onClick) onClick(event);
-        if (!event.defaultPrevented) internalOnClick(event);
-    }
-    return(/*#__PURE__*/ // eslint-disable-next-line jsx-a11y/anchor-has-content
-    _react.createElement("a", _extends({}, rest, {
-        href: absoluteHref || href,
-        onClick: isExternal || reloadDocument ? onClick : handleClick,
-        ref: ref,
-        target: target
-    })));
-});
-Link.displayName = "Link";
-/**
- * A `<Link>` wrapper that knows if it's "active" or not.
- */ const NavLink = /*#__PURE__*/ _react.forwardRef(function NavLinkWithRef(_ref8, ref) {
-    let { "aria-current": ariaCurrentProp = "page", caseSensitive = false, className: classNameProp = "", end = false, style: styleProp, to, viewTransition, children } = _ref8, rest = _objectWithoutPropertiesLoose(_ref8, _excluded2);
-    let path = (0, _reactRouter.useResolvedPath)(to, {
-        relative: rest.relative
-    });
-    let location = (0, _reactRouter.useLocation)();
-    let routerState = _react.useContext((0, _reactRouter.UNSAFE_DataRouterStateContext));
-    let { navigator, basename } = _react.useContext((0, _reactRouter.UNSAFE_NavigationContext));
-    let isTransitioning = routerState != null && // Conditional usage is OK here because the usage of a data router is static
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    useViewTransitionState(path) && viewTransition === true;
-    let toPathname = navigator.encodeLocation ? navigator.encodeLocation(path).pathname : path.pathname;
-    let locationPathname = location.pathname;
-    let nextLocationPathname = routerState && routerState.navigation && routerState.navigation.location ? routerState.navigation.location.pathname : null;
-    if (!caseSensitive) {
-        locationPathname = locationPathname.toLowerCase();
-        nextLocationPathname = nextLocationPathname ? nextLocationPathname.toLowerCase() : null;
-        toPathname = toPathname.toLowerCase();
-    }
-    if (nextLocationPathname && basename) nextLocationPathname = (0, _router.stripBasename)(nextLocationPathname, basename) || nextLocationPathname;
-    // If the `to` has a trailing slash, look at that exact spot.  Otherwise,
-    // we're looking for a slash _after_ what's in `to`.  For example:
-    //
-    // <NavLink to="/users"> and <NavLink to="/users/">
-    // both want to look for a / at index 6 to match URL `/users/matt`
-    const endSlashPosition = toPathname !== "/" && toPathname.endsWith("/") ? toPathname.length - 1 : toPathname.length;
-    let isActive = locationPathname === toPathname || !end && locationPathname.startsWith(toPathname) && locationPathname.charAt(endSlashPosition) === "/";
-    let isPending = nextLocationPathname != null && (nextLocationPathname === toPathname || !end && nextLocationPathname.startsWith(toPathname) && nextLocationPathname.charAt(toPathname.length) === "/");
-    let renderProps = {
-        isActive,
-        isPending,
-        isTransitioning
-    };
-    let ariaCurrent = isActive ? ariaCurrentProp : undefined;
-    let className;
-    if (typeof classNameProp === "function") className = classNameProp(renderProps);
-    else // If the className prop is not a function, we use a default `active`
-    // class for <NavLink />s that are active. In v5 `active` was the default
-    // value for `activeClassName`, but we are removing that API and can still
-    // use the old default behavior for a cleaner upgrade path and keep the
-    // simple styling rules working as they currently do.
-    className = [
-        classNameProp,
-        isActive ? "active" : null,
-        isPending ? "pending" : null,
-        isTransitioning ? "transitioning" : null
-    ].filter(Boolean).join(" ");
-    let style = typeof styleProp === "function" ? styleProp(renderProps) : styleProp;
-    return /*#__PURE__*/ _react.createElement(Link, _extends({}, rest, {
-        "aria-current": ariaCurrent,
-        className: className,
-        ref: ref,
-        style: style,
-        to: to,
-        viewTransition: viewTransition
-    }), typeof children === "function" ? children(renderProps) : children);
-});
-NavLink.displayName = "NavLink";
-/**
- * A `@remix-run/router`-aware `<form>`. It behaves like a normal form except
- * that the interaction with the server is with `fetch` instead of new document
- * requests, allowing components to add nicer UX to the page as the form is
- * submitted and returns with data.
- */ const Form = /*#__PURE__*/ _react.forwardRef((_ref9, forwardedRef)=>{
-    let { fetcherKey, navigate, reloadDocument, replace, state, method = defaultMethod, action, onSubmit, relative, preventScrollReset, viewTransition } = _ref9, props = _objectWithoutPropertiesLoose(_ref9, _excluded3);
-    let submit = useSubmit();
-    let formAction = useFormAction(action, {
-        relative
-    });
-    let formMethod = method.toLowerCase() === "get" ? "get" : "post";
-    let submitHandler = (event)=>{
-        onSubmit && onSubmit(event);
-        if (event.defaultPrevented) return;
-        event.preventDefault();
-        let submitter = event.nativeEvent.submitter;
-        let submitMethod = (submitter == null ? void 0 : submitter.getAttribute("formmethod")) || method;
-        submit(submitter || event.currentTarget, {
-            fetcherKey,
-            method: submitMethod,
-            navigate,
-            replace,
-            state,
-            relative,
-            preventScrollReset,
-            viewTransition
-        });
-    };
-    return /*#__PURE__*/ _react.createElement("form", _extends({
-        ref: forwardedRef,
-        method: formMethod,
-        action: formAction,
-        onSubmit: reloadDocument ? onSubmit : submitHandler
-    }, props));
-});
-Form.displayName = "Form";
-/**
- * This component will emulate the browser's scroll restoration on location
- * changes.
- */ function ScrollRestoration(_ref10) {
-    let { getKey, storageKey } = _ref10;
-    useScrollRestoration({
-        getKey,
-        storageKey
-    });
-    return null;
-}
-ScrollRestoration.displayName = "ScrollRestoration";
-//#endregion
-////////////////////////////////////////////////////////////////////////////////
-//#region Hooks
-////////////////////////////////////////////////////////////////////////////////
-var DataRouterHook;
-(function(DataRouterHook) {
-    DataRouterHook["UseScrollRestoration"] = "useScrollRestoration";
-    DataRouterHook["UseSubmit"] = "useSubmit";
-    DataRouterHook["UseSubmitFetcher"] = "useSubmitFetcher";
-    DataRouterHook["UseFetcher"] = "useFetcher";
-    DataRouterHook["useViewTransitionState"] = "useViewTransitionState";
-})(DataRouterHook || (DataRouterHook = {}));
-var DataRouterStateHook;
-(function(DataRouterStateHook) {
-    DataRouterStateHook["UseFetcher"] = "useFetcher";
-    DataRouterStateHook["UseFetchers"] = "useFetchers";
-    DataRouterStateHook["UseScrollRestoration"] = "useScrollRestoration";
-})(DataRouterStateHook || (DataRouterStateHook = {}));
-// Internal hooks
-function getDataRouterConsoleError(hookName) {
-    return hookName + " must be used within a data router.  See https://reactrouter.com/v6/routers/picking-a-router.";
-}
-function useDataRouterContext(hookName) {
-    let ctx = _react.useContext((0, _reactRouter.UNSAFE_DataRouterContext));
-    !ctx && (0, _router.UNSAFE_invariant)(false, getDataRouterConsoleError(hookName));
-    return ctx;
-}
-function useDataRouterState(hookName) {
-    let state = _react.useContext((0, _reactRouter.UNSAFE_DataRouterStateContext));
-    !state && (0, _router.UNSAFE_invariant)(false, getDataRouterConsoleError(hookName));
-    return state;
-}
-// External hooks
-/**
- * Handles the click behavior for router `<Link>` components. This is useful if
- * you need to create custom `<Link>` components with the same click behavior we
- * use in our exported `<Link>`.
- */ function useLinkClickHandler(to, _temp) {
-    let { target, replace: replaceProp, state, preventScrollReset, relative, viewTransition } = _temp === void 0 ? {} : _temp;
-    let navigate = (0, _reactRouter.useNavigate)();
-    let location = (0, _reactRouter.useLocation)();
-    let path = (0, _reactRouter.useResolvedPath)(to, {
-        relative
-    });
-    return _react.useCallback((event)=>{
-        if (shouldProcessLinkClick(event, target)) {
-            event.preventDefault();
-            // If the URL hasn't changed, a regular <a> will do a replace instead of
-            // a push, so do the same here unless the replace prop is explicitly set
-            let replace = replaceProp !== undefined ? replaceProp : (0, _reactRouter.createPath)(location) === (0, _reactRouter.createPath)(path);
-            navigate(to, {
-                replace,
-                state,
-                preventScrollReset,
-                relative,
-                viewTransition
-            });
-        }
-    }, [
-        location,
-        navigate,
-        path,
-        replaceProp,
-        state,
-        target,
-        to,
-        preventScrollReset,
-        relative,
-        viewTransition
-    ]);
-}
-/**
- * A convenient wrapper for reading and writing search parameters via the
- * URLSearchParams interface.
- */ function useSearchParams(defaultInit) {
-    (0, _router.UNSAFE_warning)(typeof URLSearchParams !== "undefined", "You cannot use the `useSearchParams` hook in a browser that does not support the URLSearchParams API. If you need to support Internet Explorer 11, we recommend you load a polyfill such as https://github.com/ungap/url-search-params.");
-    let defaultSearchParamsRef = _react.useRef(createSearchParams(defaultInit));
-    let hasSetSearchParamsRef = _react.useRef(false);
-    let location = (0, _reactRouter.useLocation)();
-    let searchParams = _react.useMemo(()=>// Only merge in the defaults if we haven't yet called setSearchParams.
-        // Once we call that we want those to take precedence, otherwise you can't
-        // remove a param with setSearchParams({}) if it has an initial value
-        getSearchParamsForLocation(location.search, hasSetSearchParamsRef.current ? null : defaultSearchParamsRef.current), [
-        location.search
-    ]);
-    let navigate = (0, _reactRouter.useNavigate)();
-    let setSearchParams = _react.useCallback((nextInit, navigateOptions)=>{
-        const newSearchParams = createSearchParams(typeof nextInit === "function" ? nextInit(searchParams) : nextInit);
-        hasSetSearchParamsRef.current = true;
-        navigate("?" + newSearchParams, navigateOptions);
-    }, [
-        navigate,
-        searchParams
-    ]);
-    return [
-        searchParams,
-        setSearchParams
-    ];
-}
-function validateClientSideSubmission() {
-    if (typeof document === "undefined") throw new Error("You are calling submit during the server render. Try calling submit within a `useEffect` or callback instead.");
-}
-let fetcherId = 0;
-let getUniqueFetcherId = ()=>"__" + String(++fetcherId) + "__";
-/**
- * Returns a function that may be used to programmatically submit a form (or
- * some arbitrary data) to the server.
- */ function useSubmit() {
-    let { router } = useDataRouterContext(DataRouterHook.UseSubmit);
-    let { basename } = _react.useContext((0, _reactRouter.UNSAFE_NavigationContext));
-    let currentRouteId = (0, _reactRouter.UNSAFE_useRouteId)();
-    return _react.useCallback(function(target, options) {
-        if (options === void 0) options = {};
-        validateClientSideSubmission();
-        let { action, method, encType, formData, body } = getFormSubmissionInfo(target, basename);
-        if (options.navigate === false) {
-            let key = options.fetcherKey || getUniqueFetcherId();
-            router.fetch(key, currentRouteId, options.action || action, {
-                preventScrollReset: options.preventScrollReset,
-                formData,
-                body,
-                formMethod: options.method || method,
-                formEncType: options.encType || encType,
-                flushSync: options.flushSync
-            });
-        } else router.navigate(options.action || action, {
-            preventScrollReset: options.preventScrollReset,
-            formData,
-            body,
-            formMethod: options.method || method,
-            formEncType: options.encType || encType,
-            replace: options.replace,
-            state: options.state,
-            fromRouteId: currentRouteId,
-            flushSync: options.flushSync,
-            viewTransition: options.viewTransition
-        });
-    }, [
-        router,
-        basename,
-        currentRouteId
-    ]);
-}
-// v7: Eventually we should deprecate this entirely in favor of using the
-// router method directly?
-function useFormAction(action, _temp2) {
-    let { relative } = _temp2 === void 0 ? {} : _temp2;
-    let { basename } = _react.useContext((0, _reactRouter.UNSAFE_NavigationContext));
-    let routeContext = _react.useContext((0, _reactRouter.UNSAFE_RouteContext));
-    !routeContext && (0, _router.UNSAFE_invariant)(false, "useFormAction must be used inside a RouteContext");
-    let [match] = routeContext.matches.slice(-1);
-    // Shallow clone path so we can modify it below, otherwise we modify the
-    // object referenced by useMemo inside useResolvedPath
-    let path = _extends({}, (0, _reactRouter.useResolvedPath)(action ? action : ".", {
-        relative
-    }));
-    // If no action was specified, browsers will persist current search params
-    // when determining the path, so match that behavior
-    // https://github.com/remix-run/remix/issues/927
-    let location = (0, _reactRouter.useLocation)();
-    if (action == null) {
-        // Safe to write to this directly here since if action was undefined, we
-        // would have called useResolvedPath(".") which will never include a search
-        path.search = location.search;
-        // When grabbing search params from the URL, remove any included ?index param
-        // since it might not apply to our contextual route.  We add it back based
-        // on match.route.index below
-        let params = new URLSearchParams(path.search);
-        let indexValues = params.getAll("index");
-        let hasNakedIndexParam = indexValues.some((v)=>v === "");
-        if (hasNakedIndexParam) {
-            params.delete("index");
-            indexValues.filter((v)=>v).forEach((v)=>params.append("index", v));
-            let qs = params.toString();
-            path.search = qs ? "?" + qs : "";
-        }
-    }
-    if ((!action || action === ".") && match.route.index) path.search = path.search ? path.search.replace(/^\?/, "?index&") : "?index";
-    // If we're operating within a basename, prepend it to the pathname prior
-    // to creating the form action.  If this is a root navigation, then just use
-    // the raw basename which allows the basename to have full control over the
-    // presence of a trailing slash on root actions
-    if (basename !== "/") path.pathname = path.pathname === "/" ? basename : (0, _router.joinPaths)([
-        basename,
-        path.pathname
-    ]);
-    return (0, _reactRouter.createPath)(path);
-}
-// TODO: (v7) Change the useFetcher generic default from `any` to `unknown`
-/**
- * Interacts with route loaders and actions without causing a navigation. Great
- * for any interaction that stays on the same page.
- */ function useFetcher(_temp3) {
-    var _route$matches;
-    let { key } = _temp3 === void 0 ? {} : _temp3;
-    let { router } = useDataRouterContext(DataRouterHook.UseFetcher);
-    let state = useDataRouterState(DataRouterStateHook.UseFetcher);
-    let fetcherData = _react.useContext(FetchersContext);
-    let route = _react.useContext((0, _reactRouter.UNSAFE_RouteContext));
-    let routeId = (_route$matches = route.matches[route.matches.length - 1]) == null ? void 0 : _route$matches.route.id;
-    !fetcherData && (0, _router.UNSAFE_invariant)(false, "useFetcher must be used inside a FetchersContext");
-    !route && (0, _router.UNSAFE_invariant)(false, "useFetcher must be used inside a RouteContext");
-    !(routeId != null) && (0, _router.UNSAFE_invariant)(false, "useFetcher can only be used on routes that contain a unique \"id\"");
-    // Fetcher key handling
-    // OK to call conditionally to feature detect `useId`
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    let defaultKey = useIdImpl ? useIdImpl() : "";
-    let [fetcherKey, setFetcherKey] = _react.useState(key || defaultKey);
-    if (key && key !== fetcherKey) setFetcherKey(key);
-    else if (!fetcherKey) // We will only fall through here when `useId` is not available
-    setFetcherKey(getUniqueFetcherId());
-    // Registration/cleanup
-    _react.useEffect(()=>{
-        router.getFetcher(fetcherKey);
-        return ()=>{
-            // Tell the router we've unmounted - if v7_fetcherPersist is enabled this
-            // will not delete immediately but instead queue up a delete after the
-            // fetcher returns to an `idle` state
-            router.deleteFetcher(fetcherKey);
-        };
-    }, [
-        router,
-        fetcherKey
-    ]);
-    // Fetcher additions
-    let load = _react.useCallback((href, opts)=>{
-        !routeId && (0, _router.UNSAFE_invariant)(false, "No routeId available for fetcher.load()");
-        router.fetch(fetcherKey, routeId, href, opts);
-    }, [
-        fetcherKey,
-        routeId,
-        router
-    ]);
-    let submitImpl = useSubmit();
-    let submit = _react.useCallback((target, opts)=>{
-        submitImpl(target, _extends({}, opts, {
-            navigate: false,
-            fetcherKey
-        }));
-    }, [
-        fetcherKey,
-        submitImpl
-    ]);
-    let FetcherForm = _react.useMemo(()=>{
-        let FetcherForm = /*#__PURE__*/ _react.forwardRef((props, ref)=>{
-            return /*#__PURE__*/ _react.createElement(Form, _extends({}, props, {
-                navigate: false,
-                fetcherKey: fetcherKey,
-                ref: ref
-            }));
-        });
-        FetcherForm.displayName = "fetcher.Form";
-        return FetcherForm;
-    }, [
-        fetcherKey
-    ]);
-    // Exposed FetcherWithComponents
-    let fetcher = state.fetchers.get(fetcherKey) || (0, _router.IDLE_FETCHER);
-    let data = fetcherData.get(fetcherKey);
-    let fetcherWithComponents = _react.useMemo(()=>_extends({
-            Form: FetcherForm,
-            submit,
-            load
-        }, fetcher, {
-            data
-        }), [
-        FetcherForm,
-        submit,
-        load,
-        fetcher,
-        data
-    ]);
-    return fetcherWithComponents;
-}
-/**
- * Provides all fetchers currently on the page. Useful for layouts and parent
- * routes that need to provide pending/optimistic UI regarding the fetch.
- */ function useFetchers() {
-    let state = useDataRouterState(DataRouterStateHook.UseFetchers);
-    return Array.from(state.fetchers.entries()).map((_ref11)=>{
-        let [key, fetcher] = _ref11;
-        return _extends({}, fetcher, {
-            key
-        });
-    });
-}
-const SCROLL_RESTORATION_STORAGE_KEY = "react-router-scroll-positions";
-let savedScrollPositions = {};
-/**
- * When rendered inside a RouterProvider, will restore scroll positions on navigations
- */ function useScrollRestoration(_temp4) {
-    let { getKey, storageKey } = _temp4 === void 0 ? {} : _temp4;
-    let { router } = useDataRouterContext(DataRouterHook.UseScrollRestoration);
-    let { restoreScrollPosition, preventScrollReset } = useDataRouterState(DataRouterStateHook.UseScrollRestoration);
-    let { basename } = _react.useContext((0, _reactRouter.UNSAFE_NavigationContext));
-    let location = (0, _reactRouter.useLocation)();
-    let matches = (0, _reactRouter.useMatches)();
-    let navigation = (0, _reactRouter.useNavigation)();
-    // Trigger manual scroll restoration while we're active
-    _react.useEffect(()=>{
-        window.history.scrollRestoration = "manual";
-        return ()=>{
-            window.history.scrollRestoration = "auto";
-        };
-    }, []);
-    // Save positions on pagehide
-    usePageHide(_react.useCallback(()=>{
-        if (navigation.state === "idle") {
-            let key = (getKey ? getKey(location, matches) : null) || location.key;
-            savedScrollPositions[key] = window.scrollY;
-        }
-        try {
-            sessionStorage.setItem(storageKey || SCROLL_RESTORATION_STORAGE_KEY, JSON.stringify(savedScrollPositions));
-        } catch (error) {
-            (0, _router.UNSAFE_warning)(false, "Failed to save scroll positions in sessionStorage, <ScrollRestoration /> will not work properly (" + error + ").");
-        }
-        window.history.scrollRestoration = "auto";
-    }, [
-        storageKey,
-        getKey,
-        navigation.state,
-        location,
-        matches
-    ]));
-    // Read in any saved scroll locations
-    if (typeof document !== "undefined") {
-        // eslint-disable-next-line react-hooks/rules-of-hooks
-        _react.useLayoutEffect(()=>{
-            try {
-                let sessionPositions = sessionStorage.getItem(storageKey || SCROLL_RESTORATION_STORAGE_KEY);
-                if (sessionPositions) savedScrollPositions = JSON.parse(sessionPositions);
-            } catch (e) {
-            // no-op, use default empty object
-            }
-        }, [
-            storageKey
-        ]);
-        // Enable scroll restoration in the router
-        // eslint-disable-next-line react-hooks/rules-of-hooks
-        _react.useLayoutEffect(()=>{
-            let getKeyWithoutBasename = getKey && basename !== "/" ? (location, matches)=>getKey(_extends({}, location, {
-                    pathname: (0, _router.stripBasename)(location.pathname, basename) || location.pathname
-                }), matches) : getKey;
-            let disableScrollRestoration = router == null ? void 0 : router.enableScrollRestoration(savedScrollPositions, ()=>window.scrollY, getKeyWithoutBasename);
-            return ()=>disableScrollRestoration && disableScrollRestoration();
-        }, [
-            router,
-            basename,
-            getKey
-        ]);
-        // Restore scrolling when state.restoreScrollPosition changes
-        // eslint-disable-next-line react-hooks/rules-of-hooks
-        _react.useLayoutEffect(()=>{
-            // Explicit false means don't do anything (used for submissions)
-            if (restoreScrollPosition === false) return;
-            // been here before, scroll to it
-            if (typeof restoreScrollPosition === "number") {
-                window.scrollTo(0, restoreScrollPosition);
-                return;
-            }
-            // try to scroll to the hash
-            if (location.hash) {
-                let el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
-                if (el) {
-                    el.scrollIntoView();
-                    return;
-                }
-            }
-            // Don't reset if this navigation opted out
-            if (preventScrollReset === true) return;
-            // otherwise go to the top on new locations
-            window.scrollTo(0, 0);
-        }, [
-            location,
-            restoreScrollPosition,
-            preventScrollReset
-        ]);
-    }
-}
-/**
- * Setup a callback to be fired on the window's `beforeunload` event. This is
- * useful for saving some data to `window.localStorage` just before the page
- * refreshes.
- *
- * Note: The `callback` argument should be a function created with
- * `React.useCallback()`.
- */ function useBeforeUnload(callback, options) {
-    let { capture } = options || {};
-    _react.useEffect(()=>{
-        let opts = capture != null ? {
-            capture
-        } : undefined;
-        window.addEventListener("beforeunload", callback, opts);
-        return ()=>{
-            window.removeEventListener("beforeunload", callback, opts);
-        };
-    }, [
-        callback,
-        capture
-    ]);
-}
-/**
- * Setup a callback to be fired on the window's `pagehide` event. This is
- * useful for saving some data to `window.localStorage` just before the page
- * refreshes.  This event is better supported than beforeunload across browsers.
- *
- * Note: The `callback` argument should be a function created with
- * `React.useCallback()`.
- */ function usePageHide(callback, options) {
-    let { capture } = options || {};
-    _react.useEffect(()=>{
-        let opts = capture != null ? {
-            capture
-        } : undefined;
-        window.addEventListener("pagehide", callback, opts);
-        return ()=>{
-            window.removeEventListener("pagehide", callback, opts);
-        };
-    }, [
-        callback,
-        capture
-    ]);
-}
-/**
- * Wrapper around useBlocker to show a window.confirm prompt to users instead
- * of building a custom UI with useBlocker.
- *
- * Warning: This has *a lot of rough edges* and behaves very differently (and
- * very incorrectly in some cases) across browsers if user click addition
- * back/forward navigations while the confirm is open.  Use at your own risk.
- */ function usePrompt(_ref12) {
-    let { when, message } = _ref12;
-    let blocker = (0, _reactRouter.useBlocker)(when);
-    _react.useEffect(()=>{
-        if (blocker.state === "blocked") {
-            let proceed = window.confirm(message);
-            if (proceed) // This timeout is needed to avoid a weird "race" on POP navigations
-            // between the `window.history` revert navigation and the result of
-            // `window.confirm`
-            setTimeout(blocker.proceed, 0);
-            else blocker.reset();
-        }
-    }, [
-        blocker,
-        message
-    ]);
-    _react.useEffect(()=>{
-        if (blocker.state === "blocked" && !when) blocker.reset();
-    }, [
-        blocker,
-        when
-    ]);
-}
-/**
- * Return a boolean indicating if there is an active view transition to the
- * given href.  You can use this value to render CSS classes or viewTransitionName
- * styles onto your elements
- *
- * @param href The destination href
- * @param [opts.relative] Relative routing type ("route" | "path")
- */ function useViewTransitionState(to, opts) {
-    if (opts === void 0) opts = {};
-    let vtContext = _react.useContext(ViewTransitionContext);
-    !(vtContext != null) && (0, _router.UNSAFE_invariant)(false, "`useViewTransitionState` must be used within `react-router-dom`'s `RouterProvider`.  Did you accidentally import `RouterProvider` from `react-router`?");
-    let { basename } = useDataRouterContext(DataRouterHook.useViewTransitionState);
-    let path = (0, _reactRouter.useResolvedPath)(to, {
-        relative: opts.relative
-    });
-    if (!vtContext.isTransitioning) return false;
-    let currentPath = (0, _router.stripBasename)(vtContext.currentLocation.pathname, basename) || vtContext.currentLocation.pathname;
-    let nextPath = (0, _router.stripBasename)(vtContext.nextLocation.pathname, basename) || vtContext.nextLocation.pathname;
-    // Transition is active if we're going to or coming from the indicated
-    // destination.  This ensures that other PUSH navigations that reverse
-    // an indicated transition apply.  I.e., on the list view you have:
-    //
-    //   <NavLink to="/details/1" viewTransition>
-    //
-    // If you click the breadcrumb back to the list view:
-    //
-    //   <NavLink to="/list" viewTransition>
-    //
-    // We should apply the transition because it's indicated as active going
-    // from /list -> /details/1 and therefore should be active on the reverse
-    // (even though this isn't strictly a POP reverse)
-    return (0, _router.matchPath)(path.pathname, nextPath) != null || (0, _router.matchPath)(path.pathname, currentPath) != null;
-}
-
-},{"react":"21dqq","react-dom":"j6uA9","react-router":"dbWyW","@remix-run/router":"5ncDG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"j6uA9":[function(require,module,exports,__globalThis) {
+},{"aaccff5d309d9239":"j6uA9"}],"j6uA9":[function(require,module,exports,__globalThis) {
 'use strict';
 function checkDCE() {
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === 'undefined' || typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== 'function') return;
@@ -29904,7 +27298,1856 @@ module.exports = require("ef03b89c8fe2794e");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== 'undefined' && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === 'function') __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"dbWyW":[function(require,module,exports,__globalThis) {
+},{}],"bANSw":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Schedule", ()=>(0, _schedule.Schedule));
+var _schedule = require("./Schedule");
+
+},{"./Schedule":"hvAsX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hvAsX":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$1426 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$1426.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Schedule", ()=>Schedule);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _styleCss = require("./style.css");
+var _reactRouterDom = require("react-router-dom");
+var _google = require("@react-oauth/google");
+var _gapiScript = require("gapi-script");
+var _s = $RefreshSig$();
+const Schedule = ()=>{
+    _s();
+    const CLIENT_ID = "7058040155-g739av7vkfgl73dbvk6mrkiadt6vdjs5.apps.googleusercontent.com";
+    const API_KEY = "AIzaSyBYdgzwDYfT95WAoyNEGH8BD2A7ZujvwCk";
+    const CLIENT_SECRET = "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"; // Replace with your actual client secret
+    const SCOPES = "https://www.googleapis.com/auth/calendar https://www.googleapis.com/auth/calendar.events.readonly";
+    const [events, setEvents] = (0, _react.useState)([]);
+    const [error, setError] = (0, _react.useState)(null);
+    const REDIRECT_URI = window.location.origin;
+    // Function to initialize gapi client
+    const initClient = (accessToken)=>{
+        (0, _gapiScript.gapi).load("client", ()=>{
+            (0, _gapiScript.gapi).client.init({
+                apiKey: API_KEY,
+                clientId: CLIENT_ID,
+                discoveryDocs: [
+                    "https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"
+                ],
+                scope: SCOPES
+            }).then(()=>{
+                (0, _gapiScript.gapi).auth.setToken({
+                    access_token: accessToken
+                });
+                fetchEvents();
+            }).catch((err)=>setError("Error initializing client: " + err.message));
+        });
+    };
+    // Function to fetch Google Calendar events
+    const fetchEvents = ()=>{
+        (0, _gapiScript.gapi).client.calendar.events.list({
+            calendarId: "f447f8579b4a1493049fbea49a613748677a5754a3ec46b076c57f08cc08d5ef@group.calendar.google.com",
+            timeMin: new Date().toISOString(),
+            showDeleted: false,
+            singleEvents: true,
+            maxResults: 10,
+            orderBy: "startTime",
+            headers: {
+                Authorization: `Bearer ${(0, _gapiScript.gapi).auth.getToken().access_token}`
+            }
+        }).then((response)=>{
+            console.log("Events response:", response);
+            setEvents(response.result.items);
+        }).catch((err)=>{
+            console.error("Fetch events error:", err);
+            setError("Error fetching events: " + err.message);
+        });
+    };
+    // Login function
+    const login = (0, _google.useGoogleLogin)({
+        flow: "auth-code",
+        onSuccess: (codeResponse)=>{
+            console.log("Redirect URI:", REDIRECT_URI);
+            console.log("Auth Code:", codeResponse.code);
+            // Exchange the authorization code for an access token
+            fetch("https://oauth2.googleapis.com/token", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                body: new URLSearchParams({
+                    code: codeResponse.code,
+                    client_id: CLIENT_ID,
+                    client_secret: CLIENT_SECRET,
+                    redirect_uri: REDIRECT_URI,
+                    grant_type: "authorization_code"
+                })
+            }).then((response)=>{
+                if (!response.ok) return response.json().then((err)=>{
+                    console.error("Token Exchange Error:", err);
+                    throw new Error(err.error_description || "Token exchange failed");
+                });
+                return response.json();
+            }).then((data)=>{
+                console.log("Access Token:", data.access_token);
+                initClient(data.access_token);
+            }).catch((err)=>setError("Error exchanging code: " + err.message));
+        },
+        onError: ()=>setError("Login failed."),
+        redirectUri: REDIRECT_URI
+    });
+    console.log("Redirect URI (raw):", REDIRECT_URI);
+    console.log("Redirect URI components:", {
+        origin: window.location.origin,
+        pathname: "/schedule",
+        full: window.location.origin + "/schedule"
+    });
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _google.GoogleOAuthProvider), {
+        clientId: CLIENT_ID,
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "schedule",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "overlap",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "overlap-group",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "container-26",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "header-menu",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                            to: "/schedule",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "frame",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "text-wrapper-bold",
+                                                    children: "Schedule"
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/Schedule/Schedule.jsx",
+                                                    lineNumber: 117,
+                                                    columnNumber: 21
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/screens/Schedule/Schedule.jsx",
+                                                lineNumber: 116,
+                                                columnNumber: 19
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/screens/Schedule/Schedule.jsx",
+                                            lineNumber: 115,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                            to: "/group-availability",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "frame-2",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "text-wrapper-menu",
+                                                    children: "Availability"
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/Schedule/Schedule.jsx",
+                                                    lineNumber: 122,
+                                                    columnNumber: 21
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/screens/Schedule/Schedule.jsx",
+                                                lineNumber: 121,
+                                                columnNumber: 19
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/screens/Schedule/Schedule.jsx",
+                                            lineNumber: 120,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "frame-3",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "text-wrapper-menu",
+                                                children: "Community"
+                                            }, void 0, false, {
+                                                fileName: "src/screens/Schedule/Schedule.jsx",
+                                                lineNumber: 126,
+                                                columnNumber: 19
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/screens/Schedule/Schedule.jsx",
+                                            lineNumber: 125,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                            to: "/map",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "frame-4",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "text-wrapper-menu",
+                                                    children: "Map"
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/Schedule/Schedule.jsx",
+                                                    lineNumber: 130,
+                                                    columnNumber: 21
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/screens/Schedule/Schedule.jsx",
+                                                lineNumber: 129,
+                                                columnNumber: 19
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/screens/Schedule/Schedule.jsx",
+                                            lineNumber: 128,
+                                            columnNumber: 17
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/Schedule/Schedule.jsx",
+                                    lineNumber: 114,
+                                    columnNumber: 15
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    to: "/",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "text-wrapper-menu-title",
+                                        children: "Pickup@Penn"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/Schedule/Schedule.jsx",
+                                        lineNumber: 135,
+                                        columnNumber: 17
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/screens/Schedule/Schedule.jsx",
+                                    lineNumber: 134,
+                                    columnNumber: 15
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    to: "/availability",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "prof",
+                                        alt: "Profile",
+                                        src: "https://c.animaapp.com/RqvJyPyX/img/image-27@2x.png"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/Schedule/Schedule.jsx",
+                                        lineNumber: 138,
+                                        columnNumber: 17
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/screens/Schedule/Schedule.jsx",
+                                    lineNumber: 137,
+                                    columnNumber: 15
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    to: "/",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "logo",
+                                        alt: "Logo",
+                                        src: "https://c.animaapp.com/RqvJyPyX/img/image-28@2x.png"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/Schedule/Schedule.jsx",
+                                        lineNumber: 145,
+                                        columnNumber: 17
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/screens/Schedule/Schedule.jsx",
+                                    lineNumber: 144,
+                                    columnNumber: 15
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/Schedule/Schedule.jsx",
+                            lineNumber: 112,
+                            columnNumber: 13
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "container",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    onClick: login,
+                                    className: "sync-button",
+                                    style: {
+                                        backgroundColor: '#2d3f70',
+                                        color: 'white',
+                                        padding: '10px 20px',
+                                        borderRadius: '6px',
+                                        border: 'none',
+                                        fontFamily: '"Inter", Helvetica',
+                                        fontSize: '14px',
+                                        fontWeight: '400',
+                                        cursor: 'pointer',
+                                        marginBottom: '20px',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        gap: '8px'
+                                    },
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            src: "https://www.gstatic.com/calendar/images/dynamiclogo_2020q4/calendar_31_2x.png",
+                                            alt: "Google Calendar",
+                                            style: {
+                                                width: '20px',
+                                                height: '20px'
+                                            }
+                                        }, void 0, false, {
+                                            fileName: "src/screens/Schedule/Schedule.jsx",
+                                            lineNumber: 174,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        "Sync to Google Calendar"
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/Schedule/Schedule.jsx",
+                                    lineNumber: 155,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("iframe", {
+                                    src: "https://calendar.google.com/calendar/embed?src=f447f8579b4a1493049fbea49a613748677a5754a3ec46b076c57f08cc08d5ef%40group.calendar.google.com&ctz=America%2FNew_York",
+                                    style: {
+                                        border: 0,
+                                        width: '100%',
+                                        height: '600px',
+                                        borderRadius: '12px'
+                                    },
+                                    frameBorder: "0",
+                                    scrolling: "no",
+                                    title: "Group Calendar"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Schedule/Schedule.jsx",
+                                    lineNumber: 185,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/Schedule/Schedule.jsx",
+                            lineNumber: 154,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/create-game",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "create-game-button",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "create-game-text",
+                                        children: "Create New Game"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/Schedule/Schedule.jsx",
+                                        lineNumber: 201,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "create-game-icon",
+                                        alt: "Add",
+                                        src: "https://c.animaapp.com/RqvJyPyX/img/e-add.svg"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/Schedule/Schedule.jsx",
+                                        lineNumber: 202,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/screens/Schedule/Schedule.jsx",
+                                lineNumber: 200,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/screens/Schedule/Schedule.jsx",
+                            lineNumber: 199,
+                            columnNumber: 13
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/Schedule/Schedule.jsx",
+                    lineNumber: 111,
+                    columnNumber: 11
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/screens/Schedule/Schedule.jsx",
+                lineNumber: 110,
+                columnNumber: 9
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/screens/Schedule/Schedule.jsx",
+            lineNumber: 109,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/screens/Schedule/Schedule.jsx",
+        lineNumber: 108,
+        columnNumber: 5
+    }, undefined);
+};
+_s(Schedule, "h8aarhzT1TmWZ59fpxpgfniL41Y=", false, function() {
+    return [
+        (0, _google.useGoogleLogin)
+    ];
+});
+_c = Schedule;
+var _c;
+$RefreshReg$(_c, "Schedule");
+
+  $parcel$ReactRefreshHelpers$1426.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"1Itax","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","@react-oauth/google":"2ATJC","gapi-script":"274mH"}],"1Itax":[function() {},{}],"9xmpe":[function(require,module,exports,__globalThis) {
+/**
+ * React Router DOM v6.28.0
+ *
+ * Copyright (c) Remix Software Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.md file in the root directory of this source tree.
+ *
+ * @license MIT
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "AbortedDeferredError", ()=>(0, _reactRouter.AbortedDeferredError));
+parcelHelpers.export(exports, "Await", ()=>(0, _reactRouter.Await));
+parcelHelpers.export(exports, "MemoryRouter", ()=>(0, _reactRouter.MemoryRouter));
+parcelHelpers.export(exports, "Navigate", ()=>(0, _reactRouter.Navigate));
+parcelHelpers.export(exports, "NavigationType", ()=>(0, _reactRouter.NavigationType));
+parcelHelpers.export(exports, "Outlet", ()=>(0, _reactRouter.Outlet));
+parcelHelpers.export(exports, "Route", ()=>(0, _reactRouter.Route));
+parcelHelpers.export(exports, "Router", ()=>(0, _reactRouter.Router));
+parcelHelpers.export(exports, "Routes", ()=>(0, _reactRouter.Routes));
+parcelHelpers.export(exports, "UNSAFE_DataRouterContext", ()=>(0, _reactRouter.UNSAFE_DataRouterContext));
+parcelHelpers.export(exports, "UNSAFE_DataRouterStateContext", ()=>(0, _reactRouter.UNSAFE_DataRouterStateContext));
+parcelHelpers.export(exports, "UNSAFE_LocationContext", ()=>(0, _reactRouter.UNSAFE_LocationContext));
+parcelHelpers.export(exports, "UNSAFE_NavigationContext", ()=>(0, _reactRouter.UNSAFE_NavigationContext));
+parcelHelpers.export(exports, "UNSAFE_RouteContext", ()=>(0, _reactRouter.UNSAFE_RouteContext));
+parcelHelpers.export(exports, "UNSAFE_useRouteId", ()=>(0, _reactRouter.UNSAFE_useRouteId));
+parcelHelpers.export(exports, "createMemoryRouter", ()=>(0, _reactRouter.createMemoryRouter));
+parcelHelpers.export(exports, "createPath", ()=>(0, _reactRouter.createPath));
+parcelHelpers.export(exports, "createRoutesFromChildren", ()=>(0, _reactRouter.createRoutesFromChildren));
+parcelHelpers.export(exports, "createRoutesFromElements", ()=>(0, _reactRouter.createRoutesFromElements));
+parcelHelpers.export(exports, "defer", ()=>(0, _reactRouter.defer));
+parcelHelpers.export(exports, "generatePath", ()=>(0, _reactRouter.generatePath));
+parcelHelpers.export(exports, "isRouteErrorResponse", ()=>(0, _reactRouter.isRouteErrorResponse));
+parcelHelpers.export(exports, "json", ()=>(0, _reactRouter.json));
+parcelHelpers.export(exports, "matchPath", ()=>(0, _reactRouter.matchPath));
+parcelHelpers.export(exports, "matchRoutes", ()=>(0, _reactRouter.matchRoutes));
+parcelHelpers.export(exports, "parsePath", ()=>(0, _reactRouter.parsePath));
+parcelHelpers.export(exports, "redirect", ()=>(0, _reactRouter.redirect));
+parcelHelpers.export(exports, "redirectDocument", ()=>(0, _reactRouter.redirectDocument));
+parcelHelpers.export(exports, "renderMatches", ()=>(0, _reactRouter.renderMatches));
+parcelHelpers.export(exports, "replace", ()=>(0, _reactRouter.replace));
+parcelHelpers.export(exports, "resolvePath", ()=>(0, _reactRouter.resolvePath));
+parcelHelpers.export(exports, "useActionData", ()=>(0, _reactRouter.useActionData));
+parcelHelpers.export(exports, "useAsyncError", ()=>(0, _reactRouter.useAsyncError));
+parcelHelpers.export(exports, "useAsyncValue", ()=>(0, _reactRouter.useAsyncValue));
+parcelHelpers.export(exports, "useBlocker", ()=>(0, _reactRouter.useBlocker));
+parcelHelpers.export(exports, "useHref", ()=>(0, _reactRouter.useHref));
+parcelHelpers.export(exports, "useInRouterContext", ()=>(0, _reactRouter.useInRouterContext));
+parcelHelpers.export(exports, "useLoaderData", ()=>(0, _reactRouter.useLoaderData));
+parcelHelpers.export(exports, "useLocation", ()=>(0, _reactRouter.useLocation));
+parcelHelpers.export(exports, "useMatch", ()=>(0, _reactRouter.useMatch));
+parcelHelpers.export(exports, "useMatches", ()=>(0, _reactRouter.useMatches));
+parcelHelpers.export(exports, "useNavigate", ()=>(0, _reactRouter.useNavigate));
+parcelHelpers.export(exports, "useNavigation", ()=>(0, _reactRouter.useNavigation));
+parcelHelpers.export(exports, "useNavigationType", ()=>(0, _reactRouter.useNavigationType));
+parcelHelpers.export(exports, "useOutlet", ()=>(0, _reactRouter.useOutlet));
+parcelHelpers.export(exports, "useOutletContext", ()=>(0, _reactRouter.useOutletContext));
+parcelHelpers.export(exports, "useParams", ()=>(0, _reactRouter.useParams));
+parcelHelpers.export(exports, "useResolvedPath", ()=>(0, _reactRouter.useResolvedPath));
+parcelHelpers.export(exports, "useRevalidator", ()=>(0, _reactRouter.useRevalidator));
+parcelHelpers.export(exports, "useRouteError", ()=>(0, _reactRouter.useRouteError));
+parcelHelpers.export(exports, "useRouteLoaderData", ()=>(0, _reactRouter.useRouteLoaderData));
+parcelHelpers.export(exports, "useRoutes", ()=>(0, _reactRouter.useRoutes));
+parcelHelpers.export(exports, "UNSAFE_ErrorResponseImpl", ()=>(0, _router.UNSAFE_ErrorResponseImpl));
+//#endregion
+parcelHelpers.export(exports, "BrowserRouter", ()=>BrowserRouter);
+parcelHelpers.export(exports, "Form", ()=>Form);
+parcelHelpers.export(exports, "HashRouter", ()=>HashRouter);
+parcelHelpers.export(exports, "Link", ()=>Link);
+parcelHelpers.export(exports, "NavLink", ()=>NavLink);
+parcelHelpers.export(exports, "RouterProvider", ()=>RouterProvider);
+parcelHelpers.export(exports, "ScrollRestoration", ()=>ScrollRestoration);
+parcelHelpers.export(exports, "UNSAFE_FetchersContext", ()=>FetchersContext);
+parcelHelpers.export(exports, "UNSAFE_ViewTransitionContext", ()=>ViewTransitionContext);
+parcelHelpers.export(exports, "UNSAFE_useScrollRestoration", ()=>useScrollRestoration);
+parcelHelpers.export(exports, "createBrowserRouter", ()=>createBrowserRouter);
+parcelHelpers.export(exports, "createHashRouter", ()=>createHashRouter);
+parcelHelpers.export(exports, "createSearchParams", ()=>createSearchParams);
+parcelHelpers.export(exports, "unstable_HistoryRouter", ()=>HistoryRouter);
+parcelHelpers.export(exports, "unstable_usePrompt", ()=>usePrompt);
+parcelHelpers.export(exports, "useBeforeUnload", ()=>useBeforeUnload);
+parcelHelpers.export(exports, "useFetcher", ()=>useFetcher);
+parcelHelpers.export(exports, "useFetchers", ()=>useFetchers);
+parcelHelpers.export(exports, "useFormAction", ()=>useFormAction);
+parcelHelpers.export(exports, "useLinkClickHandler", ()=>useLinkClickHandler);
+parcelHelpers.export(exports, "useSearchParams", ()=>useSearchParams);
+parcelHelpers.export(exports, "useSubmit", ()=>useSubmit);
+parcelHelpers.export(exports, "useViewTransitionState", ()=>useViewTransitionState);
+var _react = require("react");
+var _reactDom = require("react-dom");
+var _reactRouter = require("react-router");
+var _router = require("@remix-run/router");
+function _extends() {
+    _extends = Object.assign ? Object.assign.bind() : function(target) {
+        for(var i = 1; i < arguments.length; i++){
+            var source = arguments[i];
+            for(var key in source)if (Object.prototype.hasOwnProperty.call(source, key)) target[key] = source[key];
+        }
+        return target;
+    };
+    return _extends.apply(this, arguments);
+}
+function _objectWithoutPropertiesLoose(source, excluded) {
+    if (source == null) return {};
+    var target = {};
+    var sourceKeys = Object.keys(source);
+    var key, i;
+    for(i = 0; i < sourceKeys.length; i++){
+        key = sourceKeys[i];
+        if (excluded.indexOf(key) >= 0) continue;
+        target[key] = source[key];
+    }
+    return target;
+}
+const defaultMethod = "get";
+const defaultEncType = "application/x-www-form-urlencoded";
+function isHtmlElement(object) {
+    return object != null && typeof object.tagName === "string";
+}
+function isButtonElement(object) {
+    return isHtmlElement(object) && object.tagName.toLowerCase() === "button";
+}
+function isFormElement(object) {
+    return isHtmlElement(object) && object.tagName.toLowerCase() === "form";
+}
+function isInputElement(object) {
+    return isHtmlElement(object) && object.tagName.toLowerCase() === "input";
+}
+function isModifiedEvent(event) {
+    return !!(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey);
+}
+function shouldProcessLinkClick(event, target) {
+    return event.button === 0 && // Ignore everything but left clicks
+    (!target || target === "_self") && // Let browser handle "target=_blank" etc.
+    !isModifiedEvent(event) // Ignore clicks with modifier keys
+    ;
+}
+/**
+ * Creates a URLSearchParams object using the given initializer.
+ *
+ * This is identical to `new URLSearchParams(init)` except it also
+ * supports arrays as values in the object form of the initializer
+ * instead of just strings. This is convenient when you need multiple
+ * values for a given key, but don't want to use an array initializer.
+ *
+ * For example, instead of:
+ *
+ *   let searchParams = new URLSearchParams([
+ *     ['sort', 'name'],
+ *     ['sort', 'price']
+ *   ]);
+ *
+ * you can do:
+ *
+ *   let searchParams = createSearchParams({
+ *     sort: ['name', 'price']
+ *   });
+ */ function createSearchParams(init) {
+    if (init === void 0) init = "";
+    return new URLSearchParams(typeof init === "string" || Array.isArray(init) || init instanceof URLSearchParams ? init : Object.keys(init).reduce((memo, key)=>{
+        let value = init[key];
+        return memo.concat(Array.isArray(value) ? value.map((v)=>[
+                key,
+                v
+            ]) : [
+            [
+                key,
+                value
+            ]
+        ]);
+    }, []));
+}
+function getSearchParamsForLocation(locationSearch, defaultSearchParams) {
+    let searchParams = createSearchParams(locationSearch);
+    if (defaultSearchParams) // Use `defaultSearchParams.forEach(...)` here instead of iterating of
+    // `defaultSearchParams.keys()` to work-around a bug in Firefox related to
+    // web extensions. Relevant Bugzilla tickets:
+    // https://bugzilla.mozilla.org/show_bug.cgi?id=1414602
+    // https://bugzilla.mozilla.org/show_bug.cgi?id=1023984
+    defaultSearchParams.forEach((_, key)=>{
+        if (!searchParams.has(key)) defaultSearchParams.getAll(key).forEach((value)=>{
+            searchParams.append(key, value);
+        });
+    });
+    return searchParams;
+}
+// One-time check for submitter support
+let _formDataSupportsSubmitter = null;
+function isFormDataSubmitterSupported() {
+    if (_formDataSupportsSubmitter === null) try {
+        new FormData(document.createElement("form"), // @ts-expect-error if FormData supports the submitter parameter, this will throw
+        0);
+        _formDataSupportsSubmitter = false;
+    } catch (e) {
+        _formDataSupportsSubmitter = true;
+    }
+    return _formDataSupportsSubmitter;
+}
+const supportedFormEncTypes = new Set([
+    "application/x-www-form-urlencoded",
+    "multipart/form-data",
+    "text/plain"
+]);
+function getFormEncType(encType) {
+    if (encType != null && !supportedFormEncTypes.has(encType)) {
+        (0, _router.UNSAFE_warning)(false, "\"" + encType + "\" is not a valid `encType` for `<Form>`/`<fetcher.Form>` " + ("and will default to \"" + defaultEncType + "\""));
+        return null;
+    }
+    return encType;
+}
+function getFormSubmissionInfo(target, basename) {
+    let method;
+    let action;
+    let encType;
+    let formData;
+    let body;
+    if (isFormElement(target)) {
+        // When grabbing the action from the element, it will have had the basename
+        // prefixed to ensure non-JS scenarios work, so strip it since we'll
+        // re-prefix in the router
+        let attr = target.getAttribute("action");
+        action = attr ? (0, _router.stripBasename)(attr, basename) : null;
+        method = target.getAttribute("method") || defaultMethod;
+        encType = getFormEncType(target.getAttribute("enctype")) || defaultEncType;
+        formData = new FormData(target);
+    } else if (isButtonElement(target) || isInputElement(target) && (target.type === "submit" || target.type === "image")) {
+        let form = target.form;
+        if (form == null) throw new Error("Cannot submit a <button> or <input type=\"submit\"> without a <form>");
+        // <button>/<input type="submit"> may override attributes of <form>
+        // When grabbing the action from the element, it will have had the basename
+        // prefixed to ensure non-JS scenarios work, so strip it since we'll
+        // re-prefix in the router
+        let attr = target.getAttribute("formaction") || form.getAttribute("action");
+        action = attr ? (0, _router.stripBasename)(attr, basename) : null;
+        method = target.getAttribute("formmethod") || form.getAttribute("method") || defaultMethod;
+        encType = getFormEncType(target.getAttribute("formenctype")) || getFormEncType(form.getAttribute("enctype")) || defaultEncType;
+        // Build a FormData object populated from a form and submitter
+        formData = new FormData(form, target);
+        // If this browser doesn't support the `FormData(el, submitter)` format,
+        // then tack on the submitter value at the end.  This is a lightweight
+        // solution that is not 100% spec compliant.  For complete support in older
+        // browsers, consider using the `formdata-submitter-polyfill` package
+        if (!isFormDataSubmitterSupported()) {
+            let { name, type, value } = target;
+            if (type === "image") {
+                let prefix = name ? name + "." : "";
+                formData.append(prefix + "x", "0");
+                formData.append(prefix + "y", "0");
+            } else if (name) formData.append(name, value);
+        }
+    } else if (isHtmlElement(target)) throw new Error('Cannot submit element that is not <form>, <button>, or <input type="submit|image">');
+    else {
+        method = defaultMethod;
+        action = null;
+        encType = defaultEncType;
+        body = target;
+    }
+    // Send body for <Form encType="text/plain" so we encode it into text
+    if (formData && encType === "text/plain") {
+        body = formData;
+        formData = undefined;
+    }
+    return {
+        action,
+        method: method.toLowerCase(),
+        encType,
+        formData,
+        body
+    };
+}
+const _excluded = [
+    "onClick",
+    "relative",
+    "reloadDocument",
+    "replace",
+    "state",
+    "target",
+    "to",
+    "preventScrollReset",
+    "viewTransition"
+], _excluded2 = [
+    "aria-current",
+    "caseSensitive",
+    "className",
+    "end",
+    "style",
+    "to",
+    "viewTransition",
+    "children"
+], _excluded3 = [
+    "fetcherKey",
+    "navigate",
+    "reloadDocument",
+    "replace",
+    "state",
+    "method",
+    "action",
+    "onSubmit",
+    "relative",
+    "preventScrollReset",
+    "viewTransition"
+];
+// HEY YOU! DON'T TOUCH THIS VARIABLE!
+//
+// It is replaced with the proper version at build time via a babel plugin in
+// the rollup config.
+//
+// Export a global property onto the window for React Router detection by the
+// Core Web Vitals Technology Report.  This way they can configure the `wappalyzer`
+// to detect and properly classify live websites as being built with React Router:
+// https://github.com/HTTPArchive/wappalyzer/blob/main/src/technologies/r.json
+const REACT_ROUTER_VERSION = "6";
+try {
+    window.__reactRouterVersion = REACT_ROUTER_VERSION;
+} catch (e) {
+// no-op
+}
+function createBrowserRouter(routes, opts) {
+    return (0, _router.createRouter)({
+        basename: opts == null ? void 0 : opts.basename,
+        future: _extends({}, opts == null ? void 0 : opts.future, {
+            v7_prependBasename: true
+        }),
+        history: (0, _router.createBrowserHistory)({
+            window: opts == null ? void 0 : opts.window
+        }),
+        hydrationData: (opts == null ? void 0 : opts.hydrationData) || parseHydrationData(),
+        routes,
+        mapRouteProperties: (0, _reactRouter.UNSAFE_mapRouteProperties),
+        dataStrategy: opts == null ? void 0 : opts.dataStrategy,
+        patchRoutesOnNavigation: opts == null ? void 0 : opts.patchRoutesOnNavigation,
+        window: opts == null ? void 0 : opts.window
+    }).initialize();
+}
+function createHashRouter(routes, opts) {
+    return (0, _router.createRouter)({
+        basename: opts == null ? void 0 : opts.basename,
+        future: _extends({}, opts == null ? void 0 : opts.future, {
+            v7_prependBasename: true
+        }),
+        history: (0, _router.createHashHistory)({
+            window: opts == null ? void 0 : opts.window
+        }),
+        hydrationData: (opts == null ? void 0 : opts.hydrationData) || parseHydrationData(),
+        routes,
+        mapRouteProperties: (0, _reactRouter.UNSAFE_mapRouteProperties),
+        dataStrategy: opts == null ? void 0 : opts.dataStrategy,
+        patchRoutesOnNavigation: opts == null ? void 0 : opts.patchRoutesOnNavigation,
+        window: opts == null ? void 0 : opts.window
+    }).initialize();
+}
+function parseHydrationData() {
+    var _window;
+    let state = (_window = window) == null ? void 0 : _window.__staticRouterHydrationData;
+    if (state && state.errors) state = _extends({}, state, {
+        errors: deserializeErrors(state.errors)
+    });
+    return state;
+}
+function deserializeErrors(errors) {
+    if (!errors) return null;
+    let entries = Object.entries(errors);
+    let serialized = {};
+    for (let [key, val] of entries){
+        // Hey you!  If you change this, please change the corresponding logic in
+        // serializeErrors in react-router-dom/server.tsx :)
+        if (val && val.__type === "RouteErrorResponse") serialized[key] = new (0, _router.UNSAFE_ErrorResponseImpl)(val.status, val.statusText, val.data, val.internal === true);
+        else if (val && val.__type === "Error") {
+            // Attempt to reconstruct the right type of Error (i.e., ReferenceError)
+            if (val.__subType) {
+                let ErrorConstructor = window[val.__subType];
+                if (typeof ErrorConstructor === "function") try {
+                    // @ts-expect-error
+                    let error = new ErrorConstructor(val.message);
+                    // Wipe away the client-side stack trace.  Nothing to fill it in with
+                    // because we don't serialize SSR stack traces for security reasons
+                    error.stack = "";
+                    serialized[key] = error;
+                } catch (e) {
+                // no-op - fall through and create a normal Error
+                }
+            }
+            if (serialized[key] == null) {
+                let error = new Error(val.message);
+                // Wipe away the client-side stack trace.  Nothing to fill it in with
+                // because we don't serialize SSR stack traces for security reasons
+                error.stack = "";
+                serialized[key] = error;
+            }
+        } else serialized[key] = val;
+    }
+    return serialized;
+}
+const ViewTransitionContext = /*#__PURE__*/ _react.createContext({
+    isTransitioning: false
+});
+ViewTransitionContext.displayName = "ViewTransition";
+const FetchersContext = /*#__PURE__*/ _react.createContext(new Map());
+FetchersContext.displayName = "Fetchers";
+//#endregion
+////////////////////////////////////////////////////////////////////////////////
+//#region Components
+////////////////////////////////////////////////////////////////////////////////
+/**
+  Webpack + React 17 fails to compile on any of the following because webpack
+  complains that `startTransition` doesn't exist in `React`:
+  * import { startTransition } from "react"
+  * import * as React from from "react";
+    "startTransition" in React ? React.startTransition(() => setState()) : setState()
+  * import * as React from from "react";
+    "startTransition" in React ? React["startTransition"](() => setState()) : setState()
+
+  Moving it to a constant such as the following solves the Webpack/React 17 issue:
+  * import * as React from from "react";
+    const START_TRANSITION = "startTransition";
+    START_TRANSITION in React ? React[START_TRANSITION](() => setState()) : setState()
+
+  However, that introduces webpack/terser minification issues in production builds
+  in React 18 where minification/obfuscation ends up removing the call of
+  React.startTransition entirely from the first half of the ternary.  Grabbing
+  this exported reference once up front resolves that issue.
+
+  See https://github.com/remix-run/react-router/issues/10579
+*/ const START_TRANSITION = "startTransition";
+const startTransitionImpl = _react[START_TRANSITION];
+const FLUSH_SYNC = "flushSync";
+const flushSyncImpl = _reactDom[FLUSH_SYNC];
+const USE_ID = "useId";
+const useIdImpl = _react[USE_ID];
+function startTransitionSafe(cb) {
+    if (startTransitionImpl) startTransitionImpl(cb);
+    else cb();
+}
+function flushSyncSafe(cb) {
+    if (flushSyncImpl) flushSyncImpl(cb);
+    else cb();
+}
+class Deferred {
+    constructor(){
+        this.status = "pending";
+        this.promise = new Promise((resolve, reject)=>{
+            this.resolve = (value)=>{
+                if (this.status === "pending") {
+                    this.status = "resolved";
+                    resolve(value);
+                }
+            };
+            this.reject = (reason)=>{
+                if (this.status === "pending") {
+                    this.status = "rejected";
+                    reject(reason);
+                }
+            };
+        });
+    }
+}
+/**
+ * Given a Remix Router instance, render the appropriate UI
+ */ function RouterProvider(_ref) {
+    let { fallbackElement, router, future } = _ref;
+    let [state, setStateImpl] = _react.useState(router.state);
+    let [pendingState, setPendingState] = _react.useState();
+    let [vtContext, setVtContext] = _react.useState({
+        isTransitioning: false
+    });
+    let [renderDfd, setRenderDfd] = _react.useState();
+    let [transition, setTransition] = _react.useState();
+    let [interruption, setInterruption] = _react.useState();
+    let fetcherData = _react.useRef(new Map());
+    let { v7_startTransition } = future || {};
+    let optInStartTransition = _react.useCallback((cb)=>{
+        if (v7_startTransition) startTransitionSafe(cb);
+        else cb();
+    }, [
+        v7_startTransition
+    ]);
+    let setState = _react.useCallback((newState, _ref2)=>{
+        let { deletedFetchers, flushSync: flushSync, viewTransitionOpts: viewTransitionOpts } = _ref2;
+        deletedFetchers.forEach((key)=>fetcherData.current.delete(key));
+        newState.fetchers.forEach((fetcher, key)=>{
+            if (fetcher.data !== undefined) fetcherData.current.set(key, fetcher.data);
+        });
+        let isViewTransitionUnavailable = router.window == null || router.window.document == null || typeof router.window.document.startViewTransition !== "function";
+        // If this isn't a view transition or it's not available in this browser,
+        // just update and be done with it
+        if (!viewTransitionOpts || isViewTransitionUnavailable) {
+            if (flushSync) flushSyncSafe(()=>setStateImpl(newState));
+            else optInStartTransition(()=>setStateImpl(newState));
+            return;
+        }
+        // flushSync + startViewTransition
+        if (flushSync) {
+            // Flush through the context to mark DOM elements as transition=ing
+            flushSyncSafe(()=>{
+                // Cancel any pending transitions
+                if (transition) {
+                    renderDfd && renderDfd.resolve();
+                    transition.skipTransition();
+                }
+                setVtContext({
+                    isTransitioning: true,
+                    flushSync: true,
+                    currentLocation: viewTransitionOpts.currentLocation,
+                    nextLocation: viewTransitionOpts.nextLocation
+                });
+            });
+            // Update the DOM
+            let t = router.window.document.startViewTransition(()=>{
+                flushSyncSafe(()=>setStateImpl(newState));
+            });
+            // Clean up after the animation completes
+            t.finished.finally(()=>{
+                flushSyncSafe(()=>{
+                    setRenderDfd(undefined);
+                    setTransition(undefined);
+                    setPendingState(undefined);
+                    setVtContext({
+                        isTransitioning: false
+                    });
+                });
+            });
+            flushSyncSafe(()=>setTransition(t));
+            return;
+        }
+        // startTransition + startViewTransition
+        if (transition) {
+            // Interrupting an in-progress transition, cancel and let everything flush
+            // out, and then kick off a new transition from the interruption state
+            renderDfd && renderDfd.resolve();
+            transition.skipTransition();
+            setInterruption({
+                state: newState,
+                currentLocation: viewTransitionOpts.currentLocation,
+                nextLocation: viewTransitionOpts.nextLocation
+            });
+        } else {
+            // Completed navigation update with opted-in view transitions, let 'er rip
+            setPendingState(newState);
+            setVtContext({
+                isTransitioning: true,
+                flushSync: false,
+                currentLocation: viewTransitionOpts.currentLocation,
+                nextLocation: viewTransitionOpts.nextLocation
+            });
+        }
+    }, [
+        router.window,
+        transition,
+        renderDfd,
+        fetcherData,
+        optInStartTransition
+    ]);
+    // Need to use a layout effect here so we are subscribed early enough to
+    // pick up on any render-driven redirects/navigations (useEffect/<Navigate>)
+    _react.useLayoutEffect(()=>router.subscribe(setState), [
+        router,
+        setState
+    ]);
+    // When we start a view transition, create a Deferred we can use for the
+    // eventual "completed" render
+    _react.useEffect(()=>{
+        if (vtContext.isTransitioning && !vtContext.flushSync) setRenderDfd(new Deferred());
+    }, [
+        vtContext
+    ]);
+    // Once the deferred is created, kick off startViewTransition() to update the
+    // DOM and then wait on the Deferred to resolve (indicating the DOM update has
+    // happened)
+    _react.useEffect(()=>{
+        if (renderDfd && pendingState && router.window) {
+            let newState = pendingState;
+            let renderPromise = renderDfd.promise;
+            let transition = router.window.document.startViewTransition(async ()=>{
+                optInStartTransition(()=>setStateImpl(newState));
+                await renderPromise;
+            });
+            transition.finished.finally(()=>{
+                setRenderDfd(undefined);
+                setTransition(undefined);
+                setPendingState(undefined);
+                setVtContext({
+                    isTransitioning: false
+                });
+            });
+            setTransition(transition);
+        }
+    }, [
+        optInStartTransition,
+        pendingState,
+        renderDfd,
+        router.window
+    ]);
+    // When the new location finally renders and is committed to the DOM, this
+    // effect will run to resolve the transition
+    _react.useEffect(()=>{
+        if (renderDfd && pendingState && state.location.key === pendingState.location.key) renderDfd.resolve();
+    }, [
+        renderDfd,
+        transition,
+        state.location,
+        pendingState
+    ]);
+    // If we get interrupted with a new navigation during a transition, we skip
+    // the active transition, let it cleanup, then kick it off again here
+    _react.useEffect(()=>{
+        if (!vtContext.isTransitioning && interruption) {
+            setPendingState(interruption.state);
+            setVtContext({
+                isTransitioning: true,
+                flushSync: false,
+                currentLocation: interruption.currentLocation,
+                nextLocation: interruption.nextLocation
+            });
+            setInterruption(undefined);
+        }
+    }, [
+        vtContext.isTransitioning,
+        interruption
+    ]);
+    _react.useEffect(()=>{
+        (0, _router.UNSAFE_warning)(fallbackElement == null || !router.future.v7_partialHydration, "`<RouterProvider fallbackElement>` is deprecated when using `v7_partialHydration`, use a `HydrateFallback` component instead");
+    // Only log this once on initial mount
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+    let navigator = _react.useMemo(()=>{
+        return {
+            createHref: router.createHref,
+            encodeLocation: router.encodeLocation,
+            go: (n)=>router.navigate(n),
+            push: (to, state, opts)=>router.navigate(to, {
+                    state,
+                    preventScrollReset: opts == null ? void 0 : opts.preventScrollReset
+                }),
+            replace: (to, state, opts)=>router.navigate(to, {
+                    replace: true,
+                    state,
+                    preventScrollReset: opts == null ? void 0 : opts.preventScrollReset
+                })
+        };
+    }, [
+        router
+    ]);
+    let basename = router.basename || "/";
+    let dataRouterContext = _react.useMemo(()=>({
+            router,
+            navigator,
+            static: false,
+            basename
+        }), [
+        router,
+        navigator,
+        basename
+    ]);
+    let routerFuture = _react.useMemo(()=>({
+            v7_relativeSplatPath: router.future.v7_relativeSplatPath
+        }), [
+        router.future.v7_relativeSplatPath
+    ]);
+    _react.useEffect(()=>(0, _reactRouter.UNSAFE_logV6DeprecationWarnings)(future, router.future), [
+        future,
+        router.future
+    ]);
+    // The fragment and {null} here are important!  We need them to keep React 18's
+    // useId happy when we are server-rendering since we may have a <script> here
+    // containing the hydrated server-side staticContext (from StaticRouterProvider).
+    // useId relies on the component tree structure to generate deterministic id's
+    // so we need to ensure it remains the same on the client even though
+    // we don't need the <script> tag
+    return /*#__PURE__*/ _react.createElement(_react.Fragment, null, /*#__PURE__*/ _react.createElement((0, _reactRouter.UNSAFE_DataRouterContext).Provider, {
+        value: dataRouterContext
+    }, /*#__PURE__*/ _react.createElement((0, _reactRouter.UNSAFE_DataRouterStateContext).Provider, {
+        value: state
+    }, /*#__PURE__*/ _react.createElement(FetchersContext.Provider, {
+        value: fetcherData.current
+    }, /*#__PURE__*/ _react.createElement(ViewTransitionContext.Provider, {
+        value: vtContext
+    }, /*#__PURE__*/ _react.createElement((0, _reactRouter.Router), {
+        basename: basename,
+        location: state.location,
+        navigationType: state.historyAction,
+        navigator: navigator,
+        future: routerFuture
+    }, state.initialized || router.future.v7_partialHydration ? /*#__PURE__*/ _react.createElement(MemoizedDataRoutes, {
+        routes: router.routes,
+        future: router.future,
+        state: state
+    }) : fallbackElement))))), null);
+}
+// Memoize to avoid re-renders when updating `ViewTransitionContext`
+const MemoizedDataRoutes = /*#__PURE__*/ _react.memo(DataRoutes);
+function DataRoutes(_ref3) {
+    let { routes, future, state } = _ref3;
+    return (0, _reactRouter.UNSAFE_useRoutesImpl)(routes, undefined, state, future);
+}
+/**
+ * A `<Router>` for use in web browsers. Provides the cleanest URLs.
+ */ function BrowserRouter(_ref4) {
+    let { basename, children, future, window: window1 } = _ref4;
+    let historyRef = _react.useRef();
+    if (historyRef.current == null) historyRef.current = (0, _router.createBrowserHistory)({
+        window: window1,
+        v5Compat: true
+    });
+    let history = historyRef.current;
+    let [state, setStateImpl] = _react.useState({
+        action: history.action,
+        location: history.location
+    });
+    let { v7_startTransition } = future || {};
+    let setState = _react.useCallback((newState)=>{
+        v7_startTransition && startTransitionImpl ? startTransitionImpl(()=>setStateImpl(newState)) : setStateImpl(newState);
+    }, [
+        setStateImpl,
+        v7_startTransition
+    ]);
+    _react.useLayoutEffect(()=>history.listen(setState), [
+        history,
+        setState
+    ]);
+    _react.useEffect(()=>(0, _reactRouter.UNSAFE_logV6DeprecationWarnings)(future), [
+        future
+    ]);
+    return /*#__PURE__*/ _react.createElement((0, _reactRouter.Router), {
+        basename: basename,
+        children: children,
+        location: state.location,
+        navigationType: state.action,
+        navigator: history,
+        future: future
+    });
+}
+/**
+ * A `<Router>` for use in web browsers. Stores the location in the hash
+ * portion of the URL so it is not sent to the server.
+ */ function HashRouter(_ref5) {
+    let { basename, children, future, window: window1 } = _ref5;
+    let historyRef = _react.useRef();
+    if (historyRef.current == null) historyRef.current = (0, _router.createHashHistory)({
+        window: window1,
+        v5Compat: true
+    });
+    let history = historyRef.current;
+    let [state, setStateImpl] = _react.useState({
+        action: history.action,
+        location: history.location
+    });
+    let { v7_startTransition } = future || {};
+    let setState = _react.useCallback((newState)=>{
+        v7_startTransition && startTransitionImpl ? startTransitionImpl(()=>setStateImpl(newState)) : setStateImpl(newState);
+    }, [
+        setStateImpl,
+        v7_startTransition
+    ]);
+    _react.useLayoutEffect(()=>history.listen(setState), [
+        history,
+        setState
+    ]);
+    _react.useEffect(()=>(0, _reactRouter.UNSAFE_logV6DeprecationWarnings)(future), [
+        future
+    ]);
+    return /*#__PURE__*/ _react.createElement((0, _reactRouter.Router), {
+        basename: basename,
+        children: children,
+        location: state.location,
+        navigationType: state.action,
+        navigator: history,
+        future: future
+    });
+}
+/**
+ * A `<Router>` that accepts a pre-instantiated history object. It's important
+ * to note that using your own history object is highly discouraged and may add
+ * two versions of the history library to your bundles unless you use the same
+ * version of the history library that React Router uses internally.
+ */ function HistoryRouter(_ref6) {
+    let { basename, children, future, history } = _ref6;
+    let [state, setStateImpl] = _react.useState({
+        action: history.action,
+        location: history.location
+    });
+    let { v7_startTransition } = future || {};
+    let setState = _react.useCallback((newState)=>{
+        v7_startTransition && startTransitionImpl ? startTransitionImpl(()=>setStateImpl(newState)) : setStateImpl(newState);
+    }, [
+        setStateImpl,
+        v7_startTransition
+    ]);
+    _react.useLayoutEffect(()=>history.listen(setState), [
+        history,
+        setState
+    ]);
+    _react.useEffect(()=>(0, _reactRouter.UNSAFE_logV6DeprecationWarnings)(future), [
+        future
+    ]);
+    return /*#__PURE__*/ _react.createElement((0, _reactRouter.Router), {
+        basename: basename,
+        children: children,
+        location: state.location,
+        navigationType: state.action,
+        navigator: history,
+        future: future
+    });
+}
+HistoryRouter.displayName = "unstable_HistoryRouter";
+const isBrowser = typeof window !== "undefined" && typeof window.document !== "undefined" && typeof window.document.createElement !== "undefined";
+const ABSOLUTE_URL_REGEX = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i;
+/**
+ * The public API for rendering a history-aware `<a>`.
+ */ const Link = /*#__PURE__*/ _react.forwardRef(function LinkWithRef(_ref7, ref) {
+    let { onClick, relative, reloadDocument, replace, state, target, to, preventScrollReset, viewTransition } = _ref7, rest = _objectWithoutPropertiesLoose(_ref7, _excluded);
+    let { basename } = _react.useContext((0, _reactRouter.UNSAFE_NavigationContext));
+    // Rendered into <a href> for absolute URLs
+    let absoluteHref;
+    let isExternal = false;
+    if (typeof to === "string" && ABSOLUTE_URL_REGEX.test(to)) {
+        // Render the absolute href server- and client-side
+        absoluteHref = to;
+        // Only check for external origins client-side
+        if (isBrowser) try {
+            let currentUrl = new URL(window.location.href);
+            let targetUrl = to.startsWith("//") ? new URL(currentUrl.protocol + to) : new URL(to);
+            let path = (0, _router.stripBasename)(targetUrl.pathname, basename);
+            if (targetUrl.origin === currentUrl.origin && path != null) // Strip the protocol/origin/basename for same-origin absolute URLs
+            to = path + targetUrl.search + targetUrl.hash;
+            else isExternal = true;
+        } catch (e) {
+            // We can't do external URL detection without a valid URL
+            (0, _router.UNSAFE_warning)(false, "<Link to=\"" + to + "\"> contains an invalid URL which will probably break " + "when clicked - please update to a valid URL path.");
+        }
+    }
+    // Rendered into <a href> for relative URLs
+    let href = (0, _reactRouter.useHref)(to, {
+        relative
+    });
+    let internalOnClick = useLinkClickHandler(to, {
+        replace,
+        state,
+        target,
+        preventScrollReset,
+        relative,
+        viewTransition
+    });
+    function handleClick(event) {
+        if (onClick) onClick(event);
+        if (!event.defaultPrevented) internalOnClick(event);
+    }
+    return(/*#__PURE__*/ // eslint-disable-next-line jsx-a11y/anchor-has-content
+    _react.createElement("a", _extends({}, rest, {
+        href: absoluteHref || href,
+        onClick: isExternal || reloadDocument ? onClick : handleClick,
+        ref: ref,
+        target: target
+    })));
+});
+Link.displayName = "Link";
+/**
+ * A `<Link>` wrapper that knows if it's "active" or not.
+ */ const NavLink = /*#__PURE__*/ _react.forwardRef(function NavLinkWithRef(_ref8, ref) {
+    let { "aria-current": ariaCurrentProp = "page", caseSensitive = false, className: classNameProp = "", end = false, style: styleProp, to, viewTransition, children } = _ref8, rest = _objectWithoutPropertiesLoose(_ref8, _excluded2);
+    let path = (0, _reactRouter.useResolvedPath)(to, {
+        relative: rest.relative
+    });
+    let location = (0, _reactRouter.useLocation)();
+    let routerState = _react.useContext((0, _reactRouter.UNSAFE_DataRouterStateContext));
+    let { navigator, basename } = _react.useContext((0, _reactRouter.UNSAFE_NavigationContext));
+    let isTransitioning = routerState != null && // Conditional usage is OK here because the usage of a data router is static
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    useViewTransitionState(path) && viewTransition === true;
+    let toPathname = navigator.encodeLocation ? navigator.encodeLocation(path).pathname : path.pathname;
+    let locationPathname = location.pathname;
+    let nextLocationPathname = routerState && routerState.navigation && routerState.navigation.location ? routerState.navigation.location.pathname : null;
+    if (!caseSensitive) {
+        locationPathname = locationPathname.toLowerCase();
+        nextLocationPathname = nextLocationPathname ? nextLocationPathname.toLowerCase() : null;
+        toPathname = toPathname.toLowerCase();
+    }
+    if (nextLocationPathname && basename) nextLocationPathname = (0, _router.stripBasename)(nextLocationPathname, basename) || nextLocationPathname;
+    // If the `to` has a trailing slash, look at that exact spot.  Otherwise,
+    // we're looking for a slash _after_ what's in `to`.  For example:
+    //
+    // <NavLink to="/users"> and <NavLink to="/users/">
+    // both want to look for a / at index 6 to match URL `/users/matt`
+    const endSlashPosition = toPathname !== "/" && toPathname.endsWith("/") ? toPathname.length - 1 : toPathname.length;
+    let isActive = locationPathname === toPathname || !end && locationPathname.startsWith(toPathname) && locationPathname.charAt(endSlashPosition) === "/";
+    let isPending = nextLocationPathname != null && (nextLocationPathname === toPathname || !end && nextLocationPathname.startsWith(toPathname) && nextLocationPathname.charAt(toPathname.length) === "/");
+    let renderProps = {
+        isActive,
+        isPending,
+        isTransitioning
+    };
+    let ariaCurrent = isActive ? ariaCurrentProp : undefined;
+    let className;
+    if (typeof classNameProp === "function") className = classNameProp(renderProps);
+    else // If the className prop is not a function, we use a default `active`
+    // class for <NavLink />s that are active. In v5 `active` was the default
+    // value for `activeClassName`, but we are removing that API and can still
+    // use the old default behavior for a cleaner upgrade path and keep the
+    // simple styling rules working as they currently do.
+    className = [
+        classNameProp,
+        isActive ? "active" : null,
+        isPending ? "pending" : null,
+        isTransitioning ? "transitioning" : null
+    ].filter(Boolean).join(" ");
+    let style = typeof styleProp === "function" ? styleProp(renderProps) : styleProp;
+    return /*#__PURE__*/ _react.createElement(Link, _extends({}, rest, {
+        "aria-current": ariaCurrent,
+        className: className,
+        ref: ref,
+        style: style,
+        to: to,
+        viewTransition: viewTransition
+    }), typeof children === "function" ? children(renderProps) : children);
+});
+NavLink.displayName = "NavLink";
+/**
+ * A `@remix-run/router`-aware `<form>`. It behaves like a normal form except
+ * that the interaction with the server is with `fetch` instead of new document
+ * requests, allowing components to add nicer UX to the page as the form is
+ * submitted and returns with data.
+ */ const Form = /*#__PURE__*/ _react.forwardRef((_ref9, forwardedRef)=>{
+    let { fetcherKey, navigate, reloadDocument, replace, state, method = defaultMethod, action, onSubmit, relative, preventScrollReset, viewTransition } = _ref9, props = _objectWithoutPropertiesLoose(_ref9, _excluded3);
+    let submit = useSubmit();
+    let formAction = useFormAction(action, {
+        relative
+    });
+    let formMethod = method.toLowerCase() === "get" ? "get" : "post";
+    let submitHandler = (event)=>{
+        onSubmit && onSubmit(event);
+        if (event.defaultPrevented) return;
+        event.preventDefault();
+        let submitter = event.nativeEvent.submitter;
+        let submitMethod = (submitter == null ? void 0 : submitter.getAttribute("formmethod")) || method;
+        submit(submitter || event.currentTarget, {
+            fetcherKey,
+            method: submitMethod,
+            navigate,
+            replace,
+            state,
+            relative,
+            preventScrollReset,
+            viewTransition
+        });
+    };
+    return /*#__PURE__*/ _react.createElement("form", _extends({
+        ref: forwardedRef,
+        method: formMethod,
+        action: formAction,
+        onSubmit: reloadDocument ? onSubmit : submitHandler
+    }, props));
+});
+Form.displayName = "Form";
+/**
+ * This component will emulate the browser's scroll restoration on location
+ * changes.
+ */ function ScrollRestoration(_ref10) {
+    let { getKey, storageKey } = _ref10;
+    useScrollRestoration({
+        getKey,
+        storageKey
+    });
+    return null;
+}
+ScrollRestoration.displayName = "ScrollRestoration";
+//#endregion
+////////////////////////////////////////////////////////////////////////////////
+//#region Hooks
+////////////////////////////////////////////////////////////////////////////////
+var DataRouterHook;
+(function(DataRouterHook) {
+    DataRouterHook["UseScrollRestoration"] = "useScrollRestoration";
+    DataRouterHook["UseSubmit"] = "useSubmit";
+    DataRouterHook["UseSubmitFetcher"] = "useSubmitFetcher";
+    DataRouterHook["UseFetcher"] = "useFetcher";
+    DataRouterHook["useViewTransitionState"] = "useViewTransitionState";
+})(DataRouterHook || (DataRouterHook = {}));
+var DataRouterStateHook;
+(function(DataRouterStateHook) {
+    DataRouterStateHook["UseFetcher"] = "useFetcher";
+    DataRouterStateHook["UseFetchers"] = "useFetchers";
+    DataRouterStateHook["UseScrollRestoration"] = "useScrollRestoration";
+})(DataRouterStateHook || (DataRouterStateHook = {}));
+// Internal hooks
+function getDataRouterConsoleError(hookName) {
+    return hookName + " must be used within a data router.  See https://reactrouter.com/v6/routers/picking-a-router.";
+}
+function useDataRouterContext(hookName) {
+    let ctx = _react.useContext((0, _reactRouter.UNSAFE_DataRouterContext));
+    !ctx && (0, _router.UNSAFE_invariant)(false, getDataRouterConsoleError(hookName));
+    return ctx;
+}
+function useDataRouterState(hookName) {
+    let state = _react.useContext((0, _reactRouter.UNSAFE_DataRouterStateContext));
+    !state && (0, _router.UNSAFE_invariant)(false, getDataRouterConsoleError(hookName));
+    return state;
+}
+// External hooks
+/**
+ * Handles the click behavior for router `<Link>` components. This is useful if
+ * you need to create custom `<Link>` components with the same click behavior we
+ * use in our exported `<Link>`.
+ */ function useLinkClickHandler(to, _temp) {
+    let { target, replace: replaceProp, state, preventScrollReset, relative, viewTransition } = _temp === void 0 ? {} : _temp;
+    let navigate = (0, _reactRouter.useNavigate)();
+    let location = (0, _reactRouter.useLocation)();
+    let path = (0, _reactRouter.useResolvedPath)(to, {
+        relative
+    });
+    return _react.useCallback((event)=>{
+        if (shouldProcessLinkClick(event, target)) {
+            event.preventDefault();
+            // If the URL hasn't changed, a regular <a> will do a replace instead of
+            // a push, so do the same here unless the replace prop is explicitly set
+            let replace = replaceProp !== undefined ? replaceProp : (0, _reactRouter.createPath)(location) === (0, _reactRouter.createPath)(path);
+            navigate(to, {
+                replace,
+                state,
+                preventScrollReset,
+                relative,
+                viewTransition
+            });
+        }
+    }, [
+        location,
+        navigate,
+        path,
+        replaceProp,
+        state,
+        target,
+        to,
+        preventScrollReset,
+        relative,
+        viewTransition
+    ]);
+}
+/**
+ * A convenient wrapper for reading and writing search parameters via the
+ * URLSearchParams interface.
+ */ function useSearchParams(defaultInit) {
+    (0, _router.UNSAFE_warning)(typeof URLSearchParams !== "undefined", "You cannot use the `useSearchParams` hook in a browser that does not support the URLSearchParams API. If you need to support Internet Explorer 11, we recommend you load a polyfill such as https://github.com/ungap/url-search-params.");
+    let defaultSearchParamsRef = _react.useRef(createSearchParams(defaultInit));
+    let hasSetSearchParamsRef = _react.useRef(false);
+    let location = (0, _reactRouter.useLocation)();
+    let searchParams = _react.useMemo(()=>// Only merge in the defaults if we haven't yet called setSearchParams.
+        // Once we call that we want those to take precedence, otherwise you can't
+        // remove a param with setSearchParams({}) if it has an initial value
+        getSearchParamsForLocation(location.search, hasSetSearchParamsRef.current ? null : defaultSearchParamsRef.current), [
+        location.search
+    ]);
+    let navigate = (0, _reactRouter.useNavigate)();
+    let setSearchParams = _react.useCallback((nextInit, navigateOptions)=>{
+        const newSearchParams = createSearchParams(typeof nextInit === "function" ? nextInit(searchParams) : nextInit);
+        hasSetSearchParamsRef.current = true;
+        navigate("?" + newSearchParams, navigateOptions);
+    }, [
+        navigate,
+        searchParams
+    ]);
+    return [
+        searchParams,
+        setSearchParams
+    ];
+}
+function validateClientSideSubmission() {
+    if (typeof document === "undefined") throw new Error("You are calling submit during the server render. Try calling submit within a `useEffect` or callback instead.");
+}
+let fetcherId = 0;
+let getUniqueFetcherId = ()=>"__" + String(++fetcherId) + "__";
+/**
+ * Returns a function that may be used to programmatically submit a form (or
+ * some arbitrary data) to the server.
+ */ function useSubmit() {
+    let { router } = useDataRouterContext(DataRouterHook.UseSubmit);
+    let { basename } = _react.useContext((0, _reactRouter.UNSAFE_NavigationContext));
+    let currentRouteId = (0, _reactRouter.UNSAFE_useRouteId)();
+    return _react.useCallback(function(target, options) {
+        if (options === void 0) options = {};
+        validateClientSideSubmission();
+        let { action, method, encType, formData, body } = getFormSubmissionInfo(target, basename);
+        if (options.navigate === false) {
+            let key = options.fetcherKey || getUniqueFetcherId();
+            router.fetch(key, currentRouteId, options.action || action, {
+                preventScrollReset: options.preventScrollReset,
+                formData,
+                body,
+                formMethod: options.method || method,
+                formEncType: options.encType || encType,
+                flushSync: options.flushSync
+            });
+        } else router.navigate(options.action || action, {
+            preventScrollReset: options.preventScrollReset,
+            formData,
+            body,
+            formMethod: options.method || method,
+            formEncType: options.encType || encType,
+            replace: options.replace,
+            state: options.state,
+            fromRouteId: currentRouteId,
+            flushSync: options.flushSync,
+            viewTransition: options.viewTransition
+        });
+    }, [
+        router,
+        basename,
+        currentRouteId
+    ]);
+}
+// v7: Eventually we should deprecate this entirely in favor of using the
+// router method directly?
+function useFormAction(action, _temp2) {
+    let { relative } = _temp2 === void 0 ? {} : _temp2;
+    let { basename } = _react.useContext((0, _reactRouter.UNSAFE_NavigationContext));
+    let routeContext = _react.useContext((0, _reactRouter.UNSAFE_RouteContext));
+    !routeContext && (0, _router.UNSAFE_invariant)(false, "useFormAction must be used inside a RouteContext");
+    let [match] = routeContext.matches.slice(-1);
+    // Shallow clone path so we can modify it below, otherwise we modify the
+    // object referenced by useMemo inside useResolvedPath
+    let path = _extends({}, (0, _reactRouter.useResolvedPath)(action ? action : ".", {
+        relative
+    }));
+    // If no action was specified, browsers will persist current search params
+    // when determining the path, so match that behavior
+    // https://github.com/remix-run/remix/issues/927
+    let location = (0, _reactRouter.useLocation)();
+    if (action == null) {
+        // Safe to write to this directly here since if action was undefined, we
+        // would have called useResolvedPath(".") which will never include a search
+        path.search = location.search;
+        // When grabbing search params from the URL, remove any included ?index param
+        // since it might not apply to our contextual route.  We add it back based
+        // on match.route.index below
+        let params = new URLSearchParams(path.search);
+        let indexValues = params.getAll("index");
+        let hasNakedIndexParam = indexValues.some((v)=>v === "");
+        if (hasNakedIndexParam) {
+            params.delete("index");
+            indexValues.filter((v)=>v).forEach((v)=>params.append("index", v));
+            let qs = params.toString();
+            path.search = qs ? "?" + qs : "";
+        }
+    }
+    if ((!action || action === ".") && match.route.index) path.search = path.search ? path.search.replace(/^\?/, "?index&") : "?index";
+    // If we're operating within a basename, prepend it to the pathname prior
+    // to creating the form action.  If this is a root navigation, then just use
+    // the raw basename which allows the basename to have full control over the
+    // presence of a trailing slash on root actions
+    if (basename !== "/") path.pathname = path.pathname === "/" ? basename : (0, _router.joinPaths)([
+        basename,
+        path.pathname
+    ]);
+    return (0, _reactRouter.createPath)(path);
+}
+// TODO: (v7) Change the useFetcher generic default from `any` to `unknown`
+/**
+ * Interacts with route loaders and actions without causing a navigation. Great
+ * for any interaction that stays on the same page.
+ */ function useFetcher(_temp3) {
+    var _route$matches;
+    let { key } = _temp3 === void 0 ? {} : _temp3;
+    let { router } = useDataRouterContext(DataRouterHook.UseFetcher);
+    let state = useDataRouterState(DataRouterStateHook.UseFetcher);
+    let fetcherData = _react.useContext(FetchersContext);
+    let route = _react.useContext((0, _reactRouter.UNSAFE_RouteContext));
+    let routeId = (_route$matches = route.matches[route.matches.length - 1]) == null ? void 0 : _route$matches.route.id;
+    !fetcherData && (0, _router.UNSAFE_invariant)(false, "useFetcher must be used inside a FetchersContext");
+    !route && (0, _router.UNSAFE_invariant)(false, "useFetcher must be used inside a RouteContext");
+    !(routeId != null) && (0, _router.UNSAFE_invariant)(false, "useFetcher can only be used on routes that contain a unique \"id\"");
+    // Fetcher key handling
+    // OK to call conditionally to feature detect `useId`
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    let defaultKey = useIdImpl ? useIdImpl() : "";
+    let [fetcherKey, setFetcherKey] = _react.useState(key || defaultKey);
+    if (key && key !== fetcherKey) setFetcherKey(key);
+    else if (!fetcherKey) // We will only fall through here when `useId` is not available
+    setFetcherKey(getUniqueFetcherId());
+    // Registration/cleanup
+    _react.useEffect(()=>{
+        router.getFetcher(fetcherKey);
+        return ()=>{
+            // Tell the router we've unmounted - if v7_fetcherPersist is enabled this
+            // will not delete immediately but instead queue up a delete after the
+            // fetcher returns to an `idle` state
+            router.deleteFetcher(fetcherKey);
+        };
+    }, [
+        router,
+        fetcherKey
+    ]);
+    // Fetcher additions
+    let load = _react.useCallback((href, opts)=>{
+        !routeId && (0, _router.UNSAFE_invariant)(false, "No routeId available for fetcher.load()");
+        router.fetch(fetcherKey, routeId, href, opts);
+    }, [
+        fetcherKey,
+        routeId,
+        router
+    ]);
+    let submitImpl = useSubmit();
+    let submit = _react.useCallback((target, opts)=>{
+        submitImpl(target, _extends({}, opts, {
+            navigate: false,
+            fetcherKey
+        }));
+    }, [
+        fetcherKey,
+        submitImpl
+    ]);
+    let FetcherForm = _react.useMemo(()=>{
+        let FetcherForm = /*#__PURE__*/ _react.forwardRef((props, ref)=>{
+            return /*#__PURE__*/ _react.createElement(Form, _extends({}, props, {
+                navigate: false,
+                fetcherKey: fetcherKey,
+                ref: ref
+            }));
+        });
+        FetcherForm.displayName = "fetcher.Form";
+        return FetcherForm;
+    }, [
+        fetcherKey
+    ]);
+    // Exposed FetcherWithComponents
+    let fetcher = state.fetchers.get(fetcherKey) || (0, _router.IDLE_FETCHER);
+    let data = fetcherData.get(fetcherKey);
+    let fetcherWithComponents = _react.useMemo(()=>_extends({
+            Form: FetcherForm,
+            submit,
+            load
+        }, fetcher, {
+            data
+        }), [
+        FetcherForm,
+        submit,
+        load,
+        fetcher,
+        data
+    ]);
+    return fetcherWithComponents;
+}
+/**
+ * Provides all fetchers currently on the page. Useful for layouts and parent
+ * routes that need to provide pending/optimistic UI regarding the fetch.
+ */ function useFetchers() {
+    let state = useDataRouterState(DataRouterStateHook.UseFetchers);
+    return Array.from(state.fetchers.entries()).map((_ref11)=>{
+        let [key, fetcher] = _ref11;
+        return _extends({}, fetcher, {
+            key
+        });
+    });
+}
+const SCROLL_RESTORATION_STORAGE_KEY = "react-router-scroll-positions";
+let savedScrollPositions = {};
+/**
+ * When rendered inside a RouterProvider, will restore scroll positions on navigations
+ */ function useScrollRestoration(_temp4) {
+    let { getKey, storageKey } = _temp4 === void 0 ? {} : _temp4;
+    let { router } = useDataRouterContext(DataRouterHook.UseScrollRestoration);
+    let { restoreScrollPosition, preventScrollReset } = useDataRouterState(DataRouterStateHook.UseScrollRestoration);
+    let { basename } = _react.useContext((0, _reactRouter.UNSAFE_NavigationContext));
+    let location = (0, _reactRouter.useLocation)();
+    let matches = (0, _reactRouter.useMatches)();
+    let navigation = (0, _reactRouter.useNavigation)();
+    // Trigger manual scroll restoration while we're active
+    _react.useEffect(()=>{
+        window.history.scrollRestoration = "manual";
+        return ()=>{
+            window.history.scrollRestoration = "auto";
+        };
+    }, []);
+    // Save positions on pagehide
+    usePageHide(_react.useCallback(()=>{
+        if (navigation.state === "idle") {
+            let key = (getKey ? getKey(location, matches) : null) || location.key;
+            savedScrollPositions[key] = window.scrollY;
+        }
+        try {
+            sessionStorage.setItem(storageKey || SCROLL_RESTORATION_STORAGE_KEY, JSON.stringify(savedScrollPositions));
+        } catch (error) {
+            (0, _router.UNSAFE_warning)(false, "Failed to save scroll positions in sessionStorage, <ScrollRestoration /> will not work properly (" + error + ").");
+        }
+        window.history.scrollRestoration = "auto";
+    }, [
+        storageKey,
+        getKey,
+        navigation.state,
+        location,
+        matches
+    ]));
+    // Read in any saved scroll locations
+    if (typeof document !== "undefined") {
+        // eslint-disable-next-line react-hooks/rules-of-hooks
+        _react.useLayoutEffect(()=>{
+            try {
+                let sessionPositions = sessionStorage.getItem(storageKey || SCROLL_RESTORATION_STORAGE_KEY);
+                if (sessionPositions) savedScrollPositions = JSON.parse(sessionPositions);
+            } catch (e) {
+            // no-op, use default empty object
+            }
+        }, [
+            storageKey
+        ]);
+        // Enable scroll restoration in the router
+        // eslint-disable-next-line react-hooks/rules-of-hooks
+        _react.useLayoutEffect(()=>{
+            let getKeyWithoutBasename = getKey && basename !== "/" ? (location, matches)=>getKey(_extends({}, location, {
+                    pathname: (0, _router.stripBasename)(location.pathname, basename) || location.pathname
+                }), matches) : getKey;
+            let disableScrollRestoration = router == null ? void 0 : router.enableScrollRestoration(savedScrollPositions, ()=>window.scrollY, getKeyWithoutBasename);
+            return ()=>disableScrollRestoration && disableScrollRestoration();
+        }, [
+            router,
+            basename,
+            getKey
+        ]);
+        // Restore scrolling when state.restoreScrollPosition changes
+        // eslint-disable-next-line react-hooks/rules-of-hooks
+        _react.useLayoutEffect(()=>{
+            // Explicit false means don't do anything (used for submissions)
+            if (restoreScrollPosition === false) return;
+            // been here before, scroll to it
+            if (typeof restoreScrollPosition === "number") {
+                window.scrollTo(0, restoreScrollPosition);
+                return;
+            }
+            // try to scroll to the hash
+            if (location.hash) {
+                let el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+                if (el) {
+                    el.scrollIntoView();
+                    return;
+                }
+            }
+            // Don't reset if this navigation opted out
+            if (preventScrollReset === true) return;
+            // otherwise go to the top on new locations
+            window.scrollTo(0, 0);
+        }, [
+            location,
+            restoreScrollPosition,
+            preventScrollReset
+        ]);
+    }
+}
+/**
+ * Setup a callback to be fired on the window's `beforeunload` event. This is
+ * useful for saving some data to `window.localStorage` just before the page
+ * refreshes.
+ *
+ * Note: The `callback` argument should be a function created with
+ * `React.useCallback()`.
+ */ function useBeforeUnload(callback, options) {
+    let { capture } = options || {};
+    _react.useEffect(()=>{
+        let opts = capture != null ? {
+            capture
+        } : undefined;
+        window.addEventListener("beforeunload", callback, opts);
+        return ()=>{
+            window.removeEventListener("beforeunload", callback, opts);
+        };
+    }, [
+        callback,
+        capture
+    ]);
+}
+/**
+ * Setup a callback to be fired on the window's `pagehide` event. This is
+ * useful for saving some data to `window.localStorage` just before the page
+ * refreshes.  This event is better supported than beforeunload across browsers.
+ *
+ * Note: The `callback` argument should be a function created with
+ * `React.useCallback()`.
+ */ function usePageHide(callback, options) {
+    let { capture } = options || {};
+    _react.useEffect(()=>{
+        let opts = capture != null ? {
+            capture
+        } : undefined;
+        window.addEventListener("pagehide", callback, opts);
+        return ()=>{
+            window.removeEventListener("pagehide", callback, opts);
+        };
+    }, [
+        callback,
+        capture
+    ]);
+}
+/**
+ * Wrapper around useBlocker to show a window.confirm prompt to users instead
+ * of building a custom UI with useBlocker.
+ *
+ * Warning: This has *a lot of rough edges* and behaves very differently (and
+ * very incorrectly in some cases) across browsers if user click addition
+ * back/forward navigations while the confirm is open.  Use at your own risk.
+ */ function usePrompt(_ref12) {
+    let { when, message } = _ref12;
+    let blocker = (0, _reactRouter.useBlocker)(when);
+    _react.useEffect(()=>{
+        if (blocker.state === "blocked") {
+            let proceed = window.confirm(message);
+            if (proceed) // This timeout is needed to avoid a weird "race" on POP navigations
+            // between the `window.history` revert navigation and the result of
+            // `window.confirm`
+            setTimeout(blocker.proceed, 0);
+            else blocker.reset();
+        }
+    }, [
+        blocker,
+        message
+    ]);
+    _react.useEffect(()=>{
+        if (blocker.state === "blocked" && !when) blocker.reset();
+    }, [
+        blocker,
+        when
+    ]);
+}
+/**
+ * Return a boolean indicating if there is an active view transition to the
+ * given href.  You can use this value to render CSS classes or viewTransitionName
+ * styles onto your elements
+ *
+ * @param href The destination href
+ * @param [opts.relative] Relative routing type ("route" | "path")
+ */ function useViewTransitionState(to, opts) {
+    if (opts === void 0) opts = {};
+    let vtContext = _react.useContext(ViewTransitionContext);
+    !(vtContext != null) && (0, _router.UNSAFE_invariant)(false, "`useViewTransitionState` must be used within `react-router-dom`'s `RouterProvider`.  Did you accidentally import `RouterProvider` from `react-router`?");
+    let { basename } = useDataRouterContext(DataRouterHook.useViewTransitionState);
+    let path = (0, _reactRouter.useResolvedPath)(to, {
+        relative: opts.relative
+    });
+    if (!vtContext.isTransitioning) return false;
+    let currentPath = (0, _router.stripBasename)(vtContext.currentLocation.pathname, basename) || vtContext.currentLocation.pathname;
+    let nextPath = (0, _router.stripBasename)(vtContext.nextLocation.pathname, basename) || vtContext.nextLocation.pathname;
+    // Transition is active if we're going to or coming from the indicated
+    // destination.  This ensures that other PUSH navigations that reverse
+    // an indicated transition apply.  I.e., on the list view you have:
+    //
+    //   <NavLink to="/details/1" viewTransition>
+    //
+    // If you click the breadcrumb back to the list view:
+    //
+    //   <NavLink to="/list" viewTransition>
+    //
+    // We should apply the transition because it's indicated as active going
+    // from /list -> /details/1 and therefore should be active on the reverse
+    // (even though this isn't strictly a POP reverse)
+    return (0, _router.matchPath)(path.pathname, nextPath) != null || (0, _router.matchPath)(path.pathname, currentPath) != null;
+}
+
+},{"react":"21dqq","react-dom":"j6uA9","react-router":"dbWyW","@remix-run/router":"5ncDG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dbWyW":[function(require,module,exports,__globalThis) {
 /**
  * React Router v6.28.0
  *
@@ -35834,7 +35077,2564 @@ function registerExportsForReactRefresh(module1) {
 },{"7422ead32dcc1e6b":"786KC","630b62916b1ae0e7":"4SQxb"}],"4SQxb":[function(require,module,exports,__globalThis) {
 module.exports = JSON.parse("{\"name\":\"react-refresh\",\"description\":\"React is a JavaScript library for building user interfaces.\",\"keywords\":[\"react\"],\"version\":\"0.14.2\",\"homepage\":\"https://reactjs.org/\",\"bugs\":\"https://github.com/facebook/react/issues\",\"license\":\"MIT\",\"files\":[\"LICENSE\",\"README.md\",\"babel.js\",\"runtime.js\",\"cjs/\",\"umd/\"],\"main\":\"runtime.js\",\"exports\":{\".\":\"./runtime.js\",\"./runtime\":\"./runtime.js\",\"./babel\":\"./babel.js\",\"./package.json\":\"./package.json\"},\"repository\":{\"type\":\"git\",\"url\":\"https://github.com/facebook/react.git\",\"directory\":\"packages/react\"},\"engines\":{\"node\":\">=0.10.0\"},\"devDependencies\":{\"react-16-8\":\"npm:react@16.8.0\",\"react-dom-16-8\":\"npm:react-dom@16.8.0\",\"scheduler-0-13\":\"npm:scheduler@0.13.0\"}}");
 
-},{}],"7eUR9":[function(require,module,exports,__globalThis) {
+},{}],"2ATJC":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "GoogleLogin", ()=>GoogleLogin);
+parcelHelpers.export(exports, "GoogleOAuthProvider", ()=>GoogleOAuthProvider);
+parcelHelpers.export(exports, "googleLogout", ()=>googleLogout);
+parcelHelpers.export(exports, "hasGrantedAllScopesGoogle", ()=>hasGrantedAllScopesGoogle);
+parcelHelpers.export(exports, "hasGrantedAnyScopeGoogle", ()=>hasGrantedAnyScopeGoogle);
+parcelHelpers.export(exports, "useGoogleLogin", ()=>useGoogleLogin);
+parcelHelpers.export(exports, "useGoogleOAuth", ()=>useGoogleOAuth);
+parcelHelpers.export(exports, "useGoogleOneTapLogin", ()=>useGoogleOneTapLogin);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+'use client';
+function useLoadGsiScript(options = {}) {
+    const { nonce, onScriptLoadSuccess, onScriptLoadError } = options;
+    const [scriptLoadedSuccessfully, setScriptLoadedSuccessfully] = (0, _react.useState)(false);
+    const onScriptLoadSuccessRef = (0, _react.useRef)(onScriptLoadSuccess);
+    onScriptLoadSuccessRef.current = onScriptLoadSuccess;
+    const onScriptLoadErrorRef = (0, _react.useRef)(onScriptLoadError);
+    onScriptLoadErrorRef.current = onScriptLoadError;
+    (0, _react.useEffect)(()=>{
+        const scriptTag = document.createElement('script');
+        scriptTag.src = 'https://accounts.google.com/gsi/client';
+        scriptTag.async = true;
+        scriptTag.defer = true;
+        scriptTag.nonce = nonce;
+        scriptTag.onload = ()=>{
+            var _a;
+            setScriptLoadedSuccessfully(true);
+            (_a = onScriptLoadSuccessRef.current) === null || _a === void 0 || _a.call(onScriptLoadSuccessRef);
+        };
+        scriptTag.onerror = ()=>{
+            var _a;
+            setScriptLoadedSuccessfully(false);
+            (_a = onScriptLoadErrorRef.current) === null || _a === void 0 || _a.call(onScriptLoadErrorRef);
+        };
+        document.body.appendChild(scriptTag);
+        return ()=>{
+            document.body.removeChild(scriptTag);
+        };
+    }, [
+        nonce
+    ]);
+    return scriptLoadedSuccessfully;
+}
+const GoogleOAuthContext = (0, _react.createContext)(null);
+function GoogleOAuthProvider({ clientId, nonce, onScriptLoadSuccess, onScriptLoadError, children }) {
+    const scriptLoadedSuccessfully = useLoadGsiScript({
+        nonce,
+        onScriptLoadSuccess,
+        onScriptLoadError
+    });
+    const contextValue = (0, _react.useMemo)(()=>({
+            clientId,
+            scriptLoadedSuccessfully
+        }), [
+        clientId,
+        scriptLoadedSuccessfully
+    ]);
+    return (0, _reactDefault.default).createElement(GoogleOAuthContext.Provider, {
+        value: contextValue
+    }, children);
+}
+function useGoogleOAuth() {
+    const context = (0, _react.useContext)(GoogleOAuthContext);
+    if (!context) throw new Error('Google OAuth components must be used within GoogleOAuthProvider');
+    return context;
+}
+function extractClientId(credentialResponse) {
+    var _a;
+    const clientId = (_a = credentialResponse === null || credentialResponse === void 0 ? void 0 : credentialResponse.clientId) !== null && _a !== void 0 ? _a : credentialResponse === null || credentialResponse === void 0 ? void 0 : credentialResponse.client_id;
+    return clientId;
+}
+const containerHeightMap = {
+    large: 40,
+    medium: 32,
+    small: 20
+};
+function GoogleLogin({ onSuccess, onError, useOneTap, promptMomentNotification, type = 'standard', theme = 'outline', size = 'large', text, shape, logo_alignment, width, locale, click_listener, containerProps, ...props }) {
+    const btnContainerRef = (0, _react.useRef)(null);
+    const { clientId, scriptLoadedSuccessfully } = useGoogleOAuth();
+    const onSuccessRef = (0, _react.useRef)(onSuccess);
+    onSuccessRef.current = onSuccess;
+    const onErrorRef = (0, _react.useRef)(onError);
+    onErrorRef.current = onError;
+    const promptMomentNotificationRef = (0, _react.useRef)(promptMomentNotification);
+    promptMomentNotificationRef.current = promptMomentNotification;
+    (0, _react.useEffect)(()=>{
+        var _a, _b, _c, _d, _e, _f, _g, _h, _j;
+        if (!scriptLoadedSuccessfully) return;
+        (_c = (_b = (_a = window === null || window === void 0 ? void 0 : window.google) === null || _a === void 0 ? void 0 : _a.accounts) === null || _b === void 0 ? void 0 : _b.id) === null || _c === void 0 || _c.initialize({
+            client_id: clientId,
+            callback: (credentialResponse)=>{
+                var _a;
+                if (!(credentialResponse === null || credentialResponse === void 0 ? void 0 : credentialResponse.credential)) return (_a = onErrorRef.current) === null || _a === void 0 ? void 0 : _a.call(onErrorRef);
+                const { credential, select_by } = credentialResponse;
+                onSuccessRef.current({
+                    credential,
+                    clientId: extractClientId(credentialResponse),
+                    select_by
+                });
+            },
+            ...props
+        });
+        (_f = (_e = (_d = window === null || window === void 0 ? void 0 : window.google) === null || _d === void 0 ? void 0 : _d.accounts) === null || _e === void 0 ? void 0 : _e.id) === null || _f === void 0 || _f.renderButton(btnContainerRef.current, {
+            type,
+            theme,
+            size,
+            text,
+            shape,
+            logo_alignment,
+            width,
+            locale,
+            click_listener
+        });
+        if (useOneTap) (_j = (_h = (_g = window === null || window === void 0 ? void 0 : window.google) === null || _g === void 0 ? void 0 : _g.accounts) === null || _h === void 0 ? void 0 : _h.id) === null || _j === void 0 || _j.prompt(promptMomentNotificationRef.current);
+        return ()=>{
+            var _a, _b, _c;
+            if (useOneTap) (_c = (_b = (_a = window === null || window === void 0 ? void 0 : window.google) === null || _a === void 0 ? void 0 : _a.accounts) === null || _b === void 0 ? void 0 : _b.id) === null || _c === void 0 || _c.cancel();
+        };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [
+        clientId,
+        scriptLoadedSuccessfully,
+        useOneTap,
+        type,
+        theme,
+        size,
+        text,
+        shape,
+        logo_alignment,
+        width,
+        locale
+    ]);
+    return (0, _reactDefault.default).createElement("div", {
+        ...containerProps,
+        ref: btnContainerRef,
+        style: {
+            height: containerHeightMap[size],
+            ...containerProps === null || containerProps === void 0 ? void 0 : containerProps.style
+        }
+    });
+}
+function googleLogout() {
+    var _a, _b, _c;
+    (_c = (_b = (_a = window === null || window === void 0 ? void 0 : window.google) === null || _a === void 0 ? void 0 : _a.accounts) === null || _b === void 0 ? void 0 : _b.id) === null || _c === void 0 || _c.disableAutoSelect();
+}
+/* eslint-disable import/export */ function useGoogleLogin({ flow = 'implicit', scope = '', onSuccess, onError, onNonOAuthError, overrideScope, state, ...props }) {
+    const { clientId, scriptLoadedSuccessfully } = useGoogleOAuth();
+    const clientRef = (0, _react.useRef)();
+    const onSuccessRef = (0, _react.useRef)(onSuccess);
+    onSuccessRef.current = onSuccess;
+    const onErrorRef = (0, _react.useRef)(onError);
+    onErrorRef.current = onError;
+    const onNonOAuthErrorRef = (0, _react.useRef)(onNonOAuthError);
+    onNonOAuthErrorRef.current = onNonOAuthError;
+    (0, _react.useEffect)(()=>{
+        var _a, _b;
+        if (!scriptLoadedSuccessfully) return;
+        const clientMethod = flow === 'implicit' ? 'initTokenClient' : 'initCodeClient';
+        const client = (_b = (_a = window === null || window === void 0 ? void 0 : window.google) === null || _a === void 0 ? void 0 : _a.accounts) === null || _b === void 0 ? void 0 : _b.oauth2[clientMethod]({
+            client_id: clientId,
+            scope: overrideScope ? scope : `openid profile email ${scope}`,
+            callback: (response)=>{
+                var _a, _b;
+                if (response.error) return (_a = onErrorRef.current) === null || _a === void 0 ? void 0 : _a.call(onErrorRef, response);
+                (_b = onSuccessRef.current) === null || _b === void 0 || _b.call(onSuccessRef, response);
+            },
+            error_callback: (nonOAuthError)=>{
+                var _a;
+                (_a = onNonOAuthErrorRef.current) === null || _a === void 0 || _a.call(onNonOAuthErrorRef, nonOAuthError);
+            },
+            state,
+            ...props
+        });
+        clientRef.current = client;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [
+        clientId,
+        scriptLoadedSuccessfully,
+        flow,
+        scope,
+        state
+    ]);
+    const loginImplicitFlow = (0, _react.useCallback)((overrideConfig)=>{
+        var _a;
+        return (_a = clientRef.current) === null || _a === void 0 ? void 0 : _a.requestAccessToken(overrideConfig);
+    }, []);
+    const loginAuthCodeFlow = (0, _react.useCallback)(()=>{
+        var _a;
+        return (_a = clientRef.current) === null || _a === void 0 ? void 0 : _a.requestCode();
+    }, []);
+    return flow === 'implicit' ? loginImplicitFlow : loginAuthCodeFlow;
+}
+function useGoogleOneTapLogin({ onSuccess, onError, promptMomentNotification, cancel_on_tap_outside, prompt_parent_id, state_cookie_domain, hosted_domain, use_fedcm_for_prompt = false, disabled, auto_select }) {
+    const { clientId, scriptLoadedSuccessfully } = useGoogleOAuth();
+    const onSuccessRef = (0, _react.useRef)(onSuccess);
+    onSuccessRef.current = onSuccess;
+    const onErrorRef = (0, _react.useRef)(onError);
+    onErrorRef.current = onError;
+    const promptMomentNotificationRef = (0, _react.useRef)(promptMomentNotification);
+    promptMomentNotificationRef.current = promptMomentNotification;
+    (0, _react.useEffect)(()=>{
+        var _a, _b, _c, _d, _e, _f, _g, _h, _j;
+        if (!scriptLoadedSuccessfully) return;
+        if (disabled) {
+            (_c = (_b = (_a = window === null || window === void 0 ? void 0 : window.google) === null || _a === void 0 ? void 0 : _a.accounts) === null || _b === void 0 ? void 0 : _b.id) === null || _c === void 0 || _c.cancel();
+            return;
+        }
+        (_f = (_e = (_d = window === null || window === void 0 ? void 0 : window.google) === null || _d === void 0 ? void 0 : _d.accounts) === null || _e === void 0 ? void 0 : _e.id) === null || _f === void 0 || _f.initialize({
+            client_id: clientId,
+            callback: (credentialResponse)=>{
+                var _a;
+                if (!(credentialResponse === null || credentialResponse === void 0 ? void 0 : credentialResponse.credential)) return (_a = onErrorRef.current) === null || _a === void 0 ? void 0 : _a.call(onErrorRef);
+                const { credential, select_by } = credentialResponse;
+                onSuccessRef.current({
+                    credential,
+                    clientId: extractClientId(credentialResponse),
+                    select_by
+                });
+            },
+            hosted_domain,
+            cancel_on_tap_outside,
+            prompt_parent_id,
+            state_cookie_domain,
+            use_fedcm_for_prompt,
+            auto_select
+        });
+        (_j = (_h = (_g = window === null || window === void 0 ? void 0 : window.google) === null || _g === void 0 ? void 0 : _g.accounts) === null || _h === void 0 ? void 0 : _h.id) === null || _j === void 0 || _j.prompt(promptMomentNotificationRef.current);
+        return ()=>{
+            var _a, _b, _c;
+            (_c = (_b = (_a = window === null || window === void 0 ? void 0 : window.google) === null || _a === void 0 ? void 0 : _a.accounts) === null || _b === void 0 ? void 0 : _b.id) === null || _c === void 0 || _c.cancel();
+        };
+    }, [
+        clientId,
+        scriptLoadedSuccessfully,
+        cancel_on_tap_outside,
+        prompt_parent_id,
+        state_cookie_domain,
+        hosted_domain,
+        use_fedcm_for_prompt,
+        disabled,
+        auto_select
+    ]);
+}
+/**
+ * Checks if the user granted all the specified scope or scopes
+ * @returns True if all the scopes are granted
+ */ function hasGrantedAllScopesGoogle(tokenResponse, firstScope, ...restScopes) {
+    var _a, _b, _c;
+    if (!(window === null || window === void 0 ? void 0 : window.google)) return false;
+    return ((_c = (_b = (_a = window === null || window === void 0 ? void 0 : window.google) === null || _a === void 0 ? void 0 : _a.accounts) === null || _b === void 0 ? void 0 : _b.oauth2) === null || _c === void 0 ? void 0 : _c.hasGrantedAllScopes(tokenResponse, firstScope, ...restScopes)) || false;
+}
+/**
+ * Checks if the user granted any of the specified scope or scopes.
+ * @returns True if any of the scopes are granted
+ */ function hasGrantedAnyScopeGoogle(tokenResponse, firstScope, ...restScopes) {
+    var _a, _b, _c;
+    if (!(window === null || window === void 0 ? void 0 : window.google)) return false;
+    return ((_c = (_b = (_a = window === null || window === void 0 ? void 0 : window.google) === null || _a === void 0 ? void 0 : _a.accounts) === null || _b === void 0 ? void 0 : _b.oauth2) === null || _c === void 0 ? void 0 : _c.hasGrantedAnyScope(tokenResponse, firstScope, ...restScopes)) || false;
+}
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"274mH":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "gapi", ()=>(0, _gapiScript.gapi));
+parcelHelpers.export(exports, "gapiComplete", ()=>(0, _gapiScript.gapiComplete));
+parcelHelpers.export(exports, "loadAuth2", ()=>loadAuth2);
+parcelHelpers.export(exports, "loadAuth2WithProps", ()=>loadAuth2WithProps);
+parcelHelpers.export(exports, "loadClientAuth2", ()=>loadClientAuth2);
+parcelHelpers.export(exports, "loadGapiInsideDOM", ()=>loadGapiInsideDOM);
+var _gapiScript = require("./gapiScript");
+/**
+ * Function to load gapi auth2 from a gapi that you provied
+ * Check full docs here: https://developers.google.com/identity/sign-in/web/reference#auth_setup
+ * @param {Object} gapiScript gapi script object
+ * @param {string} clientId Your google clientID string
+ * @param {Array.<string[]>} scopes The scopes to request, as a space-delimited string. Optional if fetch_basic_profile is not set to false. Check possible scopes on google docs: https://developers.google.com/identity/protocols/oauth2/scopes
+ */ const loadAuth2 = async function(gapiScript, clientId, scopes) {
+    return new Promise((resolve)=>{
+        gapiScript.load('auth2', ()=>{
+            resolve(gapiScript.auth2.init({
+                client_id: clientId,
+                scope: scopes
+            }));
+        });
+    });
+};
+/**
+ * Function to init gapi auth2 with props
+ * @param {Object} gapiScript gapi script object
+ * @param {*} props Possible props to init gapi auth2, check the options on google docs: https://developers.google.com/identity/sign-in/web/reference#gapiauth2clientconfig
+ */ const loadAuth2WithProps = async function(gapiScript, props) {
+    return new Promise((resolve)=>{
+        gapiScript.load('auth2', ()=>{
+            resolve(gapiScript.auth2.init(props));
+        });
+    });
+};
+/**
+ *
+ * @param {Object} gapiScript gapi script object
+ * @param {string} clientId Your google clientID string
+ * @param {Array.<string[]>} scopes The scopes to request, as a space-delimited string. Optional if fetch_basic_profile is not set to false. Check possible scopes on google docs: https://developers.google.com/identity/protocols/oauth2/scopes
+ */ const loadClientAuth2 = async function(gapiScript, clientId, scopes) {
+    return new Promise((resolve)=>{
+        gapiScript.load('client', ()=>{
+            resolve(gapiScript.client.init({
+                client_id: clientId,
+                scope: scopes
+            }));
+        });
+        gapiScript.load('auth2', ()=>{
+            resolve(gapiScript.client.init({
+                client_id: clientId,
+                scope: scopes
+            }));
+        });
+    });
+};
+/**
+ * A very special function to load the gapi inside the DOM, directly.
+ * So it'll load the real and most recent gapi-scrip from google and attach to DOM:
+ * let gapi = loadGapiInsideDOM();
+ * Now you can use it anywhere.
+ */ const loadGapiInsideDOM = async function() {
+    return new Promise((resolve)=>{
+        const element = document.getElementsByTagName('script')[0];
+        const js = document.createElement('script');
+        js.id = 'google-platform';
+        js.src = '//apis.google.com/js/platform.js';
+        js.async = true;
+        js.defer = true;
+        element.parentNode.insertBefore(js, element);
+        js.onload = async ()=>{
+            resolve(window.gapi);
+        };
+    });
+};
+
+},{"./gapiScript":"2nS2o","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2nS2o":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "gapi", ()=>gapi);
+parcelHelpers.export(exports, "gapiComplete", ()=>gapiComplete);
+var global = arguments[3];
+var gapi = window.gapi = window.gapi || {};
+gapi._bs = new Date().getTime();
+(function() {
+    var aa = "function" == typeof Object.defineProperties ? Object.defineProperty : function(a, b, c) {
+        if (a == Array.prototype || a == Object.prototype) return a;
+        a[b] = c.value;
+        return a;
+    }, da = function(a) {
+        a = [
+            "object" == typeof globalThis && globalThis,
+            a,
+            "object" == typeof window && window,
+            "object" == typeof self && self,
+            "object" == typeof global && global
+        ];
+        for(var b = 0; b < a.length; ++b){
+            var c = a[b];
+            if (c && c.Math == Math) return c;
+        }
+        throw Error("Cannot find global object");
+    }, ea = da(this), fa = function(a, b) {
+        if (b) a: {
+            var c = ea;
+            a = a.split(".");
+            for(var d = 0; d < a.length - 1; d++){
+                var e = a[d];
+                if (!(e in c)) break a;
+                c = c[e];
+            }
+            a = a[a.length - 1];
+            d = c[a];
+            b = b(d);
+            b != d && null != b && aa(c, a, {
+                configurable: !0,
+                writable: !0,
+                value: b
+            });
+        }
+    }, ha = function(a) {
+        var b = 0;
+        return function() {
+            return b < a.length ? {
+                done: !1,
+                value: a[b++]
+            } : {
+                done: !0
+            };
+        };
+    };
+    fa("Symbol", function(a) {
+        if (a) return a;
+        var b = function(e, f) {
+            this.ba = e;
+            aa(this, "description", {
+                configurable: !0,
+                writable: !0,
+                value: f
+            });
+        };
+        b.prototype.toString = function() {
+            return this.ba;
+        };
+        var c = 0, d = function(e) {
+            if (this instanceof d) throw new TypeError("Symbol is not a constructor");
+            return new b("jscomp_symbol_" + (e || "") + "_" + c++, e);
+        };
+        return d;
+    });
+    fa("Symbol.iterator", function(a) {
+        if (a) return a;
+        a = Symbol("Symbol.iterator");
+        for(var b = "Array Int8Array Uint8Array Uint8ClampedArray Int16Array Uint16Array Int32Array Uint32Array Float32Array Float64Array".split(" "), c = 0; c < b.length; c++){
+            var d = ea[b[c]];
+            "function" === typeof d && "function" != typeof d.prototype[a] && aa(d.prototype, a, {
+                configurable: !0,
+                writable: !0,
+                value: function() {
+                    return ia(ha(this));
+                }
+            });
+        }
+        return a;
+    });
+    var ia = function(a) {
+        a = {
+            next: a
+        };
+        a[Symbol.iterator] = function() {
+            return this;
+        };
+        return a;
+    }, ja = function(a, b) {
+        a instanceof String && (a += "");
+        var c = 0, d = !1, e = {
+            next: function() {
+                if (!d && c < a.length) {
+                    var f = c++;
+                    return {
+                        value: b(f, a[f]),
+                        done: !1
+                    };
+                }
+                d = !0;
+                return {
+                    done: !0,
+                    value: void 0
+                };
+            }
+        };
+        e[Symbol.iterator] = function() {
+            return e;
+        };
+        return e;
+    };
+    fa("Array.prototype.keys", function(a) {
+        return a ? a : function() {
+            return ja(this, function(b) {
+                return b;
+            });
+        };
+    });
+    var m = this || self, ka = function(a) {
+        var b = typeof a;
+        return "object" != b ? b : a ? Array.isArray(a) ? "array" : b : "null";
+    }, la = function(a, b, c) {
+        return a.call.apply(a.bind, arguments);
+    }, ma = function(a, b, c) {
+        if (!a) throw Error();
+        if (2 < arguments.length) {
+            var d = Array.prototype.slice.call(arguments, 2);
+            return function() {
+                var e = Array.prototype.slice.call(arguments);
+                Array.prototype.unshift.apply(e, d);
+                return a.apply(b, e);
+            };
+        }
+        return function() {
+            return a.apply(b, arguments);
+        };
+    }, na = function(a, b, c) {
+        na = Function.prototype.bind && -1 != Function.prototype.bind.toString().indexOf("native code") ? la : ma;
+        return na.apply(null, arguments);
+    }, oa = function(a, b) {
+        function c() {}
+        c.prototype = b.prototype;
+        a.ma = b.prototype;
+        a.prototype = new c;
+        a.prototype.constructor = a;
+        a.A = function(d, e, f) {
+            for(var g = Array(arguments.length - 2), h = 2; h < arguments.length; h++)g[h - 2] = arguments[h];
+            return b.prototype[e].apply(d, g);
+        };
+    }, pa = function(a) {
+        return a;
+    }, qa = function(a) {
+        var b = null, c = m.trustedTypes;
+        if (!c || !c.createPolicy) return b;
+        try {
+            b = c.createPolicy(a, {
+                createHTML: pa,
+                createScript: pa,
+                createScriptURL: pa
+            });
+        } catch (d) {
+            m.console && m.console.error(d.message);
+        }
+        return b;
+    };
+    function q(a) {
+        if (Error.captureStackTrace) Error.captureStackTrace(this, q);
+        else {
+            var b = Error().stack;
+            b && (this.stack = b);
+        }
+        a && (this.message = String(a));
+    }
+    oa(q, Error);
+    q.prototype.name = "CustomError";
+    var ra = function(a, b) {
+        a = a.split("%s");
+        for(var c = "", d = a.length - 1, e = 0; e < d; e++)c += a[e] + (e < b.length ? b[e] : "%s");
+        q.call(this, c + a[d]);
+    };
+    oa(ra, q);
+    ra.prototype.name = "AssertionError";
+    var sa = function(a, b, c, d) {
+        var e = "Assertion failed";
+        if (c) {
+            e += ": " + c;
+            var f = d;
+        } else a && (e += ": " + a, f = b);
+        throw new ra("" + e, f || []);
+    }, ta = function(a, b, c) {
+        a || sa("", null, b, Array.prototype.slice.call(arguments, 2));
+        return a;
+    }, ua = function(a, b) {
+        throw new ra("Failure" + (a ? ": " + a : ""), Array.prototype.slice.call(arguments, 1));
+    }, va = function(a, b, c) {
+        "string" !== typeof a && sa("Expected string but got %s: %s.", [
+            ka(a),
+            a
+        ], b, Array.prototype.slice.call(arguments, 2));
+    };
+    var xa = function(a, b) {
+        a: {
+            try {
+                var c = a && a.ownerDocument, d = c && (c.defaultView || c.parentWindow);
+                d = d || m;
+                if (d.Element && d.Location) {
+                    var e = d;
+                    break a;
+                }
+            } catch (g) {}
+            e = null;
+        }
+        if (e && "undefined" != typeof e[b] && (!a || !(a instanceof e[b]) && (a instanceof e.Location || a instanceof e.Element))) {
+            e = typeof a;
+            if ("object" == e && null != a || "function" == e) try {
+                var f = a.constructor.displayName || a.constructor.name || Object.prototype.toString.call(a);
+            } catch (g) {
+                f = "<object could not be stringified>";
+            }
+            else f = void 0 === a ? "undefined" : null === a ? "null" : typeof a;
+            ua("Argument is not a %s (or a non-Element, non-Location mock); got: %s", b, f);
+        }
+        return a;
+    };
+    var ya;
+    var t = function(a, b) {
+        this.P = a === za && b || "";
+        this.ca = Aa;
+    };
+    t.prototype.J = !0;
+    t.prototype.H = function() {
+        return this.P;
+    };
+    t.prototype.toString = function() {
+        return "Const{" + this.P + "}";
+    };
+    var Ba = function(a) {
+        if (a instanceof t && a.constructor === t && a.ca === Aa) return a.P;
+        ua("expected object of type Const, got '" + a + "'");
+        return "type_error:Const";
+    }, Aa = {}, za = {};
+    var v = function(a, b) {
+        this.N = b === Ca ? a : "";
+    };
+    v.prototype.J = !0;
+    v.prototype.H = function() {
+        return this.N.toString();
+    };
+    v.prototype.toString = function() {
+        return "SafeUrl{" + this.N + "}";
+    };
+    var Da = function(a) {
+        if (a instanceof v && a.constructor === v) return a.N;
+        ua("expected object of type SafeUrl, got '" + a + "' of type " + ka(a));
+        return "type_error:SafeUrl";
+    }, Ea = /^(?:(?:https?|mailto|ftp):|[^:/?#]*(?:[/?#]|$))/i, Fa = function(a) {
+        if (a instanceof v) return a;
+        a = "object" == typeof a && a.J ? a.H() : String(a);
+        ta(Ea.test(a), "%s does not match the safe URL pattern", a) || (a = "about:invalid#zClosurez");
+        return new v(a, Ca);
+    }, Ca = {};
+    var w = function(a, b, c) {
+        this.M = c === Ga ? a : "";
+    };
+    w.prototype.J = !0;
+    w.prototype.H = function() {
+        return this.M.toString();
+    };
+    w.prototype.toString = function() {
+        return "SafeHtml{" + this.M + "}";
+    };
+    var Ha = function(a) {
+        if (a instanceof w && a.constructor === w) return a.M;
+        ua("expected object of type SafeHtml, got '" + a + "' of type " + ka(a));
+        return "type_error:SafeHtml";
+    }, Ga = {}, Ia = new w(m.trustedTypes && m.trustedTypes.emptyHTML || "", 0, Ga);
+    var Ja = {
+        MATH: !0,
+        SCRIPT: !0,
+        STYLE: !0,
+        SVG: !0,
+        TEMPLATE: !0
+    }, Ka = function(a) {
+        var b = !1, c;
+        return function() {
+            b || (c = a(), b = !0);
+            return c;
+        };
+    }(function() {
+        if ("undefined" === typeof document) return !1;
+        var a = document.createElement("div"), b = document.createElement("div");
+        b.appendChild(document.createElement("div"));
+        a.appendChild(b);
+        if (!a.firstChild) return !1;
+        b = a.firstChild.firstChild;
+        a.innerHTML = Ha(Ia);
+        return !b.parentElement;
+    }); /*
+  gapi.loader.OBJECT_CREATE_TEST_OVERRIDE &&*/ 
+    var x = window, z = document, La = x.location, Ma = function() {}, Na = /\[native code\]/, A = function(a, b, c) {
+        return a[b] = a[b] || c;
+    }, Oa = function(a) {
+        for(var b = 0; b < this.length; b++)if (this[b] === a) return b;
+        return -1;
+    }, Pa = function(a) {
+        a = a.sort();
+        for(var b = [], c = void 0, d = 0; d < a.length; d++){
+            var e = a[d];
+            e != c && b.push(e);
+            c = e;
+        }
+        return b;
+    }, Qa = /&/g, Ra = /</g, Sa = />/g, Ua = /"/g, Va = /'/g, Wa = function(a) {
+        return String(a).replace(Qa, "&amp;").replace(Ra, "&lt;").replace(Sa, "&gt;").replace(Ua, "&quot;").replace(Va, "&#39;");
+    }, B = function() {
+        var a;
+        if ((a = Object.create) && Na.test(a)) a = a(null);
+        else {
+            a = {};
+            for(var b in a)a[b] = void 0;
+        }
+        return a;
+    }, C = function(a, b) {
+        return Object.prototype.hasOwnProperty.call(a, b);
+    }, Xa = function(a) {
+        if (Na.test(Object.keys)) return Object.keys(a);
+        var b = [], c;
+        for(c in a)C(a, c) && b.push(c);
+        return b;
+    }, D = function(a, b) {
+        a = a || {};
+        for(var c in a)C(a, c) && (b[c] = a[c]);
+    }, Ya = function(a) {
+        return function() {
+            x.setTimeout(a, 0);
+        };
+    }, E = function(a, b) {
+        if (!a) throw Error(b || "");
+    }, F = A(x, "gapi", {});
+    var H = function(a, b, c) {
+        var d = new RegExp("([#].*&|[#])" + b + "=([^&#]*)", "g");
+        b = new RegExp("([?#].*&|[?#])" + b + "=([^&#]*)", "g");
+        if (a = a && (d.exec(a) || b.exec(a))) try {
+            c = decodeURIComponent(a[2]);
+        } catch (e) {}
+        return c;
+    }, Za = new RegExp(/^/.source + /([a-zA-Z][-+.a-zA-Z0-9]*:)?/.source + /(\/\/[^\/?#]*)?/.source + /([^?#]*)?/.source + /(\?([^#]*))?/.source + /(#((#|[^#])*))?/.source + /$/.source), $a = /[\ud800-\udbff][\udc00-\udfff]|[^!-~]/g, ab = new RegExp(/(%([^0-9a-fA-F%]|[0-9a-fA-F]([^0-9a-fA-F%])?)?)*/.source + /%($|[^0-9a-fA-F]|[0-9a-fA-F]($|[^0-9a-fA-F]))/.source, "g"), bb = /%([a-f]|[0-9a-fA-F][a-f])/g, cb = /^(https?|ftp|file|chrome-extension):$/i, I = function(a) {
+        a = String(a);
+        a = a.replace($a, function(e) {
+            try {
+                return encodeURIComponent(e);
+            } catch (f) {
+                return encodeURIComponent(e.replace(/^[^%]+$/g, "\ufffd"));
+            }
+        }).replace(ab, function(e) {
+            return e.replace(/%/g, "%25");
+        }).replace(bb, function(e) {
+            return e.toUpperCase();
+        });
+        a = a.match(Za) || [];
+        var b = B(), c = function(e) {
+            return e.replace(/\\/g, "%5C").replace(/\^/g, "%5E").replace(/`/g, "%60").replace(/\{/g, "%7B").replace(/\|/g, "%7C").replace(/\}/g, "%7D");
+        }, d = !!(a[1] || "").match(cb);
+        b.A = c((a[1] || "") + (a[2] || "") + (a[3] || (a[2] && d ? "/" : "")));
+        d = function(e) {
+            return c(e.replace(/\?/g, "%3F").replace(/#/g, "%23"));
+        };
+        b.query = a[5] ? [
+            d(a[5])
+        ] : [];
+        b.g = a[7] ? [
+            d(a[7])
+        ] : [];
+        return b;
+    }, db = function(a) {
+        return a.A + (0 < a.query.length ? "?" + a.query.join("&") : "") + (0 < a.g.length ? "#" + a.g.join("&") : "");
+    }, eb = function(a, b) {
+        var c = [];
+        if (a) {
+            for(var d in a)if (C(a, d) && null != a[d]) {
+                var e = b ? b(a[d]) : a[d];
+                c.push(encodeURIComponent(d) + "=" + encodeURIComponent(e));
+            }
+        }
+        return c;
+    }, fb = function(a, b, c, d) {
+        a = I(a);
+        a.query.push.apply(a.query, eb(b, d));
+        a.g.push.apply(a.g, eb(c, d));
+        return db(a);
+    }, gb = new RegExp(/\/?\??#?/.source + "(" + /[\/?#]/i.source + "|" + /[\uD800-\uDBFF]/i.source + "|" + /%[c-f][0-9a-f](%[89ab][0-9a-f]){0,2}(%[89ab]?)?/i.source + "|" + /%[0-9a-f]?/i.source + ")$", "i"), hb = function(a, b) {
+        var c = I(b);
+        b = c.A;
+        c.query.length && (b += "?" + c.query.join(""));
+        c.g.length && (b += "#" + c.g.join(""));
+        var d = "";
+        2E3 < b.length && (d = b, b = b.substr(0, 2E3), b = b.replace(gb, ""), d = d.substr(b.length));
+        var e = a.createElement("div");
+        a = a.createElement("a");
+        c = I(b);
+        b = c.A;
+        c.query.length && (b += "?" + c.query.join(""));
+        c.g.length && (b += "#" + c.g.join(""));
+        b = new v(b, Ca);
+        xa(a, "HTMLAnchorElement");
+        b = b instanceof v ? b : Fa(b);
+        a.href = Da(b);
+        e.appendChild(a);
+        b = e.innerHTML;
+        c = new t(za, "Assignment to self.");
+        va(Ba(c), "must provide justification");
+        ta(!/^[\s\xa0]*$/.test(Ba(c)), "must provide non-empty justification");
+        void 0 === ya && (ya = qa("gapi#html"));
+        b = (c = ya) ? c.createHTML(b) : b;
+        b = new w(b, null, Ga);
+        if (e.tagName && Ja[e.tagName.toUpperCase()]) throw Error("goog.dom.safe.setInnerHtml cannot be used to set content of " + e.tagName + ".");
+        if (Ka()) for(; e.lastChild;)e.removeChild(e.lastChild);
+        e.innerHTML = Ha(b);
+        b = String(e.firstChild.href);
+        e.parentNode && e.parentNode.removeChild(e);
+        c = I(b + d);
+        d = c.A;
+        c.query.length && (d += "?" + c.query.join(""));
+        c.g.length && (d += "#" + c.g.join(""));
+        return d;
+    }, ib = /^https?:\/\/[^\/%\\?#\s]+\/[^\s]*$/i;
+    var jb = function(a, b, c, d) {
+        if (x[c + "EventListener"]) x[c + "EventListener"](a, b, !1);
+        else if (x[d + "tachEvent"]) x[d + "tachEvent"]("on" + a, b);
+    }, kb = function() {
+        var a = z.readyState;
+        return "complete" === a || "interactive" === a && -1 == navigator.userAgent.indexOf("MSIE");
+    }, nb = function(a) {
+        var b = lb;
+        if (!kb()) try {
+            b();
+        } catch (c) {}
+        mb(a);
+    }, mb = function(a) {
+        if (kb()) a();
+        else {
+            var b = !1, c = function() {
+                if (!b) return b = !0, a.apply(this, arguments);
+            };
+            x.addEventListener ? (x.addEventListener("load", c, !1), x.addEventListener("DOMContentLoaded", c, !1)) : x.attachEvent && (x.attachEvent("onreadystatechange", function() {
+                kb() && c.apply(this, arguments);
+            }), x.attachEvent("onload", c));
+        }
+    }, ob = function(a) {
+        for(; a.firstChild;)a.removeChild(a.firstChild);
+    }, pb = {
+        button: !0,
+        div: !0,
+        span: !0
+    };
+    var K;
+    K = A(x, "___jsl", B());
+    A(K, "I", 0);
+    A(K, "hel", 10);
+    var qb = function(a) {
+        return K.dpo ? K.h : H(a, "jsh", K.h);
+    }, rb = function(a) {
+        var b = A(K, "sws", []);
+        b.push.apply(b, a);
+    }, sb = function(a) {
+        return A(K, "watt", B())[a];
+    }, tb = function(a) {
+        var b = A(K, "PQ", []);
+        K.PQ = [];
+        var c = b.length;
+        if (0 === c) a();
+        else for(var d = 0, e = function() {
+            ++d === c && a();
+        }, f = 0; f < c; f++)b[f](e);
+    }, ub = function(a) {
+        return A(A(K, "H", B()), a, B());
+    };
+    var vb = A(K, "perf", B()), wb = A(vb, "g", B()), xb = A(vb, "i", B());
+    A(vb, "r", []);
+    B();
+    B();
+    var yb = function(a, b, c) {
+        var d = vb.r;
+        "function" === typeof d ? d(a, b, c) : d.push([
+            a,
+            b,
+            c
+        ]);
+    }, L = function(a, b, c) {
+        wb[a] = !b && wb[a] || c || (new Date).getTime();
+        yb(a);
+    }, Ab = function(a, b, c) {
+        b && 0 < b.length && (b = zb(b), c && 0 < c.length && (b += "___" + zb(c)), 28 < b.length && (b = b.substr(0, 28) + (b.length - 28)), c = b, b = A(xb, "_p", B()), A(b, c, B())[a] = (new Date).getTime(), yb(a, "_p", c));
+    }, zb = function(a) {
+        return a.join("__").replace(/\./g, "_").replace(/\-/g, "_").replace(/,/g, "_");
+    };
+    var Bb = B(), N = [], O = function(a) {
+        throw Error("Bad hint" + (a ? ": " + a : ""));
+    };
+    N.push([
+        "jsl",
+        function(a) {
+            for(var b in a)if (C(a, b)) {
+                var c = a[b];
+                "object" == typeof c ? K[b] = A(K, b, []).concat(c) : A(K, b, c);
+            }
+            if (b = a.u) a = A(K, "us", []), a.push(b), (b = /^https:(.*)$/.exec(b)) && a.push("http:" + b[1]);
+        }
+    ]);
+    var Cb = /^(\/[a-zA-Z0-9_\-]+)+$/, Db = [
+        /\/amp\//,
+        /\/amp$/,
+        /^\/amp$/
+    ], Eb = /^[a-zA-Z0-9\-_\.,!]+$/, Fb = /^gapi\.loaded_[0-9]+$/, Gb = /^[a-zA-Z0-9,._-]+$/, Kb = function(a, b, c, d) {
+        var e = a.split(";"), f = e.shift(), g = Bb[f], h = null;
+        g ? h = g(e, b, c, d) : O("no hint processor for: " + f);
+        h || O("failed to generate load url");
+        b = h;
+        c = b.match(Hb);
+        (d = b.match(Ib)) && 1 === d.length && Jb.test(b) && c && 1 === c.length || O("failed sanity: " + a);
+        return h;
+    }, Nb = function(a, b, c, d) {
+        a = Lb(a);
+        Fb.test(c) || O("invalid_callback");
+        b = Mb(b);
+        d = d && d.length ? Mb(d) : null;
+        var e = function(f) {
+            return encodeURIComponent(f).replace(/%2C/g, ",");
+        };
+        return [
+            encodeURIComponent(a.pathPrefix).replace(/%2C/g, ",").replace(/%2F/g, "/"),
+            "/k=",
+            e(a.version),
+            "/m=",
+            e(b),
+            d ? "/exm=" + e(d) : "",
+            "/rt=j/sv=1/d=1/ed=1",
+            a.S ? "/am=" + e(a.S) : "",
+            a.Z ? "/rs=" + e(a.Z) : "",
+            a.aa ? "/t=" + e(a.aa) : "",
+            "/cb=",
+            e(c)
+        ].join("");
+    }, Lb = function(a) {
+        "/" !== a.charAt(0) && O("relative path");
+        for(var b = a.substring(1).split("/"), c = []; b.length;){
+            a = b.shift();
+            if (!a.length || 0 == a.indexOf(".")) O("empty/relative directory");
+            else if (0 < a.indexOf("=")) {
+                b.unshift(a);
+                break;
+            }
+            c.push(a);
+        }
+        a = {};
+        for(var d = 0, e = b.length; d < e; ++d){
+            var f = b[d].split("="), g = decodeURIComponent(f[0]), h = decodeURIComponent(f[1]);
+            2 == f.length && g && h && (a[g] = a[g] || h);
+        }
+        b = "/" + c.join("/");
+        Cb.test(b) || O("invalid_prefix");
+        c = 0;
+        for(d = Db.length; c < d; ++c)Db[c].test(b) && O("invalid_prefix");
+        c = Ob(a, "k", !0);
+        d = Ob(a, "am");
+        e = Ob(a, "rs");
+        a = Ob(a, "t");
+        return {
+            pathPrefix: b,
+            version: c,
+            S: d,
+            Z: e,
+            aa: a
+        };
+    }, Mb = function(a) {
+        for(var b = [], c = 0, d = a.length; c < d; ++c){
+            var e = a[c].replace(/\./g, "_").replace(/-/g, "_");
+            Gb.test(e) && b.push(e);
+        }
+        return b.join(",");
+    }, Ob = function(a, b, c) {
+        a = a[b];
+        !a && c && O("missing: " + b);
+        if (a) {
+            if (Eb.test(a)) return a;
+            O("invalid: " + b);
+        }
+        return null;
+    }, Jb = /^https?:\/\/[a-z0-9_.-]+\.google(rs)?\.com(:\d+)?\/[a-zA-Z0-9_.,!=\-\/]+$/, Ib = /\/cb=/g, Hb = /\/\//g, Pb = function() {
+        var a = qb(La.href);
+        if (!a) throw Error("Bad hint");
+        return a;
+    };
+    Bb.m = function(a, b, c, d) {
+        (a = a[0]) || O("missing_hint");
+        return "https://apis.google.com" + Nb(a, b, c, d);
+    };
+    var Qb = decodeURI("%73cript"), Rb = /^[-+_0-9\/A-Za-z]+={0,2}$/, Sb = function(a, b) {
+        for(var c = [], d = 0; d < a.length; ++d){
+            var e = a[d];
+            e && 0 > Oa.call(b, e) && c.push(e);
+        }
+        return c;
+    }, Tb = function() {
+        var a = K.nonce;
+        return void 0 !== a ? a && a === String(a) && a.match(Rb) ? a : K.nonce = null : z.querySelector ? (a = z.querySelector("script[nonce]")) ? (a = a.nonce || a.getAttribute("nonce") || "", a && a === String(a) && a.match(Rb) ? K.nonce = a : K.nonce = null) : null : null;
+    }, Wb = function(a) {
+        if ("loading" != z.readyState) Ub(a);
+        else {
+            var b = Tb(), c = "";
+            null !== b && (c = ' nonce="' + b + '"');
+            a = "<" + Qb + ' src="' + encodeURI(a) + '"' + c + "></" + Qb + ">";
+            z.write(Vb ? Vb.createHTML(a) : a);
+        }
+    }, Ub = function(a) {
+        var b = z.createElement(Qb);
+        b.setAttribute("src", Vb ? Vb.createScriptURL(a) : a);
+        a = Tb();
+        null !== a && b.setAttribute("nonce", a);
+        b.async = "true";
+        (a = z.getElementsByTagName(Qb)[0]) ? a.parentNode.insertBefore(b, a) : (z.head || z.body || z.documentElement).appendChild(b);
+    }, Xb = function(a, b) {
+        var c = b && b._c;
+        if (c) for(var d = 0; d < N.length; d++){
+            var e = N[d][0], f = N[d][1];
+            f && C(c, e) && f(c[e], a, b);
+        }
+    }, Zb = function(a, b, c) {
+        Yb(function() {
+            var d = b === qb(La.href) ? A(F, "_", B()) : B();
+            d = A(ub(b), "_", d);
+            a(d);
+        }, c);
+    }, ac = function(a, b) {
+        var c = b || {};
+        "function" == typeof b && (c = {}, c.callback = b);
+        Xb(a, c);
+        b = a ? a.split(":") : [];
+        var d = c.h || Pb(), e = A(K, "ah", B());
+        if (e["::"] && b.length) {
+            a = [];
+            for(var f = null; f = b.shift();){
+                var g = f.split(".");
+                g = e[f] || e[g[1] && "ns:" + g[0] || ""] || d;
+                var h = a.length && a[a.length - 1] || null, k = h;
+                h && h.hint == g || (k = {
+                    hint: g,
+                    V: []
+                }, a.push(k));
+                k.V.push(f);
+            }
+            var l = a.length;
+            if (1 < l) {
+                var n = c.callback;
+                n && (c.callback = function() {
+                    0 == --l && n();
+                });
+            }
+            for(; b = a.shift();)$b(b.V, c, b.hint);
+        } else $b(b || [], c, d);
+    }, $b = function(a, b, c) {
+        a = Pa(a) || [];
+        var d = b.callback, e = b.config, f = b.timeout, g = b.ontimeout, h = b.onerror, k = void 0;
+        "function" == typeof h && (k = h);
+        var l = null, n = !1;
+        if (f && !g || !f && g) throw "Timeout requires both the timeout parameter and ontimeout parameter to be set";
+        h = A(ub(c), "r", []).sort();
+        var p = A(ub(c), "L", []).sort(), r = [].concat(h), u = function(M, ba) {
+            if (n) return 0;
+            x.clearTimeout(l);
+            p.push.apply(p, y);
+            var ca = ((F || {}).config || {}).update;
+            ca ? ca(e) : e && A(K, "cu", []).push(e);
+            if (ba) {
+                Ab("me0", M, r);
+                try {
+                    Zb(ba, c, k);
+                } finally{
+                    Ab("me1", M, r);
+                }
+            }
+            return 1;
+        };
+        0 < f && (l = x.setTimeout(function() {
+            n = !0;
+            g();
+        }, f));
+        var y = Sb(a, p);
+        if (y.length) {
+            y = Sb(a, h);
+            var G = A(K, "CP", []), J = G.length;
+            G[J] = function(M) {
+                if (!M) return 0;
+                Ab("ml1", y, r);
+                var ba = function(wa) {
+                    G[J] = null;
+                    u(y, M) && tb(function() {
+                        d && d();
+                        wa();
+                    });
+                }, ca = function() {
+                    var wa = G[J + 1];
+                    wa && wa();
+                };
+                0 < J && G[J - 1] ? G[J] = function() {
+                    ba(ca);
+                } : ba(ca);
+            };
+            if (y.length) {
+                var Ta = "loaded_" + K.I++;
+                F[Ta] = function(M) {
+                    G[J](M);
+                    F[Ta] = null;
+                };
+                a = Kb(c, y, "gapi." + Ta, h);
+                h.push.apply(h, y);
+                Ab("ml0", y, r);
+                b.sync || x.___gapisync ? Wb(a) : Ub(a);
+            } else G[J](Ma);
+        } else u(y) && d && d();
+    }, Vb = qa("gapi#gapi");
+    var Yb = function(a, b) {
+        if (K.hee && 0 < K.hel) try {
+            return a();
+        } catch (c) {
+            b && b(c), K.hel--, ac("debug_error", function() {
+                try {
+                    window.___jsl.hefn(c);
+                } catch (d) {
+                    throw c;
+                }
+            });
+        }
+        else try {
+            return a();
+        } catch (c) {
+            throw b && b(c), c;
+        }
+    };
+    F.load = function(a, b) {
+        return Yb(function() {
+            return ac(a, b);
+        });
+    };
+    var bc = function(a) {
+        var b = window.___jsl = window.___jsl || {};
+        b[a] = b[a] || [];
+        return b[a];
+    }, cc = function(a) {
+        var b = window.___jsl = window.___jsl || {};
+        b.cfg = !a && b.cfg || {};
+        return b.cfg;
+    }, dc = function(a) {
+        return "object" === typeof a && /\[native code\]/.test(a.push);
+    }, P = function(a, b, c) {
+        if (b && "object" === typeof b) for(var d in b)!Object.prototype.hasOwnProperty.call(b, d) || c && "___goc" === d && "undefined" === typeof b[d] || (a[d] && b[d] && "object" === typeof a[d] && "object" === typeof b[d] && !dc(a[d]) && !dc(b[d]) ? P(a[d], b[d]) : b[d] && "object" === typeof b[d] ? (a[d] = dc(b[d]) ? [] : {}, P(a[d], b[d])) : a[d] = b[d]);
+    }, ec = function(a) {
+        if (a && !/^\s+$/.test(a)) {
+            for(; 0 == a.charCodeAt(a.length - 1);)a = a.substring(0, a.length - 1);
+            try {
+                var b = window.JSON.parse(a);
+            } catch (c) {}
+            if ("object" === typeof b) return b;
+            try {
+                b = new Function("return (" + a + "\n)")();
+            } catch (c) {}
+            if ("object" === typeof b) return b;
+            try {
+                b = new Function("return ({" + a + "\n})")();
+            } catch (c) {}
+            return "object" === typeof b ? b : {};
+        }
+    }, fc = function(a, b) {
+        var c = {
+            ___goc: void 0
+        };
+        a.length && a[a.length - 1] && Object.hasOwnProperty.call(a[a.length - 1], "___goc") && "undefined" === typeof a[a.length - 1].___goc && (c = a.pop());
+        P(c, b);
+        a.push(c);
+    }, gc = function(a) {
+        cc(!0);
+        var b = window.___gcfg, c = bc("cu"), d = window.___gu;
+        b && b !== d && (fc(c, b), window.___gu = b);
+        b = bc("cu");
+        var e = document.scripts || document.getElementsByTagName("script") || [];
+        d = [];
+        var f = [];
+        f.push.apply(f, bc("us"));
+        for(var g = 0; g < e.length; ++g)for(var h = e[g], k = 0; k < f.length; ++k)h.src && 0 == h.src.indexOf(f[k]) && d.push(h);
+        0 == d.length && 0 < e.length && e[e.length - 1].src && d.push(e[e.length - 1]);
+        for(e = 0; e < d.length; ++e)d[e].getAttribute("gapi_processed") || (d[e].setAttribute("gapi_processed", !0), (f = d[e]) ? (g = f.nodeType, f = 3 == g || 4 == g ? f.nodeValue : f.textContent || f.innerText || f.innerHTML || "") : f = void 0, (f = ec(f)) && b.push(f));
+        a && fc(c, a);
+        d = bc("cd");
+        a = 0;
+        for(b = d.length; a < b; ++a)P(cc(), d[a], !0);
+        d = bc("ci");
+        a = 0;
+        for(b = d.length; a < b; ++a)P(cc(), d[a], !0);
+        a = 0;
+        for(b = c.length; a < b; ++a)P(cc(), c[a], !0);
+    }, Q = function(a) {
+        var b = cc();
+        if (!a) return b;
+        a = a.split("/");
+        for(var c = 0, d = a.length; b && "object" === typeof b && c < d; ++c)b = b[a[c]];
+        return c === a.length && void 0 !== b ? b : void 0;
+    }, hc = function(a, b) {
+        var c;
+        if ("string" === typeof a) {
+            var d = c = {};
+            a = a.split("/");
+            for(var e = 0, f = a.length; e < f - 1; ++e){
+                var g = {};
+                d = d[a[e]] = g;
+            }
+            d[a[e]] = b;
+        } else c = a;
+        gc(c);
+    };
+    var ic = function() {
+        var a = window.__GOOGLEAPIS;
+        a && (a.googleapis && !a["googleapis.config"] && (a["googleapis.config"] = a.googleapis), A(K, "ci", []).push(a), window.__GOOGLEAPIS = void 0);
+    };
+    var jc = {
+        callback: 1,
+        clientid: 1,
+        cookiepolicy: 1,
+        openidrealm: -1,
+        includegrantedscopes: -1,
+        requestvisibleactions: 1,
+        scope: 1
+    }, kc = !1, lc = B(), mc = function() {
+        if (!kc) {
+            for(var a = document.getElementsByTagName("meta"), b = 0; b < a.length; ++b){
+                var c = a[b].name.toLowerCase();
+                if (0 == c.lastIndexOf("google-signin-", 0)) {
+                    c = c.substring(14);
+                    var d = a[b].content;
+                    jc[c] && d && (lc[c] = d);
+                }
+            }
+            if (window.self !== window.top) {
+                a = document.location.toString();
+                for(var e in jc)0 < jc[e] && (b = H(a, e, "")) && (lc[e] = b);
+            }
+            kc = !0;
+        }
+        e = B();
+        D(lc, e);
+        return e;
+    }, nc = function(a) {
+        return !!(a.clientid && a.scope && a.callback);
+    };
+    var oc = window.console, pc = function(a) {
+        oc && oc.log && oc.log(a);
+    };
+    var qc = function() {
+        return !!K.oa;
+    }, rc = function() {};
+    var R = A(K, "rw", B()), sc = function(a) {
+        for(var b in R)a(R[b]);
+    }, tc = function(a, b) {
+        (a = R[a]) && a.state < b && (a.state = b);
+    };
+    var uc;
+    var vc = /^https?:\/\/(?:\w|[\-\.])+\.google\.(?:\w|[\-:\.])+(?:\/[^\?#]*)?\/u\/(\d)\//, wc = /^https?:\/\/(?:\w|[\-\.])+\.google\.(?:\w|[\-:\.])+(?:\/[^\?#]*)?\/b\/(\d{10,21})\//, xc = function(a) {
+        var b = Q("googleapis.config/sessionIndex");
+        "string" === typeof b && 254 < b.length && (b = null);
+        null == b && (b = window.__X_GOOG_AUTHUSER);
+        "string" === typeof b && 254 < b.length && (b = null);
+        if (null == b) {
+            var c = window.google;
+            c && (b = c.authuser);
+        }
+        "string" === typeof b && 254 < b.length && (b = null);
+        null == b && (a = a || window.location.href, b = H(a, "authuser") || null, null == b && (b = (b = a.match(vc)) ? b[1] : null));
+        if (null == b) return null;
+        b = String(b);
+        254 < b.length && (b = null);
+        return b;
+    }, yc = function(a) {
+        var b = Q("googleapis.config/sessionDelegate");
+        "string" === typeof b && 21 < b.length && (b = null);
+        null == b && (b = (a = (a || window.location.href).match(wc)) ? a[1] : null);
+        if (null == b) return null;
+        b = String(b);
+        21 < b.length && (b = null);
+        return b;
+    };
+    var zc, S, T = void 0, U = function(a) {
+        try {
+            return m.JSON.parse.call(m.JSON, a);
+        } catch (b) {
+            return !1;
+        }
+    }, V = function(a) {
+        return Object.prototype.toString.call(a);
+    }, Ac = V(0), Bc = V(new Date(0)), Cc = V(!0), Dc = V(""), Ec = V({}), Fc = V([]), W = function(a, b) {
+        if (b) {
+            for(var c = 0, d = b.length; c < d; ++c)if (a === b[c]) throw new TypeError("Converting circular structure to JSON");
+        }
+        d = typeof a;
+        if ("undefined" !== d) {
+            c = Array.prototype.slice.call(b || [], 0);
+            c[c.length] = a;
+            b = [];
+            var e = V(a);
+            if (null != a && "function" === typeof a.toJSON && (Object.prototype.hasOwnProperty.call(a, "toJSON") || (e !== Fc || a.constructor !== Array && a.constructor !== Object) && (e !== Ec || a.constructor !== Array && a.constructor !== Object) && e !== Dc && e !== Ac && e !== Cc && e !== Bc)) return W(a.toJSON.call(a), c);
+            if (null == a) b[b.length] = "null";
+            else if (e === Ac) a = Number(a), isNaN(a) || isNaN(a - a) ? a = "null" : -0 === a && 0 > 1 / a && (a = "-0"), b[b.length] = String(a);
+            else if (e === Cc) b[b.length] = String(!!Number(a));
+            else {
+                if (e === Bc) return W(a.toISOString.call(a), c);
+                if (e === Fc && V(a.length) === Ac) {
+                    b[b.length] = "[";
+                    var f = 0;
+                    for(d = Number(a.length) >> 0; f < d; ++f)f && (b[b.length] = ","), b[b.length] = W(a[f], c) || "null";
+                    b[b.length] = "]";
+                } else if (e == Dc && V(a.length) === Ac) {
+                    b[b.length] = '"';
+                    f = 0;
+                    for(c = Number(a.length) >> 0; f < c; ++f)d = String.prototype.charAt.call(a, f), e = String.prototype.charCodeAt.call(a, f), b[b.length] = "\b" === d ? "\\b" : "\f" === d ? "\\f" : "\n" === d ? "\\n" : "\r" === d ? "\\r" : "\t" === d ? "\\t" : "\\" === d || '"' === d ? "\\" + d : 31 >= e ? "\\u" + (e + 65536).toString(16).substr(1) : 32 <= e && 65535 >= e ? d : "\ufffd";
+                    b[b.length] = '"';
+                } else if ("object" === d) {
+                    b[b.length] = "{";
+                    d = 0;
+                    for(f in a)Object.prototype.hasOwnProperty.call(a, f) && (e = W(a[f], c), void 0 !== e && (d++ && (b[b.length] = ","), b[b.length] = W(f), b[b.length] = ":", b[b.length] = e));
+                    b[b.length] = "}";
+                } else return;
+            }
+            return b.join("");
+        }
+    }, Gc = /[\0-\x07\x0b\x0e-\x1f]/, Hc = /^([^"]*"([^\\"]|\\.)*")*[^"]*"([^"\\]|\\.)*[\0-\x1f]/, Ic = /^([^"]*"([^\\"]|\\.)*")*[^"]*"([^"\\]|\\.)*\\[^\\\/"bfnrtu]/, Jc = /^([^"]*"([^\\"]|\\.)*")*[^"]*"([^"\\]|\\.)*\\u([0-9a-fA-F]{0,3}[^0-9a-fA-F])/, Kc = /"([^\0-\x1f\\"]|\\[\\\/"bfnrt]|\\u[0-9a-fA-F]{4})*"/g, Lc = /-?(0|[1-9][0-9]*)(\.[0-9]+)?([eE][-+]?[0-9]+)?/g, Mc = /[ \t\n\r]+/g, Nc = /[^"]:/, Oc = /""/g, Pc = /true|false|null/g, Qc = /00/, Rc = /[\{]([^0\}]|0[^:])/, Sc = /(^|\[)[,:]|[,:](\]|\}|[,:]|$)/, Tc = /[^\[,:][\[\{]/, Uc = /^(\{|\}|\[|\]|,|:|0)+/, Vc = /\u2028/g, Wc = /\u2029/g, Xc = function(a) {
+        a = String(a);
+        if (Gc.test(a) || Hc.test(a) || Ic.test(a) || Jc.test(a)) return !1;
+        var b = a.replace(Kc, '""');
+        b = b.replace(Lc, "0");
+        b = b.replace(Mc, "");
+        if (Nc.test(b)) return !1;
+        b = b.replace(Oc, "0");
+        b = b.replace(Pc, "0");
+        if (Qc.test(b) || Rc.test(b) || Sc.test(b) || Tc.test(b) || !b || (b = b.replace(Uc, ""))) return !1;
+        a = a.replace(Vc, "\\u2028").replace(Wc, "\\u2029");
+        b = void 0;
+        try {
+            b = T ? [
+                U(a)
+            ] : eval("(function (var_args) {\n  return Array.prototype.slice.call(arguments, 0);\n})(\n" + a + "\n)");
+        } catch (c) {
+            return !1;
+        }
+        return b && 1 === b.length ? b[0] : !1;
+    }, Yc = function() {
+        var a = ((m.document || {}).scripts || []).length;
+        if ((void 0 === zc || void 0 === T || S !== a) && -1 !== S) {
+            zc = T = !1;
+            S = -1;
+            try {
+                try {
+                    T = !!m.JSON && '{"a":[3,true,"1970-01-01T00:00:00.000Z"]}' === m.JSON.stringify.call(m.JSON, {
+                        a: [
+                            3,
+                            !0,
+                            new Date(0)
+                        ],
+                        c: function() {}
+                    }) && !0 === U("true") && 3 === U('[{"a":3}]')[0].a;
+                } catch (b) {}
+                zc = T && !U("[00]") && !U('"\u0007"') && !U('"\\0"') && !U('"\\v"');
+            } finally{
+                S = a;
+            }
+        }
+    }, Zc = function(a) {
+        if (-1 === S) return !1;
+        Yc();
+        return (zc ? U : Xc)(a);
+    }, $c = function(a) {
+        if (-1 !== S) return Yc(), T ? m.JSON.stringify.call(m.JSON, a) : W(a);
+    }, ad = !Date.prototype.toISOString || "function" !== typeof Date.prototype.toISOString || "1970-01-01T00:00:00.000Z" !== new Date(0).toISOString(), bd = function() {
+        var a = Date.prototype.getUTCFullYear.call(this);
+        return [
+            0 > a ? "-" + String(1E6 - a).substr(1) : 9999 >= a ? String(1E4 + a).substr(1) : "+" + String(1E6 + a).substr(1),
+            "-",
+            String(101 + Date.prototype.getUTCMonth.call(this)).substr(1),
+            "-",
+            String(100 + Date.prototype.getUTCDate.call(this)).substr(1),
+            "T",
+            String(100 + Date.prototype.getUTCHours.call(this)).substr(1),
+            ":",
+            String(100 + Date.prototype.getUTCMinutes.call(this)).substr(1),
+            ":",
+            String(100 + Date.prototype.getUTCSeconds.call(this)).substr(1),
+            ".",
+            String(1E3 + Date.prototype.getUTCMilliseconds.call(this)).substr(1),
+            "Z"
+        ].join("");
+    };
+    Date.prototype.toISOString = ad ? bd : Date.prototype.toISOString;
+    var cd = function() {
+        this.j = -1;
+    };
+    var dd = function() {
+        this.j = 64;
+        this.b = [];
+        this.G = [];
+        this.da = [];
+        this.C = [];
+        this.C[0] = 128;
+        for(var a = 1; a < this.j; ++a)this.C[a] = 0;
+        this.D = this.o = 0;
+        this.reset();
+    };
+    oa(dd, cd);
+    dd.prototype.reset = function() {
+        this.b[0] = 1732584193;
+        this.b[1] = 4023233417;
+        this.b[2] = 2562383102;
+        this.b[3] = 271733878;
+        this.b[4] = 3285377520;
+        this.D = this.o = 0;
+    };
+    var ed = function(a, b, c) {
+        c || (c = 0);
+        var d = a.da;
+        if ("string" === typeof b) for(var e = 0; 16 > e; e++)d[e] = b.charCodeAt(c) << 24 | b.charCodeAt(c + 1) << 16 | b.charCodeAt(c + 2) << 8 | b.charCodeAt(c + 3), c += 4;
+        else for(e = 0; 16 > e; e++)d[e] = b[c] << 24 | b[c + 1] << 16 | b[c + 2] << 8 | b[c + 3], c += 4;
+        for(e = 16; 80 > e; e++){
+            var f = d[e - 3] ^ d[e - 8] ^ d[e - 14] ^ d[e - 16];
+            d[e] = (f << 1 | f >>> 31) & 4294967295;
+        }
+        b = a.b[0];
+        c = a.b[1];
+        var g = a.b[2], h = a.b[3], k = a.b[4];
+        for(e = 0; 80 > e; e++){
+            if (40 > e) {
+                if (20 > e) {
+                    f = h ^ c & (g ^ h);
+                    var l = 1518500249;
+                } else f = c ^ g ^ h, l = 1859775393;
+            } else 60 > e ? (f = c & g | h & (c | g), l = 2400959708) : (f = c ^ g ^ h, l = 3395469782);
+            f = (b << 5 | b >>> 27) + f + k + l + d[e] & 4294967295;
+            k = h;
+            h = g;
+            g = (c << 30 | c >>> 2) & 4294967295;
+            c = b;
+            b = f;
+        }
+        a.b[0] = a.b[0] + b & 4294967295;
+        a.b[1] = a.b[1] + c & 4294967295;
+        a.b[2] = a.b[2] + g & 4294967295;
+        a.b[3] = a.b[3] + h & 4294967295;
+        a.b[4] = a.b[4] + k & 4294967295;
+    };
+    dd.prototype.update = function(a, b) {
+        if (null != a) {
+            void 0 === b && (b = a.length);
+            for(var c = b - this.j, d = 0, e = this.G, f = this.o; d < b;){
+                if (0 == f) for(; d <= c;)ed(this, a, d), d += this.j;
+                if ("string" === typeof a) {
+                    for(; d < b;)if (e[f] = a.charCodeAt(d), ++f, ++d, f == this.j) {
+                        ed(this, e);
+                        f = 0;
+                        break;
+                    }
+                } else for(; d < b;)if (e[f] = a[d], ++f, ++d, f == this.j) {
+                    ed(this, e);
+                    f = 0;
+                    break;
+                }
+            }
+            this.o = f;
+            this.D += b;
+        }
+    };
+    dd.prototype.digest = function() {
+        var a = [], b = 8 * this.D;
+        56 > this.o ? this.update(this.C, 56 - this.o) : this.update(this.C, this.j - (this.o - 56));
+        for(var c = this.j - 1; 56 <= c; c--)this.G[c] = b & 255, b /= 256;
+        ed(this, this.G);
+        for(c = b = 0; 5 > c; c++)for(var d = 24; 0 <= d; d -= 8)a[b] = this.b[c] >> d & 255, ++b;
+        return a;
+    };
+    var fd = function() {
+        this.O = new dd;
+    };
+    fd.prototype.reset = function() {
+        this.O.reset();
+    };
+    var gd = x.crypto, hd = !1, id = 0, jd = 0, kd = 1, ld = 0, md = "", nd = function(a) {
+        a = a || x.event;
+        var b = a.screenX + a.clientX << 16;
+        b += a.screenY + a.clientY;
+        b *= (new Date).getTime() % 1E6;
+        kd = kd * b % ld;
+        0 < id && ++jd == id && jb("mousemove", nd, "remove", "de");
+    }, od = function(a) {
+        var b = new fd;
+        a = unescape(encodeURIComponent(a));
+        for(var c = [], d = 0, e = a.length; d < e; ++d)c.push(a.charCodeAt(d));
+        b.O.update(c);
+        b = b.O.digest();
+        a = "";
+        for(c = 0; c < b.length; c++)a += "0123456789ABCDEF".charAt(Math.floor(b[c] / 16)) + "0123456789ABCDEF".charAt(b[c] % 16);
+        return a;
+    };
+    hd = !!gd && "function" == typeof gd.getRandomValues;
+    hd || (ld = 1E6 * (screen.width * screen.width + screen.height), md = od(z.cookie + "|" + z.location + "|" + (new Date).getTime() + "|" + Math.random()), id = Q("random/maxObserveMousemove") || 0, 0 != id && jb("mousemove", nd, "add", "at"));
+    var pd = function() {
+        var a = kd;
+        a += parseInt(md.substr(0, 20), 16);
+        md = od(md);
+        return a / (ld + Math.pow(16, 20));
+    }, qd = function() {
+        var a = new x.Uint32Array(1);
+        gd.getRandomValues(a);
+        return Number("0." + a[0]);
+    };
+    var rd = function() {
+        var a = K.onl;
+        if (!a) {
+            a = B();
+            K.onl = a;
+            var b = B();
+            a.e = function(c) {
+                var d = b[c];
+                d && (delete b[c], d());
+            };
+            a.a = function(c, d) {
+                b[c] = d;
+            };
+            a.r = function(c) {
+                delete b[c];
+            };
+        }
+        return a;
+    }, sd = function(a, b) {
+        b = b.onload;
+        return "function" === typeof b ? (rd().a(a, b), b) : null;
+    }, td = function(a) {
+        E(/^\w+$/.test(a), "Unsupported id - " + a);
+        rd();
+        return 'onload="window.___jsl.onl.e(&#34;' + a + '&#34;)"';
+    }, ud = function(a) {
+        rd().r(a);
+    };
+    var vd = {
+        allowtransparency: "true",
+        frameborder: "0",
+        hspace: "0",
+        marginheight: "0",
+        marginwidth: "0",
+        scrolling: "no",
+        style: "",
+        tabindex: "0",
+        vspace: "0",
+        width: "100%"
+    }, wd = {
+        allowtransparency: !0,
+        onload: !0
+    }, xd = 0, yd = function(a) {
+        E(!a || ib.test(a), "Illegal url for new iframe - " + a);
+    }, zd = function(a, b, c, d, e) {
+        yd(c.src);
+        var f, g = sd(d, c), h = g ? td(d) : "";
+        try {
+            document.all && (f = a.createElement('<iframe frameborder="' + Wa(String(c.frameborder)) + '" scrolling="' + Wa(String(c.scrolling)) + '" ' + h + ' name="' + Wa(String(c.name)) + '"/>'));
+        } catch (l) {} finally{
+            f || (f = a.createElement("iframe"), g && (f.onload = function() {
+                f.onload = null;
+                g.call(this);
+            }, ud(d)));
+        }
+        f.setAttribute("ng-non-bindable", "");
+        for(var k in c)a = c[k], "style" === k && "object" === typeof a ? D(a, f.style) : wd[k] || f.setAttribute(k, String(a));
+        (k = e && e.beforeNode || null) || e && e.dontclear || ob(b);
+        b.insertBefore(f, k);
+        f = k ? k.previousSibling : b.lastChild;
+        c.allowtransparency && (f.allowTransparency = !0);
+        return f;
+    };
+    var Ad = /^:[\w]+$/, Bd = /:([a-zA-Z_]+):/g, Cd = function() {
+        var a = xc() || "0", b = yc();
+        var c = xc(void 0) || a;
+        var d = yc(void 0), e = "";
+        c && (e += "u/" + encodeURIComponent(String(c)) + "/");
+        d && (e += "b/" + encodeURIComponent(String(d)) + "/");
+        c = e || null;
+        (e = (d = !1 === Q("isLoggedIn")) ? "_/im/" : "") && (c = "");
+        var f = Q("iframes/:socialhost:"), g = Q("iframes/:im_socialhost:");
+        return uc = {
+            socialhost: f,
+            ctx_socialhost: d ? g : f,
+            session_index: a,
+            session_delegate: b,
+            session_prefix: c,
+            im_prefix: e
+        };
+    }, Dd = function(a, b) {
+        return Cd()[b] || "";
+    }, Ed = function(a) {
+        return function(b, c) {
+            return a ? Cd()[c] || a[c] || "" : Cd()[c] || "";
+        };
+    };
+    var Fd = function(a) {
+        var b;
+        a.match(/^https?%3A/i) && (b = decodeURIComponent(a));
+        return hb(document, b ? b : a);
+    }, Gd = function(a) {
+        a = a || "canonical";
+        for(var b = document.getElementsByTagName("link"), c = 0, d = b.length; c < d; c++){
+            var e = b[c], f = e.getAttribute("rel");
+            if (f && f.toLowerCase() == a && (e = e.getAttribute("href")) && (e = Fd(e)) && null != e.match(/^https?:\/\/[\w\-_\.]+/i)) return e;
+        }
+        return window.location.href;
+    };
+    var Hd = {
+        se: "0"
+    }, Id = {
+        post: !0
+    }, Jd = {
+        style: "position:absolute;top:-10000px;width:450px;margin:0px;border-style:none"
+    }, Kd = "onPlusOne _ready _close _open _resizeMe _renderstart oncircled drefresh erefresh".split(" "), Ld = A(K, "WI", B()), Md = function(a, b, c) {
+        var d;
+        var e = {};
+        var f = d = a;
+        "plus" == a && b.action && (d = a + "_" + b.action, f = a + "/" + b.action);
+        (d = Q("iframes/" + d + "/url")) || (d = ":im_socialhost:/:session_prefix::im_prefix:_/widget/render/" + f + "?usegapi=1");
+        for(var g in Hd)e[g] = g + "/" + (b[g] || Hd[g]) + "/";
+        e = hb(z, d.replace(Bd, Ed(e)));
+        g = "iframes/" + a + "/params/";
+        f = {};
+        D(b, f);
+        (d = Q("lang") || Q("gwidget/lang")) && (f.hl = d);
+        Id[a] || (f.origin = window.location.origin || window.location.protocol + "//" + window.location.host);
+        f.exp = Q(g + "exp");
+        if (g = Q(g + "location")) for(d = 0; d < g.length; d++){
+            var h = g[d];
+            f[h] = x.location[h];
+        }
+        switch(a){
+            case "plus":
+            case "follow":
+                g = f.href;
+                d = b.action ? void 0 : "publisher";
+                g = (g = "string" == typeof g ? g : void 0) ? Fd(g) : Gd(d);
+                f.url = g;
+                delete f.href;
+                break;
+            case "plusone":
+                g = (g = b.href) ? Fd(g) : Gd();
+                f.url = g;
+                g = b.db;
+                d = Q();
+                null == g && d && (g = d.db, null == g && (g = d.gwidget && d.gwidget.db));
+                f.db = g || void 0;
+                g = b.ecp;
+                d = Q();
+                null == g && d && (g = d.ecp, null == g && (g = d.gwidget && d.gwidget.ecp));
+                f.ecp = g || void 0;
+                delete f.href;
+                break;
+            case "signin":
+                f.url = Gd();
+        }
+        K.ILI && (f.iloader = "1");
+        delete f["data-onload"];
+        delete f.rd;
+        for(var k in Hd)f[k] && delete f[k];
+        f.gsrc = Q("iframes/:source:");
+        k = Q("inline/css");
+        "undefined" !== typeof k && 0 < c && k >= c && (f.ic = "1");
+        k = /^#|^fr-/;
+        c = {};
+        for(var l in f)C(f, l) && k.test(l) && (c[l.replace(k, "")] = f[l], delete f[l]);
+        l = "q" == Q("iframes/" + a + "/params/si") ? f : c;
+        k = mc();
+        for(var n in k)!C(k, n) || C(f, n) || C(c, n) || (l[n] = k[n]);
+        n = [].concat(Kd);
+        (l = Q("iframes/" + a + "/methods")) && "object" === typeof l && Na.test(l.push) && (n = n.concat(l));
+        for(var p in b)C(b, p) && /^on/.test(p) && ("plus" != a || "onconnect" != p) && (n.push(p), delete f[p]);
+        delete f.callback;
+        c._methods = n.join(",");
+        return fb(e, f, c);
+    }, Nd = [
+        "style",
+        "data-gapiscan"
+    ], Pd = function(a) {
+        for(var b = B(), c = 0 != a.nodeName.toLowerCase().indexOf("g:"), d = 0, e = a.attributes.length; d < e; d++){
+            var f = a.attributes[d], g = f.name, h = f.value;
+            0 <= Oa.call(Nd, g) || c && 0 != g.indexOf("data-") || "null" === h || "specified" in f && !f.specified || (c && (g = g.substr(5)), b[g.toLowerCase()] = h);
+        }
+        a = a.style;
+        (c = Od(a && a.height)) && (b.height = String(c));
+        (a = Od(a && a.width)) && (b.width = String(a));
+        return b;
+    }, Od = function(a) {
+        var b = void 0;
+        "number" === typeof a ? b = a : "string" === typeof a && (b = parseInt(a, 10));
+        return b;
+    }, Rd = function() {
+        var a = K.drw;
+        sc(function(b) {
+            if (a !== b.id && 4 != b.state && "share" != b.type) {
+                var c = b.id, d = b.type, e = b.url;
+                b = b.userParams;
+                var f = z.getElementById(c);
+                if (f) {
+                    var g = Md(d, b, 0);
+                    g ? (f = f.parentNode, e.replace(/#.*/, "").replace(/(\?|&)ic=1/, "") !== g.replace(/#.*/, "").replace(/(\?|&)ic=1/, "") && (b.dontclear = !0, b.rd = !0, b.ri = !0, b.type = d, Qd(f, b), (d = R[f.lastChild.id]) && (d.oid = c), tc(c, 4))) : delete R[c];
+                } else delete R[c];
+            }
+        });
+    };
+    var Sd, Td, X, Ud, Vd, Wd = /(?:^|\s)g-((\S)*)(?:$|\s)/, Xd = {
+        plusone: !0,
+        autocomplete: !0,
+        profile: !0,
+        signin: !0,
+        signin2: !0
+    };
+    Sd = A(K, "SW", B());
+    Td = A(K, "SA", B());
+    X = A(K, "SM", B());
+    Ud = A(K, "FW", []);
+    Vd = null;
+    var Zd = function(a, b) {
+        Yd(void 0, !1, a, b);
+    }, Yd = function(a, b, c, d) {
+        L("ps0", !0);
+        c = ("string" === typeof c ? document.getElementById(c) : c) || z;
+        var e = z.documentMode;
+        if (c.querySelectorAll && (!e || 8 < e)) {
+            e = d ? [
+                d
+            ] : Xa(Sd).concat(Xa(Td)).concat(Xa(X));
+            for(var f = [], g = 0; g < e.length; g++){
+                var h = e[g];
+                f.push(".g-" + h, "g\\:" + h);
+            }
+            e = c.querySelectorAll(f.join(","));
+        } else e = c.getElementsByTagName("*");
+        c = B();
+        for(f = 0; f < e.length; f++){
+            g = e[f];
+            var k = g;
+            h = d;
+            var l = k.nodeName.toLowerCase(), n = void 0;
+            if (k.getAttribute("data-gapiscan")) h = null;
+            else {
+                var p = l.indexOf("g:");
+                0 == p ? n = l.substr(2) : (p = (p = String(k.className || k.getAttribute("class"))) && Wd.exec(p)) && (n = p[1]);
+                h = !n || !(Sd[n] || Td[n] || X[n]) || h && n !== h ? null : n;
+            }
+            h && (Xd[h] || 0 == g.nodeName.toLowerCase().indexOf("g:") || 0 != Xa(Pd(g)).length) && (g.setAttribute("data-gapiscan", !0), A(c, h, []).push(g));
+        }
+        if (b) for(var r in c)for(b = c[r], d = 0; d < b.length; d++)b[d].setAttribute("data-onload", !0);
+        for(var u in c)Ud.push(u);
+        L("ps1", !0);
+        if ((r = Ud.join(":")) || a) try {
+            F.load(r, a);
+        } catch (G) {
+            pc(G);
+            return;
+        }
+        if ($d(Vd || {})) for(var y in c){
+            a = c[y];
+            u = 0;
+            for(b = a.length; u < b; u++)a[u].removeAttribute("data-gapiscan");
+            ae(y);
+        }
+        else {
+            d = [];
+            for(y in c)for(a = c[y], u = 0, b = a.length; u < b; u++)e = a[u], be(y, e, Pd(e), d, b);
+            ce(r, d);
+        }
+    }, de = function(a) {
+        var b = A(F, a, {});
+        b.go || (b.go = function(c) {
+            return Zd(c, a);
+        }, b.render = function(c, d) {
+            d = d || {};
+            d.type = a;
+            return Qd(c, d);
+        });
+    }, ee = function(a) {
+        Sd[a] = !0;
+    }, fe = function(a) {
+        Td[a] = !0;
+    }, ge = function(a) {
+        X[a] = !0;
+    };
+    var ae = function(a, b) {
+        var c = sb(a);
+        b && c ? (c(b), (c = b.iframeNode) && c.setAttribute("data-gapiattached", !0)) : F.load(a, function() {
+            var d = sb(a), e = b && b.iframeNode, f = b && b.userParams;
+            e && d ? (d(b), e.setAttribute("data-gapiattached", !0)) : (d = F[a].go, "signin2" == a ? d(e, f) : d(e && e.parentNode, f));
+        });
+    }, $d = function() {
+        return !1;
+    }, ce = function() {}, be = function(a, b, c, d, e, f, g) {
+        switch(he(b, a, f)){
+            case 0:
+                a = X[a] ? a + "_annotation" : a;
+                d = {};
+                d.iframeNode = b;
+                d.userParams = c;
+                ae(a, d);
+                break;
+            case 1:
+                if (b.parentNode) {
+                    for(var h in c){
+                        if (f = C(c, h)) f = c[h], f = !!f && "object" === typeof f && (!f.toString || f.toString === Object.prototype.toString || f.toString === Array.prototype.toString);
+                        if (f) try {
+                            c[h] = $c(c[h]);
+                        } catch (y) {
+                            delete c[h];
+                        }
+                    }
+                    f = !0;
+                    c.dontclear && (f = !1);
+                    delete c.dontclear;
+                    rc();
+                    h = Md(a, c, e);
+                    e = g || {};
+                    e.allowPost = 1;
+                    e.attributes = Jd;
+                    e.dontclear = !f;
+                    g = {};
+                    g.userParams = c;
+                    g.url = h;
+                    g.type = a;
+                    if (c.rd) var k = b;
+                    else k = document.createElement("div"), b.setAttribute("data-gapistub", !0), k.style.cssText = "position:absolute;width:450px;left:-10000px;", b.parentNode.insertBefore(k, b);
+                    g.siteElement = k;
+                    k.id || (b = k, A(Ld, a, 0), f = "___" + a + "_" + Ld[a]++, b.id = f);
+                    b = B();
+                    b[">type"] = a;
+                    D(c, b);
+                    f = h;
+                    c = k;
+                    h = e || {};
+                    b = h.attributes || {};
+                    E(!(h.allowPost || h.forcePost) || !b.onload, "onload is not supported by post iframe (allowPost or forcePost)");
+                    e = b = f;
+                    Ad.test(b) && (e = Q("iframes/" + e.substring(1) + "/url"), E(!!e, "Unknown iframe url config for - " + b));
+                    f = hb(z, e.replace(Bd, Dd));
+                    b = c.ownerDocument || z;
+                    k = 0;
+                    do e = h.id || [
+                        "I",
+                        xd++,
+                        "_",
+                        (new Date).getTime()
+                    ].join("");
+                    while (b.getElementById(e) && 5 > ++k);
+                    E(5 > k, "Error creating iframe id");
+                    k = {};
+                    var l = {};
+                    b.documentMode && 9 > b.documentMode && (k.hostiemode = b.documentMode);
+                    D(h.queryParams || {}, k);
+                    D(h.fragmentParams || {}, l);
+                    var n = h.pfname;
+                    var p = B();
+                    Q("iframes/dropLegacyIdParam") || (p.id = e);
+                    p._gfid = e;
+                    p.parent = b.location.protocol + "//" + b.location.host;
+                    var r = H(b.location.href, "parent");
+                    n = n || "";
+                    !n && r && (r = H(b.location.href, "_gfid", "") || H(b.location.href, "id", ""), n = H(b.location.href, "pfname", ""), n = r ? n + "/" + r : "");
+                    n || (r = Zc(H(b.location.href, "jcp", ""))) && "object" == typeof r && (n = (n = r.id) ? r.pfname + "/" + n : "");
+                    p.pfname = n;
+                    h.connectWithJsonParam && (r = {}, r.jcp = $c(p), p = r);
+                    r = H(f, "rpctoken") || k.rpctoken || l.rpctoken;
+                    r || (r = h.rpctoken || String(Math.round(1E8 * (hd ? qd() : pd()))), p.rpctoken = r);
+                    h.rpctoken = r;
+                    D(p, h.connectWithQueryParams ? k : l);
+                    r = b.location.href;
+                    p = B();
+                    (n = H(r, "_bsh", K.bsh)) && (p._bsh = n);
+                    (r = qb(r)) && (p.jsh = r);
+                    h.hintInFragment ? D(p, l) : D(p, k);
+                    f = fb(f, k, l, h.paramsSerializer);
+                    l = B();
+                    D(vd, l);
+                    D(h.attributes, l);
+                    l.name = l.id = e;
+                    l.src = f;
+                    h.eurl = f;
+                    k = h || {};
+                    p = !!k.allowPost;
+                    if (k.forcePost || p && 2E3 < f.length) {
+                        k = I(f);
+                        l.src = "";
+                        h.dropDataPostorigin || (l["data-postorigin"] = f);
+                        f = zd(b, c, l, e);
+                        if (-1 != navigator.userAgent.indexOf("WebKit")) {
+                            var u = f.contentWindow.document;
+                            u.open();
+                            l = u.createElement("div");
+                            p = {};
+                            r = e + "_inner";
+                            p.name = r;
+                            p.src = "";
+                            p.style = "display:none";
+                            zd(b, l, p, r, h);
+                        }
+                        l = (h = k.query[0]) ? h.split("&") : [];
+                        h = [];
+                        for(p = 0; p < l.length; p++)r = l[p].split("=", 2), h.push([
+                            decodeURIComponent(r[0]),
+                            decodeURIComponent(r[1])
+                        ]);
+                        k.query = [];
+                        l = db(k);
+                        E(ib.test(l), "Invalid URL: " + l);
+                        k = b.createElement("form");
+                        k.method = "POST";
+                        k.target = e;
+                        k.style.display = "none";
+                        e = l instanceof v ? l : Fa(l);
+                        xa(k, "HTMLFormElement").action = Da(e);
+                        for(e = 0; e < h.length; e++)l = b.createElement("input"), l.type = "hidden", l.name = h[e][0], l.value = h[e][1], k.appendChild(l);
+                        c.appendChild(k);
+                        k.submit();
+                        k.parentNode.removeChild(k);
+                        u && u.close();
+                        u = f;
+                    } else u = zd(b, c, l, e, h);
+                    g.iframeNode = u;
+                    g.id = u.getAttribute("id");
+                    u = g.id;
+                    c = B();
+                    c.id = u;
+                    c.userParams = g.userParams;
+                    c.url = g.url;
+                    c.type = g.type;
+                    c.state = 1;
+                    R[u] = c;
+                    u = g;
+                } else u = null;
+                u && ((g = u.id) && d.push(g), ae(a, u));
+        }
+    }, he = function(a, b, c) {
+        if (a && 1 === a.nodeType && b) {
+            if (c) return 1;
+            if (X[b]) {
+                if (pb[a.nodeName.toLowerCase()]) return (a = a.innerHTML) && a.replace(/^[\s\xa0]+|[\s\xa0]+$/g, "") ? 0 : 1;
+            } else {
+                if (Td[b]) return 0;
+                if (Sd[b]) return 1;
+            }
+        }
+        return null;
+    }, Qd = function(a, b) {
+        var c = b.type;
+        delete b.type;
+        var d = ("string" === typeof a ? document.getElementById(a) : a) || void 0;
+        if (d) {
+            a = {};
+            for(var e in b)C(b, e) && (a[e.toLowerCase()] = b[e]);
+            a.rd = 1;
+            (b = !!a.ri) && delete a.ri;
+            e = [];
+            be(c, d, a, e, 0, b, void 0);
+            ce(c, e);
+        } else pc("string" === "gapi." + c + ".render: missing element " + typeof a ? a : "");
+    };
+    A(F, "platform", {}).go = Zd;
+    $d = function(a) {
+        for(var b = [
+            "_c",
+            "jsl",
+            "h"
+        ], c = 0; c < b.length && a; c++)a = a[b[c]];
+        b = qb(La.href);
+        return !a || 0 != a.indexOf("n;") && 0 != b.indexOf("n;") && a !== b;
+    };
+    ce = function(a, b) {
+        ie(a, b);
+    };
+    var lb = function(a) {
+        Yd(a, !0);
+    }, je = function(a, b) {
+        b = b || [];
+        for(var c = 0; c < b.length; ++c)a(b[c]);
+        for(a = 0; a < b.length; a++)de(b[a]);
+    };
+    N.push([
+        "platform",
+        function(a, b, c) {
+            Vd = c;
+            b && Ud.push(b);
+            je(ee, a);
+            je(fe, c._c.annotation);
+            je(ge, c._c.bimodal);
+            ic();
+            gc();
+            if ("explicit" != Q("parsetags")) {
+                rb(a);
+                nc(mc()) && !Q("disableRealtimeCallback") && rc();
+                if (c && (a = c.callback)) {
+                    var d = Ya(a);
+                    delete c.callback;
+                }
+                nb(function() {
+                    lb(d);
+                });
+            }
+        }
+    ]);
+    F._pl = !0;
+    var ke = function(a) {
+        a = (a = R[a]) ? a.oid : void 0;
+        if (a) {
+            var b = z.getElementById(a);
+            b && b.parentNode.removeChild(b);
+            delete R[a];
+            ke(a);
+        }
+    };
+    var le = /^\{h:'/, me = /^!_/, ne = "", ie = function(a, b) {
+        function c() {
+            jb("message", d, "remove", "de");
+        }
+        function d(f) {
+            var g = f.data, h = f.origin;
+            if (oe(g, b)) {
+                var k = e;
+                e = !1;
+                k && L("rqe");
+                pe(a, function() {
+                    k && L("rqd");
+                    c();
+                    for(var l = A(K, "RPMQ", []), n = 0; n < l.length; n++)l[n]({
+                        data: g,
+                        origin: h
+                    });
+                });
+            }
+        }
+        if (0 !== b.length) {
+            ne = H(La.href, "pfname", "");
+            var e = !0;
+            jb("message", d, "add", "at");
+            ac(a, c);
+        }
+    }, oe = function(a, b) {
+        a = String(a);
+        if (le.test(a)) return !0;
+        var c = !1;
+        me.test(a) && (c = !0, a = a.substr(2));
+        if (!/^\{/.test(a)) return !1;
+        var d = Zc(a);
+        if (!d) return !1;
+        a = d.f;
+        if (d.s && a && -1 != Oa.call(b, a)) {
+            if ("_renderstart" === d.s || d.s === ne + "/" + a + "::_renderstart") {
+                if (d = d.a && d.a[c ? 0 : 1], b = z.getElementById(a), tc(a, 2), d && b && d.width && d.height) {
+                    a: {
+                        c = b.parentNode;
+                        a = d || {};
+                        if (qc()) {
+                            var e = b.id;
+                            if (e) {
+                                d = (d = R[e]) ? d.state : void 0;
+                                if (1 === d || 4 === d) break a;
+                                ke(e);
+                            }
+                        }
+                        (d = c.nextSibling) && d.getAttribute && d.getAttribute("data-gapistub") && (c.parentNode.removeChild(d), c.style.cssText = "");
+                        d = a.width;
+                        var f = a.height, g = c.style;
+                        g.textIndent = "0";
+                        g.margin = "0";
+                        g.padding = "0";
+                        g.background = "transparent";
+                        g.borderStyle = "none";
+                        g.cssFloat = "none";
+                        g.styleFloat = "none";
+                        g.lineHeight = "normal";
+                        g.fontSize = "1px";
+                        g.verticalAlign = "baseline";
+                        c = c.style;
+                        c.display = "inline-block";
+                        g = b.style;
+                        g.position = "static";
+                        g.left = "0";
+                        g.top = "0";
+                        g.visibility = "visible";
+                        d && (c.width = g.width = d + "px");
+                        f && (c.height = g.height = f + "px");
+                        a.verticalAlign && (c.verticalAlign = a.verticalAlign);
+                        e && tc(e, 3);
+                    }
+                    b["data-csi-wdt"] = (new Date).getTime();
+                }
+            }
+            return !0;
+        }
+        return !1;
+    }, pe = function(a, b) {
+        ac(a, b);
+    };
+    var qe = function(a, b) {
+        this.L = a;
+        a = b || {};
+        this.fa = Number(a.maxAge) || 0;
+        this.U = a.domain;
+        this.X = a.path;
+        this.ga = !!a.secure;
+    };
+    qe.prototype.read = function() {
+        for(var a = this.L + "=", b = document.cookie.split(/;\s*/), c = 0; c < b.length; ++c){
+            var d = b[c];
+            if (0 == d.indexOf(a)) return d.substr(a.length);
+        }
+    };
+    qe.prototype.write = function(a, b) {
+        if (!re.test(this.L)) throw "Invalid cookie name";
+        if (!se.test(a)) throw "Invalid cookie value";
+        a = this.L + "=" + a;
+        this.U && (a += ";domain=" + this.U);
+        this.X && (a += ";path=" + this.X);
+        b = "number" === typeof b ? b : this.fa;
+        if (0 <= b) {
+            var c = new Date;
+            c.setSeconds(c.getSeconds() + b);
+            a += ";expires=" + c.toUTCString();
+        }
+        this.ga && (a += ";secure");
+        document.cookie = a;
+        return !0;
+    };
+    qe.prototype.clear = function() {
+        this.write("", 0);
+    };
+    var se = /^[-+/_=.:|%&a-zA-Z0-9@]*$/, re = /^[A-Z_][A-Z0-9_]{0,63}$/;
+    qe.iterate = function(a) {
+        for(var b = document.cookie.split(/;\s*/), c = 0; c < b.length; ++c){
+            var d = b[c].split("="), e = d.shift();
+            a(e, d.join("="));
+        }
+    };
+    var te = function(a) {
+        this.B = a;
+    };
+    te.prototype.read = function() {
+        if (Y.hasOwnProperty(this.B)) return Y[this.B];
+    };
+    te.prototype.write = function(a) {
+        Y[this.B] = a;
+        return !0;
+    };
+    te.prototype.clear = function() {
+        delete Y[this.B];
+    };
+    var Y = {};
+    te.iterate = function(a) {
+        for(var b in Y)Y.hasOwnProperty(b) && a(b, Y[b]);
+    };
+    var ue = "https:" === window.location.protocol, ve = ue || "http:" === window.location.protocol ? qe : te, we = function(a) {
+        var b = a.substr(1), c = "", d = window.location.hostname;
+        if ("" !== b) {
+            c = parseInt(b, 10);
+            if (isNaN(c)) return null;
+            b = d.split(".");
+            if (b.length < c - 1) return null;
+            b.length == c - 1 && (d = "." + d);
+        } else d = "";
+        return {
+            i: "S" == a.charAt(0),
+            domain: d,
+            l: c
+        };
+    }, xe = function() {
+        var a, b = null;
+        ve.iterate(function(c, d) {
+            0 === c.indexOf("G_AUTHUSER_") && (c = we(c.substring(11)), !a || c.i && !a.i || c.i == a.i && c.l > a.l) && (a = c, b = d);
+        });
+        return {
+            ea: a,
+            F: b
+        };
+    };
+    var ye = function(a) {
+        if (0 !== a.indexOf("GCSC")) return null;
+        var b = {
+            W: !1
+        };
+        a = a.substr(4);
+        if (!a) return b;
+        var c = a.charAt(0);
+        a = a.substr(1);
+        var d = a.lastIndexOf("_");
+        if (-1 == d) return b;
+        var e = we(a.substr(d + 1));
+        if (null == e) return b;
+        a = a.substring(0, d);
+        if ("_" !== a.charAt(0)) return b;
+        d = "E" === c && e.i;
+        return !d && ("U" !== c || e.i) || d && !ue ? b : {
+            W: !0,
+            i: d,
+            ja: a.substr(1),
+            domain: e.domain,
+            l: e.l
+        };
+    }, ze = function(a) {
+        if (!a) return [];
+        a = a.split("=");
+        return a[1] ? a[1].split("|") : [];
+    }, Ae = function(a) {
+        a = a.split(":");
+        return {
+            clientId: a[0].split("=")[1],
+            ia: ze(a[1]),
+            la: ze(a[2]),
+            ka: ze(a[3])
+        };
+    }, Be = function() {
+        var a = xe(), b = a.ea;
+        a = a.F;
+        if (null !== a) {
+            var c;
+            ve.iterate(function(f, g) {
+                (f = ye(f)) && f.W && f.i == b.i && f.l == b.l && (c = g);
+            });
+            if (c) {
+                var d = Ae(c), e = d && d.ia[Number(a)];
+                d = d && d.clientId;
+                if (e) return {
+                    F: a,
+                    ha: e,
+                    clientId: d
+                };
+            }
+        }
+        return null;
+    };
+    var Z = function() {
+        this.T = Ce;
+    };
+    Z.prototype.$ = function() {
+        this.K || (this.v = 0, this.K = !0, this.Y());
+    };
+    Z.prototype.Y = function() {
+        this.K && (this.T() ? this.v = this.R : this.v = Math.min(2 * (this.v || this.R), 120), window.setTimeout(na(this.Y, this), 1E3 * this.v));
+    };
+    Z.prototype.v = 0;
+    Z.prototype.R = 2;
+    Z.prototype.T = null;
+    Z.prototype.K = !1;
+    for(var De = 0; 64 > De; ++De);
+    var Ee = null;
+    qc = function() {
+        return K.oa = !0;
+    };
+    rc = function() {
+        K.oa = !0;
+        var a = Be();
+        (a = a && a.F) && hc("googleapis.config/sessionIndex", a);
+        Ee || (Ee = A(K, "ss", new Z));
+        a = Ee;
+        a.$ && a.$();
+    };
+    var Ce = function() {
+        var a = Be(), b = a && a.ha || null, c = a && a.clientId;
+        ac("auth", {
+            callback: function() {
+                var d = x.gapi.auth, e = {
+                    client_id: c,
+                    session_state: b
+                };
+                d.checkSessionState(e, function(f) {
+                    var g = e.session_state, h = Q("isLoggedIn");
+                    f = Q("debug/forceIm") ? !1 : g && f || !g && !f;
+                    if (h = h != f) hc("isLoggedIn", f), rc(), Rd(), f || ((f = d.signOut) ? f() : (f = d.setToken) && f(null));
+                    f = mc();
+                    var k = Q("savedUserState");
+                    g = d._guss(f.cookiepolicy);
+                    k = k != g && "undefined" != typeof k;
+                    hc("savedUserState", g);
+                    (h || k) && nc(f) && !Q("disableRealtimeCallback") && d._pimf(f, !0);
+                });
+            }
+        });
+        return !0;
+    };
+    L("bs0", !0, window.gapi._bs);
+    L("bs1", !0);
+    delete window.gapi._bs;
+}).call(undefined);
+var gapiComplete = gapi.load("", {
+    callback: window["gapi_onload"],
+    _c: {
+        "jsl": {
+            "ci": {
+                "deviceType": "desktop",
+                "oauth-flow": {
+                    "authUrl": "https://accounts.google.com/o/oauth2/auth",
+                    "proxyUrl": "https://accounts.google.com/o/oauth2/postmessageRelay",
+                    "disableOpt": true,
+                    "idpIframeUrl": "https://accounts.google.com/o/oauth2/iframe",
+                    "usegapi": false
+                },
+                "debug": {
+                    "reportExceptionRate": 0.05,
+                    "forceIm": false,
+                    "rethrowException": false,
+                    "host": "https://apis.google.com"
+                },
+                "enableMultilogin": true,
+                "googleapis.config": {
+                    "auth": {
+                        "useFirstPartyAuthV2": true
+                    }
+                },
+                "isPlusUser": false,
+                "inline": {
+                    "css": 1
+                },
+                "disableRealtimeCallback": false,
+                "drive_share": {
+                    "skipInitCommand": true
+                },
+                "csi": {
+                    "rate": 0.01
+                },
+                "client": {
+                    "cors": false
+                },
+                "isLoggedIn": true,
+                "signInDeprecation": {
+                    "rate": 0.0
+                },
+                "include_granted_scopes": true,
+                "llang": "pt",
+                "iframes": {
+                    "youtube": {
+                        "params": {
+                            "location": [
+                                "search",
+                                "hash"
+                            ]
+                        },
+                        "url": ":socialhost:/:session_prefix:_/widget/render/youtube?usegapi\u003d1",
+                        "methods": [
+                            "scroll",
+                            "openwindow"
+                        ]
+                    },
+                    "ytsubscribe": {
+                        "url": "https://www.youtube.com/subscribe_embed?usegapi\u003d1"
+                    },
+                    "plus_circle": {
+                        "params": {
+                            "url": ""
+                        },
+                        "url": ":socialhost:/:session_prefix::se:_/widget/plus/circle?usegapi\u003d1"
+                    },
+                    "plus_share": {
+                        "params": {
+                            "url": ""
+                        },
+                        "url": ":socialhost:/:session_prefix::se:_/+1/sharebutton?plusShare\u003dtrue\u0026usegapi\u003d1"
+                    },
+                    "rbr_s": {
+                        "params": {
+                            "url": ""
+                        },
+                        "url": ":socialhost:/:session_prefix::se:_/widget/render/recobarsimplescroller"
+                    },
+                    ":source:": "3p",
+                    "playemm": {
+                        "url": "https://play.google.com/work/embedded/search?usegapi\u003d1\u0026usegapi\u003d1"
+                    },
+                    "savetoandroidpay": {
+                        "url": "https://pay.google.com/gp/v/widget/save"
+                    },
+                    "blogger": {
+                        "params": {
+                            "location": [
+                                "search",
+                                "hash"
+                            ]
+                        },
+                        "url": ":socialhost:/:session_prefix:_/widget/render/blogger?usegapi\u003d1",
+                        "methods": [
+                            "scroll",
+                            "openwindow"
+                        ]
+                    },
+                    "evwidget": {
+                        "params": {
+                            "url": ""
+                        },
+                        "url": ":socialhost:/:session_prefix:_/events/widget?usegapi\u003d1"
+                    },
+                    "partnersbadge": {
+                        "url": "https://www.gstatic.com/partners/badge/templates/badge.html?usegapi\u003d1"
+                    },
+                    "dataconnector": {
+                        "url": "https://dataconnector.corp.google.com/:session_prefix:ui/widgetview?usegapi\u003d1"
+                    },
+                    "surveyoptin": {
+                        "url": "https://www.google.com/shopping/customerreviews/optin?usegapi\u003d1"
+                    },
+                    ":socialhost:": "https://apis.google.com",
+                    "shortlists": {
+                        "url": ""
+                    },
+                    "hangout": {
+                        "url": "https://talkgadget.google.com/:session_prefix:talkgadget/_/widget"
+                    },
+                    "plus_followers": {
+                        "params": {
+                            "url": ""
+                        },
+                        "url": ":socialhost:/_/im/_/widget/render/plus/followers?usegapi\u003d1"
+                    },
+                    "post": {
+                        "params": {
+                            "url": ""
+                        },
+                        "url": ":socialhost:/:session_prefix::im_prefix:_/widget/render/post?usegapi\u003d1"
+                    },
+                    ":gplus_url:": "https://plus.google.com",
+                    "signin": {
+                        "params": {
+                            "url": ""
+                        },
+                        "url": ":socialhost:/:session_prefix:_/widget/render/signin?usegapi\u003d1",
+                        "methods": [
+                            "onauth"
+                        ]
+                    },
+                    "rbr_i": {
+                        "params": {
+                            "url": ""
+                        },
+                        "url": ":socialhost:/:session_prefix::se:_/widget/render/recobarinvitation"
+                    },
+                    "share": {
+                        "url": ":socialhost:/:session_prefix::im_prefix:_/widget/render/share?usegapi\u003d1"
+                    },
+                    "plusone": {
+                        "params": {
+                            "count": "",
+                            "size": "",
+                            "url": ""
+                        },
+                        "url": ":socialhost:/:session_prefix::se:_/+1/fastbutton?usegapi\u003d1"
+                    },
+                    "comments": {
+                        "params": {
+                            "location": [
+                                "search",
+                                "hash"
+                            ]
+                        },
+                        "url": ":socialhost:/:session_prefix:_/widget/render/comments?usegapi\u003d1",
+                        "methods": [
+                            "scroll",
+                            "openwindow"
+                        ]
+                    },
+                    ":im_socialhost:": "https://plus.googleapis.com",
+                    "backdrop": {
+                        "url": "https://clients3.google.com/cast/chromecast/home/widget/backdrop?usegapi\u003d1"
+                    },
+                    "visibility": {
+                        "params": {
+                            "url": ""
+                        },
+                        "url": ":socialhost:/:session_prefix:_/widget/render/visibility?usegapi\u003d1"
+                    },
+                    "autocomplete": {
+                        "params": {
+                            "url": ""
+                        },
+                        "url": ":socialhost:/:session_prefix:_/widget/render/autocomplete"
+                    },
+                    "additnow": {
+                        "url": "https://apis.google.com/marketplace/button?usegapi\u003d1",
+                        "methods": [
+                            "launchurl"
+                        ]
+                    },
+                    ":signuphost:": "https://plus.google.com",
+                    "ratingbadge": {
+                        "url": "https://www.google.com/shopping/customerreviews/badge?usegapi\u003d1"
+                    },
+                    "appcirclepicker": {
+                        "url": ":socialhost:/:session_prefix:_/widget/render/appcirclepicker"
+                    },
+                    "follow": {
+                        "url": ":socialhost:/:session_prefix:_/widget/render/follow?usegapi\u003d1"
+                    },
+                    "community": {
+                        "url": ":ctx_socialhost:/:session_prefix::im_prefix:_/widget/render/community?usegapi\u003d1"
+                    },
+                    "sharetoclassroom": {
+                        "url": "https://classroom.google.com/sharewidget?usegapi\u003d1"
+                    },
+                    "ytshare": {
+                        "params": {
+                            "url": ""
+                        },
+                        "url": ":socialhost:/:session_prefix:_/widget/render/ytshare?usegapi\u003d1"
+                    },
+                    "plus": {
+                        "url": ":socialhost:/:session_prefix:_/widget/render/badge?usegapi\u003d1"
+                    },
+                    "family_creation": {
+                        "params": {
+                            "url": ""
+                        },
+                        "url": "https://families.google.com/webcreation?usegapi\u003d1\u0026usegapi\u003d1"
+                    },
+                    "commentcount": {
+                        "url": ":socialhost:/:session_prefix:_/widget/render/commentcount?usegapi\u003d1"
+                    },
+                    "configurator": {
+                        "url": ":socialhost:/:session_prefix:_/plusbuttonconfigurator?usegapi\u003d1"
+                    },
+                    "zoomableimage": {
+                        "url": "https://ssl.gstatic.com/microscope/embed/"
+                    },
+                    "appfinder": {
+                        "url": "https://workspace.google.com/:session_prefix:marketplace/appfinder?usegapi\u003d1"
+                    },
+                    "savetowallet": {
+                        "url": "https://pay.google.com/gp/v/widget/save"
+                    },
+                    "person": {
+                        "url": ":socialhost:/:session_prefix:_/widget/render/person?usegapi\u003d1"
+                    },
+                    "savetodrive": {
+                        "url": "https://drive.google.com/savetodrivebutton?usegapi\u003d1",
+                        "methods": [
+                            "save"
+                        ]
+                    },
+                    "page": {
+                        "url": ":socialhost:/:session_prefix:_/widget/render/page?usegapi\u003d1"
+                    },
+                    "card": {
+                        "url": ":socialhost:/:session_prefix:_/hovercard/card"
+                    }
+                }
+            },
+            "h": "m;/_/scs/apps-static/_/js/k\u003doz.gapi.pt_BR.l4Bv_WkVC6g.O/am\u003dwQE/d\u003d1/ct\u003dzgms/rs\u003dAGLTcCOuH5S2uqmF6E8zOW7n3yiqiwhzNQ/m\u003d__features__",
+            "u": "https://apis.google.com/js/platform.js",
+            "hee": true,
+            "fp": "821a251b140e4add32f87f4a7a08f044a59aa0e9",
+            "dpo": false
+        },
+        "platform": [
+            "additnow",
+            "backdrop",
+            "blogger",
+            "comments",
+            "commentcount",
+            "community",
+            "donation",
+            "family_creation",
+            "follow",
+            "hangout",
+            "health",
+            "page",
+            "partnersbadge",
+            "person",
+            "playemm",
+            "playreview",
+            "plus",
+            "plusone",
+            "post",
+            "ratingbadge",
+            "savetoandroidpay",
+            "savetodrive",
+            "savetowallet",
+            "sharetoclassroom",
+            "shortlists",
+            "signin2",
+            "surveyoptin",
+            "visibility",
+            "youtube",
+            "ytsubscribe",
+            "zoomableimage"
+        ],
+        "fp": "821a251b140e4add32f87f4a7a08f044a59aa0e9",
+        "annotation": [
+            "interactivepost",
+            "recobar",
+            "signin2",
+            "autocomplete",
+            "profile"
+        ],
+        "bimodal": [
+            "signin",
+            "share"
+        ]
+    }
+});
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7eUR9":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Home", ()=>(0, _home.Home));
@@ -35855,6 +37655,7 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _styleCss = require("./style.css");
 var _reactRouterDom = require("react-router-dom");
+var _gapiScript = require("gapi-script");
 var _s = $RefreshSig$();
 const Home = ()=>{
     _s();
@@ -35879,6 +37680,43 @@ const Home = ()=>{
             ]
         }
     ]);
+    const [calendarEvents, setCalendarEvents] = (0, _react.useState)([]);
+    // Add these constants from Schedule.jsx
+    const CLIENT_ID = "7058040155-g739av7vkfgl73dbvk6mrkiadt6vdjs5.apps.googleusercontent.com";
+    const API_KEY = "AIzaSyBYdgzwDYfT95WAoyNEGH8BD2A7ZujvwCk";
+    const CALENDAR_ID = "f447f8579b4a1493049fbea49a613748677a5754a3ec46b076c57f08cc08d5ef@group.calendar.google.com";
+    // Function to initialize Google Calendar API
+    const initCalendar = ()=>{
+        (0, _gapiScript.gapi).load("client", ()=>{
+            (0, _gapiScript.gapi).client.init({
+                apiKey: API_KEY,
+                clientId: CLIENT_ID,
+                discoveryDocs: [
+                    "https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"
+                ]
+            }).then(()=>{
+                fetchEvents();
+            }).catch((err)=>console.error("Error initializing calendar:", err));
+        });
+    };
+    // Function to fetch calendar events
+    const fetchEvents = ()=>{
+        (0, _gapiScript.gapi).client.calendar.events.list({
+            calendarId: CALENDAR_ID,
+            timeMin: new Date().toISOString(),
+            showDeleted: false,
+            singleEvents: true,
+            maxResults: 7,
+            orderBy: "startTime"
+        }).then((response)=>{
+            const events = response.result.items;
+            setCalendarEvents(events);
+        }).catch((err)=>console.error("Error fetching events:", err));
+    };
+    (0, _react.useEffect)(()=>{
+        initCalendar();
+    }, []); // Run once on component mount
+    // Your existing games useEffect
     (0, _react.useEffect)(()=>{
         if (location.state?.additionalNotes) setGames((prevGames)=>[
                 {
@@ -35894,7 +37732,21 @@ const Home = ()=>{
             ]);
     }, [
         location.state
-    ]); // Only trigger when location.state changes
+    ]);
+    // Helper function to format date and time
+    const formatDateTime = (dateTimeString)=>{
+        const date = new Date(dateTimeString);
+        return {
+            date: date.toLocaleDateString('en-US', {
+                month: 'long',
+                day: 'numeric'
+            }),
+            time: date.toLocaleTimeString('en-US', {
+                hour: 'numeric',
+                minute: '2-digit'
+            })
+        };
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "home",
         children: [
@@ -35906,7 +37758,7 @@ const Home = ()=>{
                             children: game.data[0]
                         }, void 0, false, {
                             fileName: "src/screens/Home/Home.jsx",
-                            lineNumber: 28,
+                            lineNumber: 86,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35916,12 +37768,12 @@ const Home = ()=>{
                                 children: "Join Game"
                             }, void 0, false, {
                                 fileName: "src/screens/Home/Home.jsx",
-                                lineNumber: 30,
+                                lineNumber: 88,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/screens/Home/Home.jsx",
-                            lineNumber: 29,
+                            lineNumber: 87,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35932,12 +37784,12 @@ const Home = ()=>{
                                 src: game.data[1]
                             }, void 0, false, {
                                 fileName: "src/screens/Home/Home.jsx",
-                                lineNumber: 33,
+                                lineNumber: 91,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/screens/Home/Home.jsx",
-                            lineNumber: 32,
+                            lineNumber: 90,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35948,7 +37800,7 @@ const Home = ()=>{
                                     children: game.data[2]
                                 }, void 0, false, {
                                     fileName: "src/screens/Home/Home.jsx",
-                                    lineNumber: 40,
+                                    lineNumber: 98,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35956,19 +37808,19 @@ const Home = ()=>{
                                     children: game.data[3]
                                 }, void 0, false, {
                                     fileName: "src/screens/Home/Home.jsx",
-                                    lineNumber: 41,
+                                    lineNumber: 99,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/screens/Home/Home.jsx",
-                            lineNumber: 39,
+                            lineNumber: 97,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, game.id, true, {
                     fileName: "src/screens/Home/Home.jsx",
-                    lineNumber: 27,
+                    lineNumber: 85,
                     columnNumber: 9
                 }, undefined)),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35986,17 +37838,17 @@ const Home = ()=>{
                                         children: "Schedule"
                                     }, void 0, false, {
                                         fileName: "src/screens/Home/Home.jsx",
-                                        lineNumber: 97,
+                                        lineNumber: 109,
                                         columnNumber: 13
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/screens/Home/Home.jsx",
-                                    lineNumber: 96,
+                                    lineNumber: 108,
                                     columnNumber: 11
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/screens/Home/Home.jsx",
-                                lineNumber: 95,
+                                lineNumber: 107,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -36008,17 +37860,17 @@ const Home = ()=>{
                                         children: "Availability"
                                     }, void 0, false, {
                                         fileName: "src/screens/Home/Home.jsx",
-                                        lineNumber: 103,
+                                        lineNumber: 115,
                                         columnNumber: 13
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/screens/Home/Home.jsx",
-                                    lineNumber: 102,
+                                    lineNumber: 114,
                                     columnNumber: 11
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/screens/Home/Home.jsx",
-                                lineNumber: 101,
+                                lineNumber: 113,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36028,12 +37880,12 @@ const Home = ()=>{
                                     children: "Community"
                                 }, void 0, false, {
                                     fileName: "src/screens/Home/Home.jsx",
-                                    lineNumber: 107,
+                                    lineNumber: 119,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/screens/Home/Home.jsx",
-                                lineNumber: 106,
+                                lineNumber: 118,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -36045,23 +37897,23 @@ const Home = ()=>{
                                         children: "Map"
                                     }, void 0, false, {
                                         fileName: "src/screens/Home/Home.jsx",
-                                        lineNumber: 112,
+                                        lineNumber: 124,
                                         columnNumber: 13
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/screens/Home/Home.jsx",
-                                    lineNumber: 111,
+                                    lineNumber: 123,
                                     columnNumber: 11
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/screens/Home/Home.jsx",
-                                lineNumber: 110,
+                                lineNumber: 122,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 94,
+                        lineNumber: 106,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -36071,12 +37923,12 @@ const Home = ()=>{
                             children: "Pickup@Penn"
                         }, void 0, false, {
                             fileName: "src/screens/Home/Home.jsx",
-                            lineNumber: 117,
+                            lineNumber: 129,
                             columnNumber: 9
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 116,
+                        lineNumber: 128,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -36087,12 +37939,12 @@ const Home = ()=>{
                             src: "https://c.animaapp.com/RqvJyPyX/img/image-27@2x.png"
                         }, void 0, false, {
                             fileName: "src/screens/Home/Home.jsx",
-                            lineNumber: 121,
+                            lineNumber: 133,
                             columnNumber: 9
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 120,
+                        lineNumber: 132,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -36103,59 +37955,28 @@ const Home = ()=>{
                             src: "https://c.animaapp.com/RqvJyPyX/img/image-28@2x.png"
                         }, void 0, false, {
                             fileName: "src/screens/Home/Home.jsx",
-                            lineNumber: 130,
+                            lineNumber: 142,
                             columnNumber: 9
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 129,
+                        lineNumber: 141,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/screens/Home/Home.jsx",
-                lineNumber: 93,
+                lineNumber: 105,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "container-4",
+                className: "profile-container",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         className: "button-2",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "text-wrapper-8",
                             children: "Basketball"
-                        }, void 0, false, {
-                            fileName: "src/screens/Home/Home.jsx",
-                            lineNumber: 140,
-                            columnNumber: 11
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 139,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "img-wrapper",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            className: "rectangle",
-                            alt: "Rectangle",
-                            src: "https://c.animaapp.com/RqvJyPyX/img/rectangle-2@2x.png"
-                        }, void 0, false, {
-                            fileName: "src/screens/Home/Home.jsx",
-                            lineNumber: 144,
-                            columnNumber: 11
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 143,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: "button-3",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "text-wrapper-3",
-                            children: "Soccer"
                         }, void 0, false, {
                             fileName: "src/screens/Home/Home.jsx",
                             lineNumber: 152,
@@ -36167,11 +37988,42 @@ const Home = ()=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "img-wrapper",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "rectangle",
+                            alt: "Rectangle",
+                            src: "https://c.animaapp.com/RqvJyPyX/img/rectangle-2@2x.png"
+                        }, void 0, false, {
+                            fileName: "src/screens/Home/Home.jsx",
+                            lineNumber: 156,
+                            columnNumber: 11
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/screens/Home/Home.jsx",
+                        lineNumber: 155,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "button-3",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-wrapper-3",
+                            children: "Soccer"
+                        }, void 0, false, {
+                            fileName: "src/screens/Home/Home.jsx",
+                            lineNumber: 164,
+                            columnNumber: 11
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/screens/Home/Home.jsx",
+                        lineNumber: 163,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "text-wrapper-9",
                         children: "My Profile"
                     }, void 0, false, {
                         fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 155,
+                        lineNumber: 167,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36179,7 +38031,7 @@ const Home = ()=>{
                         children: "My Sports"
                     }, void 0, false, {
                         fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 157,
+                        lineNumber: 169,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36187,7 +38039,7 @@ const Home = ()=>{
                         children: "Diana Lim"
                     }, void 0, false, {
                         fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 159,
+                        lineNumber: 171,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36195,7 +38047,7 @@ const Home = ()=>{
                         children: "@dianadl"
                     }, void 0, false, {
                         fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 161,
+                        lineNumber: 173,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36203,13 +38055,13 @@ const Home = ()=>{
                         children: "Edit"
                     }, void 0, false, {
                         fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 163,
+                        lineNumber: 175,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/screens/Home/Home.jsx",
-                lineNumber: 138,
+                lineNumber: 150,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36223,7 +38075,7 @@ const Home = ()=>{
                                 children: "My Chats"
                             }, void 0, false, {
                                 fileName: "src/screens/Home/Home.jsx",
-                                lineNumber: 168,
+                                lineNumber: 180,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36233,18 +38085,18 @@ const Home = ()=>{
                                     children: "Basketball Group"
                                 }, void 0, false, {
                                     fileName: "src/screens/Home/Home.jsx",
-                                    lineNumber: 171,
+                                    lineNumber: 183,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/screens/Home/Home.jsx",
-                                lineNumber: 170,
+                                lineNumber: 182,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 167,
+                        lineNumber: 179,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -36253,252 +38105,60 @@ const Home = ()=>{
                         src: "https://c.animaapp.com/RqvJyPyX/img/image-26@2x.png"
                     }, void 0, false, {
                         fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 175,
+                        lineNumber: 187,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/screens/Home/Home.jsx",
-                lineNumber: 166,
+                lineNumber: 178,
                 columnNumber: 7
             }, undefined),
+            "// Remove all the individual containers (5-10) and replace with:",
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "container-5",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        className: "october",
+                className: "container-upcoming-games",
+                children: calendarEvents.filter((event)=>event.summary?.startsWith('PICKUP:')).map((event, index)=>{
+                    const { date, time } = formatDateTime(event.start.dateTime || event.start.date);
+                    const location = event.location || "Location TBD";
+                    const sport = event.summary?.replace('PICKUP:', '').trim().split(" ")[0] || "Sport";
+                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "event-item",
                         children: [
-                            "October 1, 5:00 PM",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                fileName: "src/screens/Home/Home.jsx",
-                                lineNumber: 185,
-                                columnNumber: 11
-                            }, undefined),
-                            "Pottruck Gym"
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 183,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "text-wrapper-16",
-                        children: "Basketball"
-                    }, void 0, false, {
-                        fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 189,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/screens/Home/Home.jsx",
-                lineNumber: 182,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "container-6",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        className: "p",
-                        children: [
-                            "October 2, 4:00 PM",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                fileName: "src/screens/Home/Home.jsx",
-                                lineNumber: 195,
-                                columnNumber: 11
-                            }, undefined),
-                            "Penn Park"
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 193,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "text-wrapper-17",
-                        children: "Soccer"
-                    }, void 0, false, {
-                        fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 199,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/screens/Home/Home.jsx",
-                lineNumber: 192,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "container-7",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        className: "october-2",
-                        children: [
-                            "October 3, 7:00 PM",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "sport",
+                                children: sport
+                            }, void 0, false, {
                                 fileName: "src/screens/Home/Home.jsx",
                                 lineNumber: 205,
                                 columnNumber: 11
                             }, undefined),
-                            "Hamlin Tennis Center"
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 203,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "text-wrapper-18",
-                        children: "Tennis"
-                    }, void 0, false, {
-                        fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 209,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/screens/Home/Home.jsx",
-                lineNumber: 202,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "container-8",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        className: "p",
-                        children: [
-                            "October 5, 4:00 PM",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "event-details",
+                                children: [
+                                    `${date}, ${time}`,
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                        fileName: "src/screens/Home/Home.jsx",
+                                        lineNumber: 208,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    location
+                                ]
+                            }, void 0, true, {
                                 fileName: "src/screens/Home/Home.jsx",
-                                lineNumber: 215,
+                                lineNumber: 206,
                                 columnNumber: 11
-                            }, undefined),
-                            "Penn Park"
+                            }, undefined)
                         ]
-                    }, void 0, true, {
+                    }, event.id, true, {
                         fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 213,
+                        lineNumber: 204,
                         columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "text-wrapper-17",
-                        children: "Soccer"
-                    }, void 0, false, {
-                        fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 219,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/screens/Home/Home.jsx",
-                lineNumber: 212,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "container-9",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        className: "october-2",
-                        children: [
-                            "October 5, 7:00 PM",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                fileName: "src/screens/Home/Home.jsx",
-                                lineNumber: 225,
-                                columnNumber: 11
-                            }, undefined),
-                            "Hamlin Tennis Center"
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 223,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "text-wrapper-19",
-                        children: "Tennis"
-                    }, void 0, false, {
-                        fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 229,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/screens/Home/Home.jsx",
-                lineNumber: 222,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "overlap-wrapper",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "overlap-3",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            className: "october-3",
-                            children: [
-                                "October 4, 5:00 PM",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                    fileName: "src/screens/Home/Home.jsx",
-                                    lineNumber: 236,
-                                    columnNumber: 13
-                                }, undefined),
-                                "Pottruck Gym"
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/screens/Home/Home.jsx",
-                            lineNumber: 234,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "text-wrapper-20",
-                            children: "Basketball"
-                        }, void 0, false, {
-                            fileName: "src/screens/Home/Home.jsx",
-                            lineNumber: 240,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/screens/Home/Home.jsx",
-                    lineNumber: 233,
-                    columnNumber: 9
-                }, undefined)
+                    }, undefined);
+                })
             }, void 0, false, {
                 fileName: "src/screens/Home/Home.jsx",
-                lineNumber: 232,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "container-10",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        className: "october-4",
-                        children: [
-                            "October 6, 5:00 PM",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                fileName: "src/screens/Home/Home.jsx",
-                                lineNumber: 247,
-                                columnNumber: 11
-                            }, undefined),
-                            "Pottruck Gym"
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 245,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "text-wrapper-21",
-                        children: "Basketball"
-                    }, void 0, false, {
-                        fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 251,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/screens/Home/Home.jsx",
-                lineNumber: 244,
-                columnNumber: 7
+                lineNumber: 195,
+                columnNumber: 1
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "textbox-2",
@@ -36508,7 +38168,7 @@ const Home = ()=>{
                         children: "Soccer Group"
                     }, void 0, false, {
                         fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 255,
+                        lineNumber: 217,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -36517,13 +38177,13 @@ const Home = ()=>{
                         src: "https://c.animaapp.com/RqvJyPyX/img/soccer-ball.svg"
                     }, void 0, false, {
                         fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 257,
+                        lineNumber: 219,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/screens/Home/Home.jsx",
-                lineNumber: 254,
+                lineNumber: 216,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -36536,7 +38196,7 @@ const Home = ()=>{
                             children: "Create New Game"
                         }, void 0, false, {
                             fileName: "src/screens/Home/Home.jsx",
-                            lineNumber: 265,
+                            lineNumber: 227,
                             columnNumber: 9
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -36545,18 +38205,18 @@ const Home = ()=>{
                             src: "https://c.animaapp.com/RqvJyPyX/img/e-add.svg"
                         }, void 0, false, {
                             fileName: "src/screens/Home/Home.jsx",
-                            lineNumber: 267,
+                            lineNumber: 229,
                             columnNumber: 9
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/screens/Home/Home.jsx",
-                    lineNumber: 264,
+                    lineNumber: 226,
                     columnNumber: 7
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/screens/Home/Home.jsx",
-                lineNumber: 263,
+                lineNumber: 225,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36564,7 +38224,7 @@ const Home = ()=>{
                 children: "Upcoming Games"
             }, void 0, false, {
                 fileName: "src/screens/Home/Home.jsx",
-                lineNumber: 275,
+                lineNumber: 237,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36572,17 +38232,17 @@ const Home = ()=>{
                 children: "Community Feed"
             }, void 0, false, {
                 fileName: "src/screens/Home/Home.jsx",
-                lineNumber: 277,
+                lineNumber: 239,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/screens/Home/Home.jsx",
-        lineNumber: 25,
+        lineNumber: 83,
         columnNumber: 5
     }, undefined);
 };
-_s(Home, "TvvIPLRuERdmPEL0kzt8txUGLN8=", false, function() {
+_s(Home, "pJN1yooRlREb89j/b3YETDLe4fY=", false, function() {
     return [
         (0, _reactRouterDom.useLocation)
     ];
@@ -36596,7 +38256,7 @@ $RefreshReg$(_c, "Home");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"8msK4","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8msK4":[function() {},{}],"ffNjT":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"8msK4","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","gapi-script":"274mH"}],"8msK4":[function() {},{}],"ffNjT":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "CreateGame", ()=>(0, _createGame.CreateGame));
@@ -44394,7 +46054,7 @@ $RefreshReg$(_c, "Map");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./style.css":"jPJn3","leaflet/dist/leaflet.css":"6JhOO","react-router-dom":"9xmpe","react-leaflet":"7lgLf","leaflet":"iFbO2","./marker.png":"eWCeM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jPJn3":[function() {},{}],"6JhOO":[function() {},{}],"7lgLf":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react-leaflet":"7lgLf","leaflet/dist/leaflet.css":"6JhOO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./style.css":"jPJn3","react-router-dom":"9xmpe","leaflet":"iFbO2","./marker.png":"eWCeM"}],"7lgLf":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "useMap", ()=>(0, _hooksJs.useMap));
@@ -55573,7 +57233,7 @@ const TileLayer = (0, _core.createTileLayerComponent)(function createTileLayer({
     if (url != null && url !== prevProps.url) layer.setUrl(url);
 });
 
-},{"@react-leaflet/core":"ckhU0","leaflet":"iFbO2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eWCeM":[function(require,module,exports,__globalThis) {
+},{"@react-leaflet/core":"ckhU0","leaflet":"iFbO2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6JhOO":[function() {},{}],"jPJn3":[function() {},{}],"eWCeM":[function(require,module,exports,__globalThis) {
 module.exports = require("a96e6b76662510df").getBundleURL('byUka') + "marker.d433f2cf.png" + "?" + Date.now();
 
 },{"a96e6b76662510df":"lgJ39"}],"lgJ39":[function(require,module,exports,__globalThis) {
@@ -55611,27 +57271,6 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"lOjBx":[function(require,module,exports,__globalThis) {
-'use strict';
-var m = require("aaccff5d309d9239");
-var i = m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
-exports.createRoot = function(c, o) {
-    i.usingClientEntryPoint = true;
-    try {
-        return m.createRoot(c, o);
-    } finally{
-        i.usingClientEntryPoint = false;
-    }
-};
-exports.hydrateRoot = function(c, h, o) {
-    i.usingClientEntryPoint = true;
-    try {
-        return m.hydrateRoot(c, h, o);
-    } finally{
-        i.usingClientEntryPoint = false;
-    }
-};
-
-},{"aaccff5d309d9239":"j6uA9"}]},["aQL8O","905ZZ","d8Dch"], "d8Dch", "parcelRequire94c2")
+},{}],"6JhOO":[function() {},{}]},["aQL8O","905ZZ","d8Dch"], "d8Dch", "parcelRequire94c2")
 
 //# sourceMappingURL=index.b4b6dfad.js.map

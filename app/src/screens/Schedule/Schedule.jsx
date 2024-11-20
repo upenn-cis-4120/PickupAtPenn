@@ -1,334 +1,214 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import { GoogleOAuthProvider, useGoogleLogin } from "@react-oauth/google";
+import { gapi } from "gapi-script";
 
 export const Schedule = () => {
+  const CLIENT_ID = "7058040155-g739av7vkfgl73dbvk6mrkiadt6vdjs5.apps.googleusercontent.com";
+  const API_KEY = "AIzaSyBYdgzwDYfT95WAoyNEGH8BD2A7ZujvwCk";
+  const CLIENT_SECRET = "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"; // Replace with your actual client secret
+  const SCOPES = "https://www.googleapis.com/auth/calendar https://www.googleapis.com/auth/calendar.events.readonly";
+
+  const [events, setEvents] = useState([]);
+  const [error, setError] = useState(null);
+
+  const REDIRECT_URI = window.location.origin;
+
+  // Function to initialize gapi client
+  const initClient = (accessToken) => {
+    gapi.load("client", () => {
+      gapi.client
+        .init({
+          apiKey: API_KEY,
+          clientId: CLIENT_ID,
+          discoveryDocs: ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"],
+          scope: SCOPES,
+        })
+        .then(() => {
+          gapi.auth.setToken({ access_token: accessToken });
+          fetchEvents();
+        })
+        .catch((err) => setError("Error initializing client: " + err.message));
+    });
+  };
+
+  // Function to fetch Google Calendar events
+  const fetchEvents = () => {
+    gapi.client.calendar.events
+      .list({
+        calendarId: "f447f8579b4a1493049fbea49a613748677a5754a3ec46b076c57f08cc08d5ef@group.calendar.google.com",
+        timeMin: new Date().toISOString(),
+        showDeleted: false,
+        singleEvents: true,
+        maxResults: 10,
+        orderBy: "startTime",
+        headers: {
+          Authorization: `Bearer ${gapi.auth.getToken().access_token}`
+        }
+      })
+      .then((response) => {
+        console.log("Events response:", response);
+        setEvents(response.result.items);
+      })
+      .catch((err) => {
+        console.error("Fetch events error:", err);
+        setError("Error fetching events: " + err.message);
+      });
+  };
+
+  // Login function
+  const login = useGoogleLogin({
+    flow: "auth-code", // Use redirect-based flow
+    onSuccess: (codeResponse) => {
+      console.log("Redirect URI:", REDIRECT_URI);
+      console.log("Auth Code:", codeResponse.code);
+
+      // Exchange the authorization code for an access token
+      fetch("https://oauth2.googleapis.com/token", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: new URLSearchParams({
+          code: codeResponse.code,
+          client_id: CLIENT_ID,
+          client_secret: CLIENT_SECRET,
+          redirect_uri: REDIRECT_URI,
+          grant_type: "authorization_code",
+        }),
+      })
+      .then((response) => {
+        if (!response.ok) {
+            return response.json().then((err) => {
+                console.error("Token Exchange Error:", err);
+                throw new Error(err.error_description || "Token exchange failed");
+            });
+        }
+        return response.json();
+    })
+        .then((data) => {
+          console.log("Access Token:", data.access_token);
+          initClient(data.access_token);
+        })
+        .catch((err) => setError("Error exchanging code: " + err.message));
+    },
+    onError: () => setError("Login failed."),
+    redirectUri: REDIRECT_URI,
+  });
+
+  console.log("Redirect URI (raw):", REDIRECT_URI);
+  console.log("Redirect URI components:", {
+    origin: window.location.origin,
+    pathname: "/schedule",
+    full: window.location.origin + "/schedule"
+  });
+
   return (
-    <div className="schedule">
-      <div className="overlap">
-        <div className="overlap-group">
-          <div className="container">
-            <div className="div">
-              <div className="text-wrapper">Tennis 3pm</div>
-
-              <img
-                className="image"
-                alt="Image"
-                src="https://c.animaapp.com/I43ZrRid/img/image-1@2x.png"
-              />
-            </div>
-
-            <div className="overlap-group-wrapper">
-              <div className="overlap-group-2">
-                <div className="text-wrapper-2">Basketball 9am</div>
-
-                <div className="text-wrapper-3">18</div>
-              </div>
-            </div>
-
-            <div className="div-wrapper">
-              <div className="text-wrapper-4">5</div>
-            </div>
-
-            <div className="overlap-wrapper">
-              <div className="overlap-2">
-                <div className="text-wrapper-5">Basketball 2pm</div>
-
-                <div className="text-wrapper-6">26</div>
-              </div>
-            </div>
-
-            <div className="overlap-3">
-              <div className="textbox">
-                <div className="text-wrapper-7">Basketball 5pm</div>
-              </div>
-
-              <div className="text-wrapper-8">2</div>
-            </div>
-
-            <div className="container-2">
-              <div className="text-wrapper-9">8</div>
-            </div>
-
-            <div className="container-3">
-              <div className="text-wrapper-10">3</div>
-            </div>
-
-            <div className="container-4">
-              <div className="overlap-4">
-                <div className="text-wrapper-11">Basketball 11am</div>
-
-                <div className="text-wrapper-12">10</div>
-              </div>
-            </div>
-
-            <div className="container-5">
-              <div className="text-wrapper-13">24</div>
-            </div>
-
-            <div className="container-6">
-              <div className="text-wrapper-14">Soccer 8pm</div>
-
-              <div className="text-wrapper-15">31</div>
-            </div>
-
-            <div className="container-7">
-              <div className="text-wrapper-16">Tennis 8am</div>
-
-              <div className="text-wrapper-17">6</div>
-            </div>
-
-            <div className="container-8">
-              <div className="overlap-5">
-                <div className="text-wrapper-18">Basketball 10am</div>
-
-                <div className="text-wrapper-19">13</div>
-              </div>
-            </div>
-
-            <div className="container-9">
-              <div className="text-wrapper-20">Tennis 5pm</div>
-
-              <div className="text-wrapper-21">20</div>
-            </div>
-
-            <div className="container-10">
-              <div className="text-wrapper-22">27</div>
-            </div>
-
-            <div className="overlap-6">
-              <button className="button">
-                <div className="text-wrapper-23">Basketball 2pm</div>
-              </button>
-
-              <div className="text-wrapper-24">17</div>
-            </div>
-
-            <div className="overlap-7">
-              <div className="textbox-2">
-                <div className="text-wrapper-25">Running 7am</div>
-              </div>
-
-              <div className="text-wrapper-26">4</div>
-            </div>
-
-            <div className="overlap-8">
-              <div className="textbox-2">
-                <div className="text-wrapper-7">Tennis 6pm</div>
-              </div>
-
-              <div className="text-wrapper-27">28</div>
-            </div>
-
-            <div className="text-wrapper-28">Your Games</div>
-
-            <div className="text-wrapper-29">Sync with Google Calendar</div>
-
-            <div className="text-wrapper-30">October 2024</div>
-
-            <img
-              className="caret-left"
-              alt="Caret left"
-              src="https://c.animaapp.com/I43ZrRid/img/caret-left-1.svg"
-            />
-
-            <img
-              className="caret-right"
-              alt="Caret right"
-              src="https://c.animaapp.com/I43ZrRid/img/caret-right-1.svg"
-            />
-
-            <div className="text-wrapper-31">Mon</div>
-
-            <div className="text-wrapper-32">Wed</div>
-
-            <div className="text-wrapper-33">Thu</div>
-
-            <div className="text-wrapper-34">Sun</div>
-
-            <div className="text-wrapper-35">Tue</div>
-
-            <div className="text-wrapper-36">Sat</div>
-
-            <div className="text-wrapper-37">Fri</div>
-
-            <div className="container-11">
-              <div className="text-wrapper-22">25</div>
-            </div>
-
-            <div className="container-12">
-              <div className="overlap-9">
-                <div className="text-wrapper-38">22</div>
-
-                <div className="container-13">
-                  <div className="text-wrapper-38">22</div>
+    <GoogleOAuthProvider clientId={CLIENT_ID}>
+      <div className="schedule">
+        <div className="overlap">
+          <div className="overlap-group">
+            <div className="container-26">
+              {/* Header Menu */}
+              <div className="header-menu">
+                <Link to="/schedule">
+                  <div className="frame">
+                    <div className="text-wrapper-bold">Schedule</div>
+                  </div>
+                </Link>
+                <Link to="/group-availability">
+                  <div className="frame-2">
+                    <div className="text-wrapper-menu">Availability</div>
+                  </div>
+                </Link>
+                <div className="frame-3">
+                  <div className="text-wrapper-menu">Community</div>
                 </div>
+                <Link to="/map">
+                  <div className="frame-4">
+                    <div className="text-wrapper-menu">Map</div>
+                  </div>
+                </Link>
               </div>
+              <Link to="/">
+                <div className="text-wrapper-menu-title">Pickup@Penn</div>
+              </Link>
+              <Link to="/availability">
+                <img
+                  className="prof"
+                  alt="Profile"
+                  src="https://c.animaapp.com/RqvJyPyX/img/image-27@2x.png"
+                />
+              </Link>
+              <Link to="/">
+                <img
+                  className="logo"
+                  alt="Logo"
+                  src="https://c.animaapp.com/RqvJyPyX/img/image-28@2x.png"
+                />
+              </Link>
             </div>
 
-            <div className="container-14">
-              <div className="text-wrapper-38">9</div>
-            </div>
+            {/* Calendar Container */}
+          <div className="container">
+            <button 
+              onClick={login} 
+              className="sync-button"
+              style={{
+                backgroundColor: '#2d3f70',
+                color: 'white',
+                padding: '10px 20px',
+                borderRadius: '6px',
+                border: 'none',
+                fontFamily: '"Inter", Helvetica',
+                fontSize: '14px',
+                fontWeight: '400',
+                cursor: 'pointer',
+                marginBottom: '20px',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px'
+              }}
+            >
+              <img 
+                src="https://www.gstatic.com/calendar/images/dynamiclogo_2020q4/calendar_31_2x.png"
+                alt="Google Calendar"
+                style={{
+                  width: '20px',
+                  height: '20px'
+                }}
+              />
+              Sync to Google Calendar
+            </button>
 
-            <div className="container-15">
-              <div className="text-wrapper-38">16</div>
-            </div>
-
-            <div className="container-16">
-              <div className="text-wrapper-38">30</div>
-            </div>
-
-            <div className="container-17">
-              <div className="text-wrapper-38">11</div>
-            </div>
-
-            <div className="container-18">
-              <div className="text-wrapper-38">12</div>
-            </div>
-
-            <div className="container-19">
-              <div className="text-wrapper-38">7</div>
-            </div>
-
-            <div className="container-20">
-              <div className="text-wrapper-38">15</div>
-            </div>
-
-            <div className="container-21">
-              <div className="text-wrapper-38">19</div>
-            </div>
-
-            <div className="container-22">
-              <div className="text-wrapper-38">21</div>
-            </div>
-
-            <div className="container-23">
-              <div className="text-wrapper-38">29</div>
-            </div>
-
-            <div className="container-24">
-              <div className="text-wrapper-38">23</div>
-            </div>
-
-            <div className="container-25">
-              <div className="text-wrapper-38">14</div>
-            </div>
+            <iframe 
+              src="https://calendar.google.com/calendar/embed?src=f447f8579b4a1493049fbea49a613748677a5754a3ec46b076c57f08cc08d5ef%40group.calendar.google.com&ctz=America%2FNew_York" 
+              style={{
+                border: 0,
+                width: '100%',
+                height: '600px',
+                borderRadius: '12px'
+              }}
+              frameBorder="0" 
+              scrolling="no"
+              title="Group Calendar"
+            />
           </div>
-
-          {/* Header Menu */}
-      <div className="container-26">
-        <div className="header-menu">
-          <Link to="/schedule">
-          <div className="frame">
-            <div className="text-wrapper-bold">Schedule</div>
-          </div>
-          </Link>
-
-          <Link to="/group-availability">
-          <div className="frame-2">
-            <div className="text-wrapper-menu">Availability</div>
-          </div>
-          </Link>
-          <div className="frame-3">
-            <div className="text-wrapper-menu">Community</div>
-          </div>
-
-          <Link to="/map">
-          <div className="frame-4">
-            <div className="text-wrapper-menu">Map</div>
-          </div>
-          </Link>
+          {/* Add the Create Game button */}
+            <Link to="/create-game">
+            <button className="create-game-button">
+            <div className="create-game-text">Create New Game</div>
+            <img
+              className="create-game-icon"
+              alt="Add"
+              src="https://c.animaapp.com/RqvJyPyX/img/e-add.svg"
+            />
+            </button>
+            </Link>
         </div>
-        <Link to="/">
-        <div className="text-wrapper-menu-title">Pickup@Penn</div>
-        </Link>
-
-        <Link to="/availability">
-        <img
-          className="prof"
-          alt="Image"
-          src="https://c.animaapp.com/RqvJyPyX/img/image-27@2x.png"
-        />
-        </Link>
-
-
-        <Link to="/">
-        <img
-          className="logo"
-          alt="Image"
-          src="https://c.animaapp.com/RqvJyPyX/img/image-28@2x.png"
-        />
-        </Link>
-      </div>
-          
-
-          <div className="container-27">
-            <div className="container-28">
-              <p className="october">
-                October 4, 5:00 PM
-                <br />
-                Pottruck Gym
-              </p>
-
-              <div className="text-wrapper-43">Basketball</div>
-            </div>
-
-            <div className="container-29">
-              <p className="p">
-                October 3, 7:00 PM
-                <br />
-                Hamlin Tennis Center
-              </p>
-
-              <div className="text-wrapper-44">Tennis</div>
-            </div>
-          </div>
-
-          <div className="container-30">
-            <div className="overlap-10">
-              <p className="october-2">
-                October 1, 5:00 PM
-                <br />
-                Pottruck Gym
-              </p>
-
-              <div className="text-wrapper-45">Basketball</div>
-            </div>
-          </div>
-
-          <div className="container-31">
-            <p className="october-3">
-              October 2, 4:00 PM
-              <br />
-              Penn Park
-            </p>
-
-            <div className="text-wrapper-46">Soccer</div>
-          </div>
-        </div>
-
-        <button className="button-2">
-          <div className="text-wrapper-47">Create New Game</div>
-
-          <img
-            className="e-add"
-            alt="E add"
-            src="https://c.animaapp.com/I43ZrRid/img/e-add.svg"
-          />
-        </button>
-
-        <button className="button-3">
-          <div className="text-wrapper-48">Find Games</div>
-
-          <img
-            className="search"
-            alt="Search"
-            src="https://c.animaapp.com/I43ZrRid/img/search.svg"
-          />
-        </button>
-
-        <div className="text-wrapper-49">Upcoming Games</div>
       </div>
     </div>
+    </GoogleOAuthProvider>
   );
 };

@@ -415,10 +415,15 @@
   position: absolute;
   top: 776px;
   width: 442px;
+  cursor: pointer;
+}
+
+.create-game .button:hover {
+  background-color: #0c2468;
 }
 
 .create-game .text-wrapper-7 {
-  color: #d8dbe4;
+  color: #FEFFFE;
   font-family: "Inter", Helvetica;
   font-size: 16px;
   font-weight: 400;
@@ -1234,4 +1239,67 @@
   position: absolute;
   top: 12px;
   width: 42px;
+}
+
+/* Make the selector more specific and use !important if needed */
+.create-game .button .text-wrapper-7 {
+  color: #FFFFFF !important;
+  font-family: "Inter", Helvetica;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 8px;
+  white-space: nowrap;
+  text-align: center;
+  width: 100%;
+  left: 0; /* Center the text by removing left offset */
+}
+
+.container-upcoming-games {
+  background-color: #fefffe;
+  border: 1px solid;
+  border-color: #f9fbfd;
+  border-radius: 8px;
+  box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+  height: 500px;
+  left: 1075px;
+  position: absolute;
+  top: 215px;
+  width: 348px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.event-item {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 15px 10px;
+  position: relative;
+  min-height: 80px;
+}
+
+.event-date {
+  color: #8e8e8e;
+  font-family: "Inter", Helvetica;
+  font-size: 15px;
+  font-weight: 400;
+  left: 21px;
+  letter-spacing: 0;
+  line-height: 20px;
+  position: absolute;
+  top: 42px;
+}
+
+.event-sport {
+  color: #2d2d2d;
+  font-family: "Inter", Helvetica;
+  font-size: 15px;
+  font-weight: 400;
+  left: 21px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 15px;
+  white-space: nowrap;
 }

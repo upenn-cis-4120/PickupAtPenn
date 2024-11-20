@@ -10,22 +10,28 @@ import { Map } from "./screens/Map";
 import reactDom from "react-dom/client";
 import ReactDOMClient from "react-dom/client"; // Ensure the correct capitalization
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { GoogleOAuthProvider } from "@react-oauth/google"; // Ensure the import for GoogleOAuthProvider
+
 
 // to run, navigate to folder, npm install, npm start
 const app = document.getElementById("app");
 const root = ReactDOMClient.createRoot(app);
+const CLIENT_ID = "7058040155-g739av7vkfgl73dbvk6mrkiadt6vdjs5.apps.googleusercontent.com"; // Replace with your actual Google Client ID
+
 
 // change the Home to CreateGame or Schedule to navigate for now
 //oot.render(<Home />);
 root.render(
+  <GoogleOAuthProvider clientId={CLIENT_ID}>
     <Router>
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/schedule" element={<Schedule />} />
-      <Route path="/availability" element={<YourAvailability />} />
-      <Route path="/group-availability" element={<GroupAvailability />} />
-      <Route path="/create-game" element={<CreateGame />} />
-      <Route path="/map" element={<Map />} />
-    </Routes>
-  </Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/schedule" element={<Schedule />} />
+        <Route path="/availability" element={<YourAvailability />} />
+        <Route path="/group-availability" element={<GroupAvailability />} />
+        <Route path="/create-game" element={<CreateGame />} />
+        <Route path="/map" element={<Map />} />
+      </Routes>
+    </Router>
+  </GoogleOAuthProvider>
 );
