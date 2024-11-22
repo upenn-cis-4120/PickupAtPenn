@@ -54304,33 +54304,41 @@ var _s = $RefreshSig$();
 const BasketballChat = ()=>{
     _s();
     const [messages, setMessages] = (0, _react.useState)(()=>{
+        // Check if this is a fresh application start
+        const isAppInitialized = localStorage.getItem('appInitialized');
+        if (!isAppInitialized) {
+            // First time app is starting, reset to default messages
+            const defaultMessages = [
+                {
+                    id: 1,
+                    sender: "Colin",
+                    text: "Anyone up for a game at Pottruck tonight at 7?",
+                    time: "2:30 PM"
+                },
+                {
+                    id: 2,
+                    sender: "Paul",
+                    text: "I'm in! Need to work on my jump shot",
+                    time: "2:32 PM"
+                },
+                {
+                    id: 3,
+                    sender: "Colin",
+                    text: "Great! I'll bring an extra ball just in case",
+                    time: "2:33 PM"
+                },
+                {
+                    id: 4,
+                    sender: "Paul",
+                    text: "Perfect, see you there! Anyone else joining?",
+                    time: "2:35 PM"
+                }
+            ];
+            localStorage.setItem('basketballChatMessages', JSON.stringify(defaultMessages));
+            return defaultMessages;
+        }
         const savedMessages = localStorage.getItem('basketballChatMessages');
-        return savedMessages ? JSON.parse(savedMessages) : [
-            {
-                id: 1,
-                sender: "Colin",
-                text: "Anyone up for a game at Pottruck tonight at 7?",
-                time: "2:30 PM"
-            },
-            {
-                id: 2,
-                sender: "Paul",
-                text: "I'm in! Need to work on my jump shot",
-                time: "2:32 PM"
-            },
-            {
-                id: 3,
-                sender: "Colin",
-                text: "Great! I'll bring an extra ball just in case",
-                time: "2:33 PM"
-            },
-            {
-                id: 4,
-                sender: "Paul",
-                text: "Perfect, see you there! Anyone else joining?",
-                time: "2:35 PM"
-            }
-        ];
+        return savedMessages ? JSON.parse(savedMessages) : [];
     });
     (0, _react.useEffect)(()=>{
         localStorage.setItem('basketballChatMessages', JSON.stringify(messages));
@@ -54376,17 +54384,17 @@ const BasketballChat = ()=>{
                                         children: "Schedule"
                                     }, void 0, false, {
                                         fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                                        lineNumber: 67,
+                                        lineNumber: 77,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                                    lineNumber: 66,
+                                    lineNumber: 76,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                                lineNumber: 65,
+                                lineNumber: 75,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -54398,17 +54406,17 @@ const BasketballChat = ()=>{
                                         children: "Availability"
                                     }, void 0, false, {
                                         fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                                        lineNumber: 73,
+                                        lineNumber: 83,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                                    lineNumber: 72,
+                                    lineNumber: 82,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                                lineNumber: 71,
+                                lineNumber: 81,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -54420,17 +54428,17 @@ const BasketballChat = ()=>{
                                         children: "Community"
                                     }, void 0, false, {
                                         fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                                        lineNumber: 79,
+                                        lineNumber: 89,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                                    lineNumber: 78,
+                                    lineNumber: 88,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                                lineNumber: 77,
+                                lineNumber: 87,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -54442,23 +54450,23 @@ const BasketballChat = ()=>{
                                         children: "Map"
                                     }, void 0, false, {
                                         fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                                        lineNumber: 85,
+                                        lineNumber: 95,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                                    lineNumber: 84,
+                                    lineNumber: 94,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                                lineNumber: 83,
+                                lineNumber: 93,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                        lineNumber: 64,
+                        lineNumber: 74,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -54468,12 +54476,12 @@ const BasketballChat = ()=>{
                             children: "Pickup@Penn"
                         }, void 0, false, {
                             fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                            lineNumber: 91,
+                            lineNumber: 101,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                        lineNumber: 90,
+                        lineNumber: 100,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -54484,18 +54492,18 @@ const BasketballChat = ()=>{
                             src: "https://c.animaapp.com/RqvJyPyX/img/image-28@2x.png"
                         }, void 0, false, {
                             fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                            lineNumber: 103,
+                            lineNumber: 113,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                        lineNumber: 102,
+                        lineNumber: 112,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                lineNumber: 63,
+                lineNumber: 73,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -54508,7 +54516,7 @@ const BasketballChat = ()=>{
                                 children: "Basketball Group"
                             }, void 0, false, {
                                 fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                                lineNumber: 114,
+                                lineNumber: 124,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -54516,13 +54524,13 @@ const BasketballChat = ()=>{
                                 children: "45 members"
                             }, void 0, false, {
                                 fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                                lineNumber: 115,
+                                lineNumber: 125,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                        lineNumber: 113,
+                        lineNumber: 123,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -54538,7 +54546,7 @@ const BasketballChat = ()=>{
                                                 children: message.sender
                                             }, void 0, false, {
                                                 fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                                                lineNumber: 125,
+                                                lineNumber: 135,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -54546,13 +54554,13 @@ const BasketballChat = ()=>{
                                                 children: message.time
                                             }, void 0, false, {
                                                 fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                                                lineNumber: 126,
+                                                lineNumber: 136,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                                        lineNumber: 124,
+                                        lineNumber: 134,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -54560,18 +54568,18 @@ const BasketballChat = ()=>{
                                         children: message.text
                                     }, void 0, false, {
                                         fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                                        lineNumber: 128,
+                                        lineNumber: 138,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, message.id, true, {
                                 fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                                lineNumber: 120,
+                                lineNumber: 130,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                        lineNumber: 118,
+                        lineNumber: 128,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
@@ -54586,7 +54594,7 @@ const BasketballChat = ()=>{
                                 className: "message-input"
                             }, void 0, false, {
                                 fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                                lineNumber: 134,
+                                lineNumber: 144,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -54595,29 +54603,29 @@ const BasketballChat = ()=>{
                                 children: "Send"
                             }, void 0, false, {
                                 fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                                lineNumber: 141,
+                                lineNumber: 151,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                        lineNumber: 133,
+                        lineNumber: 143,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                lineNumber: 112,
+                lineNumber: 122,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-        lineNumber: 61,
+        lineNumber: 71,
         columnNumber: 5
     }, undefined);
 };
-_s(BasketballChat, "LFyq6Pi3W/AoUQDiEhw8FVQEl/g=");
+_s(BasketballChat, "R65C/0Ps6yye5zhb44uIljDh0Bg=");
 _c = BasketballChat;
 var _c;
 $RefreshReg$(_c, "BasketballChat");
@@ -54652,33 +54660,41 @@ var _s = $RefreshSig$();
 const SoccerChat = ()=>{
     _s();
     const [messages, setMessages] = (0, _react.useState)(()=>{
+        // Check if this is a fresh application start
+        const isAppInitialized = localStorage.getItem('appInitialized');
+        if (!isAppInitialized) {
+            // First time app is starting, reset to default messages
+            const defaultMessages = [
+                {
+                    id: 1,
+                    sender: "Ella",
+                    text: "Penn Park fields are empty right now! Who wants to play soccer?",
+                    time: "3:15 PM"
+                },
+                {
+                    id: 2,
+                    sender: "Liam",
+                    text: "I can be there in 20! Anyone want to practice some drills?",
+                    time: "3:17 PM"
+                },
+                {
+                    id: 3,
+                    sender: "Nate",
+                    text: "Count me in! I'll bring some cones for practice",
+                    time: "3:18 PM"
+                },
+                {
+                    id: 4,
+                    sender: "Ella",
+                    text: "Awesome! Let's meet by the main entrance",
+                    time: "3:20 PM"
+                }
+            ];
+            localStorage.setItem('soccerChatMessages', JSON.stringify(defaultMessages));
+            return defaultMessages;
+        }
         const savedMessages = localStorage.getItem('soccerChatMessages');
-        return savedMessages ? JSON.parse(savedMessages) : [
-            {
-                id: 1,
-                sender: "Ella",
-                text: "Penn Park fields are empty right now! Who wants to play soccer?",
-                time: "3:15 PM"
-            },
-            {
-                id: 2,
-                sender: "Liam",
-                text: "I can be there in 20! Anyone want to practice some drills?",
-                time: "3:17 PM"
-            },
-            {
-                id: 3,
-                sender: "Nate",
-                text: "Count me in! I'll bring some cones for practice",
-                time: "3:18 PM"
-            },
-            {
-                id: 4,
-                sender: "Ella",
-                text: "Awesome! Let's meet by the main entrance",
-                time: "3:20 PM"
-            }
-        ];
+        return savedMessages ? JSON.parse(savedMessages) : [];
     });
     (0, _react.useEffect)(()=>{
         localStorage.setItem('soccerChatMessages', JSON.stringify(messages));
@@ -54724,17 +54740,17 @@ const SoccerChat = ()=>{
                                         children: "Schedule"
                                     }, void 0, false, {
                                         fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                        lineNumber: 67,
+                                        lineNumber: 77,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                    lineNumber: 66,
+                                    lineNumber: 76,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                lineNumber: 65,
+                                lineNumber: 75,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -54746,17 +54762,17 @@ const SoccerChat = ()=>{
                                         children: "Availability"
                                     }, void 0, false, {
                                         fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                        lineNumber: 73,
+                                        lineNumber: 83,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                    lineNumber: 72,
+                                    lineNumber: 82,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                lineNumber: 71,
+                                lineNumber: 81,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -54768,17 +54784,17 @@ const SoccerChat = ()=>{
                                         children: "Community"
                                     }, void 0, false, {
                                         fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                        lineNumber: 79,
+                                        lineNumber: 89,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                    lineNumber: 78,
+                                    lineNumber: 88,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                lineNumber: 77,
+                                lineNumber: 87,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -54790,23 +54806,23 @@ const SoccerChat = ()=>{
                                         children: "Map"
                                     }, void 0, false, {
                                         fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                        lineNumber: 85,
+                                        lineNumber: 95,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                    lineNumber: 84,
+                                    lineNumber: 94,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                lineNumber: 83,
+                                lineNumber: 93,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                        lineNumber: 64,
+                        lineNumber: 74,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -54816,12 +54832,12 @@ const SoccerChat = ()=>{
                             children: "Pickup@Penn"
                         }, void 0, false, {
                             fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                            lineNumber: 91,
+                            lineNumber: 101,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                        lineNumber: 90,
+                        lineNumber: 100,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -54832,18 +54848,18 @@ const SoccerChat = ()=>{
                             src: "https://c.animaapp.com/RqvJyPyX/img/image-28@2x.png"
                         }, void 0, false, {
                             fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                            lineNumber: 103,
+                            lineNumber: 113,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                        lineNumber: 102,
+                        lineNumber: 112,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                lineNumber: 63,
+                lineNumber: 73,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -54856,7 +54872,7 @@ const SoccerChat = ()=>{
                                 children: "Soccer Group"
                             }, void 0, false, {
                                 fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                lineNumber: 114,
+                                lineNumber: 124,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -54864,13 +54880,13 @@ const SoccerChat = ()=>{
                                 children: "38 members"
                             }, void 0, false, {
                                 fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                lineNumber: 115,
+                                lineNumber: 125,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                        lineNumber: 113,
+                        lineNumber: 123,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -54886,7 +54902,7 @@ const SoccerChat = ()=>{
                                                 children: message.sender
                                             }, void 0, false, {
                                                 fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                                lineNumber: 125,
+                                                lineNumber: 135,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -54894,13 +54910,13 @@ const SoccerChat = ()=>{
                                                 children: message.time
                                             }, void 0, false, {
                                                 fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                                lineNumber: 126,
+                                                lineNumber: 136,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                        lineNumber: 124,
+                                        lineNumber: 134,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -54908,18 +54924,18 @@ const SoccerChat = ()=>{
                                         children: message.text
                                     }, void 0, false, {
                                         fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                        lineNumber: 128,
+                                        lineNumber: 138,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, message.id, true, {
                                 fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                lineNumber: 120,
+                                lineNumber: 130,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                        lineNumber: 118,
+                        lineNumber: 128,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
@@ -54934,7 +54950,7 @@ const SoccerChat = ()=>{
                                 className: "message-input"
                             }, void 0, false, {
                                 fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                lineNumber: 134,
+                                lineNumber: 144,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -54943,29 +54959,29 @@ const SoccerChat = ()=>{
                                 children: "Send"
                             }, void 0, false, {
                                 fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                lineNumber: 141,
+                                lineNumber: 151,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                        lineNumber: 133,
+                        lineNumber: 143,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                lineNumber: 112,
+                lineNumber: 122,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-        lineNumber: 61,
+        lineNumber: 71,
         columnNumber: 5
     }, undefined);
 };
-_s(SoccerChat, "Ik51Vku1HRvDZc0NbSA69fXnlA0=");
+_s(SoccerChat, "G89kf505grE7JDXd7uc2WQuy5gI=");
 _c = SoccerChat;
 var _c;
 $RefreshReg$(_c, "SoccerChat");

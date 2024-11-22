@@ -4,33 +4,43 @@ import { Link } from 'react-router-dom';
 
 export const SoccerChat = () => {
   const [messages, setMessages] = useState(() => {
+    // Check if this is a fresh application start
+    const isAppInitialized = localStorage.getItem('appInitialized');
+    
+    if (!isAppInitialized) {
+      // First time app is starting, reset to default messages
+      const defaultMessages = [
+        {
+          id: 1,
+          sender: "Ella",
+          text: "Penn Park fields are empty right now! Who wants to play soccer?",
+          time: "3:15 PM"
+        },
+        {
+          id: 2,
+          sender: "Liam",
+          text: "I can be there in 20! Anyone want to practice some drills?",
+          time: "3:17 PM"
+        },
+        {
+          id: 3,
+          sender: "Nate",
+          text: "Count me in! I'll bring some cones for practice",
+          time: "3:18 PM"
+        },
+        {
+          id: 4,
+          sender: "Ella",
+          text: "Awesome! Let's meet by the main entrance",
+          time: "3:20 PM"
+        }
+      ];
+      localStorage.setItem('soccerChatMessages', JSON.stringify(defaultMessages));
+      return defaultMessages;
+    }
+    
     const savedMessages = localStorage.getItem('soccerChatMessages');
-    return savedMessages ? JSON.parse(savedMessages) : [
-      {
-        id: 1,
-        sender: "Ella",
-        text: "Penn Park fields are empty right now! Who wants to play soccer?",
-        time: "3:15 PM"
-      },
-      {
-        id: 2,
-        sender: "Liam",
-        text: "I can be there in 20! Anyone want to practice some drills?",
-        time: "3:17 PM"
-      },
-      {
-        id: 3,
-        sender: "Nate",
-        text: "Count me in! I'll bring some cones for practice",
-        time: "3:18 PM"
-      },
-      {
-        id: 4,
-        sender: "Ella",
-        text: "Awesome! Let's meet by the main entrance",
-        time: "3:20 PM"
-      }
-    ];
+    return savedMessages ? JSON.parse(savedMessages) : [];
   });
 
   useEffect(() => {

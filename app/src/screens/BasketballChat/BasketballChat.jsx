@@ -4,33 +4,43 @@ import { Link } from 'react-router-dom';
 
 export const BasketballChat = () => {
   const [messages, setMessages] = useState(() => {
+    // Check if this is a fresh application start
+    const isAppInitialized = localStorage.getItem('appInitialized');
+    
+    if (!isAppInitialized) {
+      // First time app is starting, reset to default messages
+      const defaultMessages = [
+        {
+          id: 1,
+          sender: "Colin",
+          text: "Anyone up for a game at Pottruck tonight at 7?",
+          time: "2:30 PM"
+        },
+        {
+          id: 2,
+          sender: "Paul",
+          text: "I'm in! Need to work on my jump shot",
+          time: "2:32 PM"
+        },
+        {
+          id: 3,
+          sender: "Colin",
+          text: "Great! I'll bring an extra ball just in case",
+          time: "2:33 PM"
+        },
+        {
+          id: 4,
+          sender: "Paul",
+          text: "Perfect, see you there! Anyone else joining?",
+          time: "2:35 PM"
+        }
+      ];
+      localStorage.setItem('basketballChatMessages', JSON.stringify(defaultMessages));
+      return defaultMessages;
+    }
+    
     const savedMessages = localStorage.getItem('basketballChatMessages');
-    return savedMessages ? JSON.parse(savedMessages) : [
-      {
-        id: 1,
-        sender: "Colin",
-        text: "Anyone up for a game at Pottruck tonight at 7?",
-        time: "2:30 PM"
-      },
-      {
-        id: 2,
-        sender: "Paul",
-        text: "I'm in! Need to work on my jump shot",
-        time: "2:32 PM"
-      },
-      {
-        id: 3,
-        sender: "Colin",
-        text: "Great! I'll bring an extra ball just in case",
-        time: "2:33 PM"
-      },
-      {
-        id: 4,
-        sender: "Paul",
-        text: "Perfect, see you there! Anyone else joining?",
-        time: "2:35 PM"
-      }
-    ];
+    return savedMessages ? JSON.parse(savedMessages) : [];
   });
 
   useEffect(() => {
