@@ -149,11 +149,11 @@ export const CreateGame = () => {
     
     if (sport === "Basketball") {
       setSelectedLocation("Pottruck Gym");
-      setPlayerCount(10);
+      setPlayerCount(6);
       setSelectedGroupChat("Basketball");
     } else if (sport === "Soccer") {
       setSelectedLocation("Penn Park");
-      setPlayerCount(22);
+      setPlayerCount(12);
       setSelectedGroupChat("Soccer");
     } else if (sport === "Ultimate Frisbee") {
       setSelectedLocation("Penn Park");
@@ -340,11 +340,11 @@ useEffect(() => {
   useEffect(() => {
     if (selectedSport === "Basketball") {
       setSelectedLocation("Pottruck Gym");
-      setPlayerCount(10);
+      setPlayerCount(6);
       setSelectedGroupChat("Basketball");
     } else if (selectedSport === "Soccer") {
       setSelectedLocation("Penn Park");
-      setPlayerCount(22);
+      setPlayerCount(12);
       setSelectedGroupChat("Soccer");
     }
   }, [selectedSport]); // This will run whenever selectedSport changes

@@ -81,7 +81,7 @@ export const GroupAvailability = () => {
   }, [selectedSport]);
 
   const handleSportChange = (event) => {
-    setSelectedSport(event.target.value);
+    setSelectedSport(sportNameMapping[event.target.value] || event.target.value.toLowerCase());
   };
 
   const formatDateTime = (dateTimeString) => {
@@ -92,9 +92,15 @@ export const GroupAvailability = () => {
     };
   };
 
-  // Add new function to create time grid
+  // Modify only the display helper function, keep grid logic in 24-hour format
+  const formatTimeLabel = (hour) => {
+    const period = hour >= 12 ? 'PM' : 'AM';
+    const displayHour = hour > 12 ? hour - 12 : (hour === 0 ? 12 : hour);
+    return `${displayHour}${period}`;
+  };
+
+  // Keep the grid creation functions using 24-hour time
   const createTimeGrid = (events) => {
-    // Initialize grid with objects containing count and names array
     const grid = Array(7).fill().map(() => 
       Array(12).fill().map(() => ({ count: 0, names: [] }))
     );
@@ -104,8 +110,8 @@ export const GroupAvailability = () => {
       const endDate = new Date(event.end.dateTime || event.end.date);
       
       const dayIndex = startDate.getDay();
-      let startHour = startDate.getHours();
-      let endHour = endDate.getHours();
+      let startHour = startDate.getHours(); // Keep 24-hour format
+      let endHour = endDate.getHours(); // Keep 24-hour format
       const endMinutes = endDate.getMinutes();
       
       // Adjust end hour if there are minutes
@@ -140,38 +146,38 @@ export const GroupAvailability = () => {
     return grid;
   };
 
-  // For personal availability (container-2)
-const createPersonalTimeGrid = (events) => {
-  const grid = Array(7).fill().map(() => Array(12).fill(0));
-  
-  events.forEach(event => {
-    const startDate = new Date(event.start.dateTime || event.start.date);
-    const endDate = new Date(event.end.dateTime || event.end.date);
+  // Keep the personal grid creation using 24-hour time as well
+  const createPersonalTimeGrid = (events) => {
+    const grid = Array(7).fill().map(() => Array(12).fill(0));
     
-    const dayIndex = startDate.getDay();
-    let startHour = startDate.getHours();
-    let endHour = endDate.getHours();
-    const endMinutes = endDate.getMinutes();
-    
-    if (endMinutes > 0) {
-      endHour += 1;
-    }
-    
-    startHour = Math.max(9, startHour);
-    endHour = Math.min(21, endHour);
-    
-    const startIndex = Math.max(0, startHour - 9);
-    const endIndex = Math.min(11, endHour - 9);
-    
-    for (let i = startIndex; i < endIndex; i++) {
-      if (grid[dayIndex] && grid[dayIndex][i] !== undefined) {
-        grid[dayIndex][i]++;
+    events.forEach(event => {
+      const startDate = new Date(event.start.dateTime || event.start.date);
+      const endDate = new Date(event.end.dateTime || event.end.date);
+      
+      const dayIndex = startDate.getDay();
+      let startHour = startDate.getHours();
+      let endHour = endDate.getHours();
+      const endMinutes = endDate.getMinutes();
+      
+      if (endMinutes > 0) {
+        endHour += 1;
       }
-    }
-  });
-  
-  return grid;
-};
+      
+      startHour = Math.max(9, startHour);
+      endHour = Math.min(21, endHour);
+      
+      const startIndex = Math.max(0, startHour - 9);
+      const endIndex = Math.min(11, endHour - 9);
+      
+      for (let i = startIndex; i < endIndex; i++) {
+        if (grid[dayIndex] && grid[dayIndex][i] !== undefined) {
+          grid[dayIndex][i]++;
+        }
+      }
+    });
+    
+    return grid;
+  };
 
   // Get joined sports from localStorage
   const [joinedSports, setJoinedSports] = useState(() => {
@@ -200,7 +206,7 @@ const createPersonalTimeGrid = (events) => {
     };
   }, []);
 
-  // Add a mapping object for sport name conversions
+  // Add this mapping object near the top of the component
   const sportNameMapping = {
     'Ultimate Frisbee': 'ultimate',
     'Basketball': 'basketball',
@@ -265,7 +271,7 @@ const createPersonalTimeGrid = (events) => {
           <div className="time-labels">
             {Array(12).fill().map((_, i) => (
               <div key={i} className="time-label">
-                {`${i + 9}:00`}
+                {formatTimeLabel(i + 9)}
               </div>
             ))}
           </div>
@@ -311,7 +317,7 @@ const createPersonalTimeGrid = (events) => {
     <div className="time-labels">
       {Array(12).fill().map((_, i) => (
         <div key={i} className="time-label">
-          {`${i + 9}:00`}
+          {formatTimeLabel(i + 9)}
         </div>
       ))}
     </div>

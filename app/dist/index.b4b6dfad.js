@@ -39776,7 +39776,7 @@ const GroupAvailability = ()=>{
         selectedSport
     ]);
     const handleSportChange = (event)=>{
-        setSelectedSport(event.target.value);
+        setSelectedSport(sportNameMapping[event.target.value] || event.target.value.toLowerCase());
     };
     const formatDateTime = (dateTimeString)=>{
         const date = new Date(dateTimeString);
@@ -39792,9 +39792,14 @@ const GroupAvailability = ()=>{
             })
         };
     };
-    // Add new function to create time grid
+    // Modify only the display helper function, keep grid logic in 24-hour format
+    const formatTimeLabel = (hour)=>{
+        const period = hour >= 12 ? 'PM' : 'AM';
+        const displayHour = hour > 12 ? hour - 12 : hour === 0 ? 12 : hour;
+        return `${displayHour}${period}`;
+    };
+    // Keep the grid creation functions using 24-hour time
     const createTimeGrid = (events)=>{
-        // Initialize grid with objects containing count and names array
         const grid = Array(7).fill().map(()=>Array(12).fill().map(()=>({
                     count: 0,
                     names: []
@@ -39803,8 +39808,8 @@ const GroupAvailability = ()=>{
             const startDate = new Date(event.start.dateTime || event.start.date);
             const endDate = new Date(event.end.dateTime || event.end.date);
             const dayIndex = startDate.getDay();
-            let startHour = startDate.getHours();
-            let endHour = endDate.getHours();
+            let startHour = startDate.getHours(); // Keep 24-hour format
+            let endHour = endDate.getHours(); // Keep 24-hour format
             const endMinutes = endDate.getMinutes();
             // Adjust end hour if there are minutes
             if (endMinutes > 0) endHour += 1;
@@ -39824,7 +39829,7 @@ const GroupAvailability = ()=>{
         });
         return grid;
     };
-    // For personal availability (container-2)
+    // Keep the personal grid creation using 24-hour time as well
     const createPersonalTimeGrid = (events)=>{
         const grid = Array(7).fill().map(()=>Array(12).fill(0));
         events.forEach((event)=>{
@@ -39875,7 +39880,7 @@ const GroupAvailability = ()=>{
             });
         };
     }, []);
-    // Add a mapping object for sport name conversions
+    // Add this mapping object near the top of the component
     const sportNameMapping = {
         'Ultimate Frisbee': 'ultimate',
         'Basketball': 'basketball',
@@ -39901,28 +39906,6 @@ const GroupAvailability = ()=>{
                                         children: "Schedule"
                                     }, void 0, false, {
                                         fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 219,
-                                        columnNumber: 13
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                    lineNumber: 218,
-                                    columnNumber: 11
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 217,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/group-availability",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "frame-2",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-bold",
-                                        children: "Availability"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
                                         lineNumber: 225,
                                         columnNumber: 13
                                     }, undefined)
@@ -39937,34 +39920,34 @@ const GroupAvailability = ()=>{
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/group-availability",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "frame-2",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "text-wrapper-bold",
+                                        children: "Availability"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                        lineNumber: 231,
+                                        columnNumber: 13
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 230,
+                                    columnNumber: 11
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                lineNumber: 229,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/community",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "frame-3",
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "text-wrapper-menu",
                                         children: "Community"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 230,
-                                        columnNumber: 13
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                    lineNumber: 229,
-                                    columnNumber: 11
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 228,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/map",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "frame-4",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-menu",
-                                        children: "Map"
                                     }, void 0, false, {
                                         fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
                                         lineNumber: 236,
@@ -39979,11 +39962,33 @@ const GroupAvailability = ()=>{
                                 fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
                                 lineNumber: 234,
                                 columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/map",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "frame-4",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "text-wrapper-menu",
+                                        children: "Map"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                        lineNumber: 242,
+                                        columnNumber: 13
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                    lineNumber: 241,
+                                    columnNumber: 11
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
+                                lineNumber: 240,
+                                columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                        lineNumber: 216,
+                        lineNumber: 222,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -39993,12 +39998,12 @@ const GroupAvailability = ()=>{
                             children: "Pickup@Penn"
                         }, void 0, false, {
                             fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                            lineNumber: 241,
+                            lineNumber: 247,
                             columnNumber: 9
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                        lineNumber: 240,
+                        lineNumber: 246,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -40009,12 +40014,12 @@ const GroupAvailability = ()=>{
                             src: "https://c.animaapp.com/RqvJyPyX/img/rectangle-2@2x.png"
                         }, void 0, false, {
                             fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                            lineNumber: 245,
+                            lineNumber: 251,
                             columnNumber: 9
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                        lineNumber: 244,
+                        lineNumber: 250,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -40025,18 +40030,18 @@ const GroupAvailability = ()=>{
                             src: "https://c.animaapp.com/RqvJyPyX/img/image-28@2x.png"
                         }, void 0, false, {
                             fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                            lineNumber: 253,
+                            lineNumber: 259,
                             columnNumber: 9
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                        lineNumber: 252,
+                        lineNumber: 258,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                lineNumber: 215,
+                lineNumber: 221,
                 columnNumber: 8
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40049,12 +40054,12 @@ const GroupAvailability = ()=>{
                             children: "Your Availability"
                         }, void 0, false, {
                             fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                            lineNumber: 262,
+                            lineNumber: 268,
                             columnNumber: 9
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                        lineNumber: 261,
+                        lineNumber: 267,
                         columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40064,15 +40069,15 @@ const GroupAvailability = ()=>{
                                 className: "time-labels",
                                 children: Array(12).fill().map((_, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "time-label",
-                                        children: `${i + 9}:00`
+                                        children: formatTimeLabel(i + 9)
                                     }, i, false, {
                                         fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 267,
+                                        lineNumber: 273,
                                         columnNumber: 15
                                     }, undefined))
                             }, void 0, false, {
                                 fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 265,
+                                lineNumber: 271,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40090,12 +40095,12 @@ const GroupAvailability = ()=>{
                                         children: day
                                     }, day, false, {
                                         fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 274,
+                                        lineNumber: 280,
                                         columnNumber: 15
                                     }, undefined))
                             }, void 0, false, {
                                 fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 272,
+                                lineNumber: 278,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40106,29 +40111,29 @@ const GroupAvailability = ()=>{
                                                 className: `grid-cell busy-${Math.min(count, 1)}`
                                             }, `${dayIndex}-${timeIndex}`, false, {
                                                 fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                                lineNumber: 281,
+                                                lineNumber: 287,
                                                 columnNumber: 17
                                             }, undefined))
                                     }, dayIndex, false, {
                                         fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 279,
+                                        lineNumber: 285,
                                         columnNumber: 13
                                     }, undefined))
                             }, void 0, false, {
                                 fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 277,
+                                lineNumber: 283,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                        lineNumber: 264,
+                        lineNumber: 270,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                lineNumber: 260,
+                lineNumber: 266,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40142,7 +40147,7 @@ const GroupAvailability = ()=>{
                                 children: "Group Availability"
                             }, void 0, false, {
                                 fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 294,
+                                lineNumber: 300,
                                 columnNumber: 9
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
@@ -40154,18 +40159,18 @@ const GroupAvailability = ()=>{
                                         children: sport
                                     }, sport, false, {
                                         fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 301,
+                                        lineNumber: 307,
                                         columnNumber: 13
                                     }, undefined))
                             }, void 0, false, {
                                 fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 295,
+                                lineNumber: 301,
                                 columnNumber: 9
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                        lineNumber: 293,
+                        lineNumber: 299,
                         columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40175,15 +40180,15 @@ const GroupAvailability = ()=>{
                                 className: "time-labels",
                                 children: Array(12).fill().map((_, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "time-label",
-                                        children: `${i + 9}:00`
+                                        children: formatTimeLabel(i + 9)
                                     }, i, false, {
                                         fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 313,
+                                        lineNumber: 319,
                                         columnNumber: 9
                                     }, undefined))
                             }, void 0, false, {
                                 fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 311,
+                                lineNumber: 317,
                                 columnNumber: 5
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40201,12 +40206,12 @@ const GroupAvailability = ()=>{
                                         children: day
                                     }, day, false, {
                                         fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 320,
+                                        lineNumber: 326,
                                         columnNumber: 9
                                     }, undefined))
                             }, void 0, false, {
                                 fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 318,
+                                lineNumber: 324,
                                 columnNumber: 5
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40218,35 +40223,35 @@ const GroupAvailability = ()=>{
                                                 "data-tooltip": cell.names.length > 0 ? cell.names.join(", ") : null
                                             }, `${dayIndex}-${timeIndex}`, false, {
                                                 fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                                lineNumber: 327,
+                                                lineNumber: 333,
                                                 columnNumber: 11
                                             }, undefined))
                                     }, dayIndex, false, {
                                         fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 325,
+                                        lineNumber: 331,
                                         columnNumber: 7
                                     }, undefined))
                             }, void 0, false, {
                                 fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 323,
+                                lineNumber: 329,
                                 columnNumber: 7
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                        lineNumber: 310,
+                        lineNumber: 316,
                         columnNumber: 3
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                lineNumber: 292,
+                lineNumber: 298,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-        lineNumber: 213,
+        lineNumber: 219,
         columnNumber: 5
     }, undefined);
 };
@@ -55180,11 +55185,11 @@ const CreateGame = ()=>{
         setIsDropdownOpen(false);
         if (sport === "Basketball") {
             setSelectedLocation("Pottruck Gym");
-            setPlayerCount(10);
+            setPlayerCount(6);
             setSelectedGroupChat("Basketball");
         } else if (sport === "Soccer") {
             setSelectedLocation("Penn Park");
-            setPlayerCount(22);
+            setPlayerCount(12);
             setSelectedGroupChat("Soccer");
         } else if (sport === "Ultimate Frisbee") {
             setSelectedLocation("Penn Park");
@@ -55359,11 +55364,11 @@ const CreateGame = ()=>{
     (0, _react.useEffect)(()=>{
         if (selectedSport === "Basketball") {
             setSelectedLocation("Pottruck Gym");
-            setPlayerCount(10);
+            setPlayerCount(6);
             setSelectedGroupChat("Basketball");
         } else if (selectedSport === "Soccer") {
             setSelectedLocation("Penn Park");
-            setPlayerCount(22);
+            setPlayerCount(12);
             setSelectedGroupChat("Soccer");
         }
     }, [
