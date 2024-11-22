@@ -122,9 +122,11 @@ export const Schedule = () => {
                     <div className="text-wrapper-menu">Availability</div>
                   </div>
                 </Link>
+                <Link to="/community">
                 <div className="frame-3">
                   <div className="text-wrapper-menu">Community</div>
                 </div>
+                </Link>
                 <Link to="/map">
                   <div className="frame-4">
                     <div className="text-wrapper-menu">Map</div>
@@ -134,11 +136,11 @@ export const Schedule = () => {
               <Link to="/">
                 <div className="text-wrapper-menu-title">Pickup@Penn</div>
               </Link>
-              <Link to="/availability">
+              <Link to="/profile">
                 <img
                   className="prof"
                   alt="Profile"
-                  src="https://c.animaapp.com/RqvJyPyX/img/image-27@2x.png"
+                  src="https://c.animaapp.com/RqvJyPyX/img/rectangle-2@2x.png"
                 />
               </Link>
               <Link to="/">

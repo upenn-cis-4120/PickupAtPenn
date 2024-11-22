@@ -145,7 +145,29 @@ export const CreateGame = () => {
 
   const handleSportClick = (sport) => {
     setSelectedSport(sport);
-    setIsDropdownOpen(false); // Close dropdown after selection
+    setIsDropdownOpen(false);
+    
+    if (sport === "Basketball") {
+      setSelectedLocation("Pottruck Gym");
+      setPlayerCount(10);
+      setSelectedGroupChat("Basketball");
+    } else if (sport === "Soccer") {
+      setSelectedLocation("Penn Park");
+      setPlayerCount(22);
+      setSelectedGroupChat("Soccer");
+    } else if (sport === "Ultimate Frisbee") {
+      setSelectedLocation("Penn Park");
+      setPlayerCount(10);
+      setSelectedGroupChat("Ultimate Frisbee");
+    } else if (sport === "Volleyball") {
+      setSelectedLocation("Pottruck Gym");
+      setPlayerCount(10);
+      setSelectedGroupChat("Volleyball");
+    } else if (sport === "Tennis") {
+      setSelectedLocation("Hamlin Tennis Center");
+      setPlayerCount(2);
+      setSelectedGroupChat("Tennis");
+    }
   };
   const handleAdditionalNotesChange = (e) => {
     setAdditionalNotes(e.target.value); // Update additional notes state
@@ -313,6 +335,19 @@ useEffect(() => {
     }
     return minutes;
   };
+
+  // Add this useEffect to handle sport-specific defaults
+  useEffect(() => {
+    if (selectedSport === "Basketball") {
+      setSelectedLocation("Pottruck Gym");
+      setPlayerCount(10);
+      setSelectedGroupChat("Basketball");
+    } else if (selectedSport === "Soccer") {
+      setSelectedLocation("Penn Park");
+      setPlayerCount(22);
+      setSelectedGroupChat("Soccer");
+    }
+  }, [selectedSport]); // This will run whenever selectedSport changes
 
   return (
     <div className="create-game">

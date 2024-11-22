@@ -17,7 +17,10 @@ export const GroupAvailability = () => {
 
   const CALENDAR_IDS = {
     basketball: "eb800c79fc573ba2d58b2e70ce1c9ae1ab59a5e438326905c160251a525f0ab8@group.calendar.google.com",
-    soccer: "49faced00d84f711b9dc72f522dc5aecc3cfe3c4a28ac7a5b02e170dcd62d54b@group.calendar.google.com"
+    soccer: "49faced00d84f711b9dc72f522dc5aecc3cfe3c4a28ac7a5b02e170dcd62d54b@group.calendar.google.com",
+    tennis: "84956440b324a534d62f69b17cfdb8341ee611e4d8ba7a08ec28626ff13faab4@group.calendar.google.com",
+    ultimate: "2a00b6779e231bd572c46175877cb15d13b986b4a0fc34a63132f9fde0b18d63@group.calendar.google.com",
+    volleyball: "8189e2a40f40df2be0724136638eef8c0e37f390a67868d9f4fa9710f0a42c27@group.calendar.google.com"
   };
   // Function to initialize Google Calendar API
   const initCalendar = () => {
@@ -170,6 +173,41 @@ const createPersonalTimeGrid = (events) => {
   return grid;
 };
 
+  // Get joined sports from localStorage
+  const [joinedSports, setJoinedSports] = useState(() => {
+    // Check if this is a fresh application start
+    const isAppInitialized = localStorage.getItem('appInitialized');
+    
+    if (!isAppInitialized) {
+      // First time app is starting, set defaults
+      localStorage.setItem('joinedSports', JSON.stringify(['Basketball', 'Soccer']));
+      localStorage.setItem('appInitialized', 'true');
+      return ['Basketball', 'Soccer'];
+    }
+    
+    // Otherwise, get existing joined sports
+    const saved = localStorage.getItem('joinedSports');
+    return saved ? JSON.parse(saved) : ['Basketball', 'Soccer'];
+  });
+  
+  // Clean up initialization flag when component unmounts
+  useEffect(() => {
+    return () => {
+      // Only remove the flag when the app is actually closing
+      window.addEventListener('beforeunload', () => {
+        localStorage.removeItem('appInitialized');
+      });
+    };
+  }, []);
+
+  // Add a mapping object for sport name conversions
+  const sportNameMapping = {
+    'Ultimate Frisbee': 'ultimate',
+    'Basketball': 'basketball',
+    'Soccer': 'soccer',
+    'Tennis': 'tennis',
+    'Volleyball': 'volleyball'
+  };
 
   return (
     <div className="group-availability">
@@ -187,9 +225,11 @@ const createPersonalTimeGrid = (events) => {
             <div className="text-wrapper-bold">Availability</div>
           </div>
           </Link>
+          <Link to="/community">
           <div className="frame-3">
             <div className="text-wrapper-menu">Community</div>
           </div>
+          </Link>
 
           <Link to="/map">
           <div className="frame-4">
@@ -201,13 +241,14 @@ const createPersonalTimeGrid = (events) => {
         <div className="text-wrapper-menu-title">Pickup@Penn</div>
         </Link>
 
-        <Link to="/availability">
-        <imgs
+        <Link to="/profile">
+        <img
           className="prof"
           alt="Image"
-          src="https://c.animaapp.com/RqvJyPyX/img/image-27@2x.png"
+          src="https://c.animaapp.com/RqvJyPyX/img/rectangle-2@2x.png"
         />
         </Link>
+
         <Link to="/">
         <img
           className="logo"
@@ -256,8 +297,14 @@ const createPersonalTimeGrid = (events) => {
           onChange={handleSportChange}
           className="sport-selector"
         >
-          <option value="basketball">Basketball</option>
-          <option value="soccer">Soccer</option>
+          {joinedSports.map(sport => (
+            <option 
+              key={sport} 
+              value={sportNameMapping[sport] || sport.toLowerCase()}
+            >
+              {sport}
+            </option>
+          ))}
         </select>
       </div>
   <div className="availability-grid">

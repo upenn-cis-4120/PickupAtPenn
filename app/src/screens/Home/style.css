@@ -1,8 +1,9 @@
 .home {
   background-color: #f9fbfd;
-  height: 1020px;
+  min-height: 1020px;
   position: relative;
   width: 1440px;
+  overflow: visible;
 }
 
 .home .container {
@@ -15,6 +16,7 @@
   position: absolute;
   top: 369px;
   width: 663px;
+  overflow: visible !important;
 }
 
 .home .penn-park-fields-are {
@@ -123,6 +125,7 @@
   position: absolute;
   top: 140px;
   width: 658px;
+  overflow: visible !important;
 }
 
 .home .pickup-basketball {
@@ -147,10 +150,11 @@
   box-sizing: border-box;
   height: 42px;
   left: 23px;
-  overflow: hidden;
   position: absolute;
   top: 132px;
   width: 128px;
+  cursor: pointer;
+  overflow: visible !important;
 }
 
 .home .text-wrapper-3 {
@@ -337,6 +341,7 @@
   position: absolute;
   top: 98px;
   width: 355px;
+  position: relative;
 }
 
 .home .button-2 {
@@ -416,8 +421,9 @@
   letter-spacing: 0;
   line-height: 22px;
   position: absolute;
-  top: 161px;
+  top: -10px;
   white-space: nowrap;
+  margin-bottom: 10px;
 }
 
 .home .text-wrapper-11 {
@@ -974,9 +980,133 @@
 }
 
 .home .basketball {
-  height: 33px;
-  left: 9px;
+  height: 31px;
+  left: 10px;
   position: absolute;
   top: 48px;
-  width: 33px;
+  width: 31px;
+}
+
+/* Add these styles */
+.tooltip-popup {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: "Inter", Helvetica;
+  white-space: nowrap;
+  z-index: 99999;
+  pointer-events: none;
+  bottom: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Add arrow pointing down */
+.tooltip-popup::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.9) transparent transparent transparent;
+}
+
+/* Make sure the button can show the tooltip */
+.div-wrapper {
+  position: relative;
+  overflow: visible !important;
+}
+
+/* Make sure containers don't clip the tooltip */
+.container, .container-2 {
+  overflow: visible !important;
+}
+
+/* Make sure home container doesn't clip the tooltip */
+.home {
+  overflow: visible !important;
+}
+
+.sports-buttons-container {
+  position: relative;
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px 0;
+  margin: 10px 0;
+  left: 10px;
+  max-width: 90%; /* Reduce from 100% to prevent overflow */
+  margin-left: 5%; /* Center the container */
+  scrollbar-width: thin;
+  scrollbar-color: #091e57 transparent;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 20px; /* Adjusted spacing */
+}
+
+.sports-buttons-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.sports-buttons-container::-webkit-scrollbar-thumb {
+  background-color: #091e57;
+  border-radius: 3px;
+}
+
+.sports-buttons-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.profile-container {
+  position: relative;
+  /* ... existing styles ... */
+}
+
+.sports-buttons-container {
+  position: relative;
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px 0;
+  margin: 10px 0;
+  max-width: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: #091e57 transparent;
+  -webkit-overflow-scrolling: touch;
+}
+
+.sport-button {
+  flex: 0 0 auto;
+  background-color: #091e57;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 21px;
+  border: 1px solid #485782;
+  margin: 5px;
+  white-space: nowrap;
+  cursor: pointer;
+  font-family: "Inter", Helvetica;
+  font-size: 14px;
+}
+
+.sport-button:hover {
+  background-color: #122a6e;
+}
+
+.sports-buttons-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.sports-buttons-container::-webkit-scrollbar-thumb {
+  background-color: #091e57;
+  border-radius: 3px;
+}
+
+.sports-buttons-container::-webkit-scrollbar-track {
+  background: transparent;
 }

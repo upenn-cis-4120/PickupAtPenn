@@ -1,0 +1,296 @@
+.profile {
+    background-color: #f9fbfd;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .profile .container-3 {
+    background-color: #f9fbfd;
+    border: 0px none;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 73px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1440px;
+  }
+  
+  .profile .header-menu {
+    height: 52px;
+    left: 304px;
+    position: absolute;
+    top: 4px;
+    width: 384px;
+  }
+  
+  .profile .frame {
+      border-radius: 6px;
+      height: 52px;
+      left: 0;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      width: 100px;
+  }
+  
+  .profile .frame-2 {
+      border-radius: 6px;
+      height: 52px;
+      left: 100px;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      width: 107px;
+  }
+  
+  .profile .frame-3 {
+      border-radius: 6px;
+      height: 52px;
+      left: 207px;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      width: 111px;
+  }
+  
+  .profile .frame-4 {
+      border-radius: 6px;
+      height: 52px;
+      left: 318px;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      width: 65px;
+  }
+  
+  .profile .text-wrapper-menu1 {
+      color: #2d3f70;
+      font-family: "Inter", Helvetica;
+      font-size: 14px;
+      font-weight: 400;
+      left: 18px;
+      letter-spacing: 0;
+      line-height: 22px;
+      position: absolute;
+      top: 14px;
+      white-space: nowrap;
+  }
+  
+  .profile .text-wrapper-menu2 {
+      color: #2d3f70;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    position: absolute;
+    top: 14px;
+    white-space: nowrap;
+  }
+  
+  .profile .text-wrapper-bold {
+      color: #2d3f70;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    position: absolute;
+    top: 14px;
+    white-space: nowrap;
+  }
+  
+  .profile .text-wrapper-menu3 {
+      color: #2d3f70;
+      font-family: "Inter", Helvetica;
+      font-size: 14px;
+      font-weight: 400;
+      left: 18px;
+      letter-spacing: 0;
+      line-height: 22px;
+      position: absolute;
+      top: 14px;
+      white-space: nowrap;
+  }
+  
+  .profile .text-wrapper-menu-title {
+      color: #172b61;
+      font-family: "Archivo", Helvetica;
+      font-size: 27px;
+      font-weight: 700;
+      left: 63px;
+      letter-spacing: 0;
+      line-height: 42px;
+      position: absolute;
+      top: 8px;
+      white-space: nowrap;
+  }
+  
+  .profile .prof {
+      height: 48px;
+      left: 1374px;
+      position: absolute;
+      top: 5px;
+      width: 48px;
+  }
+  
+  .profile .logo {
+      height: 43px;
+      left: 12px;
+      position: absolute;
+      top: 10px;
+      width: 42px;
+  }
+  
+  .edit-profile-container {
+    max-width: 600px;
+    margin: 100px auto 20px;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    position: relative;
+  }
+  
+  .edit-profile-container::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .edit-profile-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+  
+  .edit-profile-container::-webkit-scrollbar-thumb {
+    background: #091e57;
+    border-radius: 4px;
+  }
+  
+  .edit-profile-container::-webkit-scrollbar-thumb:hover {
+    background: #122f7c;
+  }
+  
+  .edit-profile-container h2 {
+    color: #091e57;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .profile-image-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    margin-bottom: 15px;
+    object-fit: cover;
+  }
+  
+  .change-photo-btn {
+    background: none;
+    border: none;
+    color: #091e57;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #091e57;
+    font-weight: 500;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-field:focus {
+    border-color: #091e57;
+    outline: none;
+  }
+  
+  .input-field:disabled {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+  }
+  
+  select.input-field {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1em;
+  }
+  
+  .save-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #091e57;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .save-button:hover {
+    background-color: #122f7c;
+  }
+  
+  .profile-image.disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  .change-photo-btn.disabled {
+    color: #999;
+    cursor: not-allowed;
+    text-decoration: none;
+    pointer-events: none;
+  }
+  
+  /* Optional: Add a tooltip on hover */
+  .profile-image-section {
+    position: relative;
+  }
+  
+  .profile-image.disabled:hover::after {
+    content: "Cannot change profile photo";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+  

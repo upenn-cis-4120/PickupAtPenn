@@ -7,7 +7,7 @@
   }
 
 .map-container {
-    margin-top: 80px; /* Space for the fixed header */
+    margin-top: 105px; /* Space for the fixed header */
     display: flex;
     justify-content: center;
     align-items: center;

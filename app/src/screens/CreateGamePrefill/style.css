@@ -1,0 +1,1405 @@
+.create-game {
+    background-color: #f9fbfd;
+    height: 928px;
+    position: relative;
+    width: 1440px;
+  }
+  
+  .create-game .container {
+    background-color: #fffffe;
+    border: 1px solid #f9fbfd;
+    border-color: #f9fbfd;
+    border-radius: 6px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 847px;
+    left: 461px;
+    position: absolute;
+    top: 34px;
+    width: 514px;
+  }
+  
+  .create-game .div-wrapper {
+    background-color: #fffffe;
+    border: 1px solid;
+    border-radius: 6px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 149px;
+    left: 30px;
+    position: absolute;
+    top: 617px;
+    width: 448px;
+  }
+  
+  .create-game .text-wrapper {
+    color: #adb6c5;
+    font-family: "Inter", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    left: 13px;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: absolute;
+    top: 61px;
+    white-space: nowrap;
+  }
+  
+  .create-game .textbox {
+    height: 74px;
+    left: 30px;
+    position: absolute;
+    top: 449px;
+    width: 448px;
+  }
+  
+  .create-game .textfield {
+    background-color: #fffffe;
+    border: 1px solid;
+    border-color: #adb6c5;
+    border-radius: 4px;
+    height: 48px;
+    left: -1px;
+    position: absolute;
+    top: 26px;
+    width: 449px;
+  }
+  
+  .create-game .input-additional-notes {
+    background-color: #fffffe;
+    border: 1px solid #adb6c5;
+    /* Match border color */
+    border-radius: 6px;
+    /* Same border radius */
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    /* Same shadow */
+    width: 100%;
+    /* Full width to fit container */
+    height: calc(100% - 0px);
+    /* Height adjustment for padding */
+    padding: 10px;
+    /* Padding to match div-wrapper */
+    font-family: "Inter", Helvetica;
+    font-size: 15px;
+    color: #434343;
+    /* Text color */
+    outline: none;
+    box-sizing: border-box;
+    /* Include padding in width calculation */
+    resize: none;
+    /* Prevent resizing if it's a <textarea> */
+  }
+  
+  /* Placeholder styling for the additional notes input */
+  .create-game .input-additional-notes::placeholder {
+    color: #adb6c5;
+  }
+  
+  
+  .create-game .input-player-names {
+    width: 90%;
+    height: 99%;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    color: #434343;
+    /* Input text color */
+  }
+  
+  .create-game .input-player-names::placeholder {
+    color: #adb6c5;
+    /* Placeholder color */
+  }
+  
+  .create-game .div {
+    color: #adb6c5;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 20px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 10px;
+    white-space: nowrap;
+  }
+  
+  .create-game .text-wrapper-2 {
+    color: #455580;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 700;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: -1px;
+    white-space: nowrap;
+  }
+  
+  .create-game .overlap {
+    height: 74px;
+    left: 30px;
+    position: absolute;
+    top: 267px;
+    width: 448px;
+  }
+  
+  .create-game .textbox-2 {
+    height: 74px;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 448px;
+  }
+  
+  .create-game .player-count-input {
+    background-color: #fffffe;
+    border: 1px solid #bcc1ca;
+    border-radius: 6px;
+    height: 48px;
+    width: 100%;
+    /* Adjust width to fill container */
+    padding: 0 10px;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    color: #434343;
+    /* Text color */
+    outline: none;
+    text-align: center;
+    /* Center text within the box */
+  }
+  
+  .create-game .dropdown-arrow {
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .create-game .location-dropdown-menu {
+    position: absolute;
+    background-color: #fffffe;
+    border: 1px solid #434343;
+    border-radius: 6px;
+    margin-top: 10px;
+    width: 448px;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 10;
+    top: 80%
+  }
+  
+  .create-game .location-dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+    color: #434343;
+  }
+  
+  .create-game .location-dropdown-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .create-game .image {
+    height: 17px;
+    left: 420px;
+    position: absolute;
+    top: 39px;
+    width: 17px;
+  }
+  
+  .create-game .textbox-3 {
+    background-color: #fffffe;
+    border: 1px solid;
+    border-color: #f9fbfd;
+    border-radius: 6px;
+    height: 66px;
+    left: 3px;
+    position: absolute;
+    top: -1px;
+    width: 507px;
+  }
+  
+  .create-game .text-wrapper-3 {
+    color: #1f1f1f;
+    font-family: "Inter", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    left: 20px;
+    letter-spacing: 0;
+    line-height: 29px;
+    position: absolute;
+    top: 18px;
+    white-space: nowrap;
+  }
+  
+  .create-game .close {
+    height: 31px;
+    left: 455px;
+    position: absolute;
+    top: 17px;
+    width: 31px;
+  }
+  
+  .create-game .overlap-group {
+    height: 69px;
+    left: 30px;
+    position: absolute;
+    top: 85px;
+    width: 448px;
+  }
+  
+  .create-game .textbox-4 {
+    height: 69px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 448px;
+  }
+  
+  .create-game .text-wrapper-4 {
+    color: #54628a;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 700;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: -1px;
+    white-space: nowrap;
+  }
+  
+  .create-game .textfield-2 {
+    background-color: #fffffe;
+    border: 1px solid;
+    border-color: #434343;
+    border-radius: 6px;
+    height: 43px;
+    left: -1px;
+    position: absolute;
+    top: 26px;
+    width: 449px;
+  }
+  
+  .create-game .dropdown-arrow {
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .create-game .dropdown-menu {
+    position: absolute;
+    background-color: #fffffe;
+    border: 1px solid #434343;
+    border-radius: 6px;
+    margin-top: 10px;
+    width: 449px;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 10;
+    top: 90%
+  }
+  
+  .create-game .dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+    color: #434343;
+  }
+  
+  .create-game .dropdown-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .create-game .text-wrapper-5 {
+    color: #434343;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 20px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 8px;
+    white-space: nowrap;
+  }
+  
+  .create-game .img {
+    height: 16px;
+    left: 420px;
+    position: absolute;
+    top: 38px;
+    width: 16px;
+  }
+  
+  .create-game .overlap-2 {
+    border-radius: 4px;
+    height: 49px;
+    left: 29px;
+    position: absolute;
+    top: 531px;
+    width: 449px;
+  }
+  
+  .create-game .textbox-5 {
+    background-color: #fffffe;
+    border: 1px solid #3b3b3b;
+    border-radius: 4px;
+    height: 49px;
+    position: relative;
+    width: 449px;
+  }
+  
+  .create-game .text-wrapper-6 {
+    color: #3b3b3b;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+  }
+  
+  .create-game .text-selected-group {
+    color: #434343;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    padding: 15px 20px;
+    display: inline-block;
+  }
+  
+  .create-game .groupchat-dropdown-menu {
+    position: absolute;
+    background-color: #fffffe;
+    border: 1px solid #434343;
+    border-radius: 6px;
+    width: 100%;
+    /* Match width with text box */
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 10;
+    top: 100%;
+    /* Position dropdown below the text box */
+  }
+  
+  .create-game .groupchat-dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+    color: #434343;
+  }
+  
+  .create-game .groupchat-dropdown-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .create-game .dropdown-arrow {
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    cursor: pointer;
+  }
+  
+  .create-game .image-2 {
+    height: 17px;
+    left: 419px;
+    position: absolute;
+    top: 15px;
+    width: 18px;
+  }
+  
+  .create-game .button {
+    all: unset;
+    background-color: #091e57;
+    border: 1px solid;
+    border-color: transparent;
+    border-radius: 8px;
+    box-sizing: border-box;
+    height: 42px;
+    left: 34px;
+    overflow: hidden;
+    position: absolute;
+    top: 776px;
+    width: 442px;
+    cursor: pointer;
+  }
+  
+  .create-game .button:hover {
+    background-color: #0c2468;
+  }
+  
+  .create-game .text-wrapper-7 {
+    color: #FEFFFE;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 172px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 7px;
+    white-space: nowrap;
+  }
+  
+  .create-game .overlap-3 {
+    height: 77px;
+    left: 259px;
+    position: absolute;
+    top: 355px;
+    width: 220px;
+  }
+  
+  .create-game .textbox-6 {
+    height: 77px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 220px;
+  }
+  
+  .create-game .textfield-3 {
+    background-color: #fffffe;
+    border: 1px solid;
+    border-color: #343434;
+    border-radius: 4px;
+    height: 51px;
+    left: -1px;
+    position: absolute;
+    top: 26px;
+    width: 221px;
+  }
+  
+  .create-game .skill-dropdown-menu {
+    position: absolute;
+    background-color: #fffffe;
+    border: 1px solid #434343;
+    border-radius: 6px;
+    margin-top: 10px;
+    width: 220px;
+    /* Adjust width to match text box */
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 1000;
+    left: 259px;
+    /* Positioning relative to .overlap-3 */
+    top: 50%;
+    /* Position dropdown below the input */
+  }
+  
+  .create-game .skill-dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+    color: #434343;
+  }
+  
+  .create-game .skill-dropdown-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  
+  
+  .create-game .image-3 {
+    height: 16px;
+    left: 191px;
+    position: absolute;
+    top: 45px;
+    width: 16px;
+  }
+  
+  .create-game .textbox-7 {
+    height: 76px;
+    left: 30px;
+    position: absolute;
+    top: 172px;
+    width: 217px;
+  }
+  
+  .create-game .textfield-4 {
+    background-color: #fffffe;
+    border: 1px solid;
+    border-color: #adb6c5;
+    border-radius: 6px;
+    height: 50px;
+    left: -1px;
+    position: absolute;
+    top: 26px;
+    width: 218px;
+  }
+  
+  .create-game .textfield-4 {
+    position: relative;
+    /* Adjust position to contain the input */
+  }
+  
+  .create-game .date-input {
+    background-color: #fffffe;
+    border: 1px solid #adb6c5;
+    border-radius: 6px;
+    height: 50px;
+    width: 100%;
+    /* Set width to full container */
+    padding: 0 10px;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    color: #434343;
+    /* Text color for the selected date */
+    outline: none;
+  }
+  
+  .create-game .date-input::placeholder {
+    color: #adb6c5;
+    /* Placeholder color */
+  }
+  
+  .create-game .text-wrapper-9 {
+    color: #adb6c5;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 20px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 11px;
+    white-space: nowrap;
+  }
+  
+  .create-game .overlap-group-2 {
+    height: 74px;
+    left: 30px;
+    position: absolute;
+    top: 358px;
+    width: 216px;
+  }
+  
+  .create-game .textbox-8 {
+    height: 74px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 216px;
+  }
+  
+  .create-game .textfield-5 {
+    background-color: #fffffe;
+    border: 1px solid;
+    border-color: #bcc1ca;
+    border-radius: 6px;
+    height: 48px;
+    left: -1px;
+    position: absolute;
+    top: 26px;
+    width: 217px;
+  }
+  
+  .create-game .text {
+    color: #171a1f;
+    font-family: "Inter", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    left: 20px;
+    letter-spacing: 0;
+    line-height: 28px;
+    position: absolute;
+    top: 9px;
+    white-space: nowrap;
+  }
+  
+  .create-game .image-4 {
+    height: 21px;
+    left: 187px;
+    position: absolute;
+    top: 39px;
+    width: 17px;
+  }
+  
+  .create-game .textbox-9 {
+    height: 72px;
+    left: 259px;
+    position: absolute;
+    top: 176px;
+    width: 220px;
+  }
+  
+  .create-game .text-wrapper-10 {
+    color: #354675;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 700;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: -3px;
+    white-space: nowrap;
+  }
+  
+  .create-game .textfield-time {
+    background-color: #fffffe;
+    border: 1px solid;
+    border-color: #bcc1ca;
+    border-radius: 4px;
+    height: 50px;
+    left: -1px;
+    position: absolute;
+    top: 22px;
+    width: 221px;
+  }
+  
+  .create-game .textfield- {
+    position: relative;
+  }
+  
+  
+  .create-game .time-input-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 12px;
+    height: 100%;
+  }
+  
+  .create-game .time-input {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    color: #434343;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    padding: 4px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .create-game .time-input:hover {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+  }
+  
+  .create-game .time-input.hour,
+  .create-game .time-input.minute {
+    width: 45px;
+  }
+  
+  .create-game .time-input.period {
+    width: 55px;
+  }
+  
+  .create-game .time-separator {
+    color: #434343;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+  }
+  
+  .create-game .text-2 {
+    color: #171a1f;
+    font-family: "Inter", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    left: 20px;
+    letter-spacing: 0;
+    line-height: 28px;
+    position: absolute;
+    top: 8px;
+    white-space: nowrap;
+  }
+  
+  .create-game .text-wrapper-11 {
+    color: #455580;
+    font-family: "Inter", Helvetica;
+    font-size: 17px;
+    font-weight: 400;
+    left: 34px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 590px;
+    white-space: nowrap;
+  }
+  
+  .create-game .container-2 {
+    background-color: #fffffe;
+    border: 1px solid;
+    border-color: #f9fbfd;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 276px;
+    left: 10px;
+    position: absolute;
+    top: 98px;
+    width: 355px;
+  }
+  
+  .create-game .button-2 {
+    all: unset;
+    background-color: #091e57;
+    border: 1px solid;
+    border-color: #485782;
+    border-radius: 8px;
+    box-sizing: border-box;
+    height: 42px;
+    left: 23px;
+    overflow: hidden;
+    position: absolute;
+    top: 205px;
+    width: 128px;
+  }
+  
+  .create-game .text-wrapper-12 {
+    color: #e0e2e9;
+    font-family: "Inter", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    left: 28px;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: absolute;
+    top: 8px;
+    white-space: nowrap;
+  }
+  .create-game .text-wrapper-8 {
+    color: #434343;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 20px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 12px;
+    white-space: nowrap;
+  }
+  .create-game .img-wrapper {
+    background-color: #ced0f8;
+    border: 0px none;
+    border-radius: 32px;
+    height: 64px;
+    left: 21px;
+    overflow: hidden;
+    position: absolute;
+    top: 73px;
+    width: 64px;
+  }
+  
+  .create-game .avatar {
+    background-color: #ced0f8;
+    border: 0px none;
+    border-radius: 32px;
+    height: 64px;
+    left: 21px;
+    overflow: hidden;
+    position: absolute;
+    top: 73px;
+    width: 64px;
+  }
+  
+  .create-game .rectangle {
+    height: 64px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 64px;
+  }
+  
+  .create-game .button-3 {
+    all: unset;
+    background-color: #8c1a11;
+    border: 1px solid;
+    border-color: transparent;
+    border-radius: 8px;
+    box-sizing: border-box;
+    height: 42px;
+    left: 165px;
+    overflow: hidden;
+    position: absolute;
+    top: 205px;
+    width: 101px;
+  }
+  
+  .create-game .text-wrapper-13 {
+    color: #fefffe;
+    font-family: "Inter", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    left: 26px;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: absolute;
+    top: 8px;
+    white-space: nowrap;
+  }
+  
+  .create-game .text-wrapper-14 {
+    color: #000000;
+    font-family: "Archivo", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    left: 24px;
+    letter-spacing: 0;
+    line-height: 30px;
+    position: absolute;
+    top: 22px;
+    white-space: nowrap;
+  }
+  
+  .create-game .text-wrapper-15 {
+    color: #1b1b1b;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 24px;
+    letter-spacing: 0;
+    line-height: 22px;
+    position: absolute;
+    top: 161px;
+    white-space: nowrap;
+  }
+  
+  .create-game .text-wrapper-16 {
+    color: #212121;
+    font-family: "Inter", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    left: 109px;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: absolute;
+    top: 81px;
+    white-space: nowrap;
+  }
+  
+  .create-game .text-wrapper-17 {
+    color: #868686;
+    font-family: "Inter", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    left: 109px;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: absolute;
+    top: 109px;
+    white-space: nowrap;
+  }
+  
+  .create-game .text-wrapper-18 {
+    color: #2d3f70;
+    font-family: "Inter", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    left: 295px;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: absolute;
+    top: 25px;
+    white-space: nowrap;
+  }
+  
+  .create-game .overlap-4 {
+    height: 102px;
+    left: 17px;
+    position: absolute;
+    top: 399px;
+    width: 355px;
+  }
+  
+  .create-game .textbox-10 {
+    height: 102px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 355px;
+  }
+  
+  .create-game .textfield-7 {
+    background-color: #fffffe;
+    border: 1px solid;
+    border-color: #d9e4e5;
+    border-radius: 8px;
+    height: 70px;
+    left: -1px;
+    position: absolute;
+    top: 30px;
+    width: 356px;
+  }
+  
+  .create-game .text-wrapper-19 {
+    color: #343434;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 48px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 22px;
+    white-space: nowrap;
+  }
+  
+  .create-game .text-wrapper-20 {
+    color: #282828;
+    font-family: "Inter", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 29px;
+    position: absolute;
+    top: -1px;
+    white-space: nowrap;
+  }
+  
+  .create-game .basketball {
+    height: 31px;
+    left: 10px;
+    position: absolute;
+    top: 48px;
+    width: 31px;
+  }
+  
+  .create-game .overlap-wrapper {
+    background-color: #fffffe;
+    border: 1px solid;
+    border-color: #f9fbfd;
+    border-radius: 12px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 99px;
+    left: 1064px;
+    position: absolute;
+    top: 794px;
+    width: 354px;
+  }
+  
+  .create-game .overlap-5 {
+    height: 59px;
+    left: 19px;
+    position: relative;
+    top: 18px;
+    width: 147px;
+  }
+  
+  .create-game .october {
+    color: #9a9a9a;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 17px;
+    position: absolute;
+    top: 25px;
+    width: 147px;
+  }
+  
+  .create-game .text-wrapper-21 {
+    color: #282828;
+    font-family: "Inter", Helvetica;
+    font-size: 17px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+  }
+  
+  .create-game .overlap-group-wrapper {
+    background-color: #fffffe;
+    border: 1px solid;
+    border-color: #f9fbfd;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 98px;
+    left: 1064px;
+    position: absolute;
+    top: 220px;
+    width: 355px;
+  }
+  
+  .create-game .overlap-6 {
+    height: 62px;
+    left: 19px;
+    position: relative;
+    top: 17px;
+    width: 136px;
+  }
+  
+  .create-game .p {
+    color: #9a9a9a;
+    font-family: "Inter", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 19px;
+    position: absolute;
+    top: 24px;
+  }
+  
+  .create-game .container-3 {
+    background-color: #fffffe;
+    border: 1px solid;
+    border-color: #f9fbfd;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 98px;
+    left: 1064px;
+    position: absolute;
+    top: 563px;
+    width: 355px;
+  }
+  
+  .create-game .overlap-7 {
+    height: 63px;
+    left: 19px;
+    position: relative;
+    top: 17px;
+    width: 131px;
+  }
+  
+  .create-game .october-2 {
+    color: #9a9a9a;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 19px;
+    position: absolute;
+    top: 25px;
+    width: 131px;
+  }
+  
+  .create-game .container-4 {
+    background-color: #fffffe;
+    border: 1px solid;
+    border-color: #f9fbfd;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 98px;
+    left: 1064px;
+    position: absolute;
+    top: 336px;
+    width: 354px;
+  }
+  
+  .create-game .overlap-8 {
+    height: 59px;
+    left: 19px;
+    position: relative;
+    top: 16px;
+    width: 131px;
+  }
+  
+  .create-game .october-3 {
+    color: #9a9a9a;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 17px;
+    position: absolute;
+    top: 25px;
+    width: 131px;
+  }
+  
+  .create-game .container-5 {
+    background-color: #fffffe;
+    border: 1px solid;
+    border-color: #e4ebed;
+    border-radius: 6px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 98px;
+    left: 1064px;
+    position: absolute;
+    top: 452px;
+    width: 354px;
+  }
+  
+  .create-game .overlap-9 {
+    height: 59px;
+    left: 19px;
+    position: relative;
+    top: 16px;
+    width: 147px;
+  }
+  
+  .create-game .container-6 {
+    background-color: #fffffe;
+    border: 1px solid;
+    border-color: #e4ebed;
+    border-radius: 6px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 98px;
+    left: 1064px;
+    position: absolute;
+    top: 679px;
+    width: 354px;
+  }
+  
+  .create-game .october-4 {
+    color: #9a9a9a;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 19px;
+    letter-spacing: 0;
+    line-height: 17px;
+    position: absolute;
+    top: 42px;
+    width: 131px;
+  }
+  
+  .create-game .text-wrapper-22 {
+    color: #282828;
+    font-family: "Inter", Helvetica;
+    font-size: 17px;
+    font-weight: 400;
+    left: 19px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 16px;
+    white-space: nowrap;
+  }
+  
+  .create-game .textbox-11 {
+    background-color: #fffffe;
+    border: 1px solid;
+    border-color: #e4ebed;
+    border-radius: 12px;
+    height: 64px;
+    left: 15px;
+    position: absolute;
+    top: 513px;
+    width: 356px;
+  }
+  
+  .create-game .text-wrapper-23 {
+    color: #3b3b3b;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 50px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 18px;
+    white-space: nowrap;
+  }
+  
+  .create-game .soccer {
+    height: 31px;
+    left: 10px;
+    position: absolute;
+    top: 16px;
+    width: 31px;
+  }
+  
+  .create-game .button-4 {
+    all: unset;
+    background-color: #8c1a11;
+    border: 1px solid;
+    border-color: transparent;
+    border-radius: 8px;
+    box-sizing: border-box;
+    height: 50px;
+    left: 30px;
+    overflow: hidden;
+    position: absolute;
+    top: 780px;
+    width: 176px;
+    cursor: pointer;
+  }
+  
+  .create-game .button-4:hover {
+    background-color: #7a160f;
+  }
+  
+  .create-game .button-4:active {
+    background-color: #681209;
+  }
+  
+  .create-game .text-wrapper-24 {
+    color: #ebd7d6;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 19px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 11px;
+    white-space: nowrap;
+  }
+  
+  .create-game .text-wrapper-25 {
+    color: #172b61;
+    font-family: "Archivo", Helvetica;
+    font-size: 27px;
+    font-weight: 700;
+    left: 63px;
+    letter-spacing: 0;
+    line-height: 42px;
+    position: absolute;
+    top: 8px;
+    white-space: nowrap;
+  }
+  
+  .create-game .text-wrapper-26 {
+    color: #1f1f1f;
+    font-family: "Archivo", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    left: 1065px;
+    letter-spacing: 0;
+    line-height: 30px;
+    position: absolute;
+    top: 104px;
+    white-space: nowrap;
+  }
+  
+  .create-game .image-6 {
+    height: 43px;
+    left: 12px;
+    position: absolute;
+    top: 10px;
+    width: 42px;
+  }
+  
+  /* Make the selector more specific and use !important if needed */
+  .create-game .button .text-wrapper-7 {
+    color: #FFFFFF !important;
+    font-family: "Inter", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: absolute;
+    top: 8px;
+    white-space: nowrap;
+    text-align: center;
+    width: 100%;
+    left: 0; /* Center the text by removing left offset */
+  }
+  
+  .container-upcoming-games {
+    background-color: #fefffe;
+    border: 1px solid;
+    border-color: #f9fbfd;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 500px;
+    left: 1075px;
+    position: absolute;
+    top: 215px;
+    width: 348px;
+    overflow-y: auto;
+    padding: 10px;
+  }
+  
+  .event-item {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 15px 10px;
+    position: relative;
+    min-height: 80px;
+  }
+  
+  .event-date {
+    color: #8e8e8e;
+    font-family: "Inter", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    left: 21px;
+    letter-spacing: 0;
+    line-height: 20px;
+    position: absolute;
+    top: 42px;
+  }
+  
+  .event-sport {
+    color: #2d2d2d;
+    font-family: "Inter", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    left: 21px;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: absolute;
+    top: 15px;
+    white-space: nowrap;
+  }
+  .sport {
+    color: #2d2d2d;
+    font-family: "Inter", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 5px;
+    position: relative;
+  }
+  
+  .event-details {
+    color: #8e8e8e;
+    font-family: "Inter", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-left: 5px;
+    position: relative;
+  }
+  
+  .event-item {
+    padding: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between sport name and details */
+  }
+  .create-game .profile-container {
+    background-color: #fefffe;
+    border: 1px solid;
+    border-color: #d1dedf;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 275px;
+    left: 23px;
+    position: absolute;
+    top: 98px;
+    width: 355px;
+  }
+  .sports-buttons-container {
+    position: relative;
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 0;
+    margin: 10px 0;
+    left: 10px;
+    max-width: 90%; /* Reduce from 100% to prevent overflow */
+    margin-left: 5%; /* Center the container */
+    scrollbar-width: thin;
+    scrollbar-color: #091e57 transparent;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 20px; /* Adjusted spacing */
+  }
+  
+  .sports-buttons-container::-webkit-scrollbar {
+    height: 6px;
+  }
+  
+  .sports-buttons-container::-webkit-scrollbar-thumb {
+    background-color: #091e57;
+    border-radius: 3px;
+  }
+  
+  .sports-buttons-container::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .text-wrapper-sports {
+    color: #1b1b1b;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 24px;
+    letter-spacing: 0;
+    line-height: 22px;
+    position: absolute;
+    top: -10px;
+    white-space: nowrap;
+    margin-bottom: 10px;
+  }

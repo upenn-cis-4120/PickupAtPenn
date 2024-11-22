@@ -752,15 +752,15 @@
   white-space: nowrap;
 }
 .create-game .text-wrapper-8 {
-  color: #d8dbe4;
+  color: #434343;
   font-family: "Inter", Helvetica;
   font-size: 16px;
   font-weight: 400;
-  left: 24px;
+  left: 20px;
   letter-spacing: 0;
   line-height: 26px;
   position: absolute;
-  top: 7px;
+  top: 12px;
   white-space: nowrap;
 }
 .create-game .img-wrapper {
@@ -943,11 +943,11 @@
 }
 
 .create-game .basketball {
-  height: 33px;
-  left: 9px;
+  height: 31px;
+  left: 10px;
   position: absolute;
   top: 48px;
-  width: 33px;
+  width: 31px;
 }
 
 .create-game .overlap-wrapper {
@@ -1199,11 +1199,20 @@
   border-radius: 8px;
   box-sizing: border-box;
   height: 50px;
-  left: 1065px;
+  left: 30px;
   overflow: hidden;
   position: absolute;
-  top: 152px;
+  top: 780px;
   width: 176px;
+  cursor: pointer;
+}
+
+.create-game .button-4:hover {
+  background-color: #7a160f;
+}
+
+.create-game .button-4:active {
+  background-color: #681209;
 }
 
 .create-game .text-wrapper-24 {
@@ -1352,4 +1361,45 @@
   position: absolute;
   top: 98px;
   width: 355px;
+}
+.sports-buttons-container {
+  position: relative;
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px 0;
+  margin: 10px 0;
+  left: 10px;
+  max-width: 90%; /* Reduce from 100% to prevent overflow */
+  margin-left: 5%; /* Center the container */
+  scrollbar-width: thin;
+  scrollbar-color: #091e57 transparent;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 20px; /* Adjusted spacing */
+}
+
+.sports-buttons-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.sports-buttons-container::-webkit-scrollbar-thumb {
+  background-color: #091e57;
+  border-radius: 3px;
+}
+
+.sports-buttons-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+.text-wrapper-sports {
+  color: #1b1b1b;
+  font-family: "Inter", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  left: 24px;
+  letter-spacing: 0;
+  line-height: 22px;
+  position: absolute;
+  top: -10px;
+  white-space: nowrap;
+  margin-bottom: 10px;
 }

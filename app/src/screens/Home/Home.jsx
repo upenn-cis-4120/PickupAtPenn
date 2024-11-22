@@ -4,12 +4,15 @@ import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from 'react-router-dom';
 import { gapi } from "gapi-script";
+import colinImage from './colin.jpg';  // Adjust path as needed
+import angieImage from './angie.jpg';  // Adjust path as needed
+
 
 export const Home = () => {
   const location = useLocation();
   const [games, setGames] = useState([
-    { id: 1, data: ["Pickup basketball game at Pottruck in 30 mins  3 spots left",  "https://c.animaapp.com/RqvJyPyX/img/rectangle-1@2x.png", "Colin Speaker", "@cspeaker -- 1 hr"]},
-    { id: 2, data: ["Penn Park fields are open and empty  Perfect for soccer.","https://c.animaapp.com/RqvJyPyX/img/rectangle@2x.png", "Angie Geralis", "@ageralis -- 5 hr"]}, 
+    { id: 1, data: ["Pickup basketball game at Pottruck in tonight.  3 spots left",  colinImage, "Colin Speaker", "@cspeaker -- 1 hr"]},
+    { id: 2, data: ["Penn Park fields are open and empty tomorrow. Perfect for soccer.",angieImage, "Angie Geralis", "@ageralis -- 5 hr"]}, 
   ]);
   const [calendarEvents, setCalendarEvents] = useState([]);
 
@@ -18,17 +21,54 @@ export const Home = () => {
   const API_KEY = "AIzaSyBYdgzwDYfT95WAoyNEGH8BD2A7ZujvwCk";
   const CALENDAR_ID = "f447f8579b4a1493049fbea49a613748677a5754a3ec46b076c57f08cc08d5ef@group.calendar.google.com";
 
+  // Add state for tooltip visibility
+  const [showTooltip, setShowTooltip] = useState(-1); // -1 means no tooltip shown
+
+  // Add state for joined sports
+  const [joinedSports, setJoinedSports] = useState(() => {
+    // Check if this is a fresh application start
+    const isAppInitialized = localStorage.getItem('appInitialized');
+    
+    if (!isAppInitialized) {
+      // First time app is starting, set defaults
+      localStorage.setItem('joinedSports', JSON.stringify(['Basketball', 'Soccer']));
+      localStorage.setItem('appInitialized', 'true');
+      return ['Basketball', 'Soccer'];
+    }
+    
+    // Otherwise, get existing joined sports
+    const saved = localStorage.getItem('joinedSports');
+    return saved ? JSON.parse(saved) : ['Basketball', 'Soccer'];
+  });
+
+  // Clean up initialization flag when component unmounts
+  useEffect(() => {
+    return () => {
+      // Only remove the flag when the app is actually closing
+      window.addEventListener('beforeunload', () => {
+        localStorage.removeItem('appInitialized');
+      });
+    };
+  }, []);
+
   // Function to initialize Google Calendar API
   const initCalendar = () => {
-    gapi.load("client", () => {
+    gapi.load("client:auth2", () => {
       gapi.client
         .init({
           apiKey: API_KEY,
           clientId: CLIENT_ID,
           discoveryDocs: ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"],
+          scope: "https://www.googleapis.com/auth/calendar.events"
         })
         .then(() => {
-          fetchEvents();
+          // Initialize auth instance
+          return gapi.auth2.getAuthInstance().isSignedIn.get();
+        })
+        .then((isSignedIn) => {
+          if (isSignedIn) {
+            fetchEvents();
+          }
         })
         .catch((err) => console.error("Error initializing calendar:", err));
     });
@@ -75,8 +115,70 @@ export const Home = () => {
     };
   };
 
+  // Helper function to get formatted dates
+  const getTodayDate = () => {
+    const today = new Date();
+    return today.toLocaleDateString('en-US', { month: 'long', day: 'numeric' });
+  };
 
-  
+  const getTomorrowDate = () => {
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    return tomorrow.toLocaleDateString('en-US', { month: 'long', day: 'numeric' });
+  };
+
+  // Add this function after the formatDateTime function
+  const addToCalendar = (sport, isToday) => {
+    const eventDate = new Date();
+    if (!isToday) {
+      eventDate.setDate(eventDate.getDate() + 1); // Set to tomorrow for soccer
+    }
+    
+    // Set the time based on the sport
+    const hour = isToday ? 18 : 15; // 6PM for basketball, 3PM for soccer
+    eventDate.setHours(hour, 0, 0); // Set minutes and seconds to 0
+    
+    const endDate = new Date(eventDate);
+    endDate.setHours(endDate.getHours() + 2); // 2-hour game duration
+
+    const event = {
+      summary: `PICKUP: ${sport}`,
+      location: isToday ? 'Pottruck Gym' : 'Penn Park',
+      start: {
+        dateTime: eventDate.toISOString(),
+        timeZone: 'America/New_York',
+      },
+      end: {
+        dateTime: endDate.toISOString(),
+        timeZone: 'America/New_York',
+      },
+    };
+
+    gapi.client.calendar.events.insert({
+      calendarId: CALENDAR_ID,
+      resource: event,
+    })
+    .then(() => {
+      alert(`Successfully joined the ${sport} game!`);
+      fetchEvents(); // Refresh the events list
+    })
+    .catch((err) => {
+      console.error('Error adding event:', err);
+      alert('Failed to join the game. Please try again.');
+    });
+  };
+
+  // Add this function to handle Google authentication
+  const handleGoogleAuth = (sport, isToday) => {
+    gapi.auth2.getAuthInstance().signIn()
+      .then(() => {
+        addToCalendar(sport, isToday);
+      })
+      .catch((err) => {
+        console.error('Auth error:', err);
+        alert('Failed to authenticate with Google. Please try again.');
+      });
+  };
 
   return (
     
@@ -84,14 +186,26 @@ export const Home = () => {
       {games.map((game, index) => (
         <div key={game.id} className={index === 0 ? "container-2" : "container"}>
           <p className={index === 0 ? "pickup-basketball" : "pickup-basketball"}>{game.data[0]}</p>
-          <button className="div-wrapper">
+          <button 
+            className="div-wrapper"
+            onMouseEnter={() => setShowTooltip(index)}
+            onMouseLeave={() => setShowTooltip(-1)}
+            onClick={() => handleGoogleAuth(index === 0 ? 'Basketball' : 'Soccer', index === 0)}
+          >
             <div className="text-wrapper-3">Join Game</div>
+            {showTooltip === index && (
+              <div className="tooltip-popup">
+                {index === 0 
+                  ? `Join basketball game at 6pm, on ${getTodayDate()}?` 
+                  : `Join soccer game at 3pm, on ${getTomorrowDate()}?`}
+              </div>
+            )}
           </button>
           <div className="rectangle-wrapper">
             <img
               className="rectangle"
               alt="Rectangle"
-              src={game.data[1]}//"https://c.animaapp.com/RqvJyPyX/img/rectangle-1@2x.png"
+              src={game.data[1]}
             />
           </div>
           <div className="overlap">
@@ -115,10 +229,11 @@ export const Home = () => {
             <div className="text-wrapper-6">Availability</div>
           </div>
           </Link>
+          <Link to="/community">
           <div className="frame-3">
             <div className="text-wrapper-6">Community</div>
           </div>
-
+          </Link>
           <Link to="/map">
           <div className="frame-4">
             <div className="text-wrapper-6">Map</div>
@@ -129,11 +244,11 @@ export const Home = () => {
         <div className="text-wrapper-7">Pickup@Penn</div>
         </Link>
 
-        <Link to="/availability">
+        <Link to="/profile">
         <img
           className="image"
           alt="Image"
-          src="https://c.animaapp.com/RqvJyPyX/img/image-27@2x.png"
+          src="https://c.animaapp.com/RqvJyPyX/img/rectangle-2@2x.png"
         />
         </Link>
 
@@ -148,9 +263,12 @@ export const Home = () => {
       </div>
 
       <div className="profile-container">
-        <button className="button-2">
-          <div className="text-wrapper-8">Basketball</div>
-        </button>
+        <div className="text-wrapper-9">My Profile</div>
+        <div className="text-wrapper-11">Diana Lim</div>
+        <div className="text-wrapper-12">@dianadl</div>
+        <Link to="/profile">
+          <div className="text-wrapper-13">Edit</div>
+        </Link>
 
         <div className="img-wrapper">
           <img
@@ -160,19 +278,31 @@ export const Home = () => {
           />
         </div>
 
-        <button className="button-3">
-          <div className="text-wrapper-3">Soccer</div>
-        </button>
-
-        <div className="text-wrapper-9">My Profile</div>
-
-        <div className="text-wrapper-10">My Sports</div>
-
-        <div className="text-wrapper-11">Diana Lim</div>
-
-        <div className="text-wrapper-12">@dianadl</div>
-
-        <div className="text-wrapper-13">Edit</div>
+        <div style={{ position: 'absolute', bottom: '10px', width: '100%' }}>
+          <div className="text-wrapper-10">My Sports</div>
+          <div className="sports-buttons-container">
+            {joinedSports.map((sport, index) => (
+              <button 
+                key={index} 
+                className="sport-button"
+                style={{
+                  backgroundColor: '#091e57',
+                  color: 'white',
+                  padding: '8px 16px',
+                  borderRadius: '21px',
+                  border: '1px solid #485782',
+                  margin: '5px',
+                  whiteSpace: 'nowrap',
+                  cursor: 'pointer',
+                  fontFamily: "Inter, Helvetica",
+                  fontSize: '14px'
+                }}
+              >
+                {sport}
+              </button>
+            ))}
+          </div>
+        </div>
       </div>
 
       {/* <div className="overlap-2">
@@ -199,6 +329,7 @@ export const Home = () => {
           src="https://c.animaapp.com/RqvJyPyX/img/soccer-ball.svg"
         />
       </div> */}
+      <Link to="/basketball-chat">
       <div className="chat-overlap-4">
         <div className="chat-textbox-10">
           <div className="chat-textfield-7">
@@ -211,18 +342,21 @@ export const Home = () => {
         <img
           className="basketball"
           alt="Basketball"
-          src="https://c.animaapp.com/RqvJyPyX/img/image-26@2x.png"
+          src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/basketball-512.png"
         />
       </div>
+      </Link>
+      <Link to="/soccer-chat">
       <div className="chat-textbox-11">
         <div className="chat-text-wrapper-23">Soccer Group</div>
 
         <img
           className="soccer"
           alt="Ecology"
-          src="https://c.animaapp.com/RqvJyPyX/img/soccer-ball.svg"
+          src="https://cdn-icons-png.flaticon.com/512/53/53283.png"
         />
       </div>
+      </Link>
 
 <div className="container-upcoming-games">
   {calendarEvents

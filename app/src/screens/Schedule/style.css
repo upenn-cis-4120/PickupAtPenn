@@ -1144,11 +1144,11 @@
   .schedule .frame-2 {
     border-radius: 6px;
     height: 52px;
-    left: 106px;
+    left: 100px;
     overflow: hidden;
     position: absolute;
     top: 0;
-    width: 113px;
+    width: 107px;
   }
   
   .schedule .text-wrapper-40 {
@@ -1166,23 +1166,23 @@
   
   .schedule .frame-3 {
     border-radius: 6px;
-    height: 52px;
-    left: 219px;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    width: 117px;
+  height: 52px;
+  left: 207px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 111px;
   }
   
   .schedule .frame-4 {
     border-radius: 6px;
-    height: 52px;
-    left: 337px;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    width: 71px;
-  }
+  height: 52px;
+  left: 318px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 65px;
+}
   
   .schedule .text-wrapper-41 {
     color: #43537e;

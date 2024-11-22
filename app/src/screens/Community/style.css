@@ -1,0 +1,242 @@
+.community {
+  background-color: #f9fbfd;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.community .container-3 {
+  background-color: #f9fbfd;
+  border: 0px none;
+  box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+  height: 73px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.community .header-menu {
+  height: 52px;
+  left: 304px;
+  position: absolute;
+  top: 4px;
+  width: 384px;
+}
+
+.community .frame {
+    border-radius: 6px;
+    height: 52px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100px;
+}
+
+.community .frame-2 {
+    border-radius: 6px;
+    height: 52px;
+    left: 100px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 107px;
+}
+
+.community .frame-3 {
+    border-radius: 6px;
+    height: 52px;
+    left: 207px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 111px;
+}
+
+.community .frame-4 {
+    border-radius: 6px;
+    height: 52px;
+    left: 318px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 65px;
+}
+
+.community .text-wrapper-menu1 {
+    color: #2d3f70;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    position: absolute;
+    top: 14px;
+    white-space: nowrap;
+}
+
+.community .text-wrapper-menu2 {
+    color: #2d3f70;
+  font-family: "Inter", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  left: 18px;
+  letter-spacing: 0;
+  line-height: 22px;
+  position: absolute;
+  top: 14px;
+  white-space: nowrap;
+}
+
+.community .text-wrapper-bold {
+    color: #2d3f70;
+  font-family: "Inter", Helvetica;
+  font-size: 14px;
+  font-weight: 700 !important;
+  left: 18px;
+  letter-spacing: 0;
+  line-height: 22px;
+  position: absolute;
+  top: 14px;
+  white-space: nowrap;
+}
+
+.community .text-wrapper-menu3 {
+    color: #2d3f70;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    position: absolute;
+    top: 14px;
+    white-space: nowrap;
+}
+
+.community .text-wrapper-menu-title {
+    color: #172b61;
+    font-family: "Archivo", Helvetica;
+    font-size: 27px;
+    font-weight: 700;
+    left: 63px;
+    letter-spacing: 0;
+    line-height: 42px;
+    position: absolute;
+    top: 8px;
+    white-space: nowrap;
+}
+
+.community .prof {
+    height: 48px;
+    left: 1374px;
+    position: absolute;
+    top: 5px;
+    width: 48px;
+}
+
+.community .logo {
+    height: 43px;
+    left: 12px;
+    position: absolute;
+    top: 10px;
+    width: 42px;
+}
+
+.community-content {
+  margin-top: 90px;
+  padding: 20px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.search-input {
+  width: 60%;
+  max-width: 600px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #091e57;
+}
+
+.sports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sport-tile {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.sport-tile:hover {
+  transform: translateY(-5px);
+}
+
+.sport-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.sport-info {
+  margin: 15px 0;
+}
+
+.sport-info h3 {
+  color: #091e57;
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.sport-info p {
+  color: #666;
+  margin: 0 0 10px 0;
+  font-size: 14px;
+}
+
+.member-count {
+  color: #888;
+  font-size: 14px;
+}
+
+.join-button {
+  background-color: #091e57;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 15px;
+}
+
+.join-button:hover {
+  background-color: #122f7c;
+}
