@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 
 export const BasketballChat = () => {
   const [messages, setMessages] = useState(() => {
-    // Check if this is a fresh application start
-    const isAppInitialized = localStorage.getItem('appInitialized');
+    // Create a new flag specifically for chat sessions
+    const chatSessionActive = sessionStorage.getItem('chatSessionActive');
     
-    if (!isAppInitialized) {
-      // First time app is starting, reset to default messages
+    if (!chatSessionActive) {
+      // Reset messages when starting a new session
       const defaultMessages = [
         {
           id: 1,
@@ -35,16 +35,18 @@ export const BasketballChat = () => {
           time: "2:35 PM"
         }
       ];
-      localStorage.setItem('basketballChatMessages', JSON.stringify(defaultMessages));
+      sessionStorage.setItem('chatSessionActive', 'true');
       return defaultMessages;
     }
     
-    const savedMessages = localStorage.getItem('basketballChatMessages');
+    // Get existing messages from session
+    const savedMessages = sessionStorage.getItem('basketballChatMessages');
     return savedMessages ? JSON.parse(savedMessages) : [];
   });
 
+  // Save messages to session storage when they change
   useEffect(() => {
-    localStorage.setItem('basketballChatMessages', JSON.stringify(messages));
+    sessionStorage.setItem('basketballChatMessages', JSON.stringify(messages));
   }, [messages]);
 
   const [newMessage, setNewMessage] = useState("");

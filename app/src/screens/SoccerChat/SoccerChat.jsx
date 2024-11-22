@@ -35,17 +35,27 @@ export const SoccerChat = () => {
           time: "3:20 PM"
         }
       ];
+      localStorage.setItem('appInitialized', 'true');
       localStorage.setItem('soccerChatMessages', JSON.stringify(defaultMessages));
       return defaultMessages;
     }
     
+    // Otherwise, get existing messages
     const savedMessages = localStorage.getItem('soccerChatMessages');
     return savedMessages ? JSON.parse(savedMessages) : [];
   });
 
+  // Add cleanup for when app truly closes
   useEffect(() => {
-    localStorage.setItem('soccerChatMessages', JSON.stringify(messages));
-  }, [messages]);
+    const handleBeforeUnload = () => {
+      localStorage.removeItem('appInitialized');
+    };
+
+    window.addEventListener('beforeunload', handleBeforeUnload);
+    return () => {
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+    };
+  }, []);
 
   const [newMessage, setNewMessage] = useState("");
 

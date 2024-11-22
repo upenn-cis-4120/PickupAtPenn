@@ -619,7 +619,7 @@ useEffect(() => {
                   border: '1px solid #485782',
                   margin: '5px',
                   whiteSpace: 'nowrap',
-                  cursor: 'pointer',
+                  cursor: 'default',
                   fontFamily: "Inter, Helvetica",
                   fontSize: '14px'
                 }}
