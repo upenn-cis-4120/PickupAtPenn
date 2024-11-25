@@ -1,2 +1,2 @@
-export { CreateGame } from "./CreateGamePrefill";
+export { CreateGamePrefill } from "./CreateGamePrefill";
 

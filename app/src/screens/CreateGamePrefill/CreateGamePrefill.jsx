@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-export const CreateGame = () => {
+export const CreateGamePrefill = () => {
   const [selectedSport, setSelectedSport] = useState("Basketball"); // Default selected sport
   const [isDropdownOpen, setIsDropdownOpen] = useState(false); // To toggle dropdown visibility
   const [selectedDate, setSelectedDate] = useState("");

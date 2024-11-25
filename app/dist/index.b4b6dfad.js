@@ -3016,7 +3016,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _google.GoogleOAuthProv
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
                     path: "/create-game",
-                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _createGamePrefill.CreateGame), {}, void 0, false, {
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _createGame.CreateGame), {}, void 0, false, {
                         fileName: "src/index.jsx",
                         lineNumber: 37,
                         columnNumber: 45
@@ -3088,7 +3088,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _google.GoogleOAuthProv
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
                     path: "/create-game-prefill",
-                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _createGamePrefill.CreateGame), {}, void 0, false, {
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _createGamePrefill.CreateGamePrefill), {}, void 0, false, {
                         fileName: "src/index.jsx",
                         lineNumber: 43,
                         columnNumber: 53
@@ -55008,7 +55008,7 @@ $RefreshReg$(_c, "SoccerChat");
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"iZ4M1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"iZ4M1":[function() {},{}],"eJ4CQ":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "CreateGame", ()=>(0, _createGamePrefill.CreateGame));
+parcelHelpers.export(exports, "CreateGamePrefill", ()=>(0, _createGamePrefill.CreateGamePrefill));
 var _createGamePrefill = require("./CreateGamePrefill");
 
 },{"./CreateGamePrefill":"bWXlt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bWXlt":[function(require,module,exports,__globalThis) {
@@ -55020,14 +55020,14 @@ $parcel$ReactRefreshHelpers$04f2.prelude(module);
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "CreateGame", ()=>CreateGame);
+parcelHelpers.export(exports, "CreateGamePrefill", ()=>CreateGamePrefill);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _styleCss = require("./style.css");
 var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
-const CreateGame = ()=>{
+const CreateGamePrefill = ()=>{
     _s();
     const [selectedSport, setSelectedSport] = (0, _react.useState)("Basketball"); // Default selected sport
     const [isDropdownOpen, setIsDropdownOpen] = (0, _react.useState)(false); // To toggle dropdown visibility
@@ -56196,15 +56196,15 @@ const CreateGame = ()=>{
         columnNumber: 5
     }, undefined);
 };
-_s(CreateGame, "SSnxHUn8DfLCCcz4y95zTVLHuIg=", false, function() {
+_s(CreateGamePrefill, "SSnxHUn8DfLCCcz4y95zTVLHuIg=", false, function() {
     return [
         (0, _reactRouterDom.useLocation),
         (0, _reactRouterDom.useNavigate)
     ];
 });
-_c = CreateGame;
+_c = CreateGamePrefill;
 var _c;
-$RefreshReg$(_c, "CreateGame");
+$RefreshReg$(_c, "CreateGamePrefill");
 
   $parcel$ReactRefreshHelpers$04f2.postlude(module);
 } finally {
