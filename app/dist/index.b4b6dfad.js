@@ -37733,6 +37733,10 @@ var _colinJpgDefault = parcelHelpers.interopDefault(_colinJpg);
 var _angieJpg = require("./angie.jpg"); // Adjust path as needed
 var _angieJpgDefault = parcelHelpers.interopDefault(_angieJpg);
 var _s = $RefreshSig$();
+// Add these constants at the top of the file
+const CLIENT_ID = "7058040155-g739av7vkfgl73dbvk6mrkiadt6vdjs5.apps.googleusercontent.com";
+const API_KEY = "AIzaSyBYdgzwDYfT95WAoyNEGH8BD2A7ZujvwCk";
+const CALENDAR_ID = "f447f8579b4a1493049fbea49a613748677a5754a3ec46b076c57f08cc08d5ef@group.calendar.google.com";
 const Home = ()=>{
     _s();
     const location = (0, _reactRouterDom.useLocation)();
@@ -37757,10 +37761,6 @@ const Home = ()=>{
         }
     ]);
     const [calendarEvents, setCalendarEvents] = (0, _react.useState)([]);
-    // Add these constants from Schedule.jsx
-    const CLIENT_ID = "7058040155-g739av7vkfgl73dbvk6mrkiadt6vdjs5.apps.googleusercontent.com";
-    const API_KEY = "AIzaSyBYdgzwDYfT95WAoyNEGH8BD2A7ZujvwCk";
-    const CALENDAR_ID = "f447f8579b4a1493049fbea49a613748677a5754a3ec46b076c57f08cc08d5ef@group.calendar.google.com";
     // Add state for tooltip visibility
     const [showTooltip, setShowTooltip] = (0, _react.useState)(-1); // -1 means no tooltip shown
     // Add state for joined sports
@@ -37795,39 +37795,36 @@ const Home = ()=>{
             });
         };
     }, []);
-    // Function to initialize Google Calendar API
-    const initCalendar = ()=>{
-        (0, _gapiScript.gapi).load("client:auth2", ()=>{
-            (0, _gapiScript.gapi).client.init({
-                apiKey: API_KEY,
-                clientId: CLIENT_ID,
-                discoveryDocs: [
-                    "https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"
-                ],
-                scope: "https://www.googleapis.com/auth/calendar.events"
-            }).then(()=>{
-                // Initialize auth instance
-                return (0, _gapiScript.gapi).auth2.getAuthInstance().isSignedIn.get();
-            }).then((isSignedIn)=>{
-                if (isSignedIn) fetchEvents();
-            }).catch((err)=>console.error("Error initializing calendar:", err));
-        });
-    };
-    // Function to fetch calendar events
-    const fetchEvents = ()=>{
-        (0, _gapiScript.gapi).client.calendar.events.list({
-            calendarId: CALENDAR_ID,
-            timeMin: new Date().toISOString(),
-            showDeleted: false,
-            singleEvents: true,
-            maxResults: 7,
-            orderBy: "startTime"
-        }).then((response)=>{
-            const events = response.result.items;
-            setCalendarEvents(events);
-        }).catch((err)=>console.error("Error fetching events:", err));
-    };
+    // Add this useEffect for calendar initialization
     (0, _react.useEffect)(()=>{
+        const initCalendar = ()=>{
+            (0, _gapiScript.gapi).load("client:auth2", ()=>{
+                (0, _gapiScript.gapi).client.init({
+                    apiKey: API_KEY,
+                    clientId: CLIENT_ID,
+                    discoveryDocs: [
+                        "https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"
+                    ],
+                    scope: "https://www.googleapis.com/auth/calendar.events"
+                }).then(()=>{
+                    // After initialization, fetch events
+                    fetchEvents1();
+                }).catch((err)=>console.error("Error initializing calendar:", err));
+            });
+        };
+        const fetchEvents1 = ()=>{
+            (0, _gapiScript.gapi).client.calendar.events.list({
+                calendarId: CALENDAR_ID,
+                timeMin: new Date().toISOString(),
+                showDeleted: false,
+                singleEvents: true,
+                maxResults: 10,
+                orderBy: "startTime"
+            }).then((response)=>{
+                const events = response.result.items;
+                setCalendarEvents(events);
+            }).catch((err)=>console.error("Error fetching events:", err));
+        };
         initCalendar();
     }, []); // Run once on component mount
     // Your existing games useEffect
@@ -37929,7 +37926,7 @@ const Home = ()=>{
                             children: game.data[0]
                         }, void 0, false, {
                             fileName: "src/screens/Home/Home.jsx",
-                            lineNumber: 188,
+                            lineNumber: 181,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -37943,7 +37940,7 @@ const Home = ()=>{
                                     children: "Join Game"
                                 }, void 0, false, {
                                     fileName: "src/screens/Home/Home.jsx",
-                                    lineNumber: 195,
+                                    lineNumber: 188,
                                     columnNumber: 13
                                 }, undefined),
                                 showTooltip === index && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37951,13 +37948,13 @@ const Home = ()=>{
                                     children: index === 0 ? `Join basketball game at 6pm, on ${getTodayDate()}?` : `Join soccer game at 3pm, on ${getTomorrowDate()}?`
                                 }, void 0, false, {
                                     fileName: "src/screens/Home/Home.jsx",
-                                    lineNumber: 197,
+                                    lineNumber: 190,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/screens/Home/Home.jsx",
-                            lineNumber: 189,
+                            lineNumber: 182,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37968,12 +37965,12 @@ const Home = ()=>{
                                 src: game.data[1]
                             }, void 0, false, {
                                 fileName: "src/screens/Home/Home.jsx",
-                                lineNumber: 205,
+                                lineNumber: 198,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/screens/Home/Home.jsx",
-                            lineNumber: 204,
+                            lineNumber: 197,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37984,7 +37981,7 @@ const Home = ()=>{
                                     children: game.data[2]
                                 }, void 0, false, {
                                     fileName: "src/screens/Home/Home.jsx",
-                                    lineNumber: 212,
+                                    lineNumber: 205,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37992,19 +37989,19 @@ const Home = ()=>{
                                     children: game.data[3]
                                 }, void 0, false, {
                                     fileName: "src/screens/Home/Home.jsx",
-                                    lineNumber: 213,
+                                    lineNumber: 206,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/screens/Home/Home.jsx",
-                            lineNumber: 211,
+                            lineNumber: 204,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, game.id, true, {
                     fileName: "src/screens/Home/Home.jsx",
-                    lineNumber: 187,
+                    lineNumber: 180,
                     columnNumber: 9
                 }, undefined)),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38022,17 +38019,17 @@ const Home = ()=>{
                                         children: "Schedule"
                                     }, void 0, false, {
                                         fileName: "src/screens/Home/Home.jsx",
-                                        lineNumber: 223,
+                                        lineNumber: 216,
                                         columnNumber: 13
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/screens/Home/Home.jsx",
-                                    lineNumber: 222,
+                                    lineNumber: 215,
                                     columnNumber: 11
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/screens/Home/Home.jsx",
-                                lineNumber: 221,
+                                lineNumber: 214,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -38044,17 +38041,17 @@ const Home = ()=>{
                                         children: "Availability"
                                     }, void 0, false, {
                                         fileName: "src/screens/Home/Home.jsx",
-                                        lineNumber: 229,
+                                        lineNumber: 222,
                                         columnNumber: 13
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/screens/Home/Home.jsx",
-                                    lineNumber: 228,
+                                    lineNumber: 221,
                                     columnNumber: 11
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/screens/Home/Home.jsx",
-                                lineNumber: 227,
+                                lineNumber: 220,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -38066,17 +38063,17 @@ const Home = ()=>{
                                         children: "Community"
                                     }, void 0, false, {
                                         fileName: "src/screens/Home/Home.jsx",
-                                        lineNumber: 234,
+                                        lineNumber: 227,
                                         columnNumber: 13
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/screens/Home/Home.jsx",
-                                    lineNumber: 233,
+                                    lineNumber: 226,
                                     columnNumber: 11
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/screens/Home/Home.jsx",
-                                lineNumber: 232,
+                                lineNumber: 225,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -38088,23 +38085,23 @@ const Home = ()=>{
                                         children: "Map"
                                     }, void 0, false, {
                                         fileName: "src/screens/Home/Home.jsx",
-                                        lineNumber: 239,
+                                        lineNumber: 232,
                                         columnNumber: 13
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/screens/Home/Home.jsx",
-                                    lineNumber: 238,
+                                    lineNumber: 231,
                                     columnNumber: 11
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/screens/Home/Home.jsx",
-                                lineNumber: 237,
+                                lineNumber: 230,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 220,
+                        lineNumber: 213,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -38114,12 +38111,12 @@ const Home = ()=>{
                             children: "Pickup@Penn"
                         }, void 0, false, {
                             fileName: "src/screens/Home/Home.jsx",
-                            lineNumber: 244,
+                            lineNumber: 237,
                             columnNumber: 9
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 243,
+                        lineNumber: 236,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -38130,12 +38127,12 @@ const Home = ()=>{
                             src: "https://c.animaapp.com/RqvJyPyX/img/rectangle-2@2x.png"
                         }, void 0, false, {
                             fileName: "src/screens/Home/Home.jsx",
-                            lineNumber: 248,
+                            lineNumber: 241,
                             columnNumber: 9
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 247,
+                        lineNumber: 240,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -38146,18 +38143,18 @@ const Home = ()=>{
                             src: "https://c.animaapp.com/RqvJyPyX/img/image-28@2x.png"
                         }, void 0, false, {
                             fileName: "src/screens/Home/Home.jsx",
-                            lineNumber: 257,
+                            lineNumber: 250,
                             columnNumber: 9
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 256,
+                        lineNumber: 249,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/screens/Home/Home.jsx",
-                lineNumber: 219,
+                lineNumber: 212,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38168,7 +38165,7 @@ const Home = ()=>{
                         children: "My Profile"
                     }, void 0, false, {
                         fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 266,
+                        lineNumber: 259,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38176,7 +38173,7 @@ const Home = ()=>{
                         children: "Diana Lim"
                     }, void 0, false, {
                         fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 267,
+                        lineNumber: 260,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38184,7 +38181,7 @@ const Home = ()=>{
                         children: "@dianadl"
                     }, void 0, false, {
                         fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 268,
+                        lineNumber: 261,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -38194,12 +38191,12 @@ const Home = ()=>{
                             children: "Edit"
                         }, void 0, false, {
                             fileName: "src/screens/Home/Home.jsx",
-                            lineNumber: 270,
+                            lineNumber: 263,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 269,
+                        lineNumber: 262,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38210,12 +38207,12 @@ const Home = ()=>{
                             src: "https://c.animaapp.com/RqvJyPyX/img/rectangle-2@2x.png"
                         }, void 0, false, {
                             fileName: "src/screens/Home/Home.jsx",
-                            lineNumber: 274,
+                            lineNumber: 267,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 273,
+                        lineNumber: 266,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38230,7 +38227,7 @@ const Home = ()=>{
                                 children: "My Sports"
                             }, void 0, false, {
                                 fileName: "src/screens/Home/Home.jsx",
-                                lineNumber: 282,
+                                lineNumber: 275,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38252,24 +38249,24 @@ const Home = ()=>{
                                         children: sport
                                     }, index, false, {
                                         fileName: "src/screens/Home/Home.jsx",
-                                        lineNumber: 285,
+                                        lineNumber: 278,
                                         columnNumber: 15
                                     }, undefined))
                             }, void 0, false, {
                                 fileName: "src/screens/Home/Home.jsx",
-                                lineNumber: 283,
+                                lineNumber: 276,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 281,
+                        lineNumber: 274,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/screens/Home/Home.jsx",
-                lineNumber: 265,
+                lineNumber: 258,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -38287,12 +38284,12 @@ const Home = ()=>{
                                         children: "Basketball Group"
                                     }, void 0, false, {
                                         fileName: "src/screens/Home/Home.jsx",
-                                        lineNumber: 336,
+                                        lineNumber: 329,
                                         columnNumber: 13
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/screens/Home/Home.jsx",
-                                    lineNumber: 335,
+                                    lineNumber: 328,
                                     columnNumber: 11
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38300,13 +38297,13 @@ const Home = ()=>{
                                     children: "My Chats"
                                 }, void 0, false, {
                                     fileName: "src/screens/Home/Home.jsx",
-                                    lineNumber: 339,
+                                    lineNumber: 332,
                                     columnNumber: 11
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/screens/Home/Home.jsx",
-                            lineNumber: 334,
+                            lineNumber: 327,
                             columnNumber: 9
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -38315,18 +38312,18 @@ const Home = ()=>{
                             src: "https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/basketball-512.png"
                         }, void 0, false, {
                             fileName: "src/screens/Home/Home.jsx",
-                            lineNumber: 342,
+                            lineNumber: 335,
                             columnNumber: 9
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/screens/Home/Home.jsx",
-                    lineNumber: 333,
+                    lineNumber: 326,
                     columnNumber: 7
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/screens/Home/Home.jsx",
-                lineNumber: 332,
+                lineNumber: 325,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -38339,7 +38336,7 @@ const Home = ()=>{
                             children: "Soccer Group"
                         }, void 0, false, {
                             fileName: "src/screens/Home/Home.jsx",
-                            lineNumber: 351,
+                            lineNumber: 344,
                             columnNumber: 9
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -38348,18 +38345,18 @@ const Home = ()=>{
                             src: "https://cdn-icons-png.flaticon.com/512/53/53283.png"
                         }, void 0, false, {
                             fileName: "src/screens/Home/Home.jsx",
-                            lineNumber: 353,
+                            lineNumber: 346,
                             columnNumber: 9
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/screens/Home/Home.jsx",
-                    lineNumber: 350,
+                    lineNumber: 343,
                     columnNumber: 7
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/screens/Home/Home.jsx",
-                lineNumber: 349,
+                lineNumber: 342,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38376,7 +38373,7 @@ const Home = ()=>{
                                 children: sport
                             }, void 0, false, {
                                 fileName: "src/screens/Home/Home.jsx",
-                                lineNumber: 371,
+                                lineNumber: 364,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38385,26 +38382,26 @@ const Home = ()=>{
                                     `${date}, ${time}`,
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                         fileName: "src/screens/Home/Home.jsx",
-                                        lineNumber: 374,
+                                        lineNumber: 367,
                                         columnNumber: 13
                                     }, undefined),
                                     location
                                 ]
                             }, void 0, true, {
                                 fileName: "src/screens/Home/Home.jsx",
-                                lineNumber: 372,
+                                lineNumber: 365,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, event.id, true, {
                         fileName: "src/screens/Home/Home.jsx",
-                        lineNumber: 370,
+                        lineNumber: 363,
                         columnNumber: 9
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/screens/Home/Home.jsx",
-                lineNumber: 361,
+                lineNumber: 354,
                 columnNumber: 1
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -38417,7 +38414,7 @@ const Home = ()=>{
                             children: "Create New Game"
                         }, void 0, false, {
                             fileName: "src/screens/Home/Home.jsx",
-                            lineNumber: 385,
+                            lineNumber: 378,
                             columnNumber: 9
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -38426,18 +38423,18 @@ const Home = ()=>{
                             src: "https://c.animaapp.com/RqvJyPyX/img/e-add.svg"
                         }, void 0, false, {
                             fileName: "src/screens/Home/Home.jsx",
-                            lineNumber: 387,
+                            lineNumber: 380,
                             columnNumber: 9
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/screens/Home/Home.jsx",
-                    lineNumber: 384,
+                    lineNumber: 377,
                     columnNumber: 7
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/screens/Home/Home.jsx",
-                lineNumber: 383,
+                lineNumber: 376,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38445,7 +38442,7 @@ const Home = ()=>{
                 children: "Upcoming Games"
             }, void 0, false, {
                 fileName: "src/screens/Home/Home.jsx",
-                lineNumber: 395,
+                lineNumber: 388,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38453,13 +38450,13 @@ const Home = ()=>{
                 children: "Community Feed"
             }, void 0, false, {
                 fileName: "src/screens/Home/Home.jsx",
-                lineNumber: 397,
+                lineNumber: 390,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/screens/Home/Home.jsx",
-        lineNumber: 185,
+        lineNumber: 178,
         columnNumber: 5
     }, undefined);
 };
@@ -54667,10 +54664,10 @@ var _s = $RefreshSig$();
 const SoccerChat = ()=>{
     _s();
     const [messages, setMessages] = (0, _react.useState)(()=>{
-        // Check if this is a fresh application start
-        const isAppInitialized = localStorage.getItem('appInitialized');
-        if (!isAppInitialized) {
-            // First time app is starting, reset to default messages
+        // Create a new flag specifically for soccer chat sessions
+        const soccerChatActive = sessionStorage.getItem('soccerChatActive');
+        if (!soccerChatActive) {
+            // Reset messages when starting a new session
             const defaultMessages = [
                 {
                     id: 1,
@@ -54697,24 +54694,19 @@ const SoccerChat = ()=>{
                     time: "3:20 PM"
                 }
             ];
-            localStorage.setItem('appInitialized', 'true');
-            localStorage.setItem('soccerChatMessages', JSON.stringify(defaultMessages));
+            sessionStorage.setItem('soccerChatActive', 'true');
             return defaultMessages;
         }
-        // Otherwise, get existing messages
-        const savedMessages = localStorage.getItem('soccerChatMessages');
+        // Get existing messages from session
+        const savedMessages = sessionStorage.getItem('soccerChatMessages');
         return savedMessages ? JSON.parse(savedMessages) : [];
     });
-    // Add cleanup for when app truly closes
+    // Save messages to session storage when they change
     (0, _react.useEffect)(()=>{
-        const handleBeforeUnload = ()=>{
-            localStorage.removeItem('appInitialized');
-        };
-        window.addEventListener('beforeunload', handleBeforeUnload);
-        return ()=>{
-            window.removeEventListener('beforeunload', handleBeforeUnload);
-        };
-    }, []);
+        sessionStorage.setItem('soccerChatMessages', JSON.stringify(messages));
+    }, [
+        messages
+    ]);
     const [newMessage, setNewMessage] = (0, _react.useState)("");
     const handleSendMessage = (e)=>{
         e.preventDefault();
@@ -54754,17 +54746,17 @@ const SoccerChat = ()=>{
                                         children: "Schedule"
                                     }, void 0, false, {
                                         fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                        lineNumber: 87,
+                                        lineNumber: 79,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                    lineNumber: 86,
+                                    lineNumber: 78,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                lineNumber: 85,
+                                lineNumber: 77,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -54776,17 +54768,17 @@ const SoccerChat = ()=>{
                                         children: "Availability"
                                     }, void 0, false, {
                                         fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                        lineNumber: 93,
+                                        lineNumber: 85,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                    lineNumber: 92,
+                                    lineNumber: 84,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                lineNumber: 91,
+                                lineNumber: 83,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -54798,17 +54790,17 @@ const SoccerChat = ()=>{
                                         children: "Community"
                                     }, void 0, false, {
                                         fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                        lineNumber: 99,
+                                        lineNumber: 91,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                    lineNumber: 98,
+                                    lineNumber: 90,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                lineNumber: 97,
+                                lineNumber: 89,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -54820,23 +54812,23 @@ const SoccerChat = ()=>{
                                         children: "Map"
                                     }, void 0, false, {
                                         fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                        lineNumber: 105,
+                                        lineNumber: 97,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                    lineNumber: 104,
+                                    lineNumber: 96,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                lineNumber: 103,
+                                lineNumber: 95,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                        lineNumber: 84,
+                        lineNumber: 76,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -54846,12 +54838,12 @@ const SoccerChat = ()=>{
                             children: "Pickup@Penn"
                         }, void 0, false, {
                             fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                            lineNumber: 111,
+                            lineNumber: 103,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                        lineNumber: 110,
+                        lineNumber: 102,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -54862,18 +54854,18 @@ const SoccerChat = ()=>{
                             src: "https://c.animaapp.com/RqvJyPyX/img/image-28@2x.png"
                         }, void 0, false, {
                             fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                            lineNumber: 123,
+                            lineNumber: 115,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                        lineNumber: 122,
+                        lineNumber: 114,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                lineNumber: 83,
+                lineNumber: 75,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -54886,7 +54878,7 @@ const SoccerChat = ()=>{
                                 children: "Soccer Group"
                             }, void 0, false, {
                                 fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                lineNumber: 134,
+                                lineNumber: 126,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -54894,13 +54886,13 @@ const SoccerChat = ()=>{
                                 children: "38 members"
                             }, void 0, false, {
                                 fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                lineNumber: 135,
+                                lineNumber: 127,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                        lineNumber: 133,
+                        lineNumber: 125,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -54916,7 +54908,7 @@ const SoccerChat = ()=>{
                                                 children: message.sender
                                             }, void 0, false, {
                                                 fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                                lineNumber: 145,
+                                                lineNumber: 137,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -54924,13 +54916,13 @@ const SoccerChat = ()=>{
                                                 children: message.time
                                             }, void 0, false, {
                                                 fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                                lineNumber: 146,
+                                                lineNumber: 138,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                        lineNumber: 144,
+                                        lineNumber: 136,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -54938,18 +54930,18 @@ const SoccerChat = ()=>{
                                         children: message.text
                                     }, void 0, false, {
                                         fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                        lineNumber: 148,
+                                        lineNumber: 140,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, message.id, true, {
                                 fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                lineNumber: 140,
+                                lineNumber: 132,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                        lineNumber: 138,
+                        lineNumber: 130,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
@@ -54964,7 +54956,7 @@ const SoccerChat = ()=>{
                                 className: "message-input"
                             }, void 0, false, {
                                 fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                lineNumber: 154,
+                                lineNumber: 146,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -54973,29 +54965,29 @@ const SoccerChat = ()=>{
                                 children: "Send"
                             }, void 0, false, {
                                 fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                lineNumber: 161,
+                                lineNumber: 153,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                        lineNumber: 153,
+                        lineNumber: 145,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                lineNumber: 132,
+                lineNumber: 124,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-        lineNumber: 81,
+        lineNumber: 73,
         columnNumber: 5
     }, undefined);
 };
-_s(SoccerChat, "s2icrur0Yw+zNzjgy/brX1hgyqk=");
+_s(SoccerChat, "kje65Wudwho3BiQgmJo0jNZM7/0=");
 _c = SoccerChat;
 var _c;
 $RefreshReg$(_c, "SoccerChat");
@@ -55121,7 +55113,7 @@ const CreateGamePrefill = ()=>{
             timeMin: new Date().toISOString(),
             showDeleted: false,
             singleEvents: true,
-            maxResults: 7,
+            maxResults: 10,
             orderBy: "startTime"
         }).then((response)=>{
             const events = response.result.items;

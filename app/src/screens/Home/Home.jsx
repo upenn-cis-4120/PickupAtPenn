@@ -7,6 +7,10 @@ import { gapi } from "gapi-script";
 import colinImage from './colin.jpg';  // Adjust path as needed
 import angieImage from './angie.jpg';  // Adjust path as needed
 
+// Add these constants at the top of the file
+const CLIENT_ID = "7058040155-g739av7vkfgl73dbvk6mrkiadt6vdjs5.apps.googleusercontent.com";
+const API_KEY = "AIzaSyBYdgzwDYfT95WAoyNEGH8BD2A7ZujvwCk";
+const CALENDAR_ID = "f447f8579b4a1493049fbea49a613748677a5754a3ec46b076c57f08cc08d5ef@group.calendar.google.com";
 
 export const Home = () => {
   const location = useLocation();
@@ -15,11 +19,6 @@ export const Home = () => {
     { id: 2, data: ["Penn Park fields are open and empty tomorrow. Perfect for soccer.",angieImage, "Angie Geralis", "@ageralis -- 5 hr"]}, 
   ]);
   const [calendarEvents, setCalendarEvents] = useState([]);
-
-  // Add these constants from Schedule.jsx
-  const CLIENT_ID = "7058040155-g739av7vkfgl73dbvk6mrkiadt6vdjs5.apps.googleusercontent.com";
-  const API_KEY = "AIzaSyBYdgzwDYfT95WAoyNEGH8BD2A7ZujvwCk";
-  const CALENDAR_ID = "f447f8579b4a1493049fbea49a613748677a5754a3ec46b076c57f08cc08d5ef@group.calendar.google.com";
 
   // Add state for tooltip visibility
   const [showTooltip, setShowTooltip] = useState(-1); // -1 means no tooltip shown
@@ -51,48 +50,42 @@ export const Home = () => {
     };
   }, []);
 
-  // Function to initialize Google Calendar API
-  const initCalendar = () => {
-    gapi.load("client:auth2", () => {
-      gapi.client
-        .init({
-          apiKey: API_KEY,
-          clientId: CLIENT_ID,
-          discoveryDocs: ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"],
-          scope: "https://www.googleapis.com/auth/calendar.events"
-        })
-        .then(() => {
-          // Initialize auth instance
-          return gapi.auth2.getAuthInstance().isSignedIn.get();
-        })
-        .then((isSignedIn) => {
-          if (isSignedIn) {
-            fetchEvents();
-          }
-        })
-        .catch((err) => console.error("Error initializing calendar:", err));
-    });
-  };
-
-  // Function to fetch calendar events
-  const fetchEvents = () => {
-    gapi.client.calendar.events
-      .list({
-        calendarId: CALENDAR_ID,
-        timeMin: new Date().toISOString(),
-        showDeleted: false,
-        singleEvents: true,
-        maxResults: 7, // Limit to 7 events
-        orderBy: "startTime",
-      })
-      .then((response) => {
-        const events = response.result.items;
-        setCalendarEvents(events);
-      })
-      .catch((err) => console.error("Error fetching events:", err));
-  };
-
+  // Add this useEffect for calendar initialization
   useEffect(() => {
+    const initCalendar = () => {
+      gapi.load("client:auth2", () => {
+        gapi.client
+          .init({
+            apiKey: API_KEY,
+            clientId: CLIENT_ID,
+            discoveryDocs: ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"],
+            scope: "https://www.googleapis.com/auth/calendar.events"
+          })
+          .then(() => {
+            // After initialization, fetch events
+            fetchEvents();
+          })
+          .catch((err) => console.error("Error initializing calendar:", err));
+      });
+    };
+
+    const fetchEvents = () => {
+      gapi.client.calendar.events
+        .list({
+          calendarId: CALENDAR_ID,
+          timeMin: new Date().toISOString(),
+          showDeleted: false,
+          singleEvents: true,
+          maxResults: 10,
+          orderBy: "startTime"
+        })
+        .then((response) => {
+          const events = response.result.items;
+          setCalendarEvents(events);
+        })
+        .catch((err) => console.error("Error fetching events:", err));
+    };
+
     initCalendar();
   }, []); // Run once on component mount
 
@@ -380,7 +373,7 @@ export const Home = () => {
 </div>
 
       
-      <Link to="/create-game">
+      <Link to="/create-game-prefill">
       <button className="button-4">
         <div className="text-wrapper-23">Create New Game</div>
 

@@ -75,7 +75,7 @@ export const CreateGamePrefill = () => {
         timeMin: new Date().toISOString(),
         showDeleted: false,
         singleEvents: true,
-        maxResults: 7, // Limit to 7 events
+        maxResults: 10, // Limit to 10 events
         orderBy: "startTime",
       })
       .then((response) => {

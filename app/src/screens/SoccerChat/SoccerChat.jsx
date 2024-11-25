@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 
 export const SoccerChat = () => {
   const [messages, setMessages] = useState(() => {
-    // Check if this is a fresh application start
-    const isAppInitialized = localStorage.getItem('appInitialized');
+    // Create a new flag specifically for soccer chat sessions
+    const soccerChatActive = sessionStorage.getItem('soccerChatActive');
     
-    if (!isAppInitialized) {
-      // First time app is starting, reset to default messages
+    if (!soccerChatActive) {
+      // Reset messages when starting a new session
       const defaultMessages = [
         {
           id: 1,
@@ -35,27 +35,19 @@ export const SoccerChat = () => {
           time: "3:20 PM"
         }
       ];
-      localStorage.setItem('appInitialized', 'true');
-      localStorage.setItem('soccerChatMessages', JSON.stringify(defaultMessages));
+      sessionStorage.setItem('soccerChatActive', 'true');
       return defaultMessages;
     }
     
-    // Otherwise, get existing messages
-    const savedMessages = localStorage.getItem('soccerChatMessages');
+    // Get existing messages from session
+    const savedMessages = sessionStorage.getItem('soccerChatMessages');
     return savedMessages ? JSON.parse(savedMessages) : [];
   });
 
-  // Add cleanup for when app truly closes
+  // Save messages to session storage when they change
   useEffect(() => {
-    const handleBeforeUnload = () => {
-      localStorage.removeItem('appInitialized');
-    };
-
-    window.addEventListener('beforeunload', handleBeforeUnload);
-    return () => {
-      window.removeEventListener('beforeunload', handleBeforeUnload);
-    };
-  }, []);
+    sessionStorage.setItem('soccerChatMessages', JSON.stringify(messages));
+  }, [messages]);
 
   const [newMessage, setNewMessage] = useState("");
 
