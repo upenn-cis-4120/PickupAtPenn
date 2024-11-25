@@ -7,7 +7,11 @@ import { useNavigate } from "react-router-dom";
 export const CreateGamePrefill = () => {
   const [selectedSport, setSelectedSport] = useState("Basketball"); // Default selected sport
   const [isDropdownOpen, setIsDropdownOpen] = useState(false); // To toggle dropdown visibility
-  const [selectedDate, setSelectedDate] = useState("");
+  const [selectedDate, setSelectedDate] = useState(() => {
+    const today = new Date();
+    // Format date as YYYY-MM-DD for the date input
+    return today.toISOString().split('T')[0];
+  });
   const [selectedTime, setSelectedTime] = useState("");
   const [selectedLocation, setSelectedLocation] = useState("Select location"); // Default location
   const [isLocationDropdownOpen, setIsLocationDropdownOpen] = useState(false); // To toggle dropdown visibility
