@@ -192,6 +192,8 @@
     padding: 10px;
     cursor: pointer;
     color: #434343;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
   }
   
   .create-game .location-dropdown-item:hover {
@@ -302,6 +304,8 @@
     padding: 10px;
     cursor: pointer;
     color: #434343;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
   }
   
   .create-game .dropdown-item:hover {
@@ -381,6 +385,8 @@
     padding: 10px;
     cursor: pointer;
     color: #434343;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
   }
   
   .create-game .groupchat-dropdown-item:hover {
@@ -484,6 +490,8 @@
     padding: 10px;
     cursor: pointer;
     color: #434343;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
   }
   
   .create-game .skill-dropdown-item:hover {
@@ -1402,4 +1410,26 @@
     top: -10px;
     white-space: nowrap;
     margin-bottom: 10px;
+  }
+  
+  .create-game select,
+  .create-game option {
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+  }
+  
+  .create-game .location-dropdown-item {
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    padding: 10px;
+    cursor: pointer;
+    color: #434343;
+  }
+  
+  .create-game input::placeholder {
+    font-family: "Inter", Helvetica;
+  }
+  
+  .create-game textarea {
+    font-family: "Inter", Helvetica;
   }
