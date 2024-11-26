@@ -7,11 +7,12 @@
   }
 
 .map-container {
-    margin-top: 105px; /* Space for the fixed header */
+    margin-top: 75px; /* Reduced from 105px to account for nav bar height */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 153px); /* Adjust height to fit the map within the screen */
+    height: calc(100vh - 80px); /* Changed from 153px to match the nav bar height */
+    width: 100%;
 }
   
   .map .container {
@@ -901,5 +902,10 @@
     position: absolute;
     top: 103px;
     white-space: nowrap;
+  }
+  
+  .leaflet-container {
+    height: 100% !important;
+    width: 100% !important;
   }
   

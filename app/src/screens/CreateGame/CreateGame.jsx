@@ -32,8 +32,60 @@ export const CreateGame = () => {
 
   const location = useLocation();
   const [games, setGames] = useState([
-    { id: 1, data: ["Pickup basketball game at Pottruck in 30 mins  3 spots left",  "https://c.animaapp.com/RqvJyPyX/img/rectangle-1@2x.png", "Colin Speaker", "@cspeaker -- 1 hr"]},
-    { id: 2, data: ["Penn Park fields are open and empty  Perfect for soccer.","https://c.animaapp.com/RqvJyPyX/img/rectangle@2x.png", "Angie Geralis", "@ageralis -- 5 hr"]}, 
+    {
+      id: 1,
+      data: [
+        "Pickup basketball game at Pottruck in 30 mins  3 spots left",
+        "https://c.animaapp.com/RqvJyPyX/img/rectangle-1@2x.png",
+        "Colin Speaker",
+        "@cspeaker -- 1 hr",
+      ],
+    },
+    {
+      id: 2,
+      data: [
+        "Penn Park fields are open and empty  Perfect for soccer.",
+        "https://c.animaapp.com/RqvJyPyX/img/rectangle@2x.png",
+        "Angie Geralis",
+        "@ageralis -- 5 hr",
+      ],
+    },
+    {
+      id: 3,
+      data: [
+        "Looking for 2 more players for volleyball at Pottruck tonight!",
+        "https://c.animaapp.com/RqvJyPyX/img/rectangle-1@2x.png",
+        "Colin Speaker",
+        "@cspeaker -- 3 hr",
+      ],
+    },
+    {
+      id: 4,
+      data: [
+        "Anyone up for tennis at Hamlin? Courts are empty right now.",
+        "https://c.animaapp.com/RqvJyPyX/img/rectangle@2x.png",
+        "Angie Geralis",
+        "@ageralis -- 4 hr",
+      ],
+    },
+    {
+      id: 5,
+      data: [
+        "Ultimate frisbee pickup game starting at Penn Park in 15!",
+        "https://c.animaapp.com/RqvJyPyX/img/rectangle-1@2x.png",
+        "Colin Speaker",
+        "@cspeaker -- 6 hr",
+      ],
+    },
+    {
+      id: 6,
+      data: [
+        "Beautiful day for soccer - organizing a game at Penn Park at 4pm",
+        "https://c.animaapp.com/RqvJyPyX/img/rectangle@2x.png",
+        "Angie Geralis",
+        "@ageralis -- 7 hr",
+      ],
+    },
   ]);
   const [calendarEvents, setCalendarEvents] = useState([]);
 
