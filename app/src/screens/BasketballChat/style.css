@@ -171,6 +171,7 @@
     color: #666;
     font-size: 14px;
     margin-left: 10px;
+    font-family: "Inter", Helvetica;
   }
   
   .messages-container {
