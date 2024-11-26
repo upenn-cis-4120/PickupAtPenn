@@ -119,7 +119,7 @@
 
 .community .text-wrapper-menu-title {
     color: #172b61;
-    font-family: "Archivo", Helvetica;
+    font-family: "Inter", Helvetica;
     font-size: 27px;
     font-weight: 700;
     left: 63px;
@@ -166,6 +166,8 @@
   border-radius: 8px;
   outline: none;
   transition: border-color 0.3s ease;
+  font-family: "Inter", Helvetica;
+  font-size: 14px;
 }
 
 .search-input:focus {
@@ -179,6 +181,33 @@
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.sports-grid .card {
+  font-family: "Inter", Helvetica;
+}
+
+.sports-grid .card-title {
+  font-family: "Inter", Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  color: #223568;
+  margin-bottom: 8px;
+}
+
+.sports-grid .card-description {
+  font-family: "Inter", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.sports-grid .card-members {
+  font-family: "Inter", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  color: #666;
 }
 
 .sport-tile {
@@ -212,12 +241,14 @@
   margin: 0 0 10px 0;
   font-size: 18px;
   font-weight: 600;
+  font-family: "Inter", Helvetica;
 }
 
 .sport-info p {
   color: #666;
   margin: 0 0 10px 0;
   font-size: 14px;
+  font-family: "Inter", Helvetica;
 }
 
 .member-count {
@@ -239,4 +270,27 @@
 
 .join-button:hover {
   background-color: #122f7c;
+}
+
+.community .card-title {
+    font-family: "Inter", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    color: #223568;
+    margin-bottom: 8px;
+}
+
+.community .card-description {
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 4px;
+}
+
+.community .card-members {
+    font-family: "Inter", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    color: #666;
 }

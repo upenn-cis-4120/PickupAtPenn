@@ -138,6 +138,7 @@
   align-items: center;
   justify-content: flex-end;
   padding-right: 10px;
+  font-family: "Inter", Helvetica;
 }
 
 .day-labels {
@@ -153,6 +154,7 @@
   text-align: center;
   font-size: 14px;
   color: #333;
+  font-family: "Inter", Helvetica;
 }
 
 .grid {
@@ -215,6 +217,7 @@
   align-items: center;
   justify-content: flex-end;
   padding-right: 10px;
+  font-family: "Inter", Helvetica;
 }
 
 .day-labels {

@@ -666,7 +666,7 @@
   
   .schedule .text-wrapper-28 {
     color: #213468;
-    font-family: "Archivo", Helvetica;
+    font-family: "Inter", Helvetica;
     font-size: 28px;
     font-weight: 700;
     left: 21px;
@@ -692,7 +692,7 @@
   
   .schedule .text-wrapper-30 {
     color: #213468;
-    font-family: "Archivo", Helvetica;
+    font-family: "Inter", Helvetica;
     font-size: 22px;
     font-weight: 700;
     left: 480px;
@@ -1102,7 +1102,7 @@
 
   .schedule .text-wrapper-menu-title {
     color: #172b61;
-    font-family: "Archivo", Helvetica;
+    font-family: "Inter", Helvetica;
     font-size: 27px;
     font-weight: 700;
     left: 63px;
@@ -1114,7 +1114,7 @@
   }
   .button .text-wrapper-menu-title {
     color: #172b61;
-    font-family: "Archivo", Helvetica;
+    font-family: "Inter", Helvetica;
     font-size: 27px;
     font-weight: 700;
     left: 63px;
