@@ -38,7 +38,7 @@ export const CreateGame = () => {
         "Pickup basketball game at Pottruck in 30 mins  3 spots left",
         "https://c.animaapp.com/RqvJyPyX/img/rectangle-1@2x.png",
         "Colin Speaker",
-        "@cspeaker -- 1 hr",
+        "@cspeaker - 1 hr",
       ],
     },
     {
@@ -47,7 +47,7 @@ export const CreateGame = () => {
         "Penn Park fields are open and empty  Perfect for soccer.",
         "https://c.animaapp.com/RqvJyPyX/img/rectangle@2x.png",
         "Angie Geralis",
-        "@ageralis -- 5 hr",
+        "@ageralis - 5 hr",
       ],
     },
     {
@@ -56,7 +56,7 @@ export const CreateGame = () => {
         "Looking for 2 more players for volleyball at Pottruck tonight!",
         "https://c.animaapp.com/RqvJyPyX/img/rectangle-1@2x.png",
         "Colin Speaker",
-        "@cspeaker -- 3 hr",
+        "@cspeaker - 3 hr",
       ],
     },
     {
@@ -65,7 +65,7 @@ export const CreateGame = () => {
         "Anyone up for tennis at Hamlin? Courts are empty right now.",
         "https://c.animaapp.com/RqvJyPyX/img/rectangle@2x.png",
         "Angie Geralis",
-        "@ageralis -- 4 hr",
+        "@ageralis - 4 hr",
       ],
     },
     {
@@ -74,7 +74,7 @@ export const CreateGame = () => {
         "Ultimate frisbee pickup game starting at Penn Park in 15!",
         "https://c.animaapp.com/RqvJyPyX/img/rectangle-1@2x.png",
         "Colin Speaker",
-        "@cspeaker -- 6 hr",
+        "@cspeaker - 6 hr",
       ],
     },
     {
@@ -83,7 +83,7 @@ export const CreateGame = () => {
         "Beautiful day for soccer - organizing a game at Penn Park at 4pm",
         "https://c.animaapp.com/RqvJyPyX/img/rectangle@2x.png",
         "Angie Geralis",
-        "@ageralis -- 7 hr",
+        "@ageralis - 7 hr",
       ],
     },
   ]);

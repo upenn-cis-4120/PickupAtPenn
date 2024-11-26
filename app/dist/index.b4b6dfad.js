@@ -37726,7 +37726,7 @@ const Home = ()=>{
                 "Pickup basketball game at Pottruck in tonight.  3 spots left",
                 (0, _colinJpgDefault.default),
                 "Colin Speaker",
-                "@cspeaker -- 1 hr"
+                "@cspeaker - 1 hr"
             ]
         },
         {
@@ -37735,7 +37735,7 @@ const Home = ()=>{
                 "Penn Park fields are open and empty tomorrow. Perfect for soccer.",
                 (0, _angieJpgDefault.default),
                 "Angie Geralis",
-                "@ageralis -- 5 hr"
+                "@ageralis - 5 hr"
             ]
         },
         {
@@ -37744,7 +37744,7 @@ const Home = ()=>{
                 "Looking for 2 more players for volleyball at Pottruck tonight!",
                 (0, _colinJpgDefault.default),
                 "Colin Speaker",
-                "@cspeaker -- 3 hr"
+                "@cspeaker - 3 hr"
             ]
         },
         {
@@ -37753,7 +37753,7 @@ const Home = ()=>{
                 "Anyone up for tennis at Hamlin? Courts are empty right now.",
                 (0, _angieJpgDefault.default),
                 "Angie Geralis",
-                "@ageralis -- 4 hr"
+                "@ageralis - 4 hr"
             ]
         },
         {
@@ -37762,7 +37762,7 @@ const Home = ()=>{
                 "Ultimate frisbee pickup game starting at Penn Park in 15!",
                 (0, _colinJpgDefault.default),
                 "Colin Speaker",
-                "@cspeaker -- 6 hr"
+                "@cspeaker - 6 hr"
             ]
         },
         {
@@ -37771,7 +37771,7 @@ const Home = ()=>{
                 "Beautiful day for soccer - organizing a game at Penn Park at 4pm",
                 (0, _angieJpgDefault.default),
                 "Angie Geralis",
-                "@ageralis -- 7 hr"
+                "@ageralis - 7 hr"
             ]
         }
     ]);
@@ -38475,7 +38475,7 @@ const Home = ()=>{
         columnNumber: 5
     }, undefined);
 };
-_s(Home, "SBF2BqzUY6EmgnsG5TUu41QeDlQ=", false, function() {
+_s(Home, "l8FEDu8s5vnSi3wd+4kGaxNCbvU=", false, function() {
     return [
         (0, _reactRouterDom.useLocation)
     ];
@@ -38599,7 +38599,7 @@ const CreateGame = ()=>{
                 "Pickup basketball game at Pottruck in 30 mins  3 spots left",
                 "https://c.animaapp.com/RqvJyPyX/img/rectangle-1@2x.png",
                 "Colin Speaker",
-                "@cspeaker -- 1 hr"
+                "@cspeaker - 1 hr"
             ]
         },
         {
@@ -38608,7 +38608,7 @@ const CreateGame = ()=>{
                 "Penn Park fields are open and empty  Perfect for soccer.",
                 "https://c.animaapp.com/RqvJyPyX/img/rectangle@2x.png",
                 "Angie Geralis",
-                "@ageralis -- 5 hr"
+                "@ageralis - 5 hr"
             ]
         },
         {
@@ -38617,7 +38617,7 @@ const CreateGame = ()=>{
                 "Looking for 2 more players for volleyball at Pottruck tonight!",
                 "https://c.animaapp.com/RqvJyPyX/img/rectangle-1@2x.png",
                 "Colin Speaker",
-                "@cspeaker -- 3 hr"
+                "@cspeaker - 3 hr"
             ]
         },
         {
@@ -38626,7 +38626,7 @@ const CreateGame = ()=>{
                 "Anyone up for tennis at Hamlin? Courts are empty right now.",
                 "https://c.animaapp.com/RqvJyPyX/img/rectangle@2x.png",
                 "Angie Geralis",
-                "@ageralis -- 4 hr"
+                "@ageralis - 4 hr"
             ]
         },
         {
@@ -38635,7 +38635,7 @@ const CreateGame = ()=>{
                 "Ultimate frisbee pickup game starting at Penn Park in 15!",
                 "https://c.animaapp.com/RqvJyPyX/img/rectangle-1@2x.png",
                 "Colin Speaker",
-                "@cspeaker -- 6 hr"
+                "@cspeaker - 6 hr"
             ]
         },
         {
@@ -38644,7 +38644,7 @@ const CreateGame = ()=>{
                 "Beautiful day for soccer - organizing a game at Penn Park at 4pm",
                 "https://c.animaapp.com/RqvJyPyX/img/rectangle@2x.png",
                 "Angie Geralis",
-                "@ageralis -- 7 hr"
+                "@ageralis - 7 hr"
             ]
         }
     ]);
@@ -39722,7 +39722,7 @@ const CreateGame = ()=>{
         columnNumber: 5
     }, undefined);
 };
-_s(CreateGame, "YaItuBMongYjNWCSHcvH9k3pwqA=", false, function() {
+_s(CreateGame, "nCUVawFHMOydkdN0WkfmMGJA5VE=", false, function() {
     return [
         (0, _reactRouterDom.useLocation),
         (0, _reactRouterDom.useNavigate)

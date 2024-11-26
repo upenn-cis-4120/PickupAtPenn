@@ -9086,6 +9086,7 @@ svg.leaflet-zoom-animated {
 .form-group label {
   color: #091e57;
   margin-bottom: 8px;
+  font-family: Inter, Helvetica;
   font-weight: 500;
   display: block;
 }
@@ -9273,11 +9274,27 @@ select.input-field {
   left: 12px;
 }
 
+.chat-header h2 {
+  color: #091e57;
+  margin: 0;
+  font-family: Inter, Helvetica;
+}
+
 .member-count {
   color: #666;
   margin-left: 10px;
   font-family: Inter, Helvetica;
   font-size: 14px;
+}
+
+.messages-container {
+  flex-direction: column;
+  flex: 1;
+  gap: 15px;
+  padding: 20px;
+  font-family: Inter, Helvetica;
+  display: flex;
+  overflow-y: auto;
 }
 
 .mmessages-container::-webkit-scrollbar-track {
