@@ -27,6 +27,9 @@
     position: absolute;
     top: 62px;
     width: 1108px;
+    padding: 20px;
+    max-width: 95%;
+    margin: 0 auto;
   }
   
   .schedule .div {
@@ -1487,65 +1490,44 @@
     font-family: "Inter", Helvetica;
     font-size: 14px;
     font-weight: 400;
-    margin-top: 20px; 
     cursor: pointer;
     display: flex;
     align-items: center;
     gap: 8px;
-    transition: background-color 0.3s ease;
+    height: 40px;
   }
 
   .sync-button:hover {
-    background-color: #364d7d;
+    opacity: 0.9;
   }
 
-  .sync-button:active {
-    transform: scale(0.98);
-  }
-
-  .sync-button img {
-    width: 20px;
-    height: 20px;
-  }
-  
   .create-game-button {
-    all: unset;
     background-color: #8c1a11;
-    border: 1px solid;
-    border-color: transparent;
-    border-radius: 8px;
-    box-sizing: border-box;
-    height: 49px;
-    position: absolute;
-    right: 20px;
-    top: 147px;
-    width: 250px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
     cursor: pointer;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 40px;
   }
 
   .create-game-text {
-    color: #f9fbfd;
-    font-family: "Inter", Helvetica;
-    font-size: 15px;
-    font-weight: 400;
-    left: 75px;
-    letter-spacing: 0;
-    line-height: 24px;
-    position: absolute;
-    top: 12px;
+    color: white;
     white-space: nowrap;
   }
 
   .create-game-icon {
-    height: 25px;
-    left: 15px;
-    position: absolute;
-    top: 12px;
-    width: 25px;
+    width: 20px;
+    height: 20px;
   }
 
   .create-game-button:hover {
-    background-color: #a01f15;
+    opacity: 0.9;
   }
   

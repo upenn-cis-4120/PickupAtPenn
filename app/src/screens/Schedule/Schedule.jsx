@@ -154,42 +154,45 @@ export const Schedule = () => {
 
             {/* Calendar Container */}
           <div className="container">
-            <button 
-              onClick={login} 
-              className="sync-button"
-              style={{
-                backgroundColor: '#2d3f70',
-                color: 'white',
-                padding: '10px 20px',
-                borderRadius: '6px',
-                border: 'none',
-                fontFamily: '"Inter", Helvetica',
-                fontSize: '14px',
-                fontWeight: '400',
-                cursor: 'pointer',
-                marginBottom: '20px',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '8px'
-              }}
-            >
-              <img 
-                src="https://www.gstatic.com/calendar/images/dynamiclogo_2020q4/calendar_31_2x.png"
-                alt="Google Calendar"
-                style={{
-                  width: '20px',
-                  height: '20px'
-                }}
-              />
-              Sync to Google Calendar
-            </button>
+            <div style={{ 
+              display: 'flex', 
+              gap: '15px', 
+              marginBottom: '20px',
+              alignItems: 'center'
+            }}>
+              <button 
+                onClick={login} 
+                className="sync-button"
+              >
+                <img 
+                  src="https://www.gstatic.com/calendar/images/dynamiclogo_2020q4/calendar_31_2x.png"
+                  alt="Google Calendar"
+                  style={{
+                    width: '20px',
+                    height: '20px'
+                  }}
+                />
+                Sync to Google Calendar
+              </button>
+
+              <Link to="/create-game">
+                <button className="create-game-button">
+                  <div className="create-game-text">Create New Game</div>
+                  <img
+                    className="create-game-icon"
+                    alt="Add"
+                    src="https://c.animaapp.com/RqvJyPyX/img/e-add.svg"
+                  />
+                </button>
+              </Link>
+            </div>
 
             <iframe 
               src="https://calendar.google.com/calendar/embed?src=f447f8579b4a1493049fbea49a613748677a5754a3ec46b076c57f08cc08d5ef%40group.calendar.google.com&ctz=America%2FNew_York" 
               style={{
                 border: 0,
                 width: '100%',
-                height: '600px',
+                height: '80vh', // Increased height to take up more vertical space
                 borderRadius: '12px'
               }}
               frameBorder="0" 
@@ -197,17 +200,6 @@ export const Schedule = () => {
               title="Group Calendar"
             />
           </div>
-          {/* Add the Create Game button */}
-            <Link to="/create-game">
-            <button className="create-game-button">
-            <div className="create-game-text">Create New Game</div>
-            <img
-              className="create-game-icon"
-              alt="Add"
-              src="https://c.animaapp.com/RqvJyPyX/img/e-add.svg"
-            />
-            </button>
-            </Link>
         </div>
       </div>
     </div>

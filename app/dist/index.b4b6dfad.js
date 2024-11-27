@@ -6114,38 +6114,70 @@ const Schedule = ()=>{
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "container",
                             children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                    onClick: login,
-                                    className: "sync-button",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     style: {
-                                        backgroundColor: '#2d3f70',
-                                        color: 'white',
-                                        padding: '10px 20px',
-                                        borderRadius: '6px',
-                                        border: 'none',
-                                        fontFamily: '"Inter", Helvetica',
-                                        fontSize: '14px',
-                                        fontWeight: '400',
-                                        cursor: 'pointer',
-                                        marginBottom: '20px',
                                         display: 'flex',
-                                        alignItems: 'center',
-                                        gap: '8px'
+                                        gap: '15px',
+                                        marginBottom: '20px',
+                                        alignItems: 'center'
                                     },
                                     children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                            src: "https://www.gstatic.com/calendar/images/dynamiclogo_2020q4/calendar_31_2x.png",
-                                            alt: "Google Calendar",
-                                            style: {
-                                                width: '20px',
-                                                height: '20px'
-                                            }
-                                        }, void 0, false, {
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                            onClick: login,
+                                            className: "sync-button",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                    src: "https://www.gstatic.com/calendar/images/dynamiclogo_2020q4/calendar_31_2x.png",
+                                                    alt: "Google Calendar",
+                                                    style: {
+                                                        width: '20px',
+                                                        height: '20px'
+                                                    }
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/Schedule/Schedule.jsx",
+                                                    lineNumber: 167,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                "Sync to Google Calendar"
+                                            ]
+                                        }, void 0, true, {
                                             fileName: "src/screens/Schedule/Schedule.jsx",
-                                            lineNumber: 176,
+                                            lineNumber: 163,
                                             columnNumber: 15
                                         }, undefined),
-                                        "Sync to Google Calendar"
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                            to: "/create-game",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                className: "create-game-button",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "create-game-text",
+                                                        children: "Create New Game"
+                                                    }, void 0, false, {
+                                                        fileName: "src/screens/Schedule/Schedule.jsx",
+                                                        lineNumber: 180,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                        className: "create-game-icon",
+                                                        alt: "Add",
+                                                        src: "https://c.animaapp.com/RqvJyPyX/img/e-add.svg"
+                                                    }, void 0, false, {
+                                                        fileName: "src/screens/Schedule/Schedule.jsx",
+                                                        lineNumber: 181,
+                                                        columnNumber: 19
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/screens/Schedule/Schedule.jsx",
+                                                lineNumber: 179,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/screens/Schedule/Schedule.jsx",
+                                            lineNumber: 178,
+                                            columnNumber: 15
+                                        }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/screens/Schedule/Schedule.jsx",
@@ -6157,7 +6189,7 @@ const Schedule = ()=>{
                                     style: {
                                         border: 0,
                                         width: '100%',
-                                        height: '600px',
+                                        height: '80vh',
                                         borderRadius: '12px'
                                     },
                                     frameBorder: "0",
@@ -6165,7 +6197,7 @@ const Schedule = ()=>{
                                     title: "Group Calendar"
                                 }, void 0, false, {
                                     fileName: "src/screens/Schedule/Schedule.jsx",
-                                    lineNumber: 187,
+                                    lineNumber: 190,
                                     columnNumber: 13
                                 }, undefined)
                             ]
@@ -6173,39 +6205,6 @@ const Schedule = ()=>{
                             fileName: "src/screens/Schedule/Schedule.jsx",
                             lineNumber: 156,
                             columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            to: "/create-game",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                className: "create-game-button",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "create-game-text",
-                                        children: "Create New Game"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/Schedule/Schedule.jsx",
-                                        lineNumber: 203,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                        className: "create-game-icon",
-                                        alt: "Add",
-                                        src: "https://c.animaapp.com/RqvJyPyX/img/e-add.svg"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/Schedule/Schedule.jsx",
-                                        lineNumber: 204,
-                                        columnNumber: 13
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/Schedule/Schedule.jsx",
-                                lineNumber: 202,
-                                columnNumber: 13
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/screens/Schedule/Schedule.jsx",
-                            lineNumber: 201,
-                            columnNumber: 13
                         }, undefined)
                     ]
                 }, void 0, true, {

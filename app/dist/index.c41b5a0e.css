@@ -695,7 +695,10 @@ svg.leaflet-zoom-animated {
   border: 1px solid #f9fbfd;
   border-radius: 6px;
   width: 1108px;
+  max-width: 95%;
   height: 611px;
+  margin: 0 auto;
+  padding: 20px;
   position: absolute;
   top: 62px;
   left: 40px;
@@ -2099,66 +2102,46 @@ svg.leaflet-zoom-animated {
   border-radius: 6px;
   align-items: center;
   gap: 8px;
-  margin-top: 20px;
+  height: 40px;
   padding: 10px 20px;
   font-family: Inter, Helvetica;
   font-size: 14px;
   font-weight: 400;
-  transition: background-color .3s;
   display: flex;
 }
 
 .sync-button:hover {
-  background-color: #364d7d;
+  opacity: .9;
 }
 
-.sync-button:active {
-  transform: scale(.98);
+.create-game-button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #8c1a11;
+  border: none;
+  border-radius: 6px;
+  align-items: center;
+  gap: 8px;
+  height: 40px;
+  padding: 10px 20px;
+  font-family: Inter, Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
 }
 
-.sync-button img {
+.create-game-text {
+  color: #fff;
+  white-space: nowrap;
+}
+
+.create-game-icon {
   width: 20px;
   height: 20px;
 }
 
-.create-game-button {
-  all: unset;
-  box-sizing: border-box;
-  cursor: pointer;
-  background-color: #8c1a11;
-  border: 1px solid #0000;
-  border-radius: 8px;
-  width: 250px;
-  height: 49px;
-  position: absolute;
-  top: 147px;
-  right: 20px;
-  overflow: hidden;
-}
-
-.create-game-text {
-  color: #f9fbfd;
-  letter-spacing: 0;
-  white-space: nowrap;
-  font-family: Inter, Helvetica;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  position: absolute;
-  top: 12px;
-  left: 75px;
-}
-
-.create-game-icon {
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  top: 12px;
-  left: 15px;
-}
-
 .create-game-button:hover {
-  background-color: #a01f15;
+  opacity: .9;
 }
 
 .home {
