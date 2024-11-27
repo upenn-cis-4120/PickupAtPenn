@@ -157,7 +157,7 @@ export const CreateGamePrefill = () => {
     
     if (sport === "Basketball") {
       setSelectedLocation("Pottruck Gym");
-      setPlayerCount(6);
+      setPlayerCount(1);
       setSelectedGroupChat("Basketball");
     } else if (sport === "Soccer") {
       setSelectedLocation("Penn Park");
@@ -348,7 +348,7 @@ useEffect(() => {
   useEffect(() => {
     if (selectedSport === "Basketball") {
       setSelectedLocation("Pottruck Gym");
-      setPlayerCount(6);
+      setPlayerCount(1);
       setSelectedGroupChat("Basketball");
     } else if (selectedSport === "Soccer") {
       setSelectedLocation("Penn Park");

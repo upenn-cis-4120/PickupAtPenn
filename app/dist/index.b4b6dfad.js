@@ -55301,7 +55301,7 @@ const CreateGamePrefill = ()=>{
         setIsDropdownOpen(false);
         if (sport === "Basketball") {
             setSelectedLocation("Pottruck Gym");
-            setPlayerCount(6);
+            setPlayerCount(1);
             setSelectedGroupChat("Basketball");
         } else if (sport === "Soccer") {
             setSelectedLocation("Penn Park");
@@ -55480,7 +55480,7 @@ const CreateGamePrefill = ()=>{
     (0, _react.useEffect)(()=>{
         if (selectedSport === "Basketball") {
             setSelectedLocation("Pottruck Gym");
-            setPlayerCount(6);
+            setPlayerCount(1);
             setSelectedGroupChat("Basketball");
         } else if (selectedSport === "Soccer") {
             setSelectedLocation("Penn Park");
