@@ -1509,7 +1509,6 @@ a {
   position: absolute;
   top: 369px;
   left: 395px;
-  box-shadow: 0 0 1px #171a1f12, 0 0 2px #171a1f1f;
   overflow: visible !important;
 }
 
@@ -1616,7 +1615,6 @@ a {
   position: absolute;
   top: 140px;
   left: 376px;
-  box-shadow: 0 0 1px #171a1f12, 0 0 2px #171a1f1f;
   overflow: visible !important;
 }
 
