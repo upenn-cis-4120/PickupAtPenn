@@ -1,7 +1,7 @@
 .schedule {
     background-color: #f9fbfd;
     height: 873px;
-    width: 1440px;
+    width: 1740px;
   }
   
   .schedule .overlap {
@@ -26,9 +26,9 @@
     left: 40px;
     position: absolute;
     top: 62px;
-    width: 1108px;
+    width: 95%;
     padding: 20px;
-    max-width: 95%;
+    max-width: 100%;
     margin: 0 auto;
   }
   
