@@ -270,14 +270,11 @@
 
 .create-game .textfield-2 {
   background-color: #fffffe;
-  border: 1px solid;
-  border-color: #434343;
+  border: 1px solid #434343;
   border-radius: 6px;
   height: 43px;
-  left: -1px;
-  position: absolute;
-  top: 26px;
-  width: 449px;
+  position: relative;
+  width: 100%;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -285,10 +282,7 @@
 }
 
 .create-game .dropdown-arrow {
-  position: absolute;
-  right: 15px;
-  cursor: pointer;
-  z-index: 1;
+  display: none;
 }
 
 .create-game .dropdown-menu {
@@ -328,11 +322,7 @@
 }
 
 .create-game .img {
-  height: 16px;
-  left: 420px;
-  position: absolute;
-  top: 38px;
-  width: 16px;
+  display: none;
 }
 
 .create-game .overlap-2 {
@@ -366,12 +356,7 @@
 }
 
 .create-game .image-2 {
-  height: 17px;
-  width: 18px;
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  transform: translateY(-50%);
+  display: none;
 }
 
 .create-game .groupchat-dropdown-menu {
@@ -426,13 +411,10 @@
 
 .create-game .textfield-3 {
   background-color: #fffffe;
-  border: 1px solid;
-  border-color: #343434;
+  border: 1px solid #343434;
   border-radius: 4px;
   height: 51px;
-  left: -1px;
-  position: absolute;
-  top: 26px;
+  position: relative;
   width: 221px;
   cursor: pointer;
   display: flex;
@@ -470,11 +452,7 @@
 
 
 .create-game .image-3 {
-  height: 16px;
-  left: 191px;
-  position: absolute;
-  top: 45px;
-  width: 16px;
+  display: none;
 }
 
 .create-game .textbox-7 {
@@ -732,12 +710,7 @@
   color: #434343;
   font-family: "Inter", Helvetica;
   font-size: 16px;
-  font-weight: 400;
-  left: 20px;
-  letter-spacing: 0;
-  line-height: 26px;
-  position: absolute;
-  top: 12px;
+  flex-grow: 1;
   white-space: nowrap;
 }
 .create-game .img-wrapper {
@@ -1379,4 +1352,20 @@
   top: -10px;
   white-space: nowrap;
   margin-bottom: 10px;
+}
+
+.create-game .dropdown-indicator {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.create-game .textfield-2,
+.create-game .textfield-3,
+.create-game .textbox-5 {
+  position: relative;
 }

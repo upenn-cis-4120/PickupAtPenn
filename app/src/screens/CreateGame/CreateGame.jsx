@@ -402,7 +402,7 @@ useEffect(() => {
             >
               <div className="text-wrapper-5">{selectedLocation}</div>
               <img
-                className="img dropdown-arrow"
+                className="dropdown-indicator"
                 alt="Dropdown Arrow"
                 src="https://c.animaapp.com/BPOawRxV/img/image-16@2x.png"
               />
@@ -445,7 +445,7 @@ useEffect(() => {
             >
               <div className="text-wrapper-5">{selectedSport}</div>
               <img
-                className="img dropdown-arrow"
+                className="dropdown-indicator"
                 alt="Dropdown Arrow"
                 src="https://c.animaapp.com/BPOawRxV/img/image-16@2x.png"
               />
@@ -473,9 +473,9 @@ useEffect(() => {
           >
             <div className="text-selected-group">{selectedGroupChat}</div>
             <img
-              className="image-2"
+              className="dropdown-indicator"
               alt="Dropdown Arrow"
-              src="https://c.animaapp.com/BPOawRxV/img/image-17@2x.png"
+              src="https://c.animaapp.com/BPOawRxV/img/image-16@2x.png"
             />
           </div>
 
@@ -500,15 +500,16 @@ useEffect(() => {
         <div className="overlap-3">
           <div className="textbox-6">
             <div className="text-wrapper-2">Skill Level</div>
+            
             <div 
               className="textfield-3"
               onClick={() => setIsSkillDropdownOpen(!isSkillDropdownOpen)}
             >
               <div className="text-wrapper-8">{selectedSkill}</div>
               <img
-                className="image-3 dropdown-arrow"
+                className="dropdown-indicator"
                 alt="Dropdown Arrow"
-                src="https://c.animaapp.com/BPOawRxV/img/image-13@2x.png"
+                src="https://c.animaapp.com/BPOawRxV/img/image-16@2x.png"
               />
             </div>
           </div>
