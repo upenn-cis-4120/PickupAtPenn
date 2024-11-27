@@ -175,7 +175,7 @@ export const Schedule = () => {
                 Sync to Google Calendar
               </button>
 
-              <Link to="/create-game-prefill">
+              <Link to="/create-game">
                 <button className="create-game-button">
                   <div className="create-game-text">Create New Game</div>
                   <img

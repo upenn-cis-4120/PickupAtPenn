@@ -20,7 +20,7 @@
 
 .create-game .div-wrapper {
   background-color: #fffffe;
-  border: 1px solid;
+    border: 1px solid #343434 !important;
   border-radius: 6px;
   box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
   height: 149px;
@@ -65,7 +65,7 @@
 
 .create-game .input-additional-notes {
   background-color: #fffffe;
-  border: 1px solid #adb6c5;
+  border: none !important;
   /* Match border color */
   border-radius: 6px;
   /* Same border radius */
@@ -155,7 +155,7 @@
 
 .create-game .player-count-input {
   background-color: #fffffe;
-  border: 1px solid #bcc1ca;
+  border: none !important;
   border-radius: 6px;
   height: 48px;
   width: 100%;
@@ -333,12 +333,11 @@
 }
 
 .create-game .overlap-2 {
-  border-radius: 4px;
-  height: 49px;
-  left: 29px;
+  height: 77px;
+  left: 259px;
   position: absolute;
-  top: 478px;
-  width: 449px;
+  top: 355px;
+  width: 220px;
 }
 
 .create-game .textbox-5 {
@@ -449,11 +448,11 @@
 }
 
 .create-game .textbox-6 {
-  height: 77px;
+  height: 74px;
   left: 0;
   position: absolute;
   top: 0;
-  width: 220px;
+  width: 216px;
 }
 
 .create-game .textfield-3 {
@@ -517,7 +516,7 @@
 
 .create-game .textfield-4 {
   background-color: #fffffe;
-  border: 1px solid;
+  border: 1px solid #343434 !important;
   border-color: #adb6c5;
   border-radius: 6px;
   height: 50px;
@@ -534,9 +533,9 @@
 
 .create-game .date-input {
   background-color: #fffffe;
-  border: 1px solid #adb6c5;
+  border: none !important;
   border-radius: 6px;
-  height: 50px;
+  height: 48px !important;
   width: 100%;
   /* Set width to full container */
   padding: 0 10px;
@@ -569,27 +568,27 @@
   height: 74px;
   left: 30px;
   position: absolute;
-  top: 358px;
+  top: 355px !important;
   width: 216px;
 }
 
 .create-game .textbox-8 {
-  height: 74px;
+  height: 77px !important;
   left: 0;
   position: absolute;
   top: 0;
-  width: 216px;
+  width: 220px;
 }
 
 .create-game .textfield-5 {
   background-color: #fffffe;
-  border: 1px solid;
+  border: 1px solid #343434 !important;
   border-color: #bcc1ca;
-  border-radius: 6px;
-  height: 48px;
+  border-radius: 4px !important;
+  height: 51px !important;
   left: -1px;
   position: absolute;
-  top: 26px;
+  top: 26px !important;
   width: 217px;
 }
 
@@ -637,7 +636,7 @@
 
 .create-game .textfield-time {
   background-color: #fffffe;
-  border: 1px solid;
+  border: 1px solid #343434 !important;
   border-color: #bcc1ca;
   border-radius: 4px;
   height: 50px;
@@ -1248,25 +1247,25 @@
   white-space: nowrap;
 }
 
-.create-game .text-wrapper-26 {
-  color: #1f1f1f;
+.create-game .text-wrapper-261 {
+  color: #1b1b1b;
   font-family: "Inter", Helvetica;
   font-size: 20px;
   font-weight: 700;
-  left: 1065px;
+  left: 1080px !important;
   letter-spacing: 0;
   line-height: 30px;
   position: absolute;
-  top: 104px;
+  top: 103px;
   white-space: nowrap;
 }
 
 .create-game .image-6 {
+  width: 42px;
   height: 43px;
-  left: 12px;
   position: absolute;
   top: 10px;
-  width: 42px;
+  left: 12px;
 }
 
 /* Make the selector more specific and use !important if needed */
@@ -1285,7 +1284,19 @@
   left: 0; /* Center the text by removing left offset */
 }
 
-.container-upcoming-games {
+.create-game .scroll-instruction-text {
+  color: #8e8e8e;
+  font-family: "Inter", Helvetica;
+  font-size: 14px;
+  position: absolute;
+  left: 1020px;  /* Match container-upcoming-games left position */
+  top: 160px;    /* 30px above the container-upcoming-games */
+  width: 348px;  /* Match container width */
+  text-align: center;
+}
+
+/* Existing container-upcoming-games styles remain the same */
+.create-game .container-upcoming-games {
   background-color: #fefffe;
   border: 1px solid;
   border-color: #f9fbfd;
@@ -1298,137 +1309,4 @@
   width: 348px;
   overflow-y: auto;
   padding: 10px;
-}
-
-.event-item {
-  border-bottom: 1px solid #f0f0f0;
-  padding: 15px 10px;
-  position: relative;
-  min-height: 80px;
-}
-
-.event-date {
-  color: #8e8e8e;
-  font-family: "Inter", Helvetica;
-  font-size: 15px;
-  font-weight: 400;
-  left: 21px;
-  letter-spacing: 0;
-  line-height: 20px;
-  position: absolute;
-  top: 42px;
-}
-
-.event-sport {
-  color: #2d2d2d;
-  font-family: "Inter", Helvetica;
-  font-size: 15px;
-  font-weight: 400;
-  left: 21px;
-  letter-spacing: 0;
-  line-height: 24px;
-  position: absolute;
-  top: 15px;
-  white-space: nowrap;
-}
-.sport {
-  color: #2d2d2d;
-  font-family: "Inter", Helvetica;
-  font-size: 15px;
-  font-weight: 400;
-  padding-left: 5px;
-  position: relative;
-}
-
-.event-details {
-  color: #8e8e8e;
-  font-family: "Inter", Helvetica;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 1.5;
-  padding-left: 5px;
-  position: relative;
-}
-
-.event-item {
-  padding: 15px;
-  border-bottom: 1px solid #f0f0f0;
-  display: flex;
-  flex-direction: column;
-  gap: 10px; /* Space between sport name and details */
-}
-.create-game .profile-container {
-  background-color: #fefffe;
-  border: 1px solid;
-  border-color: #d1dedf;
-  border-radius: 8px;
-  box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
-  height: 275px;
-  left: 23px;
-  position: absolute;
-  top: 98px;
-  width: 355px;
-}
-.sports-buttons-container {
-  position: relative;
-  display: flex;
-  overflow-x: auto;
-  gap: 10px;
-  padding: 10px 0;
-  margin: 10px 0;
-  left: 10px;
-  max-width: 90%; /* Reduce from 100% to prevent overflow */
-  margin-left: 5%; /* Center the container */
-  scrollbar-width: thin;
-  scrollbar-color: #091e57 transparent;
-  -webkit-overflow-scrolling: touch;
-  margin-top: 20px; /* Adjusted spacing */
-}
-
-.sports-buttons-container::-webkit-scrollbar {
-  height: 6px;
-}
-
-.sports-buttons-container::-webkit-scrollbar-thumb {
-  background-color: #091e57;
-  border-radius: 3px;
-}
-
-.sports-buttons-container::-webkit-scrollbar-track {
-  background: transparent;
-}
-.text-wrapper-sports {
-  color: #1b1b1b;
-  font-family: "Inter", Helvetica;
-  font-size: 14px;
-  font-weight: 400;
-  left: 24px;
-  letter-spacing: 0;
-  line-height: 22px;
-  position: absolute;
-  top: -10px;
-  white-space: nowrap;
-  margin-bottom: 10px;
-}
-
-.create-game select,
-.create-game option {
-  font-family: "Inter", Helvetica;
-  font-size: 14px;
-}
-
-.create-game .location-dropdown-item {
-  font-family: "Inter", Helvetica;
-  font-size: 14px;
-  padding: 10px;
-  cursor: pointer;
-  color: #434343;
-}
-
-.create-game input::placeholder {
-  font-family: "Inter", Helvetica;
-}
-
-.create-game textarea {
-  font-family: "Inter", Helvetica;
 }

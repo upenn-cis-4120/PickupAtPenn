@@ -118,16 +118,16 @@
   }
   
   .basketball-chat .text-wrapper-menu-title {
-      color: #172b61;
-      font-family: "Inter", Helvetica;
-      font-size: 27px;
-      font-weight: 700;
-      left: 63px;
-      letter-spacing: 0;
-      line-height: 42px;
-      position: absolute;
-      top: 8px;
-      white-space: nowrap;
+    color: rgb(23, 43, 97);
+    letter-spacing: 0px;
+    white-space: nowrap;
+    font-family: Inter, Helvetica;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 42px;
+    position: absolute;
+    top: 8px;
+    left: 63px;
   }
   
   .basketball-chat .prof {

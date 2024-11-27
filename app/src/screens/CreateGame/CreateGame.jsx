@@ -109,6 +109,10 @@ export const CreateGame = () => {
           discoveryDocs: ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"],
         })
         .then(() => {
+          // Check if user is signed in
+          if (!gapi.auth2.getAuthInstance().isSignedIn.get()) {
+            gapi.auth2.getAuthInstance().signIn();
+          }
           fetchEvents();
         })
         .catch((err) => console.error("Error initializing calendar:", err));
@@ -265,7 +269,9 @@ const handleCreateGame = async () => {
         'dateTime': endDateTime.toISOString(),
         'timeZone': 'America/New_York'
       },
-      'location': selectedLocation
+      'location': selectedLocation,
+      'visibility': 'public',
+      'transparency': 'transparent',
     };
     console.log('Event object created:', event);
 
@@ -291,9 +297,28 @@ const handleCreateGame = async () => {
     const responses = await Promise.all(createPromises);
     console.log('Events created successfully:', responses.map(r => r.result));
 
-    navigate("/", { state: { additionalNotes } });
+    // Subscribe user to calendars if not already subscribed
+    targetCalendars.forEach(async (calendarId) => {
+      try {
+        await gapi.client.calendar.calendarList.insert({
+          'resource': {
+            'id': calendarId
+          }
+        });
+        console.log(`Subscribed to calendar: ${calendarId}`);
+      } catch (error) {
+        // Ignore if already subscribed
+        if (error.result.error.code !== 409) {
+          console.error(`Error subscribing to calendar: ${error}`);
+        }
+      }
+    });
+
+    alert('Game created successfully!');
+    navigate('/');
   } catch (error) {
     console.error('Error in handleCreateGame:', error);
+    alert('Failed to create game. Please try again.');
   }
 };
 const [joinedSports, setJoinedSports] = useState(() => {
@@ -669,26 +694,29 @@ useEffect(() => {
         />
       </div>
 
-          <div className="container-upcoming-games">
-      {calendarEvents
-        .filter(event => event.summary?.startsWith('PICKUP:'))
-        .map((event, index) => {
-          const { date, time } = formatDateTime(event.start.dateTime || event.start.date);
-          const location = event.location || "Location TBD";
-          const sport = event.summary?.replace('PICKUP:', '').trim().split(" ")[0] || "Sport";
+          <div className="scroll-instruction-text">Scroll to see your upcoming games</div>
 
-          return (
-            <div key={event.id} className="event-item">
-              <div className="sport">{sport}</div>
-              <div className="event-details">
-                {`${date}, ${time}`}
-                <br />
-                {location}
-              </div>
-            </div>
-          );
-      })}
-    </div>
+          <div className="container-upcoming-games">
+            
+            {calendarEvents
+              .filter(event => event.summary?.startsWith('PICKUP:'))
+              .map((event, index) => {
+                const { date, time } = formatDateTime(event.start.dateTime || event.start.date);
+                const location = event.location || "Location TBD";
+                const sport = event.summary?.replace('PICKUP:', '').trim().split(" ")[0] || "Sport";
+
+                return (
+                  <div key={event.id} className="event-item">
+                    <div className="sport">{sport}</div>
+                    <div className="event-details">
+                      {`${date}, ${time}`}
+                      <br />
+                      {location}
+                    </div>
+                  </div>
+                );
+            })}
+        </div>
 
 
       
@@ -698,15 +726,15 @@ useEffect(() => {
       {/* <button className="button-4">
         <div className="text-wrapper-24">Create New Game</div>
       </button> */}
-
+      
       <div className="text-wrapper-25">Pickup@Penn</div>
 
-      <div className="text-wrapper-26">Upcoming Games</div>
+      <div className="text-wrapper-261">Upcoming Games</div>
 
       <img
         className="image-6"
         alt="Image"
-        src="https://c.animaapp.com/BPOawRxV/img/image-12@2x.png"
+        src="https://c.animaapp.com/RqvJyPyX/img/image-28@2x.png"
       />
     </div>
   );

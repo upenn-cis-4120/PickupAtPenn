@@ -20,7 +20,7 @@ export const Home = () => {
     { id: 3, data: ["Looking for 2 more players for volleyball at Pottruck tonight!", colinImage, "Colin Speaker", "@cspeaker - 3 hr"]},
     { id: 4, data: ["Anyone up for tennis at Hamlin? Courts are empty right now.", angieImage, "Angie Geralis", "@ageralis - 4 hr"]},
     { id: 5, data: ["Ultimate frisbee pickup game starting at Penn Park in 15!", colinImage, "Colin Speaker", "@cspeaker - 6 hr"]},
-    { id: 6, data: ["Beautiful day for soccer - organizing a game at Penn Park at 4pm", angieImage, "Angie Geralis", "@ageralis - 7 hr"]},
+    { id: 6, data: ["Beautiful day for soccer - organizing a game at Penn Park at pm", angieImage, "Angie Geralis", "@ageralis - 7 hr"]},
   ]);
   const [calendarEvents, setCalendarEvents] = useState([]);
 
@@ -54,7 +54,7 @@ export const Home = () => {
     };
   }, []);
 
-  // Move fetchEvents outside of useEffect
+  // Move fetchEvents outside useEffect so it can be called from anywhere
   const fetchEvents = () => {
     gapi.client.calendar.events
       .list({
@@ -125,6 +125,7 @@ export const Home = () => {
     return tomorrow.toLocaleDateString('en-US', { month: 'long', day: 'numeric' });
   };
 
+  // Add this function after the formatDateTime function
   const addToCalendar = (sport, isToday) => {
     const eventDate = new Date();
     if (!isToday) {
@@ -377,7 +378,7 @@ export const Home = () => {
 </div>
 
       
-      <Link to="/create-game-prefill">
+      <Link to="/create-game">
       <button className="button-4">
         <div className="text-wrapper-23">Create New Game</div>
 

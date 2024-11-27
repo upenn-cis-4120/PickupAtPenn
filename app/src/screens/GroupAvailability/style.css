@@ -200,6 +200,7 @@
   margin: 20px;
   padding: 20px;
   width: 800px;
+  top: 130px !important;
 }
 
 .time-labels {
@@ -1008,10 +1009,10 @@
     border-radius: 12px;
     box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
     height: 937px;
-    left: 0;
+    left: 20px;
     position: absolute;
-    top: 70px;
-    width: 698px;
+    top: 280px;  /* Increase this value to move container down */
+    width: 700px;
   }
   
   .group-availability .overlap-17 {
@@ -2600,7 +2601,107 @@
     height: 937px;
     left: 728px;
     position: absolute;
-    top: 70px;
+    top: 280px;  /* Match container-2's top value */
     width: 700px;
+  }
+  
+  .explanation-wrapper {
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 70px;  /* Position it below the header */
+    left: 0px;
+    right: 0;
+    z-index: 1;
+  }
+
+  .explanation-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .personal-explanation, .group-explanation {
+    background-color: transparent; /* Remove background color */
+    padding: 0; /* Remove padding */
+    box-shadow: none; /* Remove box shadow */
+    flex: 1;
+  }
+
+  .personal-explanation h3, .group-explanation h3 {
+    color: #091e57;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .personal-explanation p, .group-explanation p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+
+  .legend {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: #666;
+  }
+
+  .legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+  }
+
+  .legend-color.busy-1 {
+    background-color: rgba(54, 77, 125, 0.3);
+  }
+
+  .legend-color.busy-2 {
+    background-color: rgba(54, 77, 125, 0.6);
+  }
+
+  .legend-color.busy-3 {
+    background-color: rgba(54, 77, 125, 0.9);
+  }
+  
+  .page-title-wrapper {
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .page-title {
+    color: #091e57;
+    font-family: "Inter", Helvetica;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+  .page-subtitle {
+    color: #666;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 2px;
   }
   

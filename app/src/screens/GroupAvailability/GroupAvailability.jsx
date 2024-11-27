@@ -263,9 +263,13 @@ export const GroupAvailability = () => {
         />
         </Link>
       </div>
+      <div className="page-title-wrapper">
+        <h1 className="page-title">View everyone's availability</h1>
+        <p className="page-subtitle">Compare schedules to find the perfect time to play</p>
+      </div>
       <div className="container-2">
-      <div className="header-row">
-        <h2 className="group-s-availability">Your Availability</h2>
+        <div className="header-row">
+          <h2 className="group-s-availability">Your Availability</h2>
         </div>
         <div className="availability-grid">
           <div className="time-labels">
@@ -281,66 +285,94 @@ export const GroupAvailability = () => {
             ))}
           </div>
           <div className="grid">
-          {createPersonalTimeGrid(personalEvents).map((day, dayIndex) => (
-            <div key={dayIndex} className="day-column">
-              {day.map((count, timeIndex) => (
-                <div 
-                  key={`${dayIndex}-${timeIndex}`} 
-                  className={`grid-cell busy-${Math.min(count, 1)}`}
-                />
-              ))}
-            </div>
-          ))}
+            {createPersonalTimeGrid(personalEvents).map((day, dayIndex) => (
+              <div key={dayIndex} className="day-column">
+                {day.map((count, timeIndex) => (
+                  <div 
+                    key={`${dayIndex}-${timeIndex}`} 
+                    className={`grid-cell busy-${Math.min(count, 1)}`}
+                  />
+                ))}
+              </div>
+            ))}
+          </div>
         </div>
+        <div className="personal-explanation">
+          <p>Shows your busy times based on your Google Calendar. 
+          Darker cells indicate when you're unavailable.</p>
+          <div className="legend">
+            <div className="legend-item">
+              <div className="legend-color busy-1"></div>
+              <span>You are busy</span>
+            </div>
+          </div>
         </div>
       </div>
 
       <div className="container-4">
-      <div className="header-row">
-        <h2 className="group-s-availability">Group Availability</h2>
-        <select 
-          value={selectedSport}
-          onChange={handleSportChange}
-          className="sport-selector"
-        >
-          {joinedSports.map(sport => (
-            <option 
-              key={sport} 
-              value={sportNameMapping[sport] || sport.toLowerCase()}
-            >
-              {sport}
-            </option>
-          ))}
-        </select>
-      </div>
-  <div className="availability-grid">
-    <div className="time-labels">
-      {Array(12).fill().map((_, i) => (
-        <div key={i} className="time-label">
-          {formatTimeLabel(i + 9)}
+        <div className="header-row">
+          <h2 className="group-s-availability">Group Availability</h2>
+          <select 
+            value={selectedSport}
+            onChange={handleSportChange}
+            className="sport-selector"
+          >
+            {joinedSports.map(sport => (
+              <option 
+                key={sport} 
+                value={sportNameMapping[sport] || sport.toLowerCase()}
+              >
+                {sport}
+              </option>
+            ))}
+          </select>
         </div>
-      ))}
-    </div>
-    <div className="day-labels">
-      {['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map(day => (
-        <div key={day} className="day-label">{day}</div>
-      ))}
-    </div>
-      <div className="grid">
-    {createTimeGrid(groupEvents).map((day, dayIndex) => (
-      <div key={dayIndex} className="day-column">
-        {day.map((cell, timeIndex) => (
-          <div 
-            key={`${dayIndex}-${timeIndex}`} 
-            className={`grid-cell busy-${Math.min(cell.count, 4)}`}
-            data-tooltip={cell.names.length > 0 ? cell.names.join(", ") : null}
-          />
-        ))}
+        <div className="availability-grid">
+          <div className="time-labels">
+            {Array(12).fill().map((_, i) => (
+              <div key={i} className="time-label">
+                {formatTimeLabel(i + 9)}
+              </div>
+            ))}
+          </div>
+          <div className="day-labels">
+            {['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map(day => (
+              <div key={day} className="day-label">{day}</div>
+            ))}
+          </div>
+          <div className="grid">
+            {createTimeGrid(groupEvents).map((day, dayIndex) => (
+              <div key={dayIndex} className="day-column">
+                {day.map((cell, timeIndex) => (
+                  <div 
+                    key={`${dayIndex}-${timeIndex}`} 
+                    className={`grid-cell busy-${Math.min(cell.count, 4)}`}
+                    data-tooltip={cell.names.length > 0 ? cell.names.join(", ") : null}
+                  />
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="group-explanation">
+          <p>Select a sport above to see when other players are available. 
+          Darker cells show how many players are busy.</p>
+          <div className="legend">
+            <div className="legend-item">
+              <div className="legend-color busy-1"></div>
+              <span>1 player busy</span>
+            </div>
+            <div className="legend-item">
+              <div className="legend-color busy-2"></div>
+              <span>2 players busy</span>
+            </div>
+            <div className="legend-item">
+              <div className="legend-color busy-3"></div>
+              <span>3+ players busy</span>
+            </div>
+          </div>
+        </div>
       </div>
-    ))}
-</div>
     </div>
-  </div>
-  </div>
   );
 };
