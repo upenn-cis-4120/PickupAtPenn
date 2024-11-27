@@ -1825,7 +1825,7 @@ svg.leaflet-zoom-animated {
   color: #213468;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Archivo, Helvetica;
+  font-family: Inter, Helvetica;
   font-size: 26px;
   font-weight: 700;
   line-height: 40px;
@@ -3391,7 +3391,7 @@ svg.leaflet-zoom-animated {
   color: #172b61;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Archivo, Helvetica;
+  font-family: Inter, Helvetica;
   font-size: 27px;
   font-weight: 700;
   line-height: 42px;
@@ -3498,7 +3498,7 @@ svg.leaflet-zoom-animated {
   letter-spacing: 0;
   white-space: nowrap;
   margin: 0;
-  font-family: Archivo, Helvetica;
+  font-family: Inter, Helvetica;
   font-size: 25px;
   font-weight: 700;
   line-height: 38px;
@@ -3545,7 +3545,7 @@ svg.leaflet-zoom-animated {
   color: #223568;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Archivo, Helvetica;
+  font-family: Inter, Helvetica;
   font-size: 21px;
   font-weight: 700;
   line-height: 32px;
@@ -4137,7 +4137,7 @@ svg.leaflet-zoom-animated {
   color: #223568;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Archivo, Helvetica;
+  font-family: Inter, Helvetica;
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
@@ -4163,7 +4163,7 @@ svg.leaflet-zoom-animated {
   color: #223568;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Archivo, Helvetica;
+  font-family: Inter, Helvetica;
   font-size: 21px;
   font-weight: 700;
   line-height: 32px;
@@ -5569,7 +5569,7 @@ svg.leaflet-zoom-animated {
   color: #223568;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Archivo, Helvetica;
+  font-family: Inter, Helvetica;
   font-size: 25px;
   font-weight: 700;
   line-height: 38px;
@@ -5698,24 +5698,11 @@ svg.leaflet-zoom-animated {
   overflow: hidden;
 }
 
-.your-availability .text-wrapper-menu-title {
+.your-availability .text-wrapper-menu-title, .button .text-wrapper-menu-title {
   color: #172b61;
   letter-spacing: 0;
   white-space: nowrap;
   font-family: Inter, Helvetica;
-  font-size: 27px;
-  font-weight: 700;
-  line-height: 42px;
-  position: absolute;
-  top: 8px;
-  left: 63px;
-}
-
-.button .text-wrapper-menu-title {
-  color: #172b61;
-  letter-spacing: 0;
-  white-space: nowrap;
-  font-family: Archivo, Helvetica;
   font-size: 27px;
   font-weight: 700;
   line-height: 42px;
@@ -5782,7 +5769,7 @@ svg.leaflet-zoom-animated {
   color: #223568;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Archivo, Helvetica;
+  font-family: Inter, Helvetica;
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
@@ -5828,7 +5815,7 @@ svg.leaflet-zoom-animated {
   color: #223568;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Archivo, Helvetica;
+  font-family: Inter, Helvetica;
   font-size: 21px;
   font-weight: 700;
   line-height: 32px;
@@ -7727,7 +7714,7 @@ svg.leaflet-zoom-animated {
   color: #223568;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Archivo, Helvetica;
+  font-family: Inter, Helvetica;
   font-size: 26px;
   font-weight: 700;
   line-height: 40px;
@@ -8061,7 +8048,7 @@ svg.leaflet-zoom-animated {
   color: #172b61;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Archivo, Helvetica;
+  font-family: Inter, Helvetica;
   font-size: 27px;
   font-weight: 700;
   line-height: 42px;
@@ -8155,7 +8142,7 @@ svg.leaflet-zoom-animated {
   color: #000;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Archivo, Helvetica;
+  font-family: Inter, Helvetica;
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
@@ -8581,7 +8568,7 @@ svg.leaflet-zoom-animated {
   color: #1b1b1b;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Archivo, Helvetica;
+  font-family: Inter, Helvetica;
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
@@ -8594,7 +8581,7 @@ svg.leaflet-zoom-animated {
   color: #000;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Archivo, Helvetica;
+  font-family: Inter, Helvetica;
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
@@ -8975,7 +8962,7 @@ svg.leaflet-zoom-animated {
   color: #172b61;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Archivo, Helvetica;
+  font-family: Inter, Helvetica;
   font-size: 27px;
   font-weight: 700;
   line-height: 42px;
@@ -9232,7 +9219,7 @@ select.input-field {
   color: #172b61;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Archivo, Helvetica;
+  font-family: Inter, Helvetica;
   font-size: 27px;
   font-weight: 700;
   line-height: 42px;
@@ -9369,7 +9356,7 @@ select.input-field {
   color: #172b61;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Archivo, Helvetica;
+  font-family: Inter, Helvetica;
   font-size: 27px;
   font-weight: 700;
   line-height: 42px;
@@ -10292,7 +10279,7 @@ select.input-field {
   color: #000;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Archivo, Helvetica;
+  font-family: Inter, Helvetica;
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
@@ -10688,7 +10675,7 @@ select.input-field {
   color: #172b61;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Archivo, Helvetica;
+  font-family: Inter, Helvetica;
   font-size: 27px;
   font-weight: 700;
   line-height: 42px;
@@ -10701,7 +10688,7 @@ select.input-field {
   color: #1f1f1f;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Archivo, Helvetica;
+  font-family: Inter, Helvetica;
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
