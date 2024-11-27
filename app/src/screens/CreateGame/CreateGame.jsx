@@ -396,15 +396,17 @@ useEffect(() => {
         <div className="overlap">
           <div className="textbox-2">
             <div className="text-wrapper-4">Location</div>
-            <div className="textfield-2">
-              <div className="text-wrapper-5">{selectedLocation}</div>
-            </div>
-            <img
-              className="img dropdown-arrow"
-              alt="Dropdown Arrow"
-              src="https://c.animaapp.com/BPOawRxV/img/image-16@2x.png"
+            <div 
+              className="textfield-2"
               onClick={() => setIsLocationDropdownOpen(!isLocationDropdownOpen)}
-            />
+            >
+              <div className="text-wrapper-5">{selectedLocation}</div>
+              <img
+                className="img dropdown-arrow"
+                alt="Dropdown Arrow"
+                src="https://c.animaapp.com/BPOawRxV/img/image-16@2x.png"
+              />
+            </div>
           </div>
 
           {isLocationDropdownOpen && (
@@ -436,17 +438,18 @@ useEffect(() => {
         <div className="overlap-group">
           <div className="textbox-4">
             <div className="text-wrapper-4">Sport</div>
-
-            <div className="textfield-2">
+            
+            <div 
+              className="textfield-2"
+              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+            >
               <div className="text-wrapper-5">{selectedSport}</div>
+              <img
+                className="img dropdown-arrow"
+                alt="Dropdown Arrow"
+                src="https://c.animaapp.com/BPOawRxV/img/image-16@2x.png"
+              />
             </div>
-
-            <img
-              className="img dropdown-arrow"
-              alt="Dropdown Arrow"
-              src="https://c.animaapp.com/BPOawRxV/img/image-16@2x.png"
-              onClick={() => setIsDropdownOpen(!isDropdownOpen)} // Toggle dropdown on arrow click
-            />
           </div>
 
           {isDropdownOpen && (
@@ -464,20 +467,15 @@ useEffect(() => {
           )}
         </div>
         <div className="overlap-2">
-          <div className="textbox-5">
-            {/* <div className="text-wrapper-6">Group Chat</div> */}
-
-            {/* Display selected group chat */}
+          <div 
+            className="textbox-5"
+            onClick={() => setIsGroupChatDropdownOpen(!isGroupChatDropdownOpen)}
+          >
             <div className="text-selected-group">{selectedGroupChat}</div>
-
-            {/* Dropdown arrow to toggle visibility */}
             <img
-              className="image-2 dropdown-arrow"
+              className="image-2"
               alt="Dropdown Arrow"
               src="https://c.animaapp.com/BPOawRxV/img/image-17@2x.png"
-              onClick={() =>
-                setIsGroupChatDropdownOpen(!isGroupChatDropdownOpen)
-              }
             />
           </div>
 
@@ -502,18 +500,18 @@ useEffect(() => {
         <div className="overlap-3">
           <div className="textbox-6">
             <div className="text-wrapper-2">Skill Level</div>
-
-            <div className="textfield-3">
+            <div 
+              className="textfield-3"
+              onClick={() => setIsSkillDropdownOpen(!isSkillDropdownOpen)}
+            >
               <div className="text-wrapper-8">{selectedSkill}</div>
+              <img
+                className="image-3 dropdown-arrow"
+                alt="Dropdown Arrow"
+                src="https://c.animaapp.com/BPOawRxV/img/image-13@2x.png"
+              />
             </div>
           </div>
-
-          <img
-            className="image-3 dropdown-arrow"
-            alt="Dropdown Arrow"
-            src="https://c.animaapp.com/BPOawRxV/img/image-13@2x.png"
-            onClick={() => setIsSkillDropdownOpen(!isSkillDropdownOpen)} // Toggle dropdown on arrow click
-          />
         </div>
         {isSkillDropdownOpen && (
           <div className="skill-dropdown-menu">

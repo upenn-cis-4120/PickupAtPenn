@@ -3155,16 +3155,90 @@ svg.leaflet-zoom-animated {
   padding: 10px;
 }
 
+.create-game .textfield-2 {
+  cursor: pointer;
+  background-color: #fffffe;
+  border: 1px solid #434343;
+  border-radius: 6px;
+  align-items: center;
+  width: 449px;
+  height: 43px;
+  padding: 0 15px;
+  display: flex;
+  position: absolute;
+  top: 26px;
+  left: -1px;
+}
+
+.create-game .dropdown-arrow {
+  cursor: pointer;
+  z-index: 1;
+  position: absolute;
+  right: 15px;
+}
+
 .create-game .dropdown-item {
   cursor: pointer;
   color: #434343;
   padding: 10px;
 }
 
-.create-game .groupchat-dropdown-item {
+.create-game .textbox-5 {
   cursor: pointer;
+  background-color: #fffffe;
+  border: 1px solid #3b3b3b;
+  border-radius: 4px;
+  align-items: center;
+  width: 449px;
+  height: 49px;
+  padding: 0 15px;
+  display: flex;
+  position: relative;
+}
+
+.create-game .text-selected-group {
   color: #434343;
-  padding: 10px;
+  white-space: nowrap;
+  flex-grow: 1;
+  font-family: Inter, Helvetica;
+  font-size: 16px;
+}
+
+.create-game .image-2 {
+  width: 18px;
+  height: 17px;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+
+.create-game .groupchat-dropdown-menu {
+  z-index: 10;
+  background-color: #fffffe;
+  border: 1px solid #434343;
+  border-radius: 6px;
+  width: 449px;
+  max-height: 150px;
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  overflow-y: auto;
+}
+
+.create-game .textfield-3 {
+  cursor: pointer;
+  background-color: #fffffe;
+  border: 1px solid #343434;
+  border-radius: 4px;
+  align-items: center;
+  width: 221px;
+  height: 51px;
+  padding: 0 15px;
+  display: flex;
+  position: absolute;
+  top: 26px;
+  left: -1px;
 }
 
 .create-game .skill-dropdown-item {

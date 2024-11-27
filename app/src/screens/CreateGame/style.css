@@ -278,11 +278,17 @@
   position: absolute;
   top: 26px;
   width: 449px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
 }
 
 .create-game .dropdown-arrow {
+  position: absolute;
+  right: 15px;
   cursor: pointer;
-  margin-left: 10px;
+  z-index: 1;
 }
 
 .create-game .dropdown-menu {
@@ -345,6 +351,40 @@
   height: 49px;
   position: relative;
   width: 449px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.create-game .text-selected-group {
+  color: #434343;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  flex-grow: 1;
+  white-space: nowrap;
+}
+
+.create-game .image-2 {
+  height: 17px;
+  width: 18px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.create-game .groupchat-dropdown-menu {
+  position: absolute;
+  background-color: #fffffe;
+  border: 1px solid #434343;
+  border-radius: 6px;
+  width: 449px;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 10;
+  top: calc(100% + 5px);
+  left: 0;
 }
 
 .create-game .text-wrapper-6 {
@@ -353,73 +393,6 @@
   font-size: 16px;
   font-weight: 400;
   padding: 10px;
-}
-
-.create-game .text-selected-group {
-  color: #434343;
-  font-family: "Inter", Helvetica;
-  font-size: 16px;
-  padding: 15px 20px;
-  display: inline-block;
-}
-
-.create-game .groupchat-dropdown-menu {
-  position: absolute;
-  background-color: #fffffe;
-  border: 1px solid #434343;
-  border-radius: 6px;
-  width: 100%;
-  /* Match width with text box */
-  max-height: 150px;
-  overflow-y: auto;
-  z-index: 10;
-  top: 100%;
-  /* Position dropdown below the text box */
-}
-
-.create-game .groupchat-dropdown-item {
-  padding: 10px;
-  cursor: pointer;
-  color: #434343;
-}
-
-.create-game .groupchat-dropdown-item:hover {
-  background-color: #f0f0f0;
-}
-
-.create-game .dropdown-arrow {
-  position: absolute;
-  top: 40px;
-  right: 15px;
-  cursor: pointer;
-}
-
-.create-game .image-2 {
-  height: 17px;
-  left: 419px;
-  position: absolute;
-  top: 15px;
-  width: 18px;
-}
-
-.create-game .button {
-  all: unset;
-  background-color: #091e57;
-  border: 1px solid;
-  border-color: transparent;
-  border-radius: 8px;
-  box-sizing: border-box;
-  height: 42px;
-  left: 34px;
-  overflow: hidden;
-  position: absolute;
-  top: 776px;
-  width: 442px;
-  cursor: pointer;
-}
-
-.create-game .button:hover {
-  background-color: #0c2468;
 }
 
 .create-game .text-wrapper-7 {
@@ -461,6 +434,10 @@
   position: absolute;
   top: 26px;
   width: 221px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
 }
 
 .create-game .skill-dropdown-menu {
