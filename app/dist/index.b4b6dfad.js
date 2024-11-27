@@ -6146,7 +6146,7 @@ const Schedule = ()=>{
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                            to: "/create-game",
+                                            to: "/create-game-prefill",
                                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                                 className: "create-game-button",
                                                 children: [

@@ -8,8 +8,8 @@
 
 .home .container {
   background-color: #fefffe;
-   border: 1px solid #f9fbfd;
-   border-radius: 6px;
+  border: 1px solid #d1dedf;
+  border-radius: 8px;
   box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
   height: 205px;
   left: 396px;
@@ -35,8 +35,7 @@
 .home .button {
   all: unset;
   background-color: #091e57;
-  border: 1px solid;
-  border-color: #485782;
+  border: 1px solid #d1dedf;
   border-radius: 8px;
   box-sizing: border-box;
   height: 42px;
@@ -116,9 +115,8 @@
 
 .home .container-2 {
   background-color: #fefffe;
-  border: 1px solid;
-  border-color: #f9fbfd;
-  border-radius: 6px;
+  border: 1px solid #d1dedf;
+  border-radius: 8px;
   box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
   height: 198px;
   left: 376px;
@@ -144,9 +142,8 @@
 .home .div-wrapper {
   all: unset;
   background-color: #091e57;
-  border: 1px solid;
-  border-color: #485782;
-  border-radius: 21px;
+  border: 1px solid #d1dedf;
+  border-radius: 8px;
   box-sizing: border-box;
   height: 42px;
   left: 23px;
@@ -223,7 +220,7 @@
 }
 
 .home .frame {
-  border-radius: 6px;
+  border-radius: 8px;
   height: 52px;
   left: 0;
   overflow: hidden;
@@ -246,7 +243,7 @@
 }
 
 .home .frame-2 {
-  border-radius: 6px;
+  border-radius: 8px;
   height: 52px;
   left: 100px;
   overflow: hidden;
@@ -269,7 +266,7 @@
 }
 
 .home .frame-3 {
-  border-radius: 6px;
+  border-radius: 8px;
   height: 52px;
   left: 207px;
   overflow: hidden;
@@ -279,7 +276,7 @@
 }
 
 .home .frame-4 {
-  border-radius: 6px;
+  border-radius: 8px;
   height: 52px;
   left: 318px;
   overflow: hidden;
@@ -332,8 +329,7 @@
 
 .home .profile-container {
   background-color: #fefffe;
-  border: 1px solid;
-  border-color: #d1dedf;
+  border: 1px solid #d1dedf;
   border-radius: 8px;
   box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
   height: 275px;
@@ -347,8 +343,7 @@
 .home .button-2 {
   all: unset;
   background-color: #091e57;
-  border: 1px solid;
-  border-color: #485782;
+  border: 1px solid #d1dedf;
   border-radius: 8px;
   box-sizing: border-box;
   height: 42px;
@@ -387,8 +382,7 @@
 .home .button-3 {
   all: unset;
   background-color: #8c1a11;
-  border: 1px solid;
-  border-color: transparent;
+  border: 1px solid #d1dedf;
   border-radius: 8px;
   box-sizing: border-box;
   height: 42px;
@@ -475,8 +469,7 @@
 
 .home .textbox {
   background-color: #fffffe;
-  border: 1px solid;
-  border-color: #d9e4e5;
+  border: 1px solid #d9e4e5;
   border-radius: 8px;
   height: 73px;
   left: -1px;
@@ -500,8 +493,7 @@
 
 .home .textfield {
   background-color: #fffffe;
-  border: 1px solid;
-  border-color: #d9e4e5;
+  border: 1px solid #d9e4e5;
   border-radius: 8px;
   height: 73px;
   left: -1px;
@@ -533,8 +525,7 @@
 
 .home .container-5 {
   background-color: #fefffe;
-  border: 1px solid;
-  border-color: #f9fbfd;
+  border: 1px solid #d1dedf;
   border-radius: 8px;
   box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
   height: 99px;
@@ -599,9 +590,8 @@
 
 .home .overlap-wrapper {
   background-color: #fefffe;
-  border: 1px solid;
-  border-color: #dae5e5;
-  border-radius: 4px;
+  border: 1px solid #d1dedf;
+  border-radius: 8px;
   box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
   height: 98px;
   left: 1075px;
@@ -646,9 +636,8 @@
 
 .home .container-10 {
   background-color: #fefffe;
-  border: 1px solid;
-  border-color: #dae5e5;
-  border-radius: 4px;
+  border: 1px solid #d1dedf;
+  border-radius: 8px;
   box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
   height: 98px;
   left: 1075px;
@@ -681,8 +670,7 @@
 
 .home .textbox-2 {
   background-color: #fefffe;
-  border: 1px solid;
-  border-color: #d1dedf;
+  border: 1px solid #d1dedf;
   border-radius: 8px;
   height: 62px;
   left: 22px;
@@ -715,8 +703,7 @@
 .home .button-4 {
   all: unset;
   background-color: #8c1a11;
-  border: 1px solid;
-  border-color: transparent;
+  border: 1px solid #d1dedf;
   border-radius: 8px;
   box-sizing: border-box;
   height: 49px;
@@ -777,8 +764,7 @@
 /* Calendar event containers */
 [class^="calendar-event-container-"] {
   background-color: #fefffe;
-  border: 1px solid;
-  border-color: #f9fbfd;
+  border: 1px solid #d1dedf;
   border-radius: 8px;
   box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
   height: 99px;
@@ -822,7 +808,7 @@
 
 .container-upcoming-games {
   background-color: #fefffe;
-  border: 1px solid #f9fbfd;
+  border: 1px solid #d1dedf;
   border-radius: 8px;
   box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
   height: 500px;
@@ -910,8 +896,7 @@
 
 .home .chat-textfield-7 {
   background-color: #fffffe;
-  border: 1px solid;
-  border-color: #d9e4e5;
+  border: 1px solid #d9e4e5;
   border-radius: 8px;
   height: 70px;
   left: -1px;
@@ -948,9 +933,8 @@
 
 .home .chat-textbox-11 {
   background-color: #fffffe;
-  border: 1px solid;
-  border-color: #e4ebed;
-  border-radius: 12px;
+  border: 1px solid #d1dedf;
+  border-radius: 8px;
   height: 64px;
   left: 15px;
   position: absolute;
@@ -1085,8 +1069,8 @@
   background-color: #091e57;
   color: white;
   padding: 8px 16px;
-  border-radius: 21px;
-  border: 1px solid #485782;
+  border-radius: 8px;
+  border: 1px solid #d1dedf;
   margin: 5px;
   white-space: nowrap;
   cursor: pointer;
