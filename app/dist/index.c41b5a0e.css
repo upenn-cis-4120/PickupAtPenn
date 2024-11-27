@@ -19,658 +19,6 @@ a {
   text-decoration: none;
 }
 
-.leaflet-pane, .leaflet-tile, .leaflet-marker-icon, .leaflet-marker-shadow, .leaflet-tile-container, .leaflet-pane > svg, .leaflet-pane > canvas, .leaflet-zoom-box, .leaflet-image-layer, .leaflet-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.leaflet-container {
-  overflow: hidden;
-}
-
-.leaflet-tile, .leaflet-marker-icon, .leaflet-marker-shadow {
-  -webkit-user-select: none;
-  user-select: none;
-  -webkit-user-drag: none;
-}
-
-.leaflet-tile::selection {
-  background: none;
-}
-
-.leaflet-safari .leaflet-tile {
-  image-rendering: -webkit-optimize-contrast;
-}
-
-.leaflet-safari .leaflet-tile-container {
-  -webkit-transform-origin: 0 0;
-  width: 1600px;
-  height: 1600px;
-}
-
-.leaflet-marker-icon, .leaflet-marker-shadow {
-  display: block;
-}
-
-.leaflet-container .leaflet-overlay-pane svg {
-  max-width: none !important;
-  max-height: none !important;
-}
-
-.leaflet-container .leaflet-marker-pane img, .leaflet-container .leaflet-shadow-pane img, .leaflet-container .leaflet-tile-pane img, .leaflet-container img.leaflet-image-layer, .leaflet-container .leaflet-tile {
-  width: auto;
-  padding: 0;
-  max-width: none !important;
-  max-height: none !important;
-}
-
-.leaflet-container img.leaflet-tile {
-  mix-blend-mode: plus-lighter;
-}
-
-.leaflet-container.leaflet-touch-zoom {
-  -ms-touch-action: pan-x pan-y;
-  touch-action: pan-x pan-y;
-}
-
-.leaflet-container.leaflet-touch-drag {
-  -ms-touch-action: pinch-zoom;
-  touch-action: none;
-  touch-action: pinch-zoom;
-}
-
-.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom {
-  -ms-touch-action: none;
-  touch-action: none;
-}
-
-.leaflet-container {
-  -webkit-tap-highlight-color: transparent;
-}
-
-.leaflet-container a {
-  -webkit-tap-highlight-color: #33b5e566;
-}
-
-.leaflet-tile {
-  filter: inherit;
-  visibility: hidden;
-}
-
-.leaflet-tile-loaded {
-  visibility: inherit;
-}
-
-.leaflet-zoom-box {
-  box-sizing: border-box;
-  z-index: 800;
-  width: 0;
-  height: 0;
-}
-
-.leaflet-overlay-pane svg {
-  -moz-user-select: none;
-}
-
-.leaflet-pane {
-  z-index: 400;
-}
-
-.leaflet-tile-pane {
-  z-index: 200;
-}
-
-.leaflet-overlay-pane {
-  z-index: 400;
-}
-
-.leaflet-shadow-pane {
-  z-index: 500;
-}
-
-.leaflet-marker-pane {
-  z-index: 600;
-}
-
-.leaflet-tooltip-pane {
-  z-index: 650;
-}
-
-.leaflet-popup-pane {
-  z-index: 700;
-}
-
-.leaflet-map-pane canvas {
-  z-index: 100;
-}
-
-.leaflet-map-pane svg {
-  z-index: 200;
-}
-
-.leaflet-vml-shape {
-  width: 1px;
-  height: 1px;
-}
-
-.lvml {
-  behavior: url("#default#VML");
-  display: inline-block;
-  position: absolute;
-}
-
-.leaflet-control {
-  z-index: 800;
-  pointer-events: visiblePainted;
-  pointer-events: auto;
-  position: relative;
-}
-
-.leaflet-top, .leaflet-bottom {
-  z-index: 1000;
-  pointer-events: none;
-  position: absolute;
-}
-
-.leaflet-top {
-  top: 0;
-}
-
-.leaflet-right {
-  right: 0;
-}
-
-.leaflet-bottom {
-  bottom: 0;
-}
-
-.leaflet-left {
-  left: 0;
-}
-
-.leaflet-control {
-  float: left;
-  clear: both;
-}
-
-.leaflet-right .leaflet-control {
-  float: right;
-}
-
-.leaflet-top .leaflet-control {
-  margin-top: 10px;
-}
-
-.leaflet-bottom .leaflet-control {
-  margin-bottom: 10px;
-}
-
-.leaflet-left .leaflet-control {
-  margin-left: 10px;
-}
-
-.leaflet-right .leaflet-control {
-  margin-right: 10px;
-}
-
-.leaflet-fade-anim .leaflet-popup {
-  opacity: 0;
-  transition: opacity .2s linear;
-}
-
-.leaflet-fade-anim .leaflet-map-pane .leaflet-popup {
-  opacity: 1;
-}
-
-.leaflet-zoom-animated {
-  transform-origin: 0 0;
-}
-
-svg.leaflet-zoom-animated {
-  will-change: transform;
-}
-
-.leaflet-zoom-anim .leaflet-zoom-animated {
-  -webkit-transition: -webkit-transform .25s cubic-bezier(0, 0, .25, 1);
-  -moz-transition: -moz-transform .25s cubic-bezier(0, 0, .25, 1);
-  transition: transform .25s cubic-bezier(0, 0, .25, 1);
-}
-
-.leaflet-zoom-anim .leaflet-tile, .leaflet-pan-anim .leaflet-tile {
-  transition: none;
-}
-
-.leaflet-zoom-anim .leaflet-zoom-hide {
-  visibility: hidden;
-}
-
-.leaflet-interactive {
-  cursor: pointer;
-}
-
-.leaflet-grab {
-  cursor: -webkit-grab;
-  cursor: -moz-grab;
-  cursor: grab;
-}
-
-.leaflet-crosshair, .leaflet-crosshair .leaflet-interactive {
-  cursor: crosshair;
-}
-
-.leaflet-popup-pane, .leaflet-control {
-  cursor: auto;
-}
-
-.leaflet-dragging .leaflet-grab, .leaflet-dragging .leaflet-grab .leaflet-interactive, .leaflet-dragging .leaflet-marker-draggable {
-  cursor: move;
-  cursor: -webkit-grabbing;
-  cursor: -moz-grabbing;
-  cursor: grabbing;
-}
-
-.leaflet-marker-icon, .leaflet-marker-shadow, .leaflet-image-layer, .leaflet-pane > svg path, .leaflet-tile-container {
-  pointer-events: none;
-}
-
-.leaflet-marker-icon.leaflet-interactive, .leaflet-image-layer.leaflet-interactive, .leaflet-pane > svg path.leaflet-interactive, svg.leaflet-image-layer.leaflet-interactive path {
-  pointer-events: visiblePainted;
-  pointer-events: auto;
-}
-
-.leaflet-container {
-  outline-offset: 1px;
-  background: #ddd;
-}
-
-.leaflet-container a {
-  color: #0078a8;
-}
-
-.leaflet-zoom-box {
-  background: #ffffff80;
-  border: 2px dotted #38f;
-}
-
-.leaflet-container {
-  font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
-  font-size: .75rem;
-  line-height: 1.5;
-}
-
-.leaflet-bar {
-  border-radius: 4px;
-  box-shadow: 0 1px 5px #000000a6;
-}
-
-.leaflet-bar a {
-  text-align: center;
-  color: #000;
-  background-color: #fff;
-  border-bottom: 1px solid #ccc;
-  width: 26px;
-  height: 26px;
-  line-height: 26px;
-  text-decoration: none;
-  display: block;
-}
-
-.leaflet-bar a, .leaflet-control-layers-toggle {
-  background-position: 50%;
-  background-repeat: no-repeat;
-  display: block;
-}
-
-.leaflet-bar a:hover, .leaflet-bar a:focus {
-  background-color: #f4f4f4;
-}
-
-.leaflet-bar a:first-child {
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-}
-
-.leaflet-bar a:last-child {
-  border-bottom: none;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-}
-
-.leaflet-bar a.leaflet-disabled {
-  cursor: default;
-  color: #bbb;
-  background-color: #f4f4f4;
-}
-
-.leaflet-touch .leaflet-bar a {
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-}
-
-.leaflet-touch .leaflet-bar a:first-child {
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-}
-
-.leaflet-touch .leaflet-bar a:last-child {
-  border-bottom-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-}
-
-.leaflet-control-zoom-in, .leaflet-control-zoom-out {
-  text-indent: 1px;
-  font: bold 18px Lucida Console, Monaco, monospace;
-}
-
-.leaflet-touch .leaflet-control-zoom-in, .leaflet-touch .leaflet-control-zoom-out {
-  font-size: 22px;
-}
-
-.leaflet-control-layers {
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 1px 5px #0006;
-}
-
-.leaflet-control-layers-toggle {
-  background-image: url("layers.19804faf.png");
-  width: 36px;
-  height: 36px;
-}
-
-.leaflet-retina .leaflet-control-layers-toggle {
-  background-image: url("layers-2x.0d380d65.png");
-  background-size: 26px 26px;
-}
-
-.leaflet-touch .leaflet-control-layers-toggle {
-  width: 44px;
-  height: 44px;
-}
-
-.leaflet-control-layers .leaflet-control-layers-list, .leaflet-control-layers-expanded .leaflet-control-layers-toggle {
-  display: none;
-}
-
-.leaflet-control-layers-expanded .leaflet-control-layers-list {
-  display: block;
-  position: relative;
-}
-
-.leaflet-control-layers-expanded {
-  color: #333;
-  background: #fff;
-  padding: 6px 10px 6px 6px;
-}
-
-.leaflet-control-layers-scrollbar {
-  padding-right: 5px;
-  overflow: hidden scroll;
-}
-
-.leaflet-control-layers-selector {
-  margin-top: 2px;
-  position: relative;
-  top: 1px;
-}
-
-.leaflet-control-layers label {
-  font-size: 1.08333em;
-  display: block;
-}
-
-.leaflet-control-layers-separator {
-  border-top: 1px solid #ddd;
-  height: 0;
-  margin: 5px -10px 5px -6px;
-}
-
-.leaflet-default-icon-path {
-  background-image: url("marker-icon.61a78335.png");
-}
-
-.leaflet-container .leaflet-control-attribution {
-  background: #fffc;
-  margin: 0;
-}
-
-.leaflet-control-attribution, .leaflet-control-scale-line {
-  color: #333;
-  padding: 0 5px;
-  line-height: 1.4;
-}
-
-.leaflet-control-attribution a {
-  text-decoration: none;
-}
-
-.leaflet-control-attribution a:hover, .leaflet-control-attribution a:focus {
-  text-decoration: underline;
-}
-
-.leaflet-attribution-flag {
-  width: 1em;
-  height: .6669em;
-  vertical-align: baseline !important;
-  display: inline !important;
-}
-
-.leaflet-left .leaflet-control-scale {
-  margin-left: 5px;
-}
-
-.leaflet-bottom .leaflet-control-scale {
-  margin-bottom: 5px;
-}
-
-.leaflet-control-scale-line {
-  white-space: nowrap;
-  box-sizing: border-box;
-  text-shadow: 1px 1px #fff;
-  background: #fffc;
-  border: 2px solid #777;
-  border-top: none;
-  padding: 2px 5px 1px;
-  line-height: 1.1;
-}
-
-.leaflet-control-scale-line:not(:first-child) {
-  border-top: 2px solid #777;
-  border-bottom: none;
-  margin-top: -2px;
-}
-
-.leaflet-control-scale-line:not(:first-child):not(:last-child) {
-  border-bottom: 2px solid #777;
-}
-
-.leaflet-touch .leaflet-control-attribution, .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
-  box-shadow: none;
-}
-
-.leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
-  background-clip: padding-box;
-  border: 2px solid #0003;
-}
-
-.leaflet-popup {
-  text-align: center;
-  margin-bottom: 20px;
-  position: absolute;
-}
-
-.leaflet-popup-content-wrapper {
-  text-align: left;
-  border-radius: 12px;
-  padding: 1px;
-}
-
-.leaflet-popup-content {
-  min-height: 1px;
-  margin: 13px 24px 13px 20px;
-  font-size: 1.08333em;
-  line-height: 1.3;
-}
-
-.leaflet-popup-content p {
-  margin: 1.3em 0;
-}
-
-.leaflet-popup-tip-container {
-  pointer-events: none;
-  width: 40px;
-  height: 20px;
-  margin-top: -1px;
-  margin-left: -20px;
-  position: absolute;
-  left: 50%;
-  overflow: hidden;
-}
-
-.leaflet-popup-tip {
-  pointer-events: auto;
-  width: 17px;
-  height: 17px;
-  margin: -10px auto 0;
-  padding: 1px;
-  transform: rotate(45deg);
-}
-
-.leaflet-popup-content-wrapper, .leaflet-popup-tip {
-  color: #333;
-  background: #fff;
-  box-shadow: 0 3px 14px #0006;
-}
-
-.leaflet-container a.leaflet-popup-close-button {
-  text-align: center;
-  color: #757575;
-  background: none;
-  border: none;
-  width: 24px;
-  height: 24px;
-  font: 16px / 24px Tahoma, Verdana, sans-serif;
-  text-decoration: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.leaflet-container a.leaflet-popup-close-button:hover, .leaflet-container a.leaflet-popup-close-button:focus {
-  color: #585858;
-}
-
-.leaflet-popup-scrolled {
-  overflow: auto;
-}
-
-.leaflet-oldie .leaflet-popup-content-wrapper {
-  -ms-zoom: 1;
-}
-
-.leaflet-oldie .leaflet-popup-tip {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)";
-  width: 24px;
-  filter: progid:DXImageTransform. Microsoft. Matrix(M11= .707107, M12= .707107, M21= -.707107, M22= .707107);
-  margin: 0 auto;
-}
-
-.leaflet-oldie .leaflet-control-zoom, .leaflet-oldie .leaflet-control-layers, .leaflet-oldie .leaflet-popup-content-wrapper, .leaflet-oldie .leaflet-popup-tip {
-  border: 1px solid #999;
-}
-
-.leaflet-div-icon {
-  background: #fff;
-  border: 1px solid #666;
-}
-
-.leaflet-tooltip {
-  color: #222;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  user-select: none;
-  pointer-events: none;
-  background-color: #fff;
-  border: 1px solid #fff;
-  border-radius: 3px;
-  padding: 6px;
-  position: absolute;
-  box-shadow: 0 1px 3px #0006;
-}
-
-.leaflet-tooltip.leaflet-interactive {
-  cursor: pointer;
-  pointer-events: auto;
-}
-
-.leaflet-tooltip-top:before, .leaflet-tooltip-bottom:before, .leaflet-tooltip-left:before, .leaflet-tooltip-right:before {
-  pointer-events: none;
-  content: "";
-  background: none;
-  border: 6px solid #0000;
-  position: absolute;
-}
-
-.leaflet-tooltip-bottom {
-  margin-top: 6px;
-}
-
-.leaflet-tooltip-top {
-  margin-top: -6px;
-}
-
-.leaflet-tooltip-bottom:before, .leaflet-tooltip-top:before {
-  margin-left: -6px;
-  left: 50%;
-}
-
-.leaflet-tooltip-top:before {
-  border-top-color: #fff;
-  margin-bottom: -12px;
-  bottom: 0;
-}
-
-.leaflet-tooltip-bottom:before {
-  border-bottom-color: #fff;
-  margin-top: -12px;
-  margin-left: -6px;
-  top: 0;
-}
-
-.leaflet-tooltip-left {
-  margin-left: -6px;
-}
-
-.leaflet-tooltip-right {
-  margin-left: 6px;
-}
-
-.leaflet-tooltip-left:before, .leaflet-tooltip-right:before {
-  margin-top: -6px;
-  top: 50%;
-}
-
-.leaflet-tooltip-left:before {
-  border-left-color: #fff;
-  margin-right: -12px;
-  right: 0;
-}
-
-.leaflet-tooltip-right:before {
-  border-right-color: #fff;
-  margin-left: -12px;
-  left: 0;
-}
-
-@media print {
-  .leaflet-control {
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
-}
-
 .schedule {
   background-color: #f9fbfd;
   width: 1740px;
@@ -3149,120 +2497,27 @@ svg.leaflet-zoom-animated {
   background-color: #122a6e;
 }
 
-.create-game .location-dropdown-item {
+.create-game .dropdown-arrow1 {
   cursor: pointer;
-  color: #434343;
-  padding: 10px;
-}
-
-.create-game .textfield-2 {
-  cursor: pointer;
-  background-color: #fffffe;
-  border: 1px solid #434343;
-  border-radius: 6px;
-  align-items: center;
-  width: 100%;
-  height: 43px;
-  padding: 0 15px;
-  display: flex;
-  position: relative;
-}
-
-.create-game .dropdown-arrow {
-  display: none;
-}
-
-.create-game .dropdown-item {
-  cursor: pointer;
-  color: #434343;
-  padding: 10px;
-}
-
-.create-game .img {
-  display: none;
-}
-
-.create-game .textbox-5 {
-  cursor: pointer;
-  background-color: #fffffe;
-  border: 1px solid #3b3b3b;
-  border-radius: 4px;
-  align-items: center;
-  width: 449px;
-  height: 49px;
-  padding: 0 15px;
-  display: flex;
-  position: relative;
-}
-
-.create-game .text-selected-group {
-  color: #434343;
-  white-space: nowrap;
-  flex-grow: 1;
-  font-family: Inter, Helvetica;
-  font-size: 16px;
-}
-
-.create-game .image-2 {
-  display: none;
-}
-
-.create-game .groupchat-dropdown-menu {
-  z-index: 10;
-  background-color: #fffffe;
-  border: 1px solid #434343;
-  border-radius: 6px;
-  width: 449px;
-  max-height: 150px;
   position: absolute;
-  top: calc(100% + 5px);
-  left: 0;
-  overflow-y: auto;
+  right: 20px;
+  top: 15px !important;
 }
 
-.create-game .textfield-3 {
-  cursor: pointer;
-  background-color: #fffffe;
-  border: 1px solid #343434;
-  border-radius: 4px;
-  align-items: center;
-  width: 221px;
-  height: 51px;
-  padding: 0 15px;
-  display: flex;
-  position: relative;
+.create-game .image-21 {
+  width: 18px;
+  height: 17px;
+  position: absolute;
+  top: 15px !important;
+  left: 410px !important;
 }
 
-.create-game .skill-dropdown-item {
-  cursor: pointer;
-  color: #434343;
-  padding: 10px;
-}
-
-.create-game .image-3 {
-  display: none;
-}
-
-.create-game .text-wrapper-8 {
-  color: #434343;
-  white-space: nowrap;
-  flex-grow: 1;
-  font-family: Inter, Helvetica;
-  font-size: 16px;
-}
-
-.create-game .dropdown-indicator {
-  pointer-events: none;
+.create-game .image-31 {
   width: 16px;
   height: 16px;
   position: absolute;
-  top: 50%;
-  right: 15px;
-  transform: translateY(-50%);
-}
-
-.create-game .textfield-2, .create-game .textfield-3, .create-game .textbox-5 {
-  position: relative;
+  left: 182px;
+  top: 15px !important;
 }
 
 .group-availability {
@@ -3380,14 +2635,6 @@ svg.leaflet-zoom-animated {
   position: relative;
 }
 
-.day-label {
-  text-align: center;
-  color: #333;
-  flex: 1;
-  font-family: Inter, Helvetica;
-  font-size: 14px;
-}
-
 .grid-cell.busy-1 {
   background-color: #364d7d66;
 }
@@ -3417,7 +2664,6 @@ svg.leaflet-zoom-animated {
   align-items: center;
   height: 30px;
   padding-right: 10px;
-  font-family: Inter, Helvetica;
   font-size: 12px;
   display: flex;
 }
@@ -3483,7 +2729,7 @@ svg.leaflet-zoom-animated {
   color: #172b61;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Inter, Helvetica;
+  font-family: Archivo, Helvetica;
   font-size: 27px;
   font-weight: 700;
   line-height: 42px;
@@ -3590,7 +2836,7 @@ svg.leaflet-zoom-animated {
   letter-spacing: 0;
   white-space: nowrap;
   margin: 0;
-  font-family: Inter, Helvetica;
+  font-family: Archivo, Helvetica;
   font-size: 25px;
   font-weight: 700;
   line-height: 38px;
@@ -3637,7 +2883,7 @@ svg.leaflet-zoom-animated {
   color: #223568;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Inter, Helvetica;
+  font-family: Archivo, Helvetica;
   font-size: 21px;
   font-weight: 700;
   line-height: 32px;
@@ -4229,7 +3475,7 @@ svg.leaflet-zoom-animated {
   color: #223568;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Inter, Helvetica;
+  font-family: Archivo, Helvetica;
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
@@ -4255,7 +3501,7 @@ svg.leaflet-zoom-animated {
   color: #223568;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Inter, Helvetica;
+  font-family: Archivo, Helvetica;
   font-size: 21px;
   font-weight: 700;
   line-height: 32px;
@@ -5661,7 +4907,7 @@ svg.leaflet-zoom-animated {
   color: #223568;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Inter, Helvetica;
+  font-family: Archivo, Helvetica;
   font-size: 25px;
   font-weight: 700;
   line-height: 38px;
@@ -5794,7 +5040,7 @@ svg.leaflet-zoom-animated {
   color: #172b61;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Inter, Helvetica;
+  font-family: Archivo, Helvetica;
   font-size: 27px;
   font-weight: 700;
   line-height: 42px;
@@ -5861,7 +5107,7 @@ svg.leaflet-zoom-animated {
   color: #223568;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Inter, Helvetica;
+  font-family: Archivo, Helvetica;
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
@@ -5907,7 +5153,7 @@ svg.leaflet-zoom-animated {
   color: #223568;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Inter, Helvetica;
+  font-family: Archivo, Helvetica;
   font-size: 21px;
   font-weight: 700;
   line-height: 32px;
@@ -7806,7 +7052,7 @@ svg.leaflet-zoom-animated {
   color: #223568;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Inter, Helvetica;
+  font-family: Archivo, Helvetica;
   font-size: 26px;
   font-weight: 700;
   line-height: 40px;
@@ -7831,6 +7077,658 @@ svg.leaflet-zoom-animated {
   left: 12px;
 }
 
+.leaflet-pane, .leaflet-tile, .leaflet-marker-icon, .leaflet-marker-shadow, .leaflet-tile-container, .leaflet-pane > svg, .leaflet-pane > canvas, .leaflet-zoom-box, .leaflet-image-layer, .leaflet-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.leaflet-container {
+  overflow: hidden;
+}
+
+.leaflet-tile, .leaflet-marker-icon, .leaflet-marker-shadow {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.leaflet-tile::selection {
+  background: none;
+}
+
+.leaflet-safari .leaflet-tile {
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.leaflet-safari .leaflet-tile-container {
+  -webkit-transform-origin: 0 0;
+  width: 1600px;
+  height: 1600px;
+}
+
+.leaflet-marker-icon, .leaflet-marker-shadow {
+  display: block;
+}
+
+.leaflet-container .leaflet-overlay-pane svg {
+  max-width: none !important;
+  max-height: none !important;
+}
+
+.leaflet-container .leaflet-marker-pane img, .leaflet-container .leaflet-shadow-pane img, .leaflet-container .leaflet-tile-pane img, .leaflet-container img.leaflet-image-layer, .leaflet-container .leaflet-tile {
+  width: auto;
+  padding: 0;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+.leaflet-container img.leaflet-tile {
+  mix-blend-mode: plus-lighter;
+}
+
+.leaflet-container.leaflet-touch-zoom {
+  -ms-touch-action: pan-x pan-y;
+  touch-action: pan-x pan-y;
+}
+
+.leaflet-container.leaflet-touch-drag {
+  -ms-touch-action: pinch-zoom;
+  touch-action: none;
+  touch-action: pinch-zoom;
+}
+
+.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom {
+  -ms-touch-action: none;
+  touch-action: none;
+}
+
+.leaflet-container {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.leaflet-container a {
+  -webkit-tap-highlight-color: #33b5e566;
+}
+
+.leaflet-tile {
+  filter: inherit;
+  visibility: hidden;
+}
+
+.leaflet-tile-loaded {
+  visibility: inherit;
+}
+
+.leaflet-zoom-box {
+  box-sizing: border-box;
+  z-index: 800;
+  width: 0;
+  height: 0;
+}
+
+.leaflet-overlay-pane svg {
+  -moz-user-select: none;
+}
+
+.leaflet-pane {
+  z-index: 400;
+}
+
+.leaflet-tile-pane {
+  z-index: 200;
+}
+
+.leaflet-overlay-pane {
+  z-index: 400;
+}
+
+.leaflet-shadow-pane {
+  z-index: 500;
+}
+
+.leaflet-marker-pane {
+  z-index: 600;
+}
+
+.leaflet-tooltip-pane {
+  z-index: 650;
+}
+
+.leaflet-popup-pane {
+  z-index: 700;
+}
+
+.leaflet-map-pane canvas {
+  z-index: 100;
+}
+
+.leaflet-map-pane svg {
+  z-index: 200;
+}
+
+.leaflet-vml-shape {
+  width: 1px;
+  height: 1px;
+}
+
+.lvml {
+  behavior: url("#default#VML");
+  display: inline-block;
+  position: absolute;
+}
+
+.leaflet-control {
+  z-index: 800;
+  pointer-events: visiblePainted;
+  pointer-events: auto;
+  position: relative;
+}
+
+.leaflet-top, .leaflet-bottom {
+  z-index: 1000;
+  pointer-events: none;
+  position: absolute;
+}
+
+.leaflet-top {
+  top: 0;
+}
+
+.leaflet-right {
+  right: 0;
+}
+
+.leaflet-bottom {
+  bottom: 0;
+}
+
+.leaflet-left {
+  left: 0;
+}
+
+.leaflet-control {
+  float: left;
+  clear: both;
+}
+
+.leaflet-right .leaflet-control {
+  float: right;
+}
+
+.leaflet-top .leaflet-control {
+  margin-top: 10px;
+}
+
+.leaflet-bottom .leaflet-control {
+  margin-bottom: 10px;
+}
+
+.leaflet-left .leaflet-control {
+  margin-left: 10px;
+}
+
+.leaflet-right .leaflet-control {
+  margin-right: 10px;
+}
+
+.leaflet-fade-anim .leaflet-popup {
+  opacity: 0;
+  transition: opacity .2s linear;
+}
+
+.leaflet-fade-anim .leaflet-map-pane .leaflet-popup {
+  opacity: 1;
+}
+
+.leaflet-zoom-animated {
+  transform-origin: 0 0;
+}
+
+svg.leaflet-zoom-animated {
+  will-change: transform;
+}
+
+.leaflet-zoom-anim .leaflet-zoom-animated {
+  -webkit-transition: -webkit-transform .25s cubic-bezier(0, 0, .25, 1);
+  -moz-transition: -moz-transform .25s cubic-bezier(0, 0, .25, 1);
+  transition: transform .25s cubic-bezier(0, 0, .25, 1);
+}
+
+.leaflet-zoom-anim .leaflet-tile, .leaflet-pan-anim .leaflet-tile {
+  transition: none;
+}
+
+.leaflet-zoom-anim .leaflet-zoom-hide {
+  visibility: hidden;
+}
+
+.leaflet-interactive {
+  cursor: pointer;
+}
+
+.leaflet-grab {
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+}
+
+.leaflet-crosshair, .leaflet-crosshair .leaflet-interactive {
+  cursor: crosshair;
+}
+
+.leaflet-popup-pane, .leaflet-control {
+  cursor: auto;
+}
+
+.leaflet-dragging .leaflet-grab, .leaflet-dragging .leaflet-grab .leaflet-interactive, .leaflet-dragging .leaflet-marker-draggable {
+  cursor: move;
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: grabbing;
+}
+
+.leaflet-marker-icon, .leaflet-marker-shadow, .leaflet-image-layer, .leaflet-pane > svg path, .leaflet-tile-container {
+  pointer-events: none;
+}
+
+.leaflet-marker-icon.leaflet-interactive, .leaflet-image-layer.leaflet-interactive, .leaflet-pane > svg path.leaflet-interactive, svg.leaflet-image-layer.leaflet-interactive path {
+  pointer-events: visiblePainted;
+  pointer-events: auto;
+}
+
+.leaflet-container {
+  outline-offset: 1px;
+  background: #ddd;
+}
+
+.leaflet-container a {
+  color: #0078a8;
+}
+
+.leaflet-zoom-box {
+  background: #ffffff80;
+  border: 2px dotted #38f;
+}
+
+.leaflet-container {
+  font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
+  font-size: .75rem;
+  line-height: 1.5;
+}
+
+.leaflet-bar {
+  border-radius: 4px;
+  box-shadow: 0 1px 5px #000000a6;
+}
+
+.leaflet-bar a {
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  text-decoration: none;
+  display: block;
+}
+
+.leaflet-bar a, .leaflet-control-layers-toggle {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.leaflet-bar a:hover, .leaflet-bar a:focus {
+  background-color: #f4f4f4;
+}
+
+.leaflet-bar a:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.leaflet-bar a:last-child {
+  border-bottom: none;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.leaflet-bar a.leaflet-disabled {
+  cursor: default;
+  color: #bbb;
+  background-color: #f4f4f4;
+}
+
+.leaflet-touch .leaflet-bar a {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.leaflet-touch .leaflet-bar a:first-child {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.leaflet-touch .leaflet-bar a:last-child {
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.leaflet-control-zoom-in, .leaflet-control-zoom-out {
+  text-indent: 1px;
+  font: bold 18px Lucida Console, Monaco, monospace;
+}
+
+.leaflet-touch .leaflet-control-zoom-in, .leaflet-touch .leaflet-control-zoom-out {
+  font-size: 22px;
+}
+
+.leaflet-control-layers {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px #0006;
+}
+
+.leaflet-control-layers-toggle {
+  background-image: url("layers.19804faf.png");
+  width: 36px;
+  height: 36px;
+}
+
+.leaflet-retina .leaflet-control-layers-toggle {
+  background-image: url("layers-2x.0d380d65.png");
+  background-size: 26px 26px;
+}
+
+.leaflet-touch .leaflet-control-layers-toggle {
+  width: 44px;
+  height: 44px;
+}
+
+.leaflet-control-layers .leaflet-control-layers-list, .leaflet-control-layers-expanded .leaflet-control-layers-toggle {
+  display: none;
+}
+
+.leaflet-control-layers-expanded .leaflet-control-layers-list {
+  display: block;
+  position: relative;
+}
+
+.leaflet-control-layers-expanded {
+  color: #333;
+  background: #fff;
+  padding: 6px 10px 6px 6px;
+}
+
+.leaflet-control-layers-scrollbar {
+  padding-right: 5px;
+  overflow: hidden scroll;
+}
+
+.leaflet-control-layers-selector {
+  margin-top: 2px;
+  position: relative;
+  top: 1px;
+}
+
+.leaflet-control-layers label {
+  font-size: 1.08333em;
+  display: block;
+}
+
+.leaflet-control-layers-separator {
+  border-top: 1px solid #ddd;
+  height: 0;
+  margin: 5px -10px 5px -6px;
+}
+
+.leaflet-default-icon-path {
+  background-image: url("marker-icon.61a78335.png");
+}
+
+.leaflet-container .leaflet-control-attribution {
+  background: #fffc;
+  margin: 0;
+}
+
+.leaflet-control-attribution, .leaflet-control-scale-line {
+  color: #333;
+  padding: 0 5px;
+  line-height: 1.4;
+}
+
+.leaflet-control-attribution a {
+  text-decoration: none;
+}
+
+.leaflet-control-attribution a:hover, .leaflet-control-attribution a:focus {
+  text-decoration: underline;
+}
+
+.leaflet-attribution-flag {
+  width: 1em;
+  height: .6669em;
+  vertical-align: baseline !important;
+  display: inline !important;
+}
+
+.leaflet-left .leaflet-control-scale {
+  margin-left: 5px;
+}
+
+.leaflet-bottom .leaflet-control-scale {
+  margin-bottom: 5px;
+}
+
+.leaflet-control-scale-line {
+  white-space: nowrap;
+  box-sizing: border-box;
+  text-shadow: 1px 1px #fff;
+  background: #fffc;
+  border: 2px solid #777;
+  border-top: none;
+  padding: 2px 5px 1px;
+  line-height: 1.1;
+}
+
+.leaflet-control-scale-line:not(:first-child) {
+  border-top: 2px solid #777;
+  border-bottom: none;
+  margin-top: -2px;
+}
+
+.leaflet-control-scale-line:not(:first-child):not(:last-child) {
+  border-bottom: 2px solid #777;
+}
+
+.leaflet-touch .leaflet-control-attribution, .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
+  box-shadow: none;
+}
+
+.leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
+  background-clip: padding-box;
+  border: 2px solid #0003;
+}
+
+.leaflet-popup {
+  text-align: center;
+  margin-bottom: 20px;
+  position: absolute;
+}
+
+.leaflet-popup-content-wrapper {
+  text-align: left;
+  border-radius: 12px;
+  padding: 1px;
+}
+
+.leaflet-popup-content {
+  min-height: 1px;
+  margin: 13px 24px 13px 20px;
+  font-size: 1.08333em;
+  line-height: 1.3;
+}
+
+.leaflet-popup-content p {
+  margin: 1.3em 0;
+}
+
+.leaflet-popup-tip-container {
+  pointer-events: none;
+  width: 40px;
+  height: 20px;
+  margin-top: -1px;
+  margin-left: -20px;
+  position: absolute;
+  left: 50%;
+  overflow: hidden;
+}
+
+.leaflet-popup-tip {
+  pointer-events: auto;
+  width: 17px;
+  height: 17px;
+  margin: -10px auto 0;
+  padding: 1px;
+  transform: rotate(45deg);
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+  color: #333;
+  background: #fff;
+  box-shadow: 0 3px 14px #0006;
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+  text-align: center;
+  color: #757575;
+  background: none;
+  border: none;
+  width: 24px;
+  height: 24px;
+  font: 16px / 24px Tahoma, Verdana, sans-serif;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.leaflet-container a.leaflet-popup-close-button:hover, .leaflet-container a.leaflet-popup-close-button:focus {
+  color: #585858;
+}
+
+.leaflet-popup-scrolled {
+  overflow: auto;
+}
+
+.leaflet-oldie .leaflet-popup-content-wrapper {
+  -ms-zoom: 1;
+}
+
+.leaflet-oldie .leaflet-popup-tip {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)";
+  width: 24px;
+  filter: progid:DXImageTransform. Microsoft. Matrix(M11= .707107, M12= .707107, M21= -.707107, M22= .707107);
+  margin: 0 auto;
+}
+
+.leaflet-oldie .leaflet-control-zoom, .leaflet-oldie .leaflet-control-layers, .leaflet-oldie .leaflet-popup-content-wrapper, .leaflet-oldie .leaflet-popup-tip {
+  border: 1px solid #999;
+}
+
+.leaflet-div-icon {
+  background: #fff;
+  border: 1px solid #666;
+}
+
+.leaflet-tooltip {
+  color: #222;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  padding: 6px;
+  position: absolute;
+  box-shadow: 0 1px 3px #0006;
+}
+
+.leaflet-tooltip.leaflet-interactive {
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.leaflet-tooltip-top:before, .leaflet-tooltip-bottom:before, .leaflet-tooltip-left:before, .leaflet-tooltip-right:before {
+  pointer-events: none;
+  content: "";
+  background: none;
+  border: 6px solid #0000;
+  position: absolute;
+}
+
+.leaflet-tooltip-bottom {
+  margin-top: 6px;
+}
+
+.leaflet-tooltip-top {
+  margin-top: -6px;
+}
+
+.leaflet-tooltip-bottom:before, .leaflet-tooltip-top:before {
+  margin-left: -6px;
+  left: 50%;
+}
+
+.leaflet-tooltip-top:before {
+  border-top-color: #fff;
+  margin-bottom: -12px;
+  bottom: 0;
+}
+
+.leaflet-tooltip-bottom:before {
+  border-bottom-color: #fff;
+  margin-top: -12px;
+  margin-left: -6px;
+  top: 0;
+}
+
+.leaflet-tooltip-left {
+  margin-left: -6px;
+}
+
+.leaflet-tooltip-right {
+  margin-left: 6px;
+}
+
+.leaflet-tooltip-left:before, .leaflet-tooltip-right:before {
+  margin-top: -6px;
+  top: 50%;
+}
+
+.leaflet-tooltip-left:before {
+  border-left-color: #fff;
+  margin-right: -12px;
+  right: 0;
+}
+
+.leaflet-tooltip-right:before {
+  border-right-color: #fff;
+  margin-left: -12px;
+  left: 0;
+}
+
+@media print {
+  .leaflet-control {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
 .map {
   background-color: #f9fbfd;
   width: 100vw;
@@ -7842,9 +7740,8 @@ svg.leaflet-zoom-animated {
 .map-container {
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: calc(100vh - 80px);
-  margin-top: 75px;
+  height: calc(100vh - 153px);
+  margin-top: 105px;
   display: flex;
 }
 
@@ -8140,7 +8037,7 @@ svg.leaflet-zoom-animated {
   color: #172b61;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Inter, Helvetica;
+  font-family: Archivo, Helvetica;
   font-size: 27px;
   font-weight: 700;
   line-height: 42px;
@@ -8234,7 +8131,7 @@ svg.leaflet-zoom-animated {
   color: #000;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Inter, Helvetica;
+  font-family: Archivo, Helvetica;
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
@@ -8660,7 +8557,7 @@ svg.leaflet-zoom-animated {
   color: #1b1b1b;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Inter, Helvetica;
+  font-family: Archivo, Helvetica;
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
@@ -8673,18 +8570,13 @@ svg.leaflet-zoom-animated {
   color: #000;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Inter, Helvetica;
+  font-family: Archivo, Helvetica;
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
   position: absolute;
   top: 103px;
   left: 400px;
-}
-
-.leaflet-container {
-  width: 100% !important;
-  height: 100% !important;
 }
 
 .community {
@@ -8797,7 +8689,7 @@ svg.leaflet-zoom-animated {
   color: #172b61;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Inter, Helvetica;
+  font-family: Archivo, Helvetica;
   font-size: 27px;
   font-weight: 700;
   line-height: 42px;
@@ -8840,8 +8732,7 @@ svg.leaflet-zoom-animated {
   width: 60%;
   max-width: 600px;
   padding: 12px 20px;
-  font-family: Inter, Helvetica;
-  font-size: 14px;
+  font-size: 16px;
   transition: border-color .3s;
 }
 
@@ -8856,33 +8747,6 @@ svg.leaflet-zoom-animated {
   margin: 0 auto;
   padding: 20px;
   display: grid;
-}
-
-.sports-grid .card {
-  font-family: Inter, Helvetica;
-}
-
-.sports-grid .card-title {
-  color: #223568;
-  margin-bottom: 8px;
-  font-family: Inter, Helvetica;
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.sports-grid .card-description {
-  color: #666;
-  margin-bottom: 4px;
-  font-family: Inter, Helvetica;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.sports-grid .card-members {
-  color: #666;
-  font-family: Inter, Helvetica;
-  font-size: 12px;
-  font-weight: 400;
 }
 
 .sport-tile {
@@ -8914,7 +8778,6 @@ svg.leaflet-zoom-animated {
 .sport-info h3 {
   color: #091e57;
   margin: 0 0 10px;
-  font-family: Inter, Helvetica;
   font-size: 18px;
   font-weight: 600;
 }
@@ -8922,7 +8785,6 @@ svg.leaflet-zoom-animated {
 .sport-info p {
   color: #666;
   margin: 0 0 10px;
-  font-family: Inter, Helvetica;
   font-size: 14px;
 }
 
@@ -8945,29 +8807,6 @@ svg.leaflet-zoom-animated {
 
 .join-button:hover {
   background-color: #122f7c;
-}
-
-.community .card-title {
-  color: #223568;
-  margin-bottom: 8px;
-  font-family: Inter, Helvetica;
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.community .card-description {
-  color: #666;
-  margin-bottom: 4px;
-  font-family: Inter, Helvetica;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.community .card-members {
-  color: #666;
-  font-family: Inter, Helvetica;
-  font-size: 12px;
-  font-weight: 400;
 }
 
 .profile {
@@ -9054,7 +8893,7 @@ svg.leaflet-zoom-animated {
   color: #172b61;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Inter, Helvetica;
+  font-family: Archivo, Helvetica;
   font-size: 27px;
   font-weight: 700;
   line-height: 42px;
@@ -9148,7 +8987,6 @@ svg.leaflet-zoom-animated {
 .form-group label {
   color: #091e57;
   margin-bottom: 8px;
-  font-family: Inter, Helvetica;
   font-weight: 500;
   display: block;
 }
@@ -9311,7 +9149,7 @@ select.input-field {
   color: #172b61;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Inter, Helvetica;
+  font-family: Archivo, Helvetica;
   font-size: 27px;
   font-weight: 700;
   line-height: 42px;
@@ -9334,29 +9172,6 @@ select.input-field {
   position: absolute;
   top: 10px;
   left: 12px;
-}
-
-.chat-header h2 {
-  color: #091e57;
-  margin: 0;
-  font-family: Inter, Helvetica;
-}
-
-.member-count {
-  color: #666;
-  margin-left: 10px;
-  font-family: Inter, Helvetica;
-  font-size: 14px;
-}
-
-.messages-container {
-  flex-direction: column;
-  flex: 1;
-  gap: 15px;
-  padding: 20px;
-  font-family: Inter, Helvetica;
-  display: flex;
-  overflow-y: auto;
 }
 
 .mmessages-container::-webkit-scrollbar-track {
@@ -9448,7 +9263,7 @@ select.input-field {
   color: #172b61;
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: Inter, Helvetica;
+  font-family: Archivo, Helvetica;
   font-size: 27px;
   font-weight: 700;
   line-height: 42px;
@@ -9628,7 +9443,7 @@ select.input-field {
   width: 448px;
   height: 149px;
   position: absolute;
-  top: 617px;
+  top: 580px;
   left: 30px;
   box-shadow: 0 0 1px #171a1f12, 0 0 2px #171a1f1f;
 }
@@ -9754,6 +9569,13 @@ select.input-field {
   padding: 0 10px;
   font-family: Inter, Helvetica;
   font-size: 16px;
+}
+
+.create-game .dropdown-arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 40px;
+  right: 15px;
 }
 
 .create-game .location-dropdown-menu {
@@ -9909,7 +9731,7 @@ select.input-field {
   width: 449px;
   height: 49px;
   position: absolute;
-  top: 531px;
+  top: 478px;
   left: 29px;
 }
 
@@ -9960,13 +9782,6 @@ select.input-field {
 
 .create-game .groupchat-dropdown-item:hover {
   background-color: #f0f0f0;
-}
-
-.create-game .dropdown-arrow {
-  cursor: pointer;
-  position: absolute;
-  top: 40px;
-  right: 15px;
 }
 
 .create-game .image-2 {
@@ -10264,7 +10079,7 @@ select.input-field {
   font-weight: 400;
   line-height: 26px;
   position: absolute;
-  top: 590px;
+  top: 545px;
   left: 34px;
 }
 

@@ -380,17 +380,8 @@ useEffect(() => {
         </div>
 
         <div className="textbox">
-          <div className="textfield">
-            <input
-              type="text"
-              className="input-player-names"
-              placeholder="Enter player names or select from group chat"
-              value={playerNames}
-              onChange={handlePlayerNamesChange}
-            />
-          </div>
-
-          <div className="text-wrapper-2">Players</div>
+          
+          <div className="text-wrapper-2">Add a Group?</div>
         </div>
 
         <div className="overlap">
@@ -402,7 +393,7 @@ useEffect(() => {
             >
               <div className="text-wrapper-5">{selectedLocation}</div>
               <img
-                className="dropdown-indicator"
+                className="img dropdown-arrow1"
                 alt="Dropdown Arrow"
                 src="https://c.animaapp.com/BPOawRxV/img/image-16@2x.png"
               />
@@ -445,7 +436,7 @@ useEffect(() => {
             >
               <div className="text-wrapper-5">{selectedSport}</div>
               <img
-                className="dropdown-indicator"
+                className="img dropdown-arrow1"
                 alt="Dropdown Arrow"
                 src="https://c.animaapp.com/BPOawRxV/img/image-16@2x.png"
               />
@@ -473,7 +464,7 @@ useEffect(() => {
           >
             <div className="text-selected-group">{selectedGroupChat}</div>
             <img
-              className="dropdown-indicator"
+              className="image-21 dropdown-arrow"
               alt="Dropdown Arrow"
               src="https://c.animaapp.com/BPOawRxV/img/image-16@2x.png"
             />
@@ -507,7 +498,7 @@ useEffect(() => {
             >
               <div className="text-wrapper-8">{selectedSkill}</div>
               <img
-                className="dropdown-indicator"
+                className="image-31 dropdown-arrow"
                 alt="Dropdown Arrow"
                 src="https://c.animaapp.com/BPOawRxV/img/image-16@2x.png"
               />

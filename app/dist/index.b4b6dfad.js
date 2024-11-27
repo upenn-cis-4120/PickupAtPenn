@@ -38596,7 +38596,7 @@ const CreateGame = ()=>{
         "Basketball",
         "Soccer",
         "Tennis",
-        "Ultimate",
+        "Ultimate Frisbee",
         "Volleyball"
     ]; // List of sports
     const skillLevels = [
@@ -38619,7 +38619,7 @@ const CreateGame = ()=>{
                 "Pickup basketball game at Pottruck in 30 mins  3 spots left",
                 "https://c.animaapp.com/RqvJyPyX/img/rectangle-1@2x.png",
                 "Colin Speaker",
-                "@cspeaker -- 1 hr"
+                "@cspeaker - 1 hr"
             ]
         },
         {
@@ -38628,7 +38628,43 @@ const CreateGame = ()=>{
                 "Penn Park fields are open and empty  Perfect for soccer.",
                 "https://c.animaapp.com/RqvJyPyX/img/rectangle@2x.png",
                 "Angie Geralis",
-                "@ageralis -- 5 hr"
+                "@ageralis - 5 hr"
+            ]
+        },
+        {
+            id: 3,
+            data: [
+                "Looking for 2 more players for volleyball at Pottruck tonight!",
+                "https://c.animaapp.com/RqvJyPyX/img/rectangle-1@2x.png",
+                "Colin Speaker",
+                "@cspeaker - 3 hr"
+            ]
+        },
+        {
+            id: 4,
+            data: [
+                "Anyone up for tennis at Hamlin? Courts are empty right now.",
+                "https://c.animaapp.com/RqvJyPyX/img/rectangle@2x.png",
+                "Angie Geralis",
+                "@ageralis - 4 hr"
+            ]
+        },
+        {
+            id: 5,
+            data: [
+                "Ultimate frisbee pickup game starting at Penn Park in 15!",
+                "https://c.animaapp.com/RqvJyPyX/img/rectangle-1@2x.png",
+                "Colin Speaker",
+                "@cspeaker - 6 hr"
+            ]
+        },
+        {
+            id: 6,
+            data: [
+                "Beautiful day for soccer - organizing a game at Penn Park at 4pm",
+                "https://c.animaapp.com/RqvJyPyX/img/rectangle@2x.png",
+                "Angie Geralis",
+                "@ageralis - 7 hr"
             ]
         }
     ]);
@@ -38870,7 +38906,7 @@ const CreateGame = ()=>{
                 children: displayTime
             }, time, false, {
                 fileName: "src/screens/CreateGame/CreateGame.jsx",
-                lineNumber: 284,
+                lineNumber: 336,
                 columnNumber: 11
             }, undefined));
         }
@@ -38909,47 +38945,27 @@ const CreateGame = ()=>{
                             onChange: handleAdditionalNotesChange
                         }, void 0, false, {
                             fileName: "src/screens/CreateGame/CreateGame.jsx",
-                            lineNumber: 321,
+                            lineNumber: 373,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                        lineNumber: 320,
+                        lineNumber: 372,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "textbox",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "textfield",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                    type: "text",
-                                    className: "input-player-names",
-                                    placeholder: "Enter player names or select from group chat",
-                                    value: playerNames,
-                                    onChange: handlePlayerNamesChange
-                                }, void 0, false, {
-                                    fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                    lineNumber: 332,
-                                    columnNumber: 13
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                lineNumber: 331,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-2",
-                                children: "Players"
-                            }, void 0, false, {
-                                fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                lineNumber: 341,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-wrapper-2",
+                            children: "Add a Group?"
+                        }, void 0, false, {
+                            fileName: "src/screens/CreateGame/CreateGame.jsx",
+                            lineNumber: 384,
+                            columnNumber: 11
+                        }, undefined)
+                    }, void 0, false, {
                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                        lineNumber: 330,
+                        lineNumber: 382,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38963,38 +38979,40 @@ const CreateGame = ()=>{
                                         children: "Location"
                                     }, void 0, false, {
                                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                        lineNumber: 346,
+                                        lineNumber: 389,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "textfield-2",
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "text-wrapper-5",
-                                            children: selectedLocation
-                                        }, void 0, false, {
-                                            fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                            lineNumber: 348,
-                                            columnNumber: 15
-                                        }, undefined)
-                                    }, void 0, false, {
+                                        onClick: ()=>setIsLocationDropdownOpen(!isLocationDropdownOpen),
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "text-wrapper-5",
+                                                children: selectedLocation
+                                            }, void 0, false, {
+                                                fileName: "src/screens/CreateGame/CreateGame.jsx",
+                                                lineNumber: 394,
+                                                columnNumber: 15
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                className: "img dropdown-arrow1",
+                                                alt: "Dropdown Arrow",
+                                                src: "https://c.animaapp.com/BPOawRxV/img/image-16@2x.png"
+                                            }, void 0, false, {
+                                                fileName: "src/screens/CreateGame/CreateGame.jsx",
+                                                lineNumber: 395,
+                                                columnNumber: 15
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                        lineNumber: 347,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                        className: "img dropdown-arrow",
-                                        alt: "Dropdown Arrow",
-                                        src: "https://c.animaapp.com/BPOawRxV/img/image-16@2x.png",
-                                        onClick: ()=>setIsLocationDropdownOpen(!isLocationDropdownOpen)
-                                    }, void 0, false, {
-                                        fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                        lineNumber: 350,
+                                        lineNumber: 390,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                lineNumber: 345,
+                                lineNumber: 388,
                                 columnNumber: 11
                             }, undefined),
                             isLocationDropdownOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39005,18 +39023,18 @@ const CreateGame = ()=>{
                                         children: location
                                     }, location, false, {
                                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                        lineNumber: 361,
+                                        lineNumber: 406,
                                         columnNumber: 17
                                     }, undefined))
                             }, void 0, false, {
                                 fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                lineNumber: 359,
+                                lineNumber: 404,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                        lineNumber: 344,
+                        lineNumber: 387,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39027,7 +39045,7 @@ const CreateGame = ()=>{
                                 children: "Create a New Game"
                             }, void 0, false, {
                                 fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                lineNumber: 374,
+                                lineNumber: 419,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -39038,18 +39056,18 @@ const CreateGame = ()=>{
                                     src: "https://c.animaapp.com/BPOawRxV/img/close.svg"
                                 }, void 0, false, {
                                     fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                    lineNumber: 376,
+                                    lineNumber: 421,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                lineNumber: 375,
+                                lineNumber: 420,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                        lineNumber: 373,
+                        lineNumber: 418,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39063,38 +39081,40 @@ const CreateGame = ()=>{
                                         children: "Sport"
                                     }, void 0, false, {
                                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                        lineNumber: 386,
+                                        lineNumber: 431,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "textfield-2",
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "text-wrapper-5",
-                                            children: selectedSport
-                                        }, void 0, false, {
-                                            fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                            lineNumber: 389,
-                                            columnNumber: 15
-                                        }, undefined)
-                                    }, void 0, false, {
+                                        onClick: ()=>setIsDropdownOpen(!isDropdownOpen),
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "text-wrapper-5",
+                                                children: selectedSport
+                                            }, void 0, false, {
+                                                fileName: "src/screens/CreateGame/CreateGame.jsx",
+                                                lineNumber: 437,
+                                                columnNumber: 15
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                className: "img dropdown-arrow1",
+                                                alt: "Dropdown Arrow",
+                                                src: "https://c.animaapp.com/BPOawRxV/img/image-16@2x.png"
+                                            }, void 0, false, {
+                                                fileName: "src/screens/CreateGame/CreateGame.jsx",
+                                                lineNumber: 438,
+                                                columnNumber: 15
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                        lineNumber: 388,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                        className: "img dropdown-arrow",
-                                        alt: "Dropdown Arrow",
-                                        src: "https://c.animaapp.com/BPOawRxV/img/image-16@2x.png",
-                                        onClick: ()=>setIsDropdownOpen(!isDropdownOpen)
-                                    }, void 0, false, {
-                                        fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                        lineNumber: 392,
+                                        lineNumber: 433,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                lineNumber: 385,
+                                lineNumber: 430,
                                 columnNumber: 11
                             }, undefined),
                             isDropdownOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39105,18 +39125,18 @@ const CreateGame = ()=>{
                                         children: sport
                                     }, sport, false, {
                                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                        lineNumber: 403,
+                                        lineNumber: 449,
                                         columnNumber: 17
                                     }, undefined))
                             }, void 0, false, {
                                 fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                lineNumber: 401,
+                                lineNumber: 447,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                        lineNumber: 384,
+                        lineNumber: 429,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39124,29 +39144,29 @@ const CreateGame = ()=>{
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "textbox-5",
+                                onClick: ()=>setIsGroupChatDropdownOpen(!isGroupChatDropdownOpen),
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "text-selected-group",
                                         children: selectedGroupChat
                                     }, void 0, false, {
                                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                        lineNumber: 419,
+                                        lineNumber: 465,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                        className: "image-2 dropdown-arrow",
+                                        className: "image-21 dropdown-arrow",
                                         alt: "Dropdown Arrow",
-                                        src: "https://c.animaapp.com/BPOawRxV/img/image-17@2x.png",
-                                        onClick: ()=>setIsGroupChatDropdownOpen(!isGroupChatDropdownOpen)
+                                        src: "https://c.animaapp.com/BPOawRxV/img/image-16@2x.png"
                                     }, void 0, false, {
                                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                        lineNumber: 422,
+                                        lineNumber: 466,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                lineNumber: 415,
+                                lineNumber: 461,
                                 columnNumber: 11
                             }, undefined),
                             isGroupChatDropdownOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39157,18 +39177,18 @@ const CreateGame = ()=>{
                                         children: chat
                                     }, chat, false, {
                                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                        lineNumber: 435,
+                                        lineNumber: 476,
                                         columnNumber: 17
                                     }, undefined))
                             }, void 0, false, {
                                 fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                lineNumber: 433,
+                                lineNumber: 474,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                        lineNumber: 414,
+                        lineNumber: 460,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -39179,63 +39199,63 @@ const CreateGame = ()=>{
                             children: "Create Game"
                         }, void 0, false, {
                             fileName: "src/screens/CreateGame/CreateGame.jsx",
-                            lineNumber: 447,
+                            lineNumber: 488,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                        lineNumber: 446,
+                        lineNumber: 487,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "overlap-3",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "textbox-6",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-2",
-                                        children: "Skill Level"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                        lineNumber: 452,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "textfield-3",
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "textbox-6",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-2",
+                                    children: "Skill Level"
+                                }, void 0, false, {
+                                    fileName: "src/screens/CreateGame/CreateGame.jsx",
+                                    lineNumber: 493,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "textfield-3",
+                                    onClick: ()=>setIsSkillDropdownOpen(!isSkillDropdownOpen),
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                             className: "text-wrapper-8",
                                             children: selectedSkill
                                         }, void 0, false, {
                                             fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                            lineNumber: 455,
+                                            lineNumber: 499,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "image-31 dropdown-arrow",
+                                            alt: "Dropdown Arrow",
+                                            src: "https://c.animaapp.com/BPOawRxV/img/image-16@2x.png"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/CreateGame/CreateGame.jsx",
+                                            lineNumber: 500,
                                             columnNumber: 15
                                         }, undefined)
-                                    }, void 0, false, {
-                                        fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                        lineNumber: 454,
-                                        columnNumber: 13
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                lineNumber: 451,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                className: "image-3 dropdown-arrow",
-                                alt: "Dropdown Arrow",
-                                src: "https://c.animaapp.com/BPOawRxV/img/image-13@2x.png",
-                                onClick: ()=>setIsSkillDropdownOpen(!isSkillDropdownOpen)
-                            }, void 0, false, {
-                                fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                lineNumber: 459,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/CreateGame/CreateGame.jsx",
+                                    lineNumber: 495,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/CreateGame/CreateGame.jsx",
+                            lineNumber: 492,
+                            columnNumber: 11
+                        }, undefined)
+                    }, void 0, false, {
                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                        lineNumber: 450,
+                        lineNumber: 491,
                         columnNumber: 9
                     }, undefined),
                     isSkillDropdownOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39246,12 +39266,12 @@ const CreateGame = ()=>{
                                 children: level
                             }, level, false, {
                                 fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                lineNumber: 469,
+                                lineNumber: 511,
                                 columnNumber: 15
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                        lineNumber: 467,
+                        lineNumber: 509,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39262,7 +39282,7 @@ const CreateGame = ()=>{
                                 children: "Date"
                             }, void 0, false, {
                                 fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                lineNumber: 481,
+                                lineNumber: 523,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39274,18 +39294,18 @@ const CreateGame = ()=>{
                                     onChange: (e)=>setSelectedDate(e.target.value)
                                 }, void 0, false, {
                                     fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                    lineNumber: 484,
+                                    lineNumber: 526,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                lineNumber: 483,
+                                lineNumber: 525,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                        lineNumber: 480,
+                        lineNumber: 522,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39298,7 +39318,7 @@ const CreateGame = ()=>{
                                     children: "Number of Players"
                                 }, void 0, false, {
                                     fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                    lineNumber: 495,
+                                    lineNumber: 537,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39313,23 +39333,23 @@ const CreateGame = ()=>{
                                         className: "player-count-input"
                                     }, void 0, false, {
                                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                        lineNumber: 498,
+                                        lineNumber: 540,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                    lineNumber: 497,
+                                    lineNumber: 539,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/screens/CreateGame/CreateGame.jsx",
-                            lineNumber: 494,
+                            lineNumber: 536,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                        lineNumber: 493,
+                        lineNumber: 535,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39340,7 +39360,7 @@ const CreateGame = ()=>{
                                 children: "Time"
                             }, void 0, false, {
                                 fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                lineNumber: 517,
+                                lineNumber: 559,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39357,12 +39377,12 @@ const CreateGame = ()=>{
                                                     children: hour
                                                 }, hour, false, {
                                                     fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                                    lineNumber: 526,
+                                                    lineNumber: 568,
                                                     columnNumber: 19
                                                 }, undefined))
                                         }, void 0, false, {
                                             fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                            lineNumber: 520,
+                                            lineNumber: 562,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -39370,7 +39390,7 @@ const CreateGame = ()=>{
                                             children: ":"
                                         }, void 0, false, {
                                             fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                            lineNumber: 531,
+                                            lineNumber: 573,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
@@ -39382,12 +39402,12 @@ const CreateGame = ()=>{
                                                     children: minute
                                                 }, minute, false, {
                                                     fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                                    lineNumber: 538,
+                                                    lineNumber: 580,
                                                     columnNumber: 19
                                                 }, undefined))
                                         }, void 0, false, {
                                             fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                            lineNumber: 532,
+                                            lineNumber: 574,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
@@ -39400,7 +39420,7 @@ const CreateGame = ()=>{
                                                     children: "AM"
                                                 }, void 0, false, {
                                                     fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                                    lineNumber: 548,
+                                                    lineNumber: 590,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -39408,30 +39428,30 @@ const CreateGame = ()=>{
                                                     children: "PM"
                                                 }, void 0, false, {
                                                     fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                                    lineNumber: 549,
+                                                    lineNumber: 591,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                            lineNumber: 543,
+                                            lineNumber: 585,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                    lineNumber: 519,
+                                    lineNumber: 561,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                lineNumber: 518,
+                                lineNumber: 560,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                        lineNumber: 516,
+                        lineNumber: 558,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39439,13 +39459,13 @@ const CreateGame = ()=>{
                         children: "Additional Notes"
                     }, void 0, false, {
                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                        lineNumber: 555,
+                        lineNumber: 597,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/screens/CreateGame/CreateGame.jsx",
-                lineNumber: 319,
+                lineNumber: 371,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39459,12 +39479,12 @@ const CreateGame = ()=>{
                             src: "https://c.animaapp.com/BPOawRxV/img/rectangle@2x.png"
                         }, void 0, false, {
                             fileName: "src/screens/CreateGame/CreateGame.jsx",
-                            lineNumber: 562,
+                            lineNumber: 604,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                        lineNumber: 561,
+                        lineNumber: 603,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39472,7 +39492,7 @@ const CreateGame = ()=>{
                         children: "My Profile"
                     }, void 0, false, {
                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                        lineNumber: 570,
+                        lineNumber: 612,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39487,7 +39507,7 @@ const CreateGame = ()=>{
                                 children: "My Sports"
                             }, void 0, false, {
                                 fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                lineNumber: 573,
+                                lineNumber: 615,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39502,25 +39522,25 @@ const CreateGame = ()=>{
                                             border: '1px solid #485782',
                                             margin: '5px',
                                             whiteSpace: 'nowrap',
-                                            cursor: 'pointer',
+                                            cursor: 'default',
                                             fontFamily: "Inter, Helvetica",
                                             fontSize: '14px'
                                         },
                                         children: sport
                                     }, index, false, {
                                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                        lineNumber: 576,
+                                        lineNumber: 618,
                                         columnNumber: 15
                                     }, undefined))
                             }, void 0, false, {
                                 fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                lineNumber: 574,
+                                lineNumber: 616,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                        lineNumber: 572,
+                        lineNumber: 614,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39528,7 +39548,7 @@ const CreateGame = ()=>{
                         children: "Diana Lim"
                     }, void 0, false, {
                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                        lineNumber: 598,
+                        lineNumber: 640,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39536,7 +39556,7 @@ const CreateGame = ()=>{
                         children: "@dianadl"
                     }, void 0, false, {
                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                        lineNumber: 600,
+                        lineNumber: 642,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39544,13 +39564,13 @@ const CreateGame = ()=>{
                         children: "Edit"
                     }, void 0, false, {
                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                        lineNumber: 602,
+                        lineNumber: 644,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/screens/CreateGame/CreateGame.jsx",
-                lineNumber: 558,
+                lineNumber: 600,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39566,12 +39586,12 @@ const CreateGame = ()=>{
                                     children: "Basketball Group"
                                 }, void 0, false, {
                                     fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                    lineNumber: 608,
+                                    lineNumber: 650,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                lineNumber: 607,
+                                lineNumber: 649,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39579,13 +39599,13 @@ const CreateGame = ()=>{
                                 children: "My Chats"
                             }, void 0, false, {
                                 fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                lineNumber: 611,
+                                lineNumber: 653,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                        lineNumber: 606,
+                        lineNumber: 648,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -39594,13 +39614,13 @@ const CreateGame = ()=>{
                         src: "https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/basketball-512.png"
                     }, void 0, false, {
                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                        lineNumber: 614,
+                        lineNumber: 656,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/screens/CreateGame/CreateGame.jsx",
-                lineNumber: 605,
+                lineNumber: 647,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39611,7 +39631,7 @@ const CreateGame = ()=>{
                         children: "Soccer Group"
                     }, void 0, false, {
                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                        lineNumber: 621,
+                        lineNumber: 663,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -39620,13 +39640,13 @@ const CreateGame = ()=>{
                         src: "https://cdn-icons-png.flaticon.com/512/53/53283.png"
                     }, void 0, false, {
                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                        lineNumber: 623,
+                        lineNumber: 665,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/screens/CreateGame/CreateGame.jsx",
-                lineNumber: 620,
+                lineNumber: 662,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39643,7 +39663,7 @@ const CreateGame = ()=>{
                                 children: sport
                             }, void 0, false, {
                                 fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                lineNumber: 640,
+                                lineNumber: 682,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39652,26 +39672,26 @@ const CreateGame = ()=>{
                                     `${date}, ${time}`,
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                        lineNumber: 643,
+                                        lineNumber: 685,
                                         columnNumber: 17
                                     }, undefined),
                                     location
                                 ]
                             }, void 0, true, {
                                 fileName: "src/screens/CreateGame/CreateGame.jsx",
-                                lineNumber: 641,
+                                lineNumber: 683,
                                 columnNumber: 15
                             }, undefined)
                         ]
                     }, event.id, true, {
                         fileName: "src/screens/CreateGame/CreateGame.jsx",
-                        lineNumber: 639,
+                        lineNumber: 681,
                         columnNumber: 13
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/screens/CreateGame/CreateGame.jsx",
-                lineNumber: 630,
+                lineNumber: 672,
                 columnNumber: 11
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39679,7 +39699,7 @@ const CreateGame = ()=>{
                 children: "Pickup@Penn"
             }, void 0, false, {
                 fileName: "src/screens/CreateGame/CreateGame.jsx",
-                lineNumber: 660,
+                lineNumber: 702,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39687,7 +39707,7 @@ const CreateGame = ()=>{
                 children: "Upcoming Games"
             }, void 0, false, {
                 fileName: "src/screens/CreateGame/CreateGame.jsx",
-                lineNumber: 662,
+                lineNumber: 704,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -39696,17 +39716,17 @@ const CreateGame = ()=>{
                 src: "https://c.animaapp.com/BPOawRxV/img/image-12@2x.png"
             }, void 0, false, {
                 fileName: "src/screens/CreateGame/CreateGame.jsx",
-                lineNumber: 664,
+                lineNumber: 706,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/screens/CreateGame/CreateGame.jsx",
-        lineNumber: 318,
+        lineNumber: 370,
         columnNumber: 5
     }, undefined);
 };
-_s(CreateGame, "dgzgT/8o56/o7oFTxppFzR26uRE=", false, function() {
+_s(CreateGame, "nCUVawFHMOydkdN0WkfmMGJA5VE=", false, function() {
     return [
         (0, _reactRouterDom.useLocation),
         (0, _reactRouterDom.useNavigate)
@@ -55261,7 +55281,7 @@ const CreateGamePrefill = ()=>{
         setIsDropdownOpen(false);
         if (sport === "Basketball") {
             setSelectedLocation("Pottruck Gym");
-            setPlayerCount(1);
+            setPlayerCount(6);
             setSelectedGroupChat("Basketball");
         } else if (sport === "Soccer") {
             setSelectedLocation("Penn Park");
@@ -55440,7 +55460,7 @@ const CreateGamePrefill = ()=>{
     (0, _react.useEffect)(()=>{
         if (selectedSport === "Basketball") {
             setSelectedLocation("Pottruck Gym");
-            setPlayerCount(1);
+            setPlayerCount(6);
             setSelectedGroupChat("Basketball");
         } else if (selectedSport === "Soccer") {
             setSelectedLocation("Penn Park");
@@ -55458,9 +55478,6 @@ const CreateGamePrefill = ()=>{
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "div-wrapper",
-                        style: {
-                            marginTop: "-30px"
-                        },
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                             type: "text",
                             className: "input-additional-notes",
@@ -55481,70 +55498,15 @@ const CreateGamePrefill = ()=>{
                         className: "textbox",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "text-wrapper-2",
-                            children: "Add a Group?"
+                            children: "Add A Group?"
                         }, void 0, false, {
                             fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                            lineNumber: 374,
+                            lineNumber: 376,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
                         lineNumber: 373,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "overlap-2",
-                        style: {
-                            marginTop: "-50px"
-                        },
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "textbox-5",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-selected-group",
-                                        children: selectedGroupChat
-                                    }, void 0, false, {
-                                        fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                        lineNumber: 379,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                        className: "image-2 dropdown-arrow",
-                                        alt: "Dropdown Arrow",
-                                        src: "https://c.animaapp.com/BPOawRxV/img/image-17@2x.png",
-                                        onClick: ()=>setIsGroupChatDropdownOpen(!isGroupChatDropdownOpen)
-                                    }, void 0, false, {
-                                        fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                        lineNumber: 380,
-                                        columnNumber: 13
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                lineNumber: 378,
-                                columnNumber: 11
-                            }, undefined),
-                            isGroupChatDropdownOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "groupchat-dropdown-menu",
-                                children: groupChats.map((chat)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "groupchat-dropdown-item",
-                                        onClick: ()=>handleGroupChatClick(chat),
-                                        children: chat
-                                    }, chat, false, {
-                                        fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                        lineNumber: 391,
-                                        columnNumber: 17
-                                    }, undefined))
-                            }, void 0, false, {
-                                fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                lineNumber: 389,
-                                columnNumber: 13
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                        lineNumber: 377,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -55558,7 +55520,7 @@ const CreateGamePrefill = ()=>{
                                         children: "Location"
                                     }, void 0, false, {
                                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                        lineNumber: 405,
+                                        lineNumber: 381,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -55568,12 +55530,12 @@ const CreateGamePrefill = ()=>{
                                             children: selectedLocation
                                         }, void 0, false, {
                                             fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                            lineNumber: 407,
+                                            lineNumber: 383,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                        lineNumber: 406,
+                                        lineNumber: 382,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -55583,13 +55545,13 @@ const CreateGamePrefill = ()=>{
                                         onClick: ()=>setIsLocationDropdownOpen(!isLocationDropdownOpen)
                                     }, void 0, false, {
                                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                        lineNumber: 409,
+                                        lineNumber: 385,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                lineNumber: 404,
+                                lineNumber: 380,
                                 columnNumber: 11
                             }, undefined),
                             isLocationDropdownOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -55600,18 +55562,18 @@ const CreateGamePrefill = ()=>{
                                         children: location
                                     }, location, false, {
                                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                        lineNumber: 420,
+                                        lineNumber: 396,
                                         columnNumber: 17
                                     }, undefined))
                             }, void 0, false, {
                                 fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                lineNumber: 418,
+                                lineNumber: 394,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                        lineNumber: 403,
+                        lineNumber: 379,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -55622,7 +55584,7 @@ const CreateGamePrefill = ()=>{
                                 children: "Create a New Game"
                             }, void 0, false, {
                                 fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                lineNumber: 433,
+                                lineNumber: 409,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -55633,18 +55595,18 @@ const CreateGamePrefill = ()=>{
                                     src: "https://c.animaapp.com/BPOawRxV/img/close.svg"
                                 }, void 0, false, {
                                     fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                    lineNumber: 435,
+                                    lineNumber: 411,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                lineNumber: 434,
+                                lineNumber: 410,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                        lineNumber: 432,
+                        lineNumber: 408,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -55658,7 +55620,7 @@ const CreateGamePrefill = ()=>{
                                         children: "Sport"
                                     }, void 0, false, {
                                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                        lineNumber: 445,
+                                        lineNumber: 421,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -55668,12 +55630,12 @@ const CreateGamePrefill = ()=>{
                                             children: selectedSport
                                         }, void 0, false, {
                                             fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                            lineNumber: 448,
+                                            lineNumber: 424,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                        lineNumber: 447,
+                                        lineNumber: 423,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -55683,13 +55645,13 @@ const CreateGamePrefill = ()=>{
                                         onClick: ()=>setIsDropdownOpen(!isDropdownOpen)
                                     }, void 0, false, {
                                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                        lineNumber: 451,
+                                        lineNumber: 427,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                lineNumber: 444,
+                                lineNumber: 420,
                                 columnNumber: 11
                             }, undefined),
                             isDropdownOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -55700,18 +55662,18 @@ const CreateGamePrefill = ()=>{
                                         children: sport
                                     }, sport, false, {
                                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                        lineNumber: 462,
+                                        lineNumber: 438,
                                         columnNumber: 17
                                     }, undefined))
                             }, void 0, false, {
                                 fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                lineNumber: 460,
+                                lineNumber: 436,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                        lineNumber: 443,
+                        lineNumber: 419,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -55721,11 +55683,79 @@ const CreateGamePrefill = ()=>{
                                 className: "textbox-5",
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "text-selected-group",
+                                        children: selectedGroupChat
+                                    }, void 0, false, {
+                                        fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
+                                        lineNumber: 454,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "image-2 dropdown-arrow",
+                                        alt: "Dropdown Arrow",
+                                        src: "https://c.animaapp.com/BPOawRxV/img/image-17@2x.png",
+                                        onClick: ()=>setIsGroupChatDropdownOpen(!isGroupChatDropdownOpen)
+                                    }, void 0, false, {
+                                        fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
+                                        lineNumber: 457,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
+                                lineNumber: 450,
+                                columnNumber: 11
+                            }, undefined),
+                            isGroupChatDropdownOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "groupchat-dropdown-menu",
+                                children: groupChats.map((chat)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "groupchat-dropdown-item",
+                                        onClick: ()=>handleGroupChatClick(chat),
+                                        children: chat
+                                    }, chat, false, {
+                                        fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
+                                        lineNumber: 470,
+                                        columnNumber: 17
+                                    }, undefined))
+                            }, void 0, false, {
+                                fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
+                                lineNumber: 468,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
+                        lineNumber: 449,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "button",
+                        onClick: handleCreateGame,
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-wrapper-7",
+                            children: "Create Game"
+                        }, void 0, false, {
+                            fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
+                            lineNumber: 482,
+                            columnNumber: 11
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
+                        lineNumber: 481,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "overlap-3",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "textbox-6",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "text-wrapper-2",
                                         children: "Skill Level"
                                     }, void 0, false, {
                                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                        lineNumber: 475,
+                                        lineNumber: 487,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -55735,18 +55765,18 @@ const CreateGamePrefill = ()=>{
                                             children: selectedSkill
                                         }, void 0, false, {
                                             fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                            lineNumber: 478,
+                                            lineNumber: 490,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                        lineNumber: 477,
+                                        lineNumber: 489,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                lineNumber: 474,
+                                lineNumber: 486,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -55756,13 +55786,13 @@ const CreateGamePrefill = ()=>{
                                 onClick: ()=>setIsSkillDropdownOpen(!isSkillDropdownOpen)
                             }, void 0, false, {
                                 fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                lineNumber: 482,
+                                lineNumber: 494,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                        lineNumber: 473,
+                        lineNumber: 485,
                         columnNumber: 9
                     }, undefined),
                     isSkillDropdownOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -55773,12 +55803,12 @@ const CreateGamePrefill = ()=>{
                                 children: level
                             }, level, false, {
                                 fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                lineNumber: 492,
+                                lineNumber: 504,
                                 columnNumber: 15
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                        lineNumber: 490,
+                        lineNumber: 502,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -55789,7 +55819,7 @@ const CreateGamePrefill = ()=>{
                                 children: "Date"
                             }, void 0, false, {
                                 fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                lineNumber: 504,
+                                lineNumber: 516,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -55801,18 +55831,18 @@ const CreateGamePrefill = ()=>{
                                     onChange: (e)=>setSelectedDate(e.target.value)
                                 }, void 0, false, {
                                     fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                    lineNumber: 507,
+                                    lineNumber: 519,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                lineNumber: 506,
+                                lineNumber: 518,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                        lineNumber: 503,
+                        lineNumber: 515,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -55825,7 +55855,7 @@ const CreateGamePrefill = ()=>{
                                     children: "Number of Players"
                                 }, void 0, false, {
                                     fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                    lineNumber: 518,
+                                    lineNumber: 530,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -55840,23 +55870,23 @@ const CreateGamePrefill = ()=>{
                                         className: "player-count-input"
                                     }, void 0, false, {
                                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                        lineNumber: 521,
+                                        lineNumber: 533,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                    lineNumber: 520,
+                                    lineNumber: 532,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                            lineNumber: 517,
+                            lineNumber: 529,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                        lineNumber: 516,
+                        lineNumber: 528,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -55867,7 +55897,7 @@ const CreateGamePrefill = ()=>{
                                 children: "Time"
                             }, void 0, false, {
                                 fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                lineNumber: 540,
+                                lineNumber: 552,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -55884,12 +55914,12 @@ const CreateGamePrefill = ()=>{
                                                     children: hour
                                                 }, hour, false, {
                                                     fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                                    lineNumber: 549,
+                                                    lineNumber: 561,
                                                     columnNumber: 19
                                                 }, undefined))
                                         }, void 0, false, {
                                             fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                            lineNumber: 543,
+                                            lineNumber: 555,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -55897,7 +55927,7 @@ const CreateGamePrefill = ()=>{
                                             children: ":"
                                         }, void 0, false, {
                                             fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                            lineNumber: 554,
+                                            lineNumber: 566,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
@@ -55909,12 +55939,12 @@ const CreateGamePrefill = ()=>{
                                                     children: minute
                                                 }, minute, false, {
                                                     fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                                    lineNumber: 561,
+                                                    lineNumber: 573,
                                                     columnNumber: 19
                                                 }, undefined))
                                         }, void 0, false, {
                                             fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                            lineNumber: 555,
+                                            lineNumber: 567,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
@@ -55927,7 +55957,7 @@ const CreateGamePrefill = ()=>{
                                                     children: "AM"
                                                 }, void 0, false, {
                                                     fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                                    lineNumber: 571,
+                                                    lineNumber: 583,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -55935,30 +55965,30 @@ const CreateGamePrefill = ()=>{
                                                     children: "PM"
                                                 }, void 0, false, {
                                                     fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                                    lineNumber: 572,
+                                                    lineNumber: 584,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                            lineNumber: 566,
+                                            lineNumber: 578,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                    lineNumber: 542,
+                                    lineNumber: 554,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                lineNumber: 541,
+                                lineNumber: 553,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                        lineNumber: 539,
+                        lineNumber: 551,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -55966,7 +55996,7 @@ const CreateGamePrefill = ()=>{
                         children: "Additional Notes"
                     }, void 0, false, {
                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                        lineNumber: 578,
+                        lineNumber: 590,
                         columnNumber: 9
                     }, undefined)
                 ]
@@ -55986,12 +56016,12 @@ const CreateGamePrefill = ()=>{
                             src: "https://c.animaapp.com/BPOawRxV/img/rectangle@2x.png"
                         }, void 0, false, {
                             fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                            lineNumber: 585,
+                            lineNumber: 597,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                        lineNumber: 584,
+                        lineNumber: 596,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -55999,7 +56029,7 @@ const CreateGamePrefill = ()=>{
                         children: "My Profile"
                     }, void 0, false, {
                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                        lineNumber: 593,
+                        lineNumber: 605,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -56014,7 +56044,7 @@ const CreateGamePrefill = ()=>{
                                 children: "My Sports"
                             }, void 0, false, {
                                 fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                lineNumber: 596,
+                                lineNumber: 608,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -56036,18 +56066,18 @@ const CreateGamePrefill = ()=>{
                                         children: sport
                                     }, index, false, {
                                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                        lineNumber: 599,
+                                        lineNumber: 611,
                                         columnNumber: 15
                                     }, undefined))
                             }, void 0, false, {
                                 fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                lineNumber: 597,
+                                lineNumber: 609,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                        lineNumber: 595,
+                        lineNumber: 607,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -56055,7 +56085,7 @@ const CreateGamePrefill = ()=>{
                         children: "Diana Lim"
                     }, void 0, false, {
                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                        lineNumber: 621,
+                        lineNumber: 633,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -56063,7 +56093,7 @@ const CreateGamePrefill = ()=>{
                         children: "@dianadl"
                     }, void 0, false, {
                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                        lineNumber: 623,
+                        lineNumber: 635,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -56071,13 +56101,13 @@ const CreateGamePrefill = ()=>{
                         children: "Edit"
                     }, void 0, false, {
                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                        lineNumber: 625,
+                        lineNumber: 637,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                lineNumber: 581,
+                lineNumber: 593,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -56093,12 +56123,12 @@ const CreateGamePrefill = ()=>{
                                     children: "Basketball Group"
                                 }, void 0, false, {
                                     fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                    lineNumber: 631,
+                                    lineNumber: 643,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                lineNumber: 630,
+                                lineNumber: 642,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -56106,13 +56136,13 @@ const CreateGamePrefill = ()=>{
                                 children: "My Chats"
                             }, void 0, false, {
                                 fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                lineNumber: 634,
+                                lineNumber: 646,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                        lineNumber: 629,
+                        lineNumber: 641,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -56121,13 +56151,13 @@ const CreateGamePrefill = ()=>{
                         src: "https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/basketball-512.png"
                     }, void 0, false, {
                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                        lineNumber: 637,
+                        lineNumber: 649,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                lineNumber: 628,
+                lineNumber: 640,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -56138,7 +56168,7 @@ const CreateGamePrefill = ()=>{
                         children: "Soccer Group"
                     }, void 0, false, {
                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                        lineNumber: 644,
+                        lineNumber: 656,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -56147,13 +56177,13 @@ const CreateGamePrefill = ()=>{
                         src: "https://cdn-icons-png.flaticon.com/512/53/53283.png"
                     }, void 0, false, {
                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                        lineNumber: 646,
+                        lineNumber: 658,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                lineNumber: 643,
+                lineNumber: 655,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -56170,7 +56200,7 @@ const CreateGamePrefill = ()=>{
                                 children: sport
                             }, void 0, false, {
                                 fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                lineNumber: 663,
+                                lineNumber: 675,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -56179,26 +56209,26 @@ const CreateGamePrefill = ()=>{
                                     `${date}, ${time}`,
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                        lineNumber: 666,
+                                        lineNumber: 678,
                                         columnNumber: 17
                                     }, undefined),
                                     location
                                 ]
                             }, void 0, true, {
                                 fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                                lineNumber: 664,
+                                lineNumber: 676,
                                 columnNumber: 15
                             }, undefined)
                         ]
                     }, event.id, true, {
                         fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                        lineNumber: 662,
+                        lineNumber: 674,
                         columnNumber: 13
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                lineNumber: 653,
+                lineNumber: 665,
                 columnNumber: 11
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -56206,7 +56236,7 @@ const CreateGamePrefill = ()=>{
                 children: "Pickup@Penn"
             }, void 0, false, {
                 fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                lineNumber: 683,
+                lineNumber: 695,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -56214,7 +56244,7 @@ const CreateGamePrefill = ()=>{
                 children: "Upcoming Games"
             }, void 0, false, {
                 fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                lineNumber: 685,
+                lineNumber: 697,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -56223,7 +56253,7 @@ const CreateGamePrefill = ()=>{
                 src: "https://c.animaapp.com/BPOawRxV/img/image-12@2x.png"
             }, void 0, false, {
                 fileName: "src/screens/CreateGamePrefill/CreateGamePrefill.jsx",
-                lineNumber: 687,
+                lineNumber: 699,
                 columnNumber: 7
             }, undefined)
         ]

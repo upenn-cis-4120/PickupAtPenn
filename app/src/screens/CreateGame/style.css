@@ -26,7 +26,7 @@
   height: 149px;
   left: 30px;
   position: absolute;
-  top: 617px;
+  top: 580px;
   width: 448px;
 }
 
@@ -170,10 +170,6 @@
   /* Center text within the box */
 }
 
-.create-game .dropdown-arrow {
-  cursor: pointer;
-  margin-left: 10px;
-}
 
 .create-game .location-dropdown-menu {
   position: absolute;
@@ -192,6 +188,8 @@
   padding: 10px;
   cursor: pointer;
   color: #434343;
+  font-family: "Inter", Helvetica;
+  font-size: 14px;
 }
 
 .create-game .location-dropdown-item:hover {
@@ -204,6 +202,12 @@
   position: absolute;
   top: 39px;
   width: 17px;
+}
+.create-game .dropdown-arrow {
+  position: absolute;
+  top: 40px;
+  right: 15px;
+  cursor: pointer;
 }
 
 .create-game .textbox-3 {
@@ -270,20 +274,17 @@
 
 .create-game .textfield-2 {
   background-color: #fffffe;
-  border: 1px solid #434343;
+  border: 1px solid;
+  border-color: #434343;
   border-radius: 6px;
   height: 43px;
-  position: relative;
-  width: 100%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  padding: 0 15px;
+  left: -1px;
+  position: absolute;
+  top: 26px;
+  width: 449px;
 }
 
-.create-game .dropdown-arrow {
-  display: none;
-}
+
 
 .create-game .dropdown-menu {
   position: absolute;
@@ -302,6 +303,8 @@
   padding: 10px;
   cursor: pointer;
   color: #434343;
+  font-family: "Inter", Helvetica;
+  font-size: 14px;
 }
 
 .create-game .dropdown-item:hover {
@@ -322,7 +325,11 @@
 }
 
 .create-game .img {
-  display: none;
+  height: 16px;
+  left: 391px ;
+  position: absolute;
+  top: 38px;
+  width: 16px;
 }
 
 .create-game .overlap-2 {
@@ -330,7 +337,7 @@
   height: 49px;
   left: 29px;
   position: absolute;
-  top: 531px;
+  top: 478px;
   width: 449px;
 }
 
@@ -341,35 +348,6 @@
   height: 49px;
   position: relative;
   width: 449px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  padding: 0 15px;
-}
-
-.create-game .text-selected-group {
-  color: #434343;
-  font-family: "Inter", Helvetica;
-  font-size: 16px;
-  flex-grow: 1;
-  white-space: nowrap;
-}
-
-.create-game .image-2 {
-  display: none;
-}
-
-.create-game .groupchat-dropdown-menu {
-  position: absolute;
-  background-color: #fffffe;
-  border: 1px solid #434343;
-  border-radius: 6px;
-  width: 449px;
-  max-height: 150px;
-  overflow-y: auto;
-  z-index: 10;
-  top: calc(100% + 5px);
-  left: 0;
 }
 
 .create-game .text-wrapper-6 {
@@ -378,6 +356,75 @@
   font-size: 16px;
   font-weight: 400;
   padding: 10px;
+}
+
+.create-game .text-selected-group {
+  color: #434343;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  padding: 15px 20px;
+  display: inline-block;
+}
+
+.create-game .groupchat-dropdown-menu {
+  position: absolute;
+  background-color: #fffffe;
+  border: 1px solid #434343;
+  border-radius: 6px;
+  width: 100%;
+  /* Match width with text box */
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 10;
+  top: 100%;
+  /* Position dropdown below the text box */
+}
+
+.create-game .groupchat-dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  color: #434343;
+  font-family: "Inter", Helvetica;
+  font-size: 14px;
+}
+
+.create-game .groupchat-dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.create-game .dropdown-arrow1 {
+  position: absolute;
+  top: 15px !important;
+  right: 20px ;
+  cursor: pointer;
+}
+
+.create-game .image-21 {
+  height: 17px;
+  left: 410px !important;
+  position: absolute;
+  top: 15px !important;
+  width: 18px;
+}
+
+.create-game .button {
+  all: unset;
+  background-color: #091e57;
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 8px;
+  box-sizing: border-box;
+  height: 42px;
+  left: 34px;
+  overflow: hidden;
+  position: absolute;
+  top: 776px;
+  width: 442px;
+  cursor: pointer;
+}
+
+.create-game .button:hover {
+  background-color: #0c2468;
 }
 
 .create-game .text-wrapper-7 {
@@ -411,15 +458,14 @@
 
 .create-game .textfield-3 {
   background-color: #fffffe;
-  border: 1px solid #343434;
+  border: 1px solid;
+  border-color: #343434;
   border-radius: 4px;
   height: 51px;
-  position: relative;
+  left: -1px;
+  position: absolute;
+  top: 26px;
   width: 221px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  padding: 0 15px;
 }
 
 .create-game .skill-dropdown-menu {
@@ -443,6 +489,8 @@
   padding: 10px;
   cursor: pointer;
   color: #434343;
+  font-family: "Inter", Helvetica;
+  font-size: 14px;
 }
 
 .create-game .skill-dropdown-item:hover {
@@ -451,8 +499,12 @@
 
 
 
-.create-game .image-3 {
-  display: none;
+.create-game .image-31 {
+  height: 16px;
+  left: 182px;
+  position: absolute;
+  top: 15px !important;
+  width: 16px;
 }
 
 .create-game .textbox-7 {
@@ -662,7 +714,7 @@
   letter-spacing: 0;
   line-height: 26px;
   position: absolute;
-  top: 590px;
+  top: 545px;
   white-space: nowrap;
 }
 
@@ -710,7 +762,12 @@
   color: #434343;
   font-family: "Inter", Helvetica;
   font-size: 16px;
-  flex-grow: 1;
+  font-weight: 400;
+  left: 20px;
+  letter-spacing: 0;
+  line-height: 26px;
+  position: absolute;
+  top: 12px;
   white-space: nowrap;
 }
 .create-game .img-wrapper {
@@ -1354,18 +1411,24 @@
   margin-bottom: 10px;
 }
 
-.create-game .dropdown-indicator {
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  pointer-events: none;
+.create-game select,
+.create-game option {
+  font-family: "Inter", Helvetica;
+  font-size: 14px;
 }
 
-.create-game .textfield-2,
-.create-game .textfield-3,
-.create-game .textbox-5 {
-  position: relative;
+.create-game .location-dropdown-item {
+  font-family: "Inter", Helvetica;
+  font-size: 14px;
+  padding: 10px;
+  cursor: pointer;
+  color: #434343;
+}
+
+.create-game input::placeholder {
+  font-family: "Inter", Helvetica;
+}
+
+.create-game textarea {
+  font-family: "Inter", Helvetica;
 }

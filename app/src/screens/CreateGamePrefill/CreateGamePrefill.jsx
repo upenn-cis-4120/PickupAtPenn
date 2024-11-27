@@ -157,7 +157,7 @@ export const CreateGamePrefill = () => {
     
     if (sport === "Basketball") {
       setSelectedLocation("Pottruck Gym");
-      setPlayerCount(1);
+      setPlayerCount(6);
       setSelectedGroupChat("Basketball");
     } else if (sport === "Soccer") {
       setSelectedLocation("Penn Park");
@@ -348,7 +348,7 @@ useEffect(() => {
   useEffect(() => {
     if (selectedSport === "Basketball") {
       setSelectedLocation("Pottruck Gym");
-      setPlayerCount(1);
+      setPlayerCount(6);
       setSelectedGroupChat("Basketball");
     } else if (selectedSport === "Soccer") {
       setSelectedLocation("Penn Park");
@@ -371,17 +371,9 @@ useEffect(() => {
         </div>
 
         <div className="textbox">
-          <div className="textfield">
-            <input
-              type="text"
-              className="input-player-names"
-              placeholder="Enter player names or select from group chat"
-              value={playerNames}
-              onChange={handlePlayerNamesChange}
-            />
-          </div>
+          
 
-          <div className="text-wrapper-2">Players</div>
+          <div className="text-wrapper-2">Add A Group?</div>
         </div>
 
         <div className="overlap">
