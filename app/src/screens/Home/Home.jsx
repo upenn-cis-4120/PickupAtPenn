@@ -54,7 +54,25 @@ export const Home = () => {
     };
   }, []);
 
-  // Add this useEffect for calendar initialization
+  // Move fetchEvents outside of useEffect
+  const fetchEvents = () => {
+    gapi.client.calendar.events
+      .list({
+        calendarId: CALENDAR_ID,
+        timeMin: new Date().toISOString(),
+        showDeleted: false,
+        singleEvents: true,
+        maxResults: 10,
+        orderBy: "startTime"
+      })
+      .then((response) => {
+        const events = response.result.items;
+        setCalendarEvents(events);
+      })
+      .catch((err) => console.error("Error fetching events:", err));
+  };
+
+  // Calendar initialization useEffect
   useEffect(() => {
     const initCalendar = () => {
       gapi.load("client:auth2", () => {
@@ -71,23 +89,6 @@ export const Home = () => {
           })
           .catch((err) => console.error("Error initializing calendar:", err));
       });
-    };
-
-    const fetchEvents = () => {
-      gapi.client.calendar.events
-        .list({
-          calendarId: CALENDAR_ID,
-          timeMin: new Date().toISOString(),
-          showDeleted: false,
-          singleEvents: true,
-          maxResults: 10,
-          orderBy: "startTime"
-        })
-        .then((response) => {
-          const events = response.result.items;
-          setCalendarEvents(events);
-        })
-        .catch((err) => console.error("Error fetching events:", err));
     };
 
     initCalendar();
@@ -124,7 +125,6 @@ export const Home = () => {
     return tomorrow.toLocaleDateString('en-US', { month: 'long', day: 'numeric' });
   };
 
-  // Add this function after the formatDateTime function
   const addToCalendar = (sport, isToday) => {
     const eventDate = new Date();
     if (!isToday) {
@@ -157,7 +157,7 @@ export const Home = () => {
     })
     .then(() => {
       alert(`Successfully joined the ${sport} game!`);
-      fetchEvents(); // Refresh the events list
+      fetchEvents(); // Now fetchEvents is accessible here
     })
     .catch((err) => {
       console.error('Error adding event:', err);
