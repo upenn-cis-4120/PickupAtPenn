@@ -9089,16 +9089,16 @@ svg.leaflet-zoom-animated {
   line-height: 22px;
   position: absolute;
   top: 14px;
-  left: 0;
+  left: 400px !important;
 }
 
 .community .frame-about {
   border-radius: 8px;
-  width: 65px;
+  width: 111px;
   height: 52px;
   position: absolute;
   top: 0;
-  left: 398px;
+  left: 0;
 }
 
 .community .prof {

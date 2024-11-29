@@ -135,7 +135,7 @@
     font-family: "Inter", Helvetica;
     font-size: 14px;
     font-weight: 400;
-    left: 0px;
+    left: 400px !important;
     letter-spacing: 0;
     line-height: 22px;
     position: absolute;
@@ -146,10 +146,10 @@
   .community .frame-about {
     border-radius: 8px;
     height: 52px;
-    left: 398px; /* Adjust as needed */
+    left: 0px;
     position: absolute;
     top: 0;
-    width: 65px; /* Adjust as needed */
+    width: 111px;
   }
 
 
