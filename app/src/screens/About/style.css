@@ -1,0 +1,218 @@
+.about {
+    background-color: #f9fbfd; /* Match the background color */
+    min-height: 100vh; /* Ensure it takes full height */
+    position: relative;
+    width: 100%; /* Full width */
+}
+
+/* Header Menu Styles */
+.about .container-3 {
+    background-color: #f9fbfd; /* Match the background color */
+    border: 0px none;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    height: 73px; /* Height of the header */
+    left: 0;
+    position: fixed; /* Fixed position */
+    top: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.about .header-menu {
+    height: 52px;
+    left: 304px; /* Adjust as needed */
+    position: absolute;
+    top: 4px;
+    width: 384px; /* Adjust as needed */
+}
+
+.about .frame {
+    border-radius: 8px;
+    height: 52px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100px; /* Adjust as needed */
+}
+
+.about .text-wrapper-menu1,
+.about .text-wrapper-6,
+.about .text-wrapper-bold,
+.about .text-wrapper-menu3 {
+    color: #2d3f70; /* Text color */
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    position: absolute;
+    top: 14px;
+    white-space: nowrap;
+}
+
+/* Frame Styles for Menu Items */
+.about .frame-2 {
+    border-radius: 8px;
+    height: 52px;
+    left: 100px; /* Adjust as needed */
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 107px; /* Adjust as needed */
+}
+
+.about .frame-3 {
+    border-radius: 8px;
+    height: 52px;
+    left: 207px; /* Adjust as needed */
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 111px; /* Adjust as needed */
+}
+
+.about .frame-4 {
+    border-radius: 8px;
+    height: 52px;
+    left: 318px; /* Adjust as needed */
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 65px; /* Adjust as needed */
+}
+
+
+
+/* Title and Logo Styles */
+.about .text-wrapper-menu-title {
+    color: rgb(23, 43, 97);
+    letter-spacing: 0px;
+    white-space: nowrap;
+    font-family: Inter, Helvetica;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 42px;
+    position: absolute;
+    top: 8px;
+    left: 63px;
+}
+
+.about .logo {
+    height: 43px;
+    left: 12px;
+    position: absolute;
+    top: 10px;
+    width: 42px;
+}
+
+/* About Us Content Styles */
+.about .about-content {
+    margin-top: 100px; /* Space below the fixed header menu */
+    padding: 20px; /* Optional padding */
+    text-align: left; /* Left-align the text */
+}
+
+.about .about-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #172b61;
+    text-align: left; /* Left-align the title */
+    margin-bottom: 20px;
+}
+
+.about .process-title,
+.about .goal-title,
+.about .design-process-title,
+.about .insights-title,
+.about .conclusion-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #172b61;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #2d3f70;
+    margin-bottom: 20px;
+}
+
+.about-content ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    list-style-type: disc;
+}
+
+.about-content ul li {
+    margin-bottom: 10px;
+}
+.about .text-wrapper-about {
+    color: #2d3f70;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    font-weight: 700;
+    left: 400px ;
+    letter-spacing: 0;
+    line-height: 22px;
+    position: absolute;
+    top: 14px;
+    white-space: nowrap;
+  }
+  
+  .about .frame-about {
+    border-radius: 8px;
+    height: 52px;
+    left: 00px;
+    position: absolute;
+    top: 0;
+    width: 111px;
+  }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-menu {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .frame,
+    .frame-2,
+    .frame-3,
+    .frame-4,
+
+    
+
+    .about-content {
+        padding: 20px;
+    }
+
+    .about-title {
+        font-size: 28px;
+    }
+
+    .process-title,
+    .goal-title,
+    .design-process-title,
+    .insights-title,
+    .conclusion-title {
+        font-size: 20px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+    }
+}
+
+/* Boxed Section Styles */
+.about .box {
+    background-color: #ffffff; /* White background for boxes */
+    border: 1px solid #d1dedf; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    margin: 20px 0; /* Margin between boxes */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}

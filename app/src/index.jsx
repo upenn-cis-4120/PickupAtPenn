@@ -12,6 +12,7 @@ import { Profile } from "./screens/Profile";
 import { BasketballChat } from "./screens/BasketballChat";
 import { SoccerChat } from "./screens/SoccerChat";
 import { CreateGamePrefill } from "./screens/CreateGamePrefill";
+import { About } from "./screens/About"
 import reactDom from "react-dom/client";
 import ReactDOMClient from "react-dom/client"; // Ensure the correct capitalization
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -41,6 +42,7 @@ root.render(
         <Route path="/basketball-chat" element={<BasketballChat />} />
         <Route path="/soccer-chat" element={<SoccerChat />} />  
         <Route path="/create-game-prefill" element={<CreateGamePrefill />} />
+        <Route path="/about" element={<About />}/>
       </Routes>
     </Router>
   </GoogleOAuthProvider>

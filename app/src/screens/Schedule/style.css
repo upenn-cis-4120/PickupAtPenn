@@ -1127,6 +1127,29 @@
     top: 8px;
     white-space: nowrap;
   }
+
+  .schedule .text-wrapper-about {
+    color: #2d3f70;
+    font-family: "Inter", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 400px;
+    letter-spacing: 0;
+    line-height: 22px;
+    position: absolute;
+    top: 14px;
+    white-space: nowrap;
+  }
+  
+  .schedule .frame-about {
+    border-radius: 8px;
+    height: 52px;
+    left: 257px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 111px;
+  }
   
   .schedule .prof {
     height: 48px;

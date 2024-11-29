@@ -237,6 +237,11 @@ export const Home = () => {
             <div className="text-wrapper-6">Map</div>
           </div>
           </Link>
+          <Link to="/about">
+          <div classsName="frame-about">
+            <div className="text-wrapper-about">About</div>
+          </div>
+          </Link>
         </div>
         <Link to="/">
         <div className="text-wrapper-7">Pickup@Penn</div>
