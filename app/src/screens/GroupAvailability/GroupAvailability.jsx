@@ -242,11 +242,11 @@ export const GroupAvailability = () => {
             <div className="text-wrapper-menu">Map</div>
           </div>
           </Link>
-          <Link to="/about">
+          {/* <Link to="/about">
               <div classsName="frame-about">
                 <div className="text-wrapper-about">About</div>
                 </div>
-            </Link>
+            </Link> */}
         </div>
         <Link to="/">
         <div className="text-wrapper-menu-title">Pickup@Penn</div>

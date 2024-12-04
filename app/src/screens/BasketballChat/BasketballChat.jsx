@@ -97,11 +97,11 @@ export const BasketballChat = () => {
               <div className="text-wrapper-menu3">Map</div>
             </div>
           </Link>
-          <Link to="/about">
+          {/* <Link to="/about">
               <div classsName="frame-about">
                 <div className="text-wrapper-about">About</div>
                 </div>
-            </Link>
+            </Link> */}
         </div>
 
         <Link to="/">

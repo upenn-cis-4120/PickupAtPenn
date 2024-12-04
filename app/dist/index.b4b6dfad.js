@@ -27588,28 +27588,6 @@ const Schedule = ()=>{
                                             fileName: "src/screens/Schedule/Schedule.jsx",
                                             lineNumber: 130,
                                             columnNumber: 17
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                            to: "/about",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                classsName: "frame-about",
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                    className: "text-wrapper-about",
-                                                    children: "About"
-                                                }, void 0, false, {
-                                                    fileName: "src/screens/Schedule/Schedule.jsx",
-                                                    lineNumber: 137,
-                                                    columnNumber: 17
-                                                }, undefined)
-                                            }, void 0, false, {
-                                                fileName: "src/screens/Schedule/Schedule.jsx",
-                                                lineNumber: 136,
-                                                columnNumber: 15
-                                            }, undefined)
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Schedule/Schedule.jsx",
-                                            lineNumber: 135,
-                                            columnNumber: 17
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
@@ -38168,28 +38146,6 @@ const Home = ()=>{
                                 fileName: "src/screens/Home/Home.jsx",
                                 lineNumber: 235,
                                 columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/about",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    classsName: "frame-about",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-about",
-                                        children: "About"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/Home/Home.jsx",
-                                        lineNumber: 242,
-                                        columnNumber: 13
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Home/Home.jsx",
-                                    lineNumber: 241,
-                                    columnNumber: 11
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/screens/Home/Home.jsx",
-                                lineNumber: 240,
-                                columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
@@ -40117,28 +40073,6 @@ const GroupAvailability = ()=>{
                             }, void 0, false, {
                                 fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
                                 lineNumber: 240,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/about",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    classsName: "frame-about",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-about",
-                                        children: "About"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                        lineNumber: 247,
-                                        columnNumber: 17
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                    lineNumber: 246,
-                                    columnNumber: 15
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/screens/GroupAvailability/GroupAvailability.jsx",
-                                lineNumber: 245,
                                 columnNumber: 11
                             }, undefined)
                         ]
@@ -42472,28 +42406,6 @@ const Map = ()=>{
                             }, void 0, false, {
                                 fileName: "src/screens/Map/Map.jsx",
                                 lineNumber: 76,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/about",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    classsName: "frame-about",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-about",
-                                        children: "About"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/Map/Map.jsx",
-                                        lineNumber: 83,
-                                        columnNumber: 17
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Map/Map.jsx",
-                                    lineNumber: 82,
-                                    columnNumber: 15
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/screens/Map/Map.jsx",
-                                lineNumber: 81,
                                 columnNumber: 11
                             }, undefined)
                         ]
@@ -54008,28 +53920,6 @@ const Community = ()=>{
                                 fileName: "src/screens/Community/Community.jsx",
                                 lineNumber: 104,
                                 columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/about",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "frame-about",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-about",
-                                        children: "About"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/Community/Community.jsx",
-                                        lineNumber: 111,
-                                        columnNumber: 17
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Community/Community.jsx",
-                                    lineNumber: 110,
-                                    columnNumber: 15
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/screens/Community/Community.jsx",
-                                lineNumber: 109,
-                                columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
@@ -54834,28 +54724,6 @@ const BasketballChat = ()=>{
                                 fileName: "src/screens/BasketballChat/BasketballChat.jsx",
                                 lineNumber: 95,
                                 columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/about",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    classsName: "frame-about",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-about",
-                                        children: "About"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                                        lineNumber: 102,
-                                        columnNumber: 17
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                                    lineNumber: 101,
-                                    columnNumber: 15
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/screens/BasketballChat/BasketballChat.jsx",
-                                lineNumber: 100,
-                                columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
@@ -55213,28 +55081,6 @@ const SoccerChat = ()=>{
                             }, void 0, false, {
                                 fileName: "src/screens/SoccerChat/SoccerChat.jsx",
                                 lineNumber: 95,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/about",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    classsName: "frame-about",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-wrapper-about",
-                                        children: "About"
-                                    }, void 0, false, {
-                                        fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                        lineNumber: 102,
-                                        columnNumber: 17
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                    lineNumber: 101,
-                                    columnNumber: 15
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/screens/SoccerChat/SoccerChat.jsx",
-                                lineNumber: 100,
                                 columnNumber: 11
                             }, undefined)
                         ]
